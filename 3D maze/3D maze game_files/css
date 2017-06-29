@@ -1,0 +1,48 @@
+/* latin-ext */
+@font-face {
+  font-family: 'Donegal One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Donegal One'), local('DonegalOne-Regular'), url(https://fonts.gstatic.com/s/donegalone/v4/LIom94sU9XlcGbVvjBz0oCYE0-AqJ3nfInTTiDXDjU4.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Donegal One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Donegal One'), local('DonegalOne-Regular'), url(https://fonts.gstatic.com/s/donegalone/v4/LIom94sU9XlcGbVvjBz0oI4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* latin */
+@font-face {
+  font-family: 'Gloria Hallelujah';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Gloria Hallelujah'), local('GloriaHallelujah'), url(https://fonts.gstatic.com/s/gloriahallelujah/v8/CA1k7SlXcY5kvI81M_R28cNDay8z-hHR7F16xrcXsJw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Mystery Quest';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Mystery Quest'), local('MysteryQuest'), url(https://fonts.gstatic.com/s/mysteryquest/v4/467jJvg0c7HgucvBB9PLDwVds9EVChz99Vo2I1EQdcM.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Mystery Quest';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Mystery Quest'), local('MysteryQuest'), url(https://fonts.gstatic.com/s/mysteryquest/v4/467jJvg0c7HgucvBB9PLD1gaG90emUMHR_woZ36JLVg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* latin */
+@font-face {
+  font-family: 'Permanent Marker';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Permanent Marker'), local('PermanentMarker'), url(https://fonts.gstatic.com/s/permanentmarker/v5/9vYsg5VgPHKK8SXYbf3sMsW72xVeg1938eUHStY_AJ4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}

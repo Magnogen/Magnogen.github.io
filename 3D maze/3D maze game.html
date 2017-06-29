@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!-- saved from url=(0079)https://phosphorus.github.io/app.html?id=108012643&turbo=false&full-screen=true -->
+<html class="wf-donegalone-n4-active wf-gloriahallelujah-n4-active wf-permanentmarker-n4-active wf-mysteryquest-n4-active wf-active"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>3D maze game</title>
+<link rel="stylesheet" href="./3D maze game_files/app.css"><link rel="stylesheet" href="./3D maze game_files/css" media="all">
+</head><body><div class="player" style="left: 60.6667px; top: 0px;"><div style="position: absolute; overflow: hidden; width: 1158px; height: 869px; font-size: 24.1389px; background: rgb(255, 255, 255); user-select: none; transform: translateZ(0px);"><canvas width="1158" height="869" style="position: absolute; width: 1158px; height: 869px;"></canvas><canvas width="1224" height="917" style="position: absolute; width: 1158px; height: 869px;"></canvas><canvas width="1158" height="869" tabindex="0" style="outline: none; position: absolute; width: 1158px; height: 869px;"></canvas><div style="position: absolute; right: 1.4em; left: 1.4em; bottom: 0.6em; padding: 0.5em 3em 0.5em 0.5em; border: 0.3em solid rgb(46, 174, 223); border-radius: 0.8em; background: rgb(255, 255, 255); display: none;"><div style="cursor: default; font-style: normal; font-variant: normal; font-weight: bold; font-stretch: normal; font-size: 1.3em; line-height: normal; font-family: sans-serif; margin: 0px -1.92308em 0.384615em 0px; white-space: pre; overflow: hidden; text-overflow: ellipsis;"></div><input style="border: 0px; background: rgb(238, 238, 238); box-sizing: border-box; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 1.3em; line-height: normal; font-family: sans-serif; padding: 0px 0.230769em; outline: 0px; margin: 0px; width: 100%; height: 1.53846em; display: block; border-radius: 0px; box-shadow: rgba(0, 0, 0, 0.2) 0.0769231em 0.0769231em 0.153846em inset, rgba(255, 255, 255, 0.2) -0.0769231em -0.0769231em 0.0769231em inset; -webkit-appearance: none;"><div style="width: 2.2em; height: 2.2em; position: absolute; right: 0.4em; bottom: 0.4em; background: url(&quot;icons.svg&quot;) -16.5em -3.7em / 32em 9.6em;"></div></div></div></div>
+<div class="splash" style="display: none;">
+<div>
+  <h1>phosphorus</h1>
+  <div class="progress"><div class="progress-bar" style="width: 100%;"></div></div>
+</div>
+</div>
+<div class="error">
+<div>
+  <h1>phosphorus</h1>
+  <p>An error has occurred. <a id="bug-link" href="https://github.com/nathan/phosphorus/issues/new">Click here</a> to file a bug report on GitHub.</p>
+</div>
+</div>
+<script src="./3D maze game_files/webfont.js.download" type="text/javascript" async=""></script><script src="./3D maze game_files/fonts.js.download"></script>
+<script src="./3D maze game_files/jszip.js.download"></script>
+<script src="./3D maze game_files/rgbcolor.js.download"></script>
+<script src="./3D maze game_files/StackBlur.js.download"></script>
+<script src="./3D maze game_files/canvg.js.download"></script>
+<script src="./3D maze game_files/phosphorus.js.download"></script>
+<script>
+
+(function () {
+  'use strict';
+
+  var stage;
+  var projectId = 17088932;
+  var projectTitle = '';
+  var turbo = false;
+  var fullScreen = true;
+
+  var params = location.search.substr(1).split('&');
+  params.forEach(function(p) {
+    var parts = p.split('=');
+    if (parts.length > 1) {
+      switch (parts[0]) {
+        case 'id':
+          projectId = Number(parts[1]);
+          break;
+        case 'turbo':
+          turbo = parts[1] !== 'false';
+          break;
+        case 'full-screen':
+          fullScreen = parts[1] !== 'false';
+          break;
+      }
+    }
+  });
+
+  var splash = document.querySelector('.splash');
+  var progressBar = document.querySelector('.progress-bar');
+  var error = document.querySelector('.error');
+  var bugLink = document.querySelector('#bug-link');
+  var player = document.querySelector('.player');
+
+  var stage;
+
+  function layout() {
+    if (!stage) return;
+    var w = Math.min(window.innerWidth, window.innerHeight / .75);
+    if (!fullScreen) w = Math.min(w, 480);
+    var h = w * .75;
+    player.style.left = (window.innerWidth - w) / 2 + 'px';
+    player.style.top = (window.innerHeight - h) / 2 + 'px';
+    stage.setZoom(w / 480);
+    stage.draw();
+  }
+
+  function showError(e) {
+    error.style.display = 'table';
+    bugLink.href = 'https://github.com/nathan/phosphorus/issues/new?title=' + encodeURIComponent(projectTitle || '') + '&body=' + encodeURIComponent('\n\n\nhttp://scratch.mit.edu/projects/' + projectId + '\nhttp://phosphorus.github.io/#' + projectId + (e.stack ? '\n\n```\n' + e.stack + '\n```' : ''));
+    console.error(e.stack);
+  }
+
+  window.addEventListener('resize', layout);
+
+  if (P.hasTouchEvents) {
+    document.addEventListener('touchmove', function(e) {
+      e.preventDefault();
+    });
+  }
+
+  var request = P.IO.loadScratchr2Project(projectId);
+
+  request.onload = function (s) {
+    splash.style.display = 'none';
+
+    stage = s;
+    layout();
+
+    s.isTurbo = turbo;
+    s.start();
+    s.triggerGreenFlag();
+
+    player.appendChild(s.root);
+    s.focus();
+    s.handleError = showError;
+  };
+  request.onerror = showError;
+  request.onprogress = function (e) {
+    progressBar.style.width = (10 + e.loaded / e.total * 90) + '%';
+  };
+
+  P.IO.loadScratchr2ProjectTitle(projectId, function(title) {
+    document.title = projectTitle = title;
+  });
+
+}());
+
+</script>
+</body></html>
