@@ -2,7 +2,7 @@
 
 'use strict';
 
-var cfg = require('../../../config.json');
+var cfg = require('https://hydronesiumScratch.github.io/Genys.is/config.json');
 
 exports.validNick = function(nickname) {
     var regex = /^\w*$/;
