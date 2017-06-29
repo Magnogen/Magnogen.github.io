@@ -8,13 +8,13 @@ var io = require('socket.io')(http);
 var SAT = require('sat');
 
 // Import game settings.
-var c = require('../../config.json');
+var c = require('https://hydronesiumScratch.github.io/Genys.is/config.json');
 
 // Import utilities.
-var util = require('./lib/util');
+var util = require('https://hydronesiumScratch.github.io/Genys.is/src/server/lib/util.js');
 
 // Import quadtree.
-var quadtree= require('../../quadtree');
+var quadtree= require('https://hydronesiumScratch.github.io/Genys.is/quadtree.js');
 
 var args = {x : 0, y : 0, h : c.gameHeight, w : c.gameWidth, maxChildren : 1, maxDepth : 5};
 console.log(args);
