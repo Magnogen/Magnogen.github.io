@@ -138,7 +138,7 @@
               myObstacles[i].x += -1;
               myObstacles[i].update();
           }
-          myScore.text="SCORE: " + myGameArea.frameNo;
+          myScore.text="SCORE: " + math.round((myGameArea.frameNo)/10);
           myScore.update();
           myGamePiece.newPos();
           myGamePiece.update();
@@ -154,7 +154,7 @@
       }
     </script>
     <br>
-    <button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">
+    <button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.5)">
       JUMP!
     </button>
     <p>Use the JUMP! button to stay in the air</p>
