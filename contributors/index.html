@@ -1,28 +1,39 @@
 <html>
-	  <head>
+	<head>
 	   	<title>  
 			hydronesium - Contributors
 		</title>
-	  </head>
-	  <style>
+	</head>
+	<style>
 		body {
 			background-color: #222222;
 			color: #eeeeee;
 		}
-		a:link {
-		    color: #cccc00;
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #333333;
+			position: fixed;
+			top: 0;
+			width: 100%;
 		}
-		a:visited {
-		    color: #999900;
+		li {
+		    	float: left;
 		}
-		a:hover {
-		    color: #0000dd;
+		li a {
+		    	display: block;
+		    	color: white;
+		    	text-align: center;
+		    	padding: 14px 16px;
+		    	text-decoration: none;
 		}
-		a:active {
-		    color: #006400;
+		li a:hover:not(.active) {
+		    	background-color: #111111;
 		}
-		h4 {
-		    background-colour: #555511;
+		.active {
+		    	background-color: #4CAF50;
 		}
 	</style>
 	<body>
