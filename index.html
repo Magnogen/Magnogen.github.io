@@ -15,97 +15,81 @@
 			background-color: #222222;
 			color: #eeeeee;
 		}
-		
-		/* unvisited link */
 		a:link {
-		    color: #cccc00;
+		    	color: #cccc00;
 		}
-		
-		/* visited link */
 		a:visited {
-		    color: #999900;
+		    	color: #999900;
 		}
-		
-		/* mouse over link */
         	a:hover {
-		    color: #0000dd;
+		    	color: #0000dd;
 		}
-		
-		/* selected link */
 		a:active {
-		    color: #006400;
+		    	color: #006400;
 		}
-		
 		h4 {
-		    background-colour: #555511;
+		    	background-colour: #555511;
+		}
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #333;
+			position: fixed;
+			top: 0;
+			width: 100%;
+		}
+
+		li {
+		    	float: left;
+		}
+		li a {
+		    	display: block;
+		    	color: white;
+		    	text-align: center;
+		    	padding: 14px 16px;
+		    	text-decoration: none;
+		}
+		li a:hover:not(.active) {
+		    	background-color: #111;
+		}
+		.active {
+		    	background-color: #4CAF50;
 		}
 	</style>
 	<body>
+		<ul>
+  			<li>
+				<a class="active" href="https://hydronesiumscratch.github.io/">
+					Home
+				</a>
+			</li>
+  			<li>
+				<a href="datachart/">
+					News
+				</a>
+			</li>
+  			<li>
+				<a href="hydredu/">
+					hydreducation
+				</a>
+			</li>
+  			<li>
+				<a href="Game/">
+					JavaScript game
+				</a>
+			</li>
+		</ul>
 		<center>
-			<div data-role="header" data-position="fixed"></div>
-			<div class="img-with-text">
-    				<img src="H.png" alt="The hydronesium logo" />
-    				<p>
-					<h1>
-						Welcome to hydronesium's website
-					</h1>
-					<h3>
-						Click a hyperlink below to see other, closely linked, pages.
-					</h3>
-					<h4>
-						<a href="contributors/">
-							Contributors
-						</a>
-						<a href="datachart/">
-							Data chart
-						</a>
-						<a href="hydredu/">
-							hydreducation
-						</a>
-					</h4>
-				</p>
-			</div>
+			<h1>
+				Welcome to hydronesium's website
+			</h1>
+    			<img src="H.png" alt="The hydronesium logo" />
+    			<p>
+			<h3>
+				Click a hyperlink above to see other, closely linked, pages.
+			</h3>
 		</center>
-		<div data-role="page" id="pageone">
-  			<div data-role="header">
-    				<h1>Welcome To My Homepage</h1>
-    				<div data-role="navbar">
-      					<ul>
-        					<li><a href="#" class="ui-btn-active ui-state-persist" data-icon="home">Home</a></li>
-        					<li><a href="#pagetwo" data-icon="arrow-r">Page Two</a></li>
-      					</ul>
-    				</div>
-  			</div>
-
-  			<div data-role="main" class="ui-content">
-    				<p>With the ui-btn-active class, notice that the Home button stays highlighted (selected).</p>
-    				<p>Click on the Page Two button to see what happens.</p>
-  			</div>
-
-  			<div data-role="footer">
-    				<h1>My Footer</h1>
-  			</div> 
-		</div> 
-
-		<div data-role="page" id="pagetwo">
-  			<div data-role="header">
-    				<h1>Welcome To My Homepage</h1>
-    				<div data-role="navbar">
-      					<ul>
-        					<li><a href="#pageone" data-icon="home">Home</a></li>
-        					<li><a href="#" class="ui-btn-active ui-state-persist" data-icon="arrow-r">Page Two</a></li>
-      					</ul>
-    				</div>
-  			</div>
-
-  			<div data-role="main" class="ui-content">
-    				<p>This page will also have its button highlighted, because of the ui-btn-active class.</p> 
-    				<p>And if you go back to the "Home" page, you will notice that the state of that page will continue to exist, and vice versa DUE TO THE CLASS UI-STATE-PERSIST!</p>
-	  		</div>
-
-  			<div data-role="footer">
-    				<h1>My Footer</h1>
-  			</div>
-		</div> 
 	</body>
 </html>
