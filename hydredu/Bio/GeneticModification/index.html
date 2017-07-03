@@ -4,34 +4,56 @@
       hydredu - Genetic modification
     </title>
   </head>
-  <style>
+	<style>
 		body {
 			background-color: #222222;
 			color: #eeeeee;
 		}
-		
-		/* unvisited link */
-		a:link {
-		    color: #cccc00;
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #333333;
+			position: fixed;
+			top: 0;
+			width: 100%;
 		}
-		
-		/* visited link */
-		a:visited {
-		    color: #999900;
+		li {
+		    	float: left;
 		}
-		
-		/* mouse over link */
-        	a:hover {
-		    color: #0000dd;
+		li a {
+		    	display: block;
+		    	color: white;
+		    	text-align: center;
+		    	padding: 14px 16px;
+		    	text-decoration: none;
 		}
-		
-		/* selected link */
-		a:active {
-		    color: #006400;
+		li a:hover:not(.active) {
+		    	background-color: #111111;
 		}
-		
-		h4 {
-		    background-colour: #555511;
+		.active {
+		    	background-color: #4CAF50;
+		}
+		.sub {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #333333;
+			position: fixed;
+			top: 50;
+			width: 100%;
+		}
+		.subsub {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #333333;
+			position: fixed;
+			top: 100;
+			width: 100%;
 		}
 	</style>
   <body>
