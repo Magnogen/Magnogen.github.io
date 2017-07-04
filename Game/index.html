@@ -1,42 +1,71 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<style>
-			canvas {
-				border:1px solid #d3d3d3;
-				background-color: #f1f1f1;
-			}
-			body {
-				background-color: #222222;
-				color: #eeeeee;
-			}
-		
-			/* unvisited link */
-			a:link {
-			    color: #cccc00;
-			}
-
-			/* visited link */
-			a:visited {
-			    color: #999900;
-			}
-
-			/* mouse over link */
-			a:hover {
-			    color: #0000dd;
-			}
-
-			/* selected link */
-			a:active {
-			    color: #006400;
-			}
-
-			h4 {
-			    background-colour: #555511;
-			}
-		</style>
 	</head>
+	<style>
+	canvas {
+		border:1px solid #d3d3d3;
+		background-color: #f1f1f1;
+	}
+	body {
+		background-color: #222222;
+		color: #eeeeee;
+	}
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #333333;
+		position: fixed;
+		top: 0;
+		width: 100%;
+	}
+	li {
+	    	float: left;
+	}
+	li a {
+	    	display: block;
+	    	color: white;
+	    	text-align: center;
+	    	padding: 14px 16px;
+	    	text-decoration: none;
+	}
+	li a:hover:not(.active) {
+	    	background-color: #111111;
+	}
+	.active {
+	    	background-color: #4CAF50;
+	}
+	</style>
 	<body onload="startGame()">
+		<ul>
+			<li>
+				<a href="https://hydronesiumscratch.github.io/">
+					Home
+				</a>
+			</li>
+			<li>
+				<a href="https://hydronesiumscratch.github.io/datachart/">
+					Data chart
+				</a>
+			</li>
+			<li>
+				<a href="https://hydronesiumscratch.github.io/hydredu/">
+					hydreducation
+				</a>
+			</li>
+			<li>
+				<a class="active" href="https://hydronesiumscratch.github.io/Game/">
+					JavaScript game
+				</a>
+			</li>
+			<li>
+				<a href="https://hydronesiumscratch.github.io/contributors/">
+					Contributors
+				</a>
+			</li>
+		</ul>
 		<script>
 			var myGamePiece;
 			var myObstacles = [];
