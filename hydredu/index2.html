@@ -7,48 +7,76 @@
   </head>
   
   <style>
-    .dropdown-submenu {
-        position: relative;
-    }
-    .dropdown-submenu .dropdown-menu {
-        top: 0;
-        left: 100%;
-        margin-top: -1px;
-    }
+    	.dropdown-submenu {
+        	position: relative;
+    	}
+    	.dropdown-submenu .dropdown-menu {
+        	top: 0;
+        	left: 100%;
+        	margin-top: -1px;
+    	}
     
-    body {
-			background-color: #222222;
-			color: #eeeeee;
-		}
-		ul {
-			list-style-type: none;
-			margin: 0;
-			padding: 0;
-			overflow: hidden;
-			background-color: #333333;
-			position: fixed;
-			top: 0;
-			width: 100%;
-		}
-		li {
-		    	float: left;
-		}
-		li a {
-		    	display: block;
-		    	color: white;
-		    	text-align: center;
-		    	padding: 14px 16px;
-		    	text-decoration: none;
-		}
-		li a:hover:not(.active) {
-		    	background-color: #111111;
-		}
-		.active {
-		    	background-color: #4CAF50;
-		}
+    	body {
+		background-color: #222222;
+		color: #eeeeee;
+	}
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #333333;
+		position: fixed;
+		top: 0;
+		width: 100%;
+	}
+	li {
+	    	float: left;
+	}
+	li a {
+	    	display: block;
+	    	color: white;
+	    	text-align: center;
+	    	padding: 14px 16px;
+	    	text-decoration: none;
+	}
+	li a:hover:not(.active) {
+	    	background-color: #111111;
+	}
+	.active {
+	    	background-color: #4CAF50;
+	}
   </style>
   
   <body>
+	<ul>
+  		<li>
+			<a href="https://hydronesiumscratch.github.io/">
+				Home
+			</a>
+		</li>
+  		<li>
+			<a href="https://hydronesiumscratch.github.io/datachart/">
+				Data chart
+			</a>
+		</li>
+  		<li>
+			<a class="active" href="https://hydronesiumscratch.github.io/hydredu/">
+				hydreducation
+			</a>
+		</li>
+  		<li>
+			<a href="https://hydronesiumscratch.github.io/Game/">
+				JavaScript game
+			</a>
+		</li>
+		  <li>
+			<a href="https://hydronesiumscratch.github.io/contributors/">
+				Contributors
+			</a>
+		</li>
+	</ul>
+
     <div class="container">                                      
       <div class="dropdown">
         <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
