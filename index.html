@@ -9,12 +9,56 @@
 			background-color: #222222;
 			color: #eeeeee;
 		}
-		iframe {
-			
-		}
+    		ul {
+        		list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #333333;
+			position: fixed;
+			top: 0;
+			width: 100%;
+    		}
+    		li {
+        		float: left;
+    		}
+    		li a {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+    		}
+    		li a:hover:not(.active) {
+        		background-color: #111111;
+    		}
+    		.home {
+        		background-color: #4CAF50;
+    		}
 	</style>
 	<body>
-		<iframe src="https://hydronesiumscratch.github.io/src/navbar.html" width=100% height=50 frameborder=0>iFrame is not supported by your browser.</iframe>
+		<ul>
+			<li>
+				<a class="home" href="https://hydronesiumscratch.github.io/">
+					Home
+				</a>
+			</li>
+			<li>
+				<a class="contrib" href="https://hydronesiumscratch.github.io/contributors/">
+					Contributors
+				</a>
+			</li>
+			<li>
+				<a class="hydredu" href="https://hydronesiumscratch.github.io/hydredu/">
+					hydreducation
+				</a>
+			</li>
+			<li>
+				<a class="game" href="https://hydronesiumscratch.github.io/Game/">
+					Flappy square
+				</a>
+			</li>
+		</ul>
 		<center>
 			<h1>
 				<br>
