@@ -65,7 +65,6 @@
 				</a>
 			</li>
 		</ul>
-		<br>
 		<script>
 			var myGamePiece;
 			var myObstacles = [];
@@ -73,8 +72,9 @@
 
 			function startGame() {
 			    myGamePiece = new component(30, 30, "red", 10, 120);
+                
 			    myGamePiece.gravity = 0.05;
-			    myScore = new component("30px", "Consolas", "black", 960, 540, "text");
+			    myScore = new component("30px", "Consolas", "black", 760, 540, "text");
 			    myGameArea.start();
 			}
 
@@ -156,11 +156,11 @@
 			    myGameArea.frameNo += 1;
 			    if (myGameArea.frameNo == 1 || everyinterval(150)) {
 				x = myGameArea.canvas.width;
-				minHeight = 40;
+				minHeight = 50;
 				maxHeight = 400;
 				height = Math.floor(Math.random()*(maxHeight-minHeight+1)+minHeight);
-				minGap = 50;
-				maxGap = 200;
+				minGap = 80;
+				maxGap = 80;
 				gap = Math.floor(Math.random()*(maxGap-minGap+1)+minGap);
 				myObstacles.push(new component(10, height, "green", x, 0));
 				myObstacles.push(new component(10, x - height - gap, "green", x, height + gap));
@@ -193,12 +193,11 @@
 			REPLAY
 		</button>
 		<p>
-			Use the JUMP button to stay in the air<br>
-			Use the REPLAY button to play again
+			Use the JUMP button to stay in the air.<br>
+			Use the REPLAY button to play again.
 		</p>
 		<p>
 			How long can you stay alive?
 		</p>
 	</body>
 </html>
-
