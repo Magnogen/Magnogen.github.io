@@ -1,4 +1,33 @@
 <html>
-  <script src="cube.min.js">
+  <script src="cube.js">
   </script>
+  <style>
+    .the-cube {
+      margin: 80px auto;
+    }
+
+    .the-cube > span {
+      background-image: cube-texture.jpg;
+    }
+  </style>
+  <body>
+    <div id="the-cube" class="the-cube">
+      <span class="side-1"></span>
+      <span class="side-2"></span>
+      <span class="side-3"></span>
+      <span class="side-4"></span>
+      <span class="side-5"></span>
+      <span class="side-6"></span>
+    </div>
+    <script>
+      var myCube = new Cube('#the-cube');
+
+      myCube.rotate({
+        speedX: 10000,
+        speedY: 10000,
+        speedZ: 10000,
+        startSide: 'side-1'
+      });
+    </script>
+  </body>
 </html>
