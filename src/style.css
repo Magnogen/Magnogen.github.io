@@ -1,8 +1,3 @@
-body {
-  background-color: #222222;
-  color: #eeeeee;
-  font-family: Verdana, sans-serif;
-}
 ul {
   list-style-type: none;
   margin: 0;
@@ -25,9 +20,6 @@ li a {
 }
 li a:hover:not(.active) {
   background-color: #111111;
-}
-.home {
-  background-color: #504CAF;
 }
 .active {
   background-color: #717171;
