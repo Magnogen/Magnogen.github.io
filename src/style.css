@@ -1,0 +1,36 @@
+<style>
+  body {
+    background-color: #222222;
+    color: #eeeeee;
+    font-family: Verdana, sans-serif;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  li {
+    float: left;
+  }
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  li a:hover:not(.active) {
+    background-color: #111111;
+  }
+  .home {
+    background-color: #504CAF;
+  }
+  .active {
+    background-color: #717171;
+  }
+</style>
