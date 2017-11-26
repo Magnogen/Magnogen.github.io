@@ -5,6 +5,8 @@
 			Magnogen - Home
 		</title>
 		<link rel="icon" href="http://magnogen.github.io/H.png">
+		<!-- JavaScript library which gets the nav-bar content. -->
+		<script src="https://www.w3schools.com/lib/w3.js"></script>
 	</head>
 	<style>
 		body {
@@ -13,14 +15,10 @@
   			font-family: Verdana, sans-serif;
 		}
 	</style>
-	<script src="https://www.w3schools.com/lib/w3.js"></script>
-	<div w3-include-html="https://magnogen.github.io/src/navbar.html"></div> 
-
-	<script>
-		w3.includeHTML();
-	</script>
 	<body>
-		<link rel="stylesheet" type="text/html" href="https://magnogen.github.io/src/navbar.html">
+		<div w3-include-html="https://magnogen.github.io/src/navbar.html"></div> 
+		<!--Don't use <link rel="stylesheet" type="text/html" href="https://magnogen.github.io/src/navbar.html">-->
+		<script> w3.includeHTML(); </script>
 		<div style="text-align: center;">
 			<h1>
 				<br>Magnogen / hydronesium
