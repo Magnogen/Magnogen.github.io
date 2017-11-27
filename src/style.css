@@ -1,8 +1,8 @@
 body { margin: 0; }
 body>div>ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0 0 0 0.5em;
+  margin: 0 0 0 0.5em;
+  padding: 0;
   overflow: hidden;
   background-color: #333333;
   /* position: fixed; top: 0; */
