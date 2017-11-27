@@ -8,15 +8,15 @@ body>div>ul {
   /* position: fixed; top: 0; */
   width: 100%;
 }
-body>div>li { float: left; }
-body>div>li a {
+body>div>ul > li { float: left; }
+body>div>ul > li a {
   display: block;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
-body>div>li a:hover:not(.active) {
+body>div>ul > li a:hover:not(.active) {
   background-color: #111111;
 }
 .active {
