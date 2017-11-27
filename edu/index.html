@@ -5,40 +5,45 @@
 			Magnogen - hydredu
 		</title>
 		<link rel="icon" href="http://magnogen.github.io/H.png">
+		<link rel="stylesheet" type="text/css" href="https://magnogen.github.io/src/style.css">
+		
+		<!-- JavaScript library which gets the nav-bar content. -->
+		<script src="https://www.w3schools.com/lib/w3.js"></script>
+		
+		<style>
+			body {
+				background-color: #222222;
+				color: #EEEEEE;
+				font-family: Verdana, sans-serif;
+			}
+			.sub_menu {// Sub-menu on this page.
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				background-color: #333333;
+				position: fixed;
+				top: 50;
+				width: 100%;
+			}
+		</style>
 	</head>
-	<style>
-		body {
-  			background-color: #222222;
-  			color: #EEEEEE;
-  			font-family: Verdana, sans-serif;
-		}
-		.sub_menu {// Sub-menu on this page.
-			list-style-type: none;
-			margin: 0;
-			padding: 0;
-			overflow: hidden;
-			background-color: #333333;
-			position: fixed;
-			top: 50;
-			width: 100%;
-		}
-	</style>
-	<link rel="stylesheet" type="text/css" href="https://magnogen.github.io/src/style.css">
 	<body>
-		<link rel="stylesheet" type="text/html" href="https://magnogen.github.io/src/navbar.html">
+		<div w3-include-html="https://magnogen.github.io/src/navbar.html"></div>
+		<script> w3.includeHTML(); </script>
 		<ul class="sub_menu">
   			<li>
-				<a href="https://magnogen.github.io/hydredu/Bio/">
-					Biology
-				</a>
+				<a href="https://magnogen.github.io/hydredu/Bio/">Biology</a>
 			</li>
 		</ul>
+		
 		<div style="text-align: center;">
 			<h1>
-				Education <i>(older pages)</i>
+				Education
 			</h1>
 			<h3>
-				Click a hyperlink above to see other, closely linked, pages.
+				Learn some useful info about a subject area.<br>
+				Click a hyperlink above to find out more.
 			</h3>
 		</div>
 	</body>
