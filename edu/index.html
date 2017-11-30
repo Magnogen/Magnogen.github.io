@@ -8,18 +8,15 @@
 		<link rel="stylesheet" type="text/css" href="https://magnogen.github.io/src/style.css">
 		
 		<!-- JavaScript library which gets the nav-bar content. -->
-		<script src="https://www.w3schools.com/lib/w3.js"></script>
+		<script src="/src/includehtml.js"></script>
 		
 		<style>
 			body {
 				background-color: #222222;
 				color: #EEEEEE;
 				font-family: Verdana, sans-serif;
-			}
-			/*body>div>ul {
-				position: static;
-			}*/
-			.sub_menu {// Sub-menu on this page.
+			} .sub_menu {
+				// Sub-menu on this page.
 				list-style-type: none;
 				margin: 0;
 				padding: 0;
@@ -35,7 +32,7 @@
 	</head>
 	<body>
 		<div w3-include-html="https://magnogen.github.io/src/navbar.html"></div>
-		<script> w3.includeHTML(); </script>
+		<script> w3.includeHTML(nav_links_add_active); // Call-back function found in nav-bar file. </script>
 		<ul class="sub_menu">
   			<li>
 				<a href="https://magnogen.github.io/hydredu/Bio/">Biology</a>
