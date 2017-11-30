@@ -5,18 +5,22 @@
 			Magnogen - Q&amp;A section
 		</title>
 		<link rel="icon" href="http://magnogen.github.io/H.png">
+		<link rel="stylesheet" type="text/css" href="https://magnogen.github.io/src/style.css">
+		<!-- JavaScript library which gets the nav-bar content. -->
+		<script src="/src/includehtml.js"></script>
+		
+		<style>
+			body {
+				background-color: #222222;
+				color: #EEEEEE;
+				font-family: Verdana, sans-serif;
+			} /* Note: the class "Q" below has no styles. */
+		</style>
 	</head>
-	<style>
-		body {
-  			background-color: #222222;
-  			color: #EEEEEE;
-  			font-family: Verdana, sans-serif;
-		}
-		/* Note: the class "Q" below has no styles. */
-	</style>
-	<link rel="stylesheet" type="text/css" href="https://magnogen.github.io/src/style.css">
 	<body>
-		<link rel="stylesheet" type="text/html" href="https://magnogen.github.io/src/navbar.html">
+		<div w3-include-html="https://magnogen.github.io/src/navbar.html"></div>
+		<script> w3.includeHTML(nav_links_add_active); // Call-back function found in nav-bar file. </script>
+		
 		<div style="text-align: center;">
 			<h1>
 				<br>Questions &amp; Answers section
@@ -31,7 +35,8 @@
 			I used HTML, CSS and JavaScript - mainly JavaScript for the 'Flappy square' game)<br>
 			Hmmm... I think that HTML has lots of quick and easy-to-use tags but<br>
 			I'm gonna have to go with CSS to be the easiest language to code in.
-		<p></p>
+			
+			<p></p>
 			<div class="Q">
 			What is your favourite programming language in general?
 			</div>
@@ -39,10 +44,10 @@
 			unanswerable 'favourite' question! What am I going to do now?".<br>
 			So, in other words, all of the ones I know - including:
 			Scratch, Python, CSS, HTML, Batch files, as well as many others...<br>
-			because I think that all programming languages are good and special in their own way.
-			<br>
+			because I think that all programming languages are good and special in their own way.<br>
 			<i>Looking back at what I just wrote, I feel so cringy.</i>
-		<p></p>
+			
+			<p></p>
 			<div class="Q">Who are you?</div>
 			I am hydronesium/Magnogen.
 			I have only said my username because I am protective about sharing<br>
