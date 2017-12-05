@@ -6,9 +6,6 @@
 		</title>
 		<link rel="icon" href="http://magnogen.github.io/H.png">
 		<link rel="stylesheet" type="text/css" href="https://magnogen.github.io/src/style.css">
-		<!-- JavaScript library which gets the nav-bar content. -->
-		<script src="/src/includehtml.js"></script>
-		
 		<style>
 			body {
 				background-color: #222222;
@@ -18,8 +15,11 @@
 		</style>
 	</head>
 	<body>
-		<div w3-include-html="https://magnogen.github.io/src/navbar.html"></div>
-		<script> w3.includeHTML(nav_links_add_active); // Call-back function found in nav-bar file. </script>
+		<script src="https://www.w3schools.com/lib/w3.js"></script>
+		<div w3-include-html="https://magnogen.github.io/src/navbar.html"></div> 
+		<script>
+			w3.includeHTML();
+		</script>
 		
 		<div style="text-align: center;">
 			<h1>
