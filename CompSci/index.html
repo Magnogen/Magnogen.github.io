@@ -1,31 +1,44 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Computer science revision - Magnogen</title>
-        <link rel="icon" href="http://magnogen.github.io/H.png">
-        <style>
-        body {
-            background-color: #222222;
-            color: #EEEEEE;
-            font-family: Verdana, sans-serif;
-        }
-        .zaxis {//Class names can't start with numbers.
-            perspective: 600px;
-            rotateY(30);
-        }
-        </style>
-        <link rel="stylesheet" type="text/css" href="https://magnogen.github.io/src/style.css">
-    </head>
-    <body>
-        <link rel="stylesheet" type="text/html" href="https://magnogen.github.io/src/navbar.html">
-        <div style="text-align: center;">
-            <div class="zaxis">
-                <b>Data</b>
-                <p></p>
-                What is binary?<br>
-                Binary is needed to represent data and program instructions
-                <br>because of the way in which computers work.
-            </div>
-        </div>
-    </body>
+        <head>
+                <title>
+                        Magnogen - Computer science revision
+                </title>
+                <link rel="icon" href="http://magnogen.github.io/H.png">
+                <link rel="stylesheet" type="text/css" href="https://magnogen.github.io/src/style.css">
+                <!-- JavaScript library which gets the nav-bar content. -->
+                <script src="/src/includehtml.js"></script>
+                
+                <style>
+                        body {
+                                background-color: #222222;
+                                color: #EEEEEE;
+                                font-family: Verdana, sans-serif;
+                        }
+                        .h1 {
+                                -webkit-perspective: 2em; /* Older Chrome, Safari, Opera web browsers. */
+                                -moz-perspective: 2em; /* Other internet browser. */
+                                perspective: 2em;
+                        } .zaxis {// Class names can't start with numbers.
+                                padding: 1em;
+                                -webkit-transform: rotateY(130deg);
+                                -moz-transform: rotateY(30deg);
+                                transform: rotateY(30deg);
+                        }
+                </style>
+        </head>
+        <body>
+                <div w3-include-html="https://magnogen.github.io/src/navbar.html"></div>
+                <script> w3.includeHTML(nav_links_add_active); // Call-back function found in nav-bar file. </script>
+                
+                <div style="text-align: center;">
+                        <h1>
+                                <div class="zaxis">Data</div>
+			</h1>
+                        <p></p>
+                        What is binary?<br>
+                        Binary is needed to represent data and program instructions<br>
+                        because of the way in which computers work.
+                </div>
+        </body>
 </html>
