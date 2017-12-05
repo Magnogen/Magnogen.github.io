@@ -29,7 +29,12 @@
         </head>
         <body>
                 <div w3-include-html="https://magnogen.github.io/src/navbar.html"></div>
-                <script> w3.includeHTML(nav_links_add_active); // Call-back function found in nav-bar file. </script>
+                <script> 
+                        try {w3.includeHTML(nav_links_add_active); // Call-back function found in nav-bar file. 
+                        } catch(err) {
+                                document.document.getElementsByClassName("p")[0].innerHTML = err.name+"<br>"+err.message;
+                        }
+		</script>
                 
                 <div style="text-align: center;">
                         <h1>
