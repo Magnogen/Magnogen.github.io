@@ -33,7 +33,10 @@
                         try {w3.includeHTML(nav_links_add_active); // Call-back function found in nav-bar file. 
                         } catch(err) {
                                 document.getElementsByClassName("p")[0].innerHTML = err.name+"<br>"+err.message;
-                        }
+                        };
+			var code = document.createElement("pre");
+			code.innerHTML = document.documentElement.innerHTML.replace(/</g, "&lt;");
+			document.body.appendChild(code);
 		</script>
                 
                 <div style="text-align: center;">
