@@ -1,41 +1,11 @@
 <html>
-  <head>
+	<head>
 		<title>
 			hydronesium - Home
 		</title>
 	</head>
+	<link rel="stylesheet" type="text/html" href="https://magnogen.github.io/src/style.css">
 	<style>
-		body {
-			background-color: #222222;
-			color: #eeeeee;
-			font-family: Verdana, sans-serif;
-		}
-		ul {
-			list-style-type: none;
-			margin: 0;
-			padding: 0;
-			overflow: hidden;
-			background-color: #333333;
-			position: fixed;
-			top: 0;
-			width: 100%;
-		}
-		li {
-		    	float: left;
-		}
-		li a {
-		    	display: block;
-		    	color: white;
-		    	text-align: center;
-		    	padding: 14px 16px;
-		    	text-decoration: none;
-		}
-		li a:hover:not(.active) {
-		    	background-color: #111111;
-		}
-		.active {
-		    	background-color: #4CAF50;
-		}
 		.sub {
 			list-style-type: none;
 			margin: 0;
@@ -58,7 +28,12 @@
 		}
 	</style>
 	<body>
-		<link rel="stylesheet" type="text/html" href="https://magnogen.github.io/src/navbar.html">
+		<script src="https://www.w3schools.com/lib/w3.js"></script>
+		<div w3-include-html="https://magnogen.github.io/src/navbar.html"></div> 
+		<script>
+			w3.includeHTML();
+		</script>
+		
 		<ul class="sub">
   			<li>
 				<a href="https://hydronesiumscratch.github.io/hydredu/Bio/">
