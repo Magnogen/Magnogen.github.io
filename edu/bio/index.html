@@ -14,25 +14,31 @@
 		.edu {
 			background-color: #4286f4;
 		}
-		.sub {
+		.sub_menu {
+			// Sub-menu on this page.
 			list-style-type: none;
 			margin: 0;
 			padding: 0;
 			overflow: hidden;
 			background-color: #333333;
-			position: fixed;
-			top: 50;
-			width: 100%;
+			
+			display: inline-block;
+			position: relative;
+			left: 2.5em;
+			border-top: 2px solid #111111;
 		}
-		.subsub {
+		.subsub_menu {
+			// Sub-sub-menu on this page.
 			list-style-type: none;
 			margin: 0;
 			padding: 0;
 			overflow: hidden;
 			background-color: #333333;
-			position: fixed;
-			top: 100;
-			width: 100%;
+			
+			display: inline-block;
+			position: relative;
+			left: 5em;
+			border-top: 2px solid #111111;
 		}
 	</style>
 	<body>
@@ -42,14 +48,14 @@
 			w3.includeHTML();
 		</script>
 		
-		<ul class="sub">
+		<ul class="sub_menu">
   			<li>
 				<a href="https://hydronesiumscratch.github.io/hydredu/Bio/">
 					Biology
 				</a>
 			</li>
 		</ul>
-		<ul class="subsub">
+		<ul class="subsub_menu">
   			<li>
 				<a href="https://hydronesiumscratch.github.io/hydredu/Bio/GeneticModification/">
 					Genetic modification
