@@ -4,19 +4,21 @@
                 <title>
                         Magnogen - Education: Computer science
                 </title>
-                <link rel="icon" href="http://magnogen.github.io/H.png">
-                <link rel="stylesheet" type="text/css" href="https://magnogen.github.io/src/style.css">              
+		<base href="https://magnogen.github.io/">
+		<link rel="icon" href="/src/logo_icon.png">
+		<link rel="stylesheet" type="text/css" href="/src/style.css">
+		
                 <style>
-                        body {
-                                background-color: #222222;
-                                color: #EEEEEE;
-                                font-family: Verdana, sans-serif;
-                        }
-                        .h1 {
+			body {
+				background-color: #222222;
+				color: #EEEEEE;
+				font-family: Verdana, sans-serif;
+			}
+                        .zaxis {/* 3d style outer container */
                                 -webkit-perspective: 2em; /* Older Chrome, Safari, Opera web browsers. */
                                 -moz-perspective: 2em; /* Other internet browser. */
                                 perspective: 2em;
-                        } .zaxis {// Class names can't start with numbers.
+                        } .zaxis > div {// Class names can't start with numbers.
                                 padding: 1em;
                                 -webkit-transform: rotateY(130deg);
                                 -moz-transform: rotateY(30deg);
@@ -26,19 +28,20 @@
         </head>
         <body>
 		<script src="https://www.w3schools.com/lib/w3.js"></script>
-		<div w3-include-html="https://magnogen.github.io/src/navbar.html"></div> 
+		<div w3-include-html="/src/navbar.html"></div> 
 		<script>
 			w3.includeHTML();
 		</script>
                 
                 <div style="text-align: center;">
-                        <h1>
-                                <div class="zaxis">Data</div>
+                        <h1 class="zaxis">
+                                <div>Data</div>
 			</h1>
-                        <p></p>
-                        What is binary?<br>
-                        Binary is needed to represent data and program instructions<br>
-                        because of the way in which computers work.
+                        <h3>
+				What is binary?<br>
+				Binary is needed to represent data and program instructions<br>
+				because of the way in which computers work.
+			</h3>
                 </div>
         </body>
 </html>
