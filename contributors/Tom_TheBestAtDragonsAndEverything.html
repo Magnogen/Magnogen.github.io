@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Magnogen - Contributor info
+		</title>
+		<base href="https://magnogen.github.io/">
+		<link rel="icon" href="/src/logo_icon.png">
+		<link rel="stylesheet" type="text/css" href="/src/style.css">
+		<style>
+			body {
+				background-color: #222222;
+				color: #EEEEEE;
+				font-family: Verdana, sans-serif;
+			}
+			.name {
+				padding: 0.2em 0.3em;
+				font-family: Arial, Helvetica, sans-serif;
+				color: #113333;
+				
+				border: 1px solid #A0C0E0;
+				-webkit-border-radius: 0.3em;
+				-moz-border-radius: 0.3em;
+				border-radius: 0.3em;
+				background: #DCFAE0;
+			} div.inactive {
+				margin: 0.2em 0 0 0.6em;
+				display: inline-block;
+			} div.inactive:before, div.inactive::before {
+				content: "(inactive)";
+				color: #db5757;
+			} a[href="#"]:before, a[href="#"]::before {
+				content: "(none)";
+			} .about:before, .about::before {
+				content: "About me:";
+				display: block;
+				margin-bottom: 0.5em;
+				text-transform: uppercase;
+			}
+		</style>
+	</head>
+	<body>
+		<script src="https://www.w3schools.com/lib/w3.js"></script>
+		<div w3-include-html="/src/navbar.html"></div> 
+		<script>
+			w3.includeHTML();
+		</script>
+		
+		<div style="text-align: center;">
+			<h1>
+				<br>Contributor details
+			</h1>
+			<h3>
+				Some info about <span class="name">
+                			TomIsTheBestAtEverything(WhichIncludesDragons)
+                		</span><div class="inactive"></div>
+			</h3>
+			<h4>
+				Website: <a href="#"></a>
+				<br>
+				Scratch profile: <a href="#"></a>
+				<br>
+				YouTube: <a href="#"></a>
+				<br>
+				Github: <a href="#"></a>				
+                                <br>
+				<div class="about">
+					nothing said
+				</div>
+			</h4>
+		</div>
+  	</body>
+</html>
