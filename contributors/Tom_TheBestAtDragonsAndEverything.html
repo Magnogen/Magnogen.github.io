@@ -38,6 +38,8 @@
 			  a:not([href]):before, a:not([href])::before {
 				content: "(none)";
 			} .about:empty:after, .about:empty::after {
+				/* This only shows when the tag contains
+				no content - including whitespace and text */
 				content: "nothing to see";
 				font-style: italic;
 			} .about:before, .about::before {
@@ -81,8 +83,7 @@
 				<div>
 					Github: <a href="#"></a>
 				</div>
-				<div class="about">
-				</div>
+				<div class="about"></div>
 			</h4>
 		</div>
   	</body>
