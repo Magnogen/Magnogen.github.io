@@ -7,6 +7,7 @@
 		<base href="https://magnogen.github.io/">
 		<link rel="icon" href="/src/logo_icon.png">
 		<link rel="stylesheet" type="text/css" href="/src/style.css">
+		
 		<style>
 			body {
 				background-color: #222222;
@@ -33,17 +34,18 @@
 			
 			.user_info > div:not(.about) {
 				padding: 0.1em 0 0.1em 0;
-			} a[href="#"]:before, a[href="#"]::before {
+			} a[href="#"]:before, a[href="#"]::before,
+			  a:not([href]):before, a:not([href])::before {
 				content: "(none)";
-			} .about:before, .about::before {
-				content: "About me:";
-				display: block;
-				margin: 0.8em 0 0.5em 0;
-				text-transform: uppercase;
-				color: #a8f0a8;
 			} .about:empty:after, .about:empty::after {
 				content: "nothing to see";
 				font-style: italic;
+			} .about:before, .about::before {
+				content: "About me:";
+				display: block;
+				padding: 1em 0 0.5em 0;
+				text-transform: uppercase;
+				color: #a8f0a8;
 			}
 		</style>
 	</head>
@@ -56,7 +58,7 @@
 		
 		<div style="text-align: center;">
 			<h1>
-				<span style="margin-top: 0.8em;">
+				<span style="padding-top: 0.5em;">
 					Contributor details
 				</span>
 			</h1>
