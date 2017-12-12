@@ -1,72 +1,61 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>
 			Magnogen - Education: Biology
 		</title>
-        	<link rel="icon" href="http://magnogen.github.io/H.png">
+        	<base href="https://magnogen.github.io/">
+		<link rel="icon" href="/src/logo_icon.png">
+		<link rel="stylesheet" type="text/css" href="/src/style.css">
+		<style>
+			body {
+				background-color: #222222;
+				color: #EEEEEE;
+				font-family: Verdana, sans-serif;
+			}
+			.edu { background-color: #4286f4; }
+			.sub_menu {/* Sub-menu on this page. */
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				background-color: #333333;
+				
+				display: inline-block;
+				position: relative;
+				left: 2.5em;
+				border-top: 2px solid #111111;
+			}
+			.sub_x2 { /* Sub-sub-menu on this page. */
+				/* Avoid repeating code so use the sub-menu
+				class then add extra changes to this one. */
+				left: 5em;
+			}
+		</style>
 	</head>
-	<link rel="stylesheet" href="https://magnogen.github.io/src/style.css">
-	<style>
-		body {
-			background-color: #222222;
-			color: #EEEEEE;
-			font-family: Verdana, sans-serif;
-		}
-		.edu {
-			background-color: #4286f4;
-		}
-		.sub_menu {
-			// Sub-menu on this page.
-			list-style-type: none;
-			margin: 0;
-			padding: 0;
-			overflow: hidden;
-			background-color: #333333;
-			
-			display: inline-block;
-			position: relative;
-			left: 2.5em;
-			border-top: 2px solid #111111;
-		}
-		.subsub_menu {
-			// Sub-sub-menu on this page.
-			list-style-type: none;
-			margin: 0;
-			padding: 0;
-			overflow: hidden;
-			background-color: #333333;
-			
-			display: inline-block;
-			position: relative;
-			left: 5em;
-			border-top: 2px solid #111111;
-		}
-	</style>
 	<body>
 		<script src="https://www.w3schools.com/lib/w3.js"></script>
-		<div w3-include-html="https://magnogen.github.io/src/navbar.html"></div> 
+		<div w3-include-html="/src/navbar.html"></div> 
 		<script>
 			w3.includeHTML();
 		</script>
 		
 		<ul class="sub_menu">
   			<li>
-				<a href="https://magnogen.github.io/edu/bio/">
-					Biology
-				</a>
+				<a href="/edu/bio/">Biology</a>
 			</li>
 		</ul>
-		<ul class="subsub_menu">
+		<ul class="sub_menu sub_x2">
   			<li>
-				<a href="https://magnogen.github.io/edu/bio/GeneticModification.html">
+				<a href="edu/bio/GeneticModification.html">
 					Genetic modification
 				</a>
 			</li>
 		</ul>
-		<center>
+		<div style="text-align: center;">
 			<h3>
-				Click a hyperlink above to see other, closely linked, pages.
+				<br>Click a hyperlink above to see other, closely linked, pages.
 			</h3>
-		</center>
+		</div>
 	</body>
 </html>
