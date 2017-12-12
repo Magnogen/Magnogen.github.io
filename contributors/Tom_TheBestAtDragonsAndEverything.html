@@ -29,14 +29,21 @@
 			} div.inactive:before, div.inactive::before {
 				content: "(inactive)";
 				color: #db5757;
+			}
+			
+			.user_info > div:not(.about) {
+				padding: 0.1em 0 0.1em 0;
 			} a[href="#"]:before, a[href="#"]::before {
 				content: "(none)";
 			} .about:before, .about::before {
 				content: "About me:";
-				color: lightgreen;
 				display: block;
-				margin: 0.3em 0 0.5em 0;
+				margin: 0.8em 0 0.5em 0;
 				text-transform: uppercase;
+				color: #a8f0a8;
+			} .about:empty:after, .about:empty::after {
+				content: "nothing to see";
+				font-style: italic;
 			}
 		</style>
 	</head>
@@ -49,24 +56,30 @@
 		
 		<div style="text-align: center;">
 			<h1>
-				<br>Contributor details
+				<span style="margin-top: 0.8em;">
+					Contributor details
+				</span>
 			</h1>
 			<h3>
 				Some info about <span class="name">
                 			TomIsTheBestAtEverything(WhichIncludesDragons)
-                		</span><div class="inactive"></div>
+                		</span>
+				<div class="inactive"></div>
 			</h3>
-			<h4>
-				Website: <a href="#"></a>
-				<br><br>
-				Scratch profile: <a href="#"></a>
-				<br><br>
-				YouTube: <a href="#"></a>
-				<br><br>
-				Github: <a href="#"></a>				
-                                <br><br>
+			<h4 class="user_info">
+				<div>
+					Website: <a href="#"></a>
+				</div>
+				<div>
+					Scratch profile: <a href="#"></a>
+				</div>
+				<div>
+					YouTube: <a href="#"></a>
+				</div>
+				<div>
+					Github: <a href="#"></a>
+				</div>
 				<div class="about">
-					<i>nothing said</i>
 				</div>
 			</h4>
 		</div>
