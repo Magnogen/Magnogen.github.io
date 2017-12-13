@@ -11,8 +11,6 @@
 } div.inactive {
     margin: 0.2em 0 0 0.6em;
     display: inline-block;
-} div.inactive:before, div.inactive::before {
-    content: "(inactive)";
     color: #db5757;
 }
 
