@@ -8,7 +8,7 @@
     -moz-border-radius: 0.3em;
     border-radius: 0.3em;
     background: #DCFAE0;
-} div.inactive {
+} .name + div {/* Inactive text. */
     margin: 0.2em 0 0 0.6em;
     display: inline-block;
     color: #db5757;
