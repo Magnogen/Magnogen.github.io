@@ -12,7 +12,22 @@
 				background-color: #222222;
 				color: #EEEEEE;
 				font-family: Verdana, sans-serif;
-			} /* Note: the class "Q" below has no styles. */
+			}
+			/* ### Edward needs to add styles below to improve formatting ######
+			(see <https://github.com/user-e/magnogen.github.io-code-edits/pull/13>) */
+			div.qa_item {
+				/* Styles for better appearance (shapes, colour). */
+			}
+			div.qa_item > div {
+				/* Add styles. */
+			}
+			div.qa_item > blockquote {
+				/* The <blockquote> tag specifies a
+				section that is quoted from another source. */
+				display: block;
+				margin: 0.8em 0.6em 0.8em 1.2em;
+				font-size: 0.9em;
+			}
 		</style>
 	</head>
 	<body>
@@ -23,38 +38,45 @@
 		</script>
 		
 		<div style="text-align: center;">
-			<h1>
-				<br>Questions &amp; Answers
+			<h2>
+				<br>
+				Questions &amp; Answers
 				<span style="font-style: italic;">a.k.a. FAQ</span> section
-			</h1>
+				<br>
+			</h2>
+			<div class="qa_item">
+				<div>
+				What programming languages did you use to make this website?<br>
+				Also, which one do you think is easier to code in?
+				</div>
+				<blockquote>
+				I used HTML, CSS and JavaScript - mainly JavaScript for the 'Flappy square' game)<br>
+				Hmmm... I think that HTML has lots of quick and easy-to-use tags but<br>
+				I'm gonna have to go with CSS to be the easiest language to code in.
+				</blockquote>
+			</div>
+			<div class="qa_item">
+				<div>
+				What is your favourite programming language in general?
+				</div>
+				<blockquote>
+				When I saw this question, I thought to myself "Oh no! They asked the<br>
+				unanswerable 'favourite' question! What am I going to do now?".<br>
+				So, in other words, all of the ones I know - including:
+				Scratch, Python, CSS, HTML, Batch files, as well as many others...<br>
+				because I think that all programming languages are good and special in their own way.<br>
+				<i>Looking back at what I just wrote, I feel so cringy.</i>
+				</blockquote>
+			</div>
+			<div class="qa_item">
+				<div>Who are you?</div>
+				</div>
+				<blockquote>I am hydronesium/Magnogen.
+				I have only said my username because I am protective about sharing<br>
+				personal details on the internet. And also I don't want identity-frauders<br>
+				to steal who I am... <i>(Note to those people: "Haha! You can't catch me!")</i>
+				</blockquote>
+			</div>
 		</div>
-		<p></p>
-		<h3>
-			<div class="Q">
-			What programming languages did you use to make this website?<br>
-			Also, which one do you think is easier to code in?
-			</div>
-			I used HTML, CSS and JavaScript - mainly JavaScript for the 'Flappy square' game)<br>
-			Hmmm... I think that HTML has lots of quick and easy-to-use tags but<br>
-			I'm gonna have to go with CSS to be the easiest language to code in.
-			
-			<p></p>
-			<div class="Q">
-			What is your favourite programming language in general?
-			</div>
-			When I saw this question, I thought to myself "Oh no! They asked the<br>
-			unanswerable 'favourite' question! What am I going to do now?".<br>
-			So, in other words, all of the ones I know - including:
-			Scratch, Python, CSS, HTML, Batch files, as well as many others...<br>
-			because I think that all programming languages are good and special in their own way.<br>
-			<i>Looking back at what I just wrote, I feel so cringy.</i>
-			
-			<p></p>
-			<div class="Q">Who are you?</div>
-			I am hydronesium/Magnogen.
-			I have only said my username because I am protective about sharing<br>
-			personal details on the internet. And also I don't want identity-frauders<br>
-			to steal who I am... (Note to those people: "Haha! You can't catch me!")
-		</h3>
 	</body>
 </html>
