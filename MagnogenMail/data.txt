@@ -1,1 +1,2 @@
-
+This is some data retreived from a text file at:
+magnogen.github.io/MagnogenMail/data.txt
