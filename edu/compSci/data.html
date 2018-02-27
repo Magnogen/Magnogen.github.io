@@ -16,12 +16,10 @@
 			.edu {
 				background-color: #4286f4;
 			}
-			.zaxis > div {// Class names can't start with numbers.
-				padding: 0.8em;
-				-webkit-transform: skewY(5deg) rotateY(60deg);
-				-moz-transform: skewY(5deg) rotateY(60deg);
-				transform: skewY(5deg) rotateY(60deg);
-			}
+            .sub {
+            	color: #00dfff;
+            	font-weight:bold;
+            }
 		</style>
 	</head>
 	<body>
@@ -31,14 +29,32 @@
 			w3.includeHTML();
 		</script>
 		
-		<div style="text-align: center;color: #EEEEEE;">
-			<h1 class="zaxis">
-				<div>Data - what is binary?</div>
+		<div style="padding: 0px 10%;color: #EEEEEE;">
+			<h1 style="text-align: center;">
+				Computer science: Data
 			</h1>
-			<h3>
-				Binary is needed to represent data and program instructions<br>
-				because of the way in which computers work.
-			</h3>
+            <h2 style="color: #00a8ff">
+            	Using binary
+            </h2>
+			Binary is used to represent data and instructions in a program.
+            <p>
+            <div class="sub">
+            	But what's so special about binary?
+            </div>
+			Well, computer processors contain billions of transistors (like
+            a switch) that only have two states: on and off (like a
+            switch again).
+            <br>
+            Because there are only 2 states, binary is used to represent
+            these states and thus determine what the computer should do.
+            <p>
+            <div class="sub">
+            	The binary system
+            </div>
+            The two states in binary are represented by 1 (on) and 0 (off).
+            These are called 'binary digits' or 'bits'. All instructions and
+            data including graphics and sound are represented as millions of
+            bits.
 		</div>
 	</body>
 </html>
