@@ -16,10 +16,17 @@
 			.dropdown {
 				background-color: #4286f4;
 			}
-            		.sub {
-            			color: #00dfff;
-            			font-weight:bold;
-            		}
+            .sub {
+            	color: #00dfff;
+            	font-weight:bold;
+            }
+            .num {
+            	color: #222222;
+                background-color: #eeeeee;
+                padding: 4px 8px;
+                margin: 2px 2px 2px 5%;
+                display: inline-block;
+            }
 		</style>
 	</head>
 	<body>
@@ -29,7 +36,7 @@
 			w3.includeHTML();
 		</script>
 		
-		<div style="padding: 0px 10%;color: #EEEEEE;">
+		<div style="padding: 0% 10% 12% 10%;color: #EEEEEE;">
 			<h1 style="text-align: center;">
 				Computer science: Data
 			</h1>
@@ -92,6 +99,66 @@
             though, it is also used in decimal, except what you do is multiply
             or divide by a number which is a power of 10. (Including: 10, 100,
             1000, etc.)
+            <p>
+            <div class="sub">
+            	How do I perform a logical shift?
+            </div>
+            To perform a logical shift, just move all the digits along a
+            column, for instance,
+            <br>
+            <div class="num">
+            	0|0|0|1|0|1|1|1 (23)
+            </div>
+            <br>
+            would become:
+            <br>
+            <div class="num">
+            	0|0|1|0|1|1|1|0 (46)
+            </div>
+            <br>
+            When performing a logical shift of +1 (also called x2).
+            <br><br>
+            And the same number, once a logical shift of -1 has taken place,
+            would become this:
+            <br>
+            <div class="num">
+            	0|0|0|0|1|0|1|1 (11)
+            </div>
+            <br>
+            However this example would not also be called ÷2 because the one on
+            the end has been lost to oblivion and so it will be 0.5 less than
+            the half of 00010111.
+            <p>
+            <h2 style="color: #00a8ff">
+				Negative numbers
+		    </h2>
+            Negative numbers are useful, there's almost no doubt about that,
+            but how can you write down a negative number in binary? There are
+            two ways: "Sign and magnitude" and "Two's complement". Each have
+            their limitations, but I'll show you how to use both.
+            <p>
+            <div class="sub">
+            	Sign and magnitude
+            </div>
+            In this method, the digit at the far left is known as the Most
+            Significant Bit (MSB). The MSB is used to determine wether or not
+            the number is positive (when it is 0) or negative (when it is 1).
+            The MSB is the sign and the rest of the number is the magnitude,
+            hence why this method is called "Sign and magnitude".
+            <p>
+            Examples:
+            <br>
+            <div class="num">
+            	<b>0</b>|0|0|0|1|0|1|0 (+10)
+            </div>
+            <br>
+            <div class="num">
+            	<b>1</b>|0|0|0|1|0|1|0 (-10)
+            </div>
 		</div>
+        <div w3-include-html="/src/footer.html"></div> 
+		<script>
+			w3.includeHTML();
+		</script>
 	</body>
 </html>
