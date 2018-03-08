@@ -7,7 +7,6 @@
     box-sizing: border-box;
 }
 .all {
-    position: absolute;
     bottom: 0;
     width: 100%;
 }
@@ -34,9 +33,13 @@ body {
     padding: 8px;
     text-align: center;
 }
+.push {
+	min-height: calc(100vh - 80px)
+}
 </style>
 </head>
 <body>
+<div class="push"></div>
 <div class="all">
 	<div class="footer">
     	<a href="/">Magnogen.github.io</a> - Official Magnogen / hydronesium website.
