@@ -6,6 +6,11 @@
 * {
     box-sizing: border-box;
 }
+.all {
+	position: fixed;
+    bottom: 0;
+    width: 100%;
+}
 body {
     margin: 0;
     font-family: Verdana, sans-serif;
@@ -15,9 +20,9 @@ body {
     overflow: hidden;
     background-color: #444444;
     font-family: Verdana, sans-serif;
-    width: 100%;
     font-size: 16px;
     padding: 14px 16px;
+    
 }
 .footer a {
 	color: #0064ff;
@@ -27,16 +32,18 @@ body {
 	color: #222222;
     background-color: #eeeeee;
     padding: 8px;
-    text-align: center
+    text-align: center;
 }
 </style>
 </head>
 <body>
+<div class="all">
 	<div class="footer">
     	<a href="/">Magnogen.github.io</a> - Official Magnogen / hydronesium website.
     </div>
     <div class="credit">
 		Please give credit if you wish to use anything on this website.
     </div>
+</div>
 </body>
 </html>
