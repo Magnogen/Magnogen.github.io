@@ -24,3 +24,14 @@ body>div>ul > li a:hover:not(.active),
 .active {
   background-color: #0033cc;
 }
+.sub {
+  color: #00dfff;
+  font-weight:bold;
+}
+.num {
+  color: #222222;
+  background-color: #eeeeee;
+  padding: 4px 8px;
+  margin: 2px 2px 2px 5%;
+  display: inline-block;
+}
