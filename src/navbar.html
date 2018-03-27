@@ -68,7 +68,7 @@ body {
     background-color: #ccc;
     height: 250px;
 }
-.column a {
+.column a :not(.nopage) {
     float: none;
     color: #000000;
     padding: 16px;
@@ -76,7 +76,7 @@ body {
     display: block;
     text-align: left;
 }
-.column a:hover {
+.column a:hover :not(.nopage) {
     background-color: #dddddd;
 }
 .row:after {
@@ -84,16 +84,9 @@ body {
     display: table;
     clear: both;
 }
-@media (max-width: 600px) {
-    .column {
-        width: 100%;
-        height: auto;
-    }
-}
 </style>
 </head>
 <body>
-
 <div class="navbar">
   <a href="/" class="home">Home</a>
   <a href="/about/" class="contrib">About</a>
@@ -138,7 +131,9 @@ body {
       </div>
     </div>
   </div>
-  <img src="/src/GitHub_Logo_White.png" alt="GitHub" height="100%"> 
+  <a href="https://github.com/Magnogen/magnogen.github.io/" style="float: right; margin: 0px 5px; padding: 0px 5px">
+  	<img src="/src/GitHub_Logo_White.png" alt="GitHub" height="50vh">
+  </a>
 </div>
 <br><br><br>
 </body>
