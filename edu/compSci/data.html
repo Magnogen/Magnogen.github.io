@@ -33,6 +33,16 @@
                 padding: 0px 2px;
                 display: inline-block;
             }
+            .dataNav {
+            	background-color: #0032ff;
+                padding: 2px 5%;
+                text-align: center;
+            }
+            .dataNav a {
+            	color: #ffffff;
+                text-decoration: none;
+                font-weight: bold;
+            }
 		</style>
 	</head>
 	<body>
@@ -46,11 +56,15 @@
 			<h1 style="text-align: center;">
 				Computer science: Data
 			</h1>
+            <div class="dataNav">
+            	<a href="/edu/compSci/data.html#binaryUsage">BINARY</a> |
+                <a href="/edu/compSci/data.html#hexUsage">HEXADECIMAL</a>
+            </div>
 		    <h2 style="color: #00a8ff" id="binaryUsage">
 				Using binary
 		    </h2>
 				Binary is used to represent data and instructions in a program.
-		    <p>
+		    <br><br>
 		    <div class="sub">
 			But what's so special about binary?
 		    </div>
@@ -60,7 +74,7 @@
 		    <br>
 		    Because there are only 2 states, binary is used to represent
 		    these states and thus determine what the computer should do.
-		    <p>
+		    <br><br>
 		    <div class="sub">
 				The binary system
 		    </div>
@@ -68,7 +82,7 @@
 		    These are called 'binary digits' or 'bits'. All instructions and
 		    data including graphics and sound are represented as millions of
 		    bits.
-		    <p>
+		    <br><br>
 		    <div class="sub">
             	Why are binary numbers so long?
             </div>
@@ -77,7 +91,7 @@
 		    digits in 'standard' numbering, requires 6 digits in binary
 		    numbering [101010]) This results in a generally longer number, when
             compared to other forms of numbering.
-		    <p>
+		    <br><br>
 		    <h2 style="color: #00a8ff" id="conversion">
 				Converting to binary
 		    </h2>
@@ -86,13 +100,13 @@
             (binary numbers with 8 digits). Denary numbers above 255 need more
             digits. I have made a video on YouTube for converting denar
             numbers to binary and vice versa. You can see it here:
-            <p>
+            <br><br>
             <center>
             	<iframe width="75%" height="315" src="https://www.youtube.com/embed/PL2TQmsXm6Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
             		iFrames aren't supported by your browser.
             	</iframe>
             </center>
-            <p>
+            <br><br>
             <h2 style="color: #00a8ff" id="shifts">
 				Shifts
 		    </h2>
@@ -107,7 +121,7 @@
             1000, etc.). There are 2 types of shift: Logical shift and
             Arithmetic shift, the difference is that Arithmetic shifts are used
             for binary numbers with a negative value. You can learn about that <a href="/edu/compSci/data.html#negativeBinary">here</a>
-            <p>
+            <br><br>
             <div class="sub">
             	How do I perform a logical shift?
             </div>
@@ -136,7 +150,7 @@
             However this example would not also be called ÷2 because the one on
             the end has been lost to oblivion and so it will be 0.5 less than
             the half of 00010111.
-            <p>
+            <br><br>
             <div class="sub">
             	How do I perform an arithmetic shift?
             </div>To perform an arithmetic shift, just move all but the first
@@ -165,7 +179,7 @@
             is. This is the case no matter which number it is. Also notice that
             the second digit from the left is a 1, this is because the number
             is carried along. More about this in the <a href="/edu/compSci/data.html#negativeBinary">Negative numbers</a> section.
-            <p>
+            <br><br>
             <h2 style="color: #00a8ff" id="negativeBinary">
 				Negative numbers
 		    </h2>
@@ -173,7 +187,7 @@
             but how can you write down a negative number in binary? There are
             two ways: "Sign and magnitude" and "Two's complement". Each have
             their limitations, but I'll show you how to use both.
-            <p>
+            <br><br>
             <div class="sub">
             	Sign and magnitude
             </div>
@@ -182,7 +196,7 @@
             the number is positive (when it is 0) or negative (when it is 1).
             The MSB is the sign and the rest of the number is the magnitude,
             hence why this method is called "Sign and magnitude".
-            <p>
+            <br><br>
             Examples:
             <br>
             <div class="num">
@@ -192,7 +206,7 @@
             <div class="num">
             	<b>1</b>|0|0|0|1|0|1|0 (-10)
             </div>
-            <p>
+            <br><br>
             <div class="sub">
             	Two's complement
             </div>
@@ -211,6 +225,15 @@
             Step 3: Flip all the bits. (<div class="num-brackets">0|0|0|0|1|0|1|0</div> becomes <div class="num-brackets">1|1|1|1|0|1|0|1</div>)<br>
             Step 4: Add 1 (<div class="num-brackets">1|1|1|1|0|1|0|1</div> +
             <div class="num-brackets">1</div> = <div class="num-brackets">1|1|1|1|0|1|<b>1</b>|<b>0</b></div>)
+            <br><br>
+            <h2 style="color: #00a8ff" id="hexUsage">
+				Using hexadecimal
+		    </h2>
+            Hexadecimal looks like this:
+            <div class="num">
+            	ffffff
+            </div>
+            
 	    </div>
 	</body>
 </html>
