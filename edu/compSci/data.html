@@ -27,6 +27,12 @@
                 margin: 2px 2px 2px 5%;
                 display: inline-block;
             }
+            .num-brackets {
+            	color: #222222;
+                background-color: #eeeeee;
+                padding: 0px 2px;
+                display: inline-block;
+            }
 		</style>
 	</head>
 	<body>
@@ -40,7 +46,7 @@
 			<h1 style="text-align: center;">
 				Computer science: Data
 			</h1>
-		    <h2 style="color: #00a8ff">
+		    <h2 style="color: #00a8ff" id="binaryUsage">
 				Using binary
 		    </h2>
 				Binary is used to represent data and instructions in a program.
@@ -72,7 +78,7 @@
 		    numbering [101010]) This results in a generally longer number, when
             compared to other forms of numbering.
 		    <p>
-		    <h2 style="color: #00a8ff">
+		    <h2 style="color: #00a8ff" id="conversion">
 				Converting to binary
 		    </h2>
             You can convert 'standard' (also called 'decimal' or 'denary')
@@ -87,18 +93,20 @@
             	</iframe>
             </center>
             <p>
-            <h2 style="color: #00a8ff">
-				Logical shifts
+            <h2 style="color: #00a8ff" id="shifts">
+				Shifts
 		    </h2>
             <div class="sub">
             	What are they?
             </div>
-            Logical shifts are used when you want to multiply or divide binary
-            numbers by a number which is a power of 2. (Including: 2, 4, 8, 16,
-            32, 64, etc) Logical shifts aren't just restricted to binary
+            Shifts are used when you want to multiply or divide binary
+            numbers by a number which is a power of 2 (including: 2, 4, 8, 16,
+            32, 64, etc). Shifts aren't just restricted to binary
             though, it is also used in decimal, except what you do is multiply
-            or divide by a number which is a power of 10. (Including: 10, 100,
-            1000, etc.)
+            or divide by a number which is a power of 10 (including: 10, 100,
+            1000, etc.). There are 2 types of shift: Logical shift and
+            Arithmetic shift, the difference is that Arithmetic shifts are used
+            for binary numbers with a negative value. You can learn about that <a href="/edu/compSci/data.html#negativeBinary">here</a>
             <p>
             <div class="sub">
             	How do I perform a logical shift?
@@ -129,7 +137,36 @@
             the end has been lost to oblivion and so it will be 0.5 less than
             the half of 00010111.
             <p>
-            <h2 style="color: #00a8ff">
+            <div class="sub">
+            	How do I perform an arithmetic shift?
+            </div>To perform an arithmetic shift, just move all but the first
+            digit along a column, for instance,
+            <br>
+            <div class="num">
+            	1|0|0|1|0|1|1|1 (23)
+            </div>
+            <br>
+            would become:
+            <br>
+            <div class="num">
+            	1|0|1|0|1|1|1|0 (46)
+            </div>
+            <br>
+            When performing an arithmetic shift of +1 (also called x2).
+            <br><br>
+            And the same number, once a logical shift of -1 has taken place,
+            would become this:
+            <br>
+            <div class="num">
+            	1|1|0|0|1|0|1|1 (11)
+            </div>
+            <br>
+            Notice that the 1 on the left-most end of the number stays as it
+            is. This is the case no matter which number it is. Also notice that
+            the second digit from the left is a 1, this is because the number
+            is carried along. More about this in the <a href="/edu/compSci/data.html#negativeBinary">Negative numbers</a> section.
+            <p>
+            <h2 style="color: #00a8ff" id="negativeBinary">
 				Negative numbers
 		    </h2>
             Negative numbers are useful, there's almost no doubt about that,
@@ -155,6 +192,25 @@
             <div class="num">
             	<b>1</b>|0|0|0|1|0|1|0 (-10)
             </div>
+            <p>
+            <div class="sub">
+            	Two's complement
+            </div>
+            <br>
+            This format is more common when compared to Sign and magnitude, but
+            it is slightly harder to understand. But why use this instead of
+            Sign and magnitude? Because Sign and magnitude has two vaules for
+            0: +0 (<div class="num-brackets"><b>0</b>|0|0|0|0|0|0|0</div>), and
+            -0 (<div class="num-brackets"><b>1</b>|0|0|0|0|0|0|0</div>). Even
+            though these two values are exactly the same, they have differing
+            Sign and magnitude representations. Two's complement fixes this
+            problem.
+            <br><br>
+            Step 1: Choose a number. (I'll choose 10)<br>
+            Step 2: Find positive binary value. (10 = <div class="num-brackets">0|0|0|0|1|0|1|0</div>)<br>
+            Step 3: Flip all the bits. (<div class="num-brackets">0|0|0|0|1|0|1|0</div> becomes <div class="num-brackets">1|1|1|1|0|1|0|1</div>)<br>
+            Step 4: Add 1 (<div class="num-brackets">1|1|1|1|0|1|0|1</div> +
+            <div class="num-brackets">1</div> = <div class="num-brackets">1|1|1|1|0|1|<b>1</b>|<b>0</b></div>)
 	    </div>
 	</body>
 </html>
