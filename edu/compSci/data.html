@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Magnogen - Education: Computer science
+		</title>
+		<base href="https://magnogen.github.io/">
+		<link rel="icon" href="/src/logo_icon.png">
+		<link rel="stylesheet" type="text/css" href="/src/style.css">
+		
+		<style>
+			body {
+				background-color: #222222;
+				font-family: Verdana, sans-serif;
+			}
+			.edu {
+				background-color: #0000a8;
+			}
+            .sub {
+            	color: #00dfff;
+            	font-weight:bold;
+            }
+            .num {
+            	color: #222222;
+                background-color: #eeeeee;
+                padding: 4px 8px;
+                margin: 2px 2px 2px 5%;
+                display: inline-block;
+            }
+            .num-brackets {
+            	color: #222222;
+                background-color: #eeeeee;
+                padding: 0px 2px;
+                display: inline-block;
+            }
+            .dataNav {
+            	background-color: #0032ff;
+                padding: 2px 5%;
+                text-align: center;
+            }
+            .dataNav a {
+            	color: #ffffff;
+                text-decoration: none;
+                font-weight: bold;
+            }
+		</style>
+	</head>
+	<body>
+		<script src="https://www.w3schools.com/lib/w3.js"></script>
+		<div w3-include-html="/src/navbar.html"></div> 
+		<script>
+			w3.includeHTML();
+		</script>
+		
+		<div style="padding: 0% 10% 12% 10%;color: #EEEEEE;">
+			<h1 style="text-align: center;">
+				Computer science: Data
+			</h1>
+            <div class="dataNav">
+            	<a href="/edu/compSci/data.html#binaryUsage">BINARY</a> |
+                <a href="/edu/compSci/data.html#hexUsage">HEXADECIMAL</a>
+            </div>
+		    <h2 style="color: #00a8ff" id="binaryUsage">
+				Using binary
+		    </h2>
+				Binary is used to represent data and instructions in a program.
+		    <br><br>
+		    <div class="sub">
+			But what's so special about binary?
+		    </div>
+				Computer processors contain billions of transistors (like
+		    a switch) that only have two states: on and off (like a
+		    switch again).
+		    <br>
+		    Because there are only 2 states, binary is used to represent
+		    these states and thus determine what the computer should do.
+		    <br><br>
+		    <div class="sub">
+				The binary system
+		    </div>
+		    The two states in binary are represented by 1 (on) and 0 (off).
+		    These are called 'binary digits' or 'bits'. All instructions and
+		    data including graphics and sound are represented as millions of
+		    bits.
+		    <br><br>
+		    <div class="sub">
+            	Why are binary numbers so long?
+            </div>
+		    Because binary only has two numbers, you need multiple digits to
+		    symbolise the same value. (For example, 42, while only needing 2
+		    digits in 'standard' numbering, requires 6 digits in binary
+		    numbering [101010]) This results in a generally longer number, when
+            compared to other forms of numbering.
+		    <br><br>
+		    <h2 style="color: #00a8ff" id="conversion">
+				Converting to binary
+		    </h2>
+            You can convert 'standard' (also called 'decimal' or 'denary')
+            numbers with values between 0 and 255 into 8-bit binary numbers
+            (binary numbers with 8 digits). Denary numbers above 255 need more
+            digits. I have made a video on YouTube for converting denar
+            numbers to binary and vice versa. You can see it here:
+            <br><br>
+            <center>
+            	<iframe width="75%" height="315" src="https://www.youtube.com/embed/PL2TQmsXm6Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+            		iFrames aren't supported by your browser.
+            	</iframe>
+            </center>
+            <br><br>
+            <h2 style="color: #00a8ff" id="shifts">
+				Shifts
+		    </h2>
+            <div class="sub">
+            	What are they?
+            </div>
+            Shifts are used when you want to multiply or divide binary
+            numbers by a number which is a power of 2 (including: 2, 4, 8, 16,
+            32, 64, etc). Shifts aren't just restricted to binary
+            though, it is also used in decimal, except what you do is multiply
+            or divide by a number which is a power of 10 (including: 10, 100,
+            1000, etc.). There are 2 types of shift: Logical shift and
+            Arithmetic shift, the difference is that Arithmetic shifts are used
+            for binary numbers with a negative value. You can learn about that <a href="/edu/compSci/data.html#negativeBinary">here</a>
+            <br><br>
+            <div class="sub">
+            	How do I perform a logical shift?
+            </div>
+            To perform a logical shift, just move all the digits along a
+            column, for instance,
+            <br>
+            <div class="num">
+            	0|0|0|1|0|1|1|1 (23)
+            </div>
+            <br>
+            would become:
+            <br>
+            <div class="num">
+            	0|0|1|0|1|1|1|0 (46)
+            </div>
+            <br>
+            When performing a logical shift of +1 (also called x2).
+            <br><br>
+            And the same number, once a logical shift of -1 has taken place,
+            would become this:
+            <br>
+            <div class="num">
+            	0|0|0|0|1|0|1|1 (11)
+            </div>
+            <br>
+            However this example would not also be called ÷2 because the one on
+            the end has been lost to oblivion and so it will be 0.5 less than
+            the half of 00010111.
+            <br><br>
+            <div class="sub">
+            	How do I perform an arithmetic shift?
+            </div>To perform an arithmetic shift, just move all but the first
+            digit along a column, for instance,
+            <br>
+            <div class="num">
+            	1|0|0|1|0|1|1|1 (23)
+            </div>
+            <br>
+            would become:
+            <br>
+            <div class="num">
+            	1|0|1|0|1|1|1|0 (46)
+            </div>
+            <br>
+            When performing an arithmetic shift of +1 (also called x2).
+            <br><br>
+            And the same number, once a logical shift of -1 has taken place,
+            would become this:
+            <br>
+            <div class="num">
+            	1|1|0|0|1|0|1|1 (11)
+            </div>
+            <br>
+            Notice that the 1 on the left-most end of the number stays as it
+            is. This is the case no matter which number it is. Also notice that
+            the second digit from the left is a 1, this is because the number
+            is carried along. More about this in the <a href="/edu/compSci/data.html#negativeBinary">Negative numbers</a> section.
+            <br><br>
+            <h2 style="color: #00a8ff" id="negativeBinary">
+				Negative numbers
+		    </h2>
+            Negative numbers are useful, there's almost no doubt about that,
+            but how can you write down a negative number in binary? There are
+            two ways: "Sign and magnitude" and "Two's complement". Each have
+            their limitations, but I'll show you how to use both.
+            <br><br>
+            <div class="sub">
+            	Sign and magnitude
+            </div>
+            In this method, the digit at the far left is known as the Most
+            Significant Bit (MSB). The MSB is used to determine wether or not
+            the number is positive (when it is 0) or negative (when it is 1).
+            The MSB is the sign and the rest of the number is the magnitude,
+            hence why this method is called "Sign and magnitude".
+            <br><br>
+            Examples:
+            <br>
+            <div class="num">
+            	<b>0</b>|0|0|0|1|0|1|0 (+10)
+            </div>
+            <br>
+            <div class="num">
+            	<b>1</b>|0|0|0|1|0|1|0 (-10)
+            </div>
+            <br><br>
+            <div class="sub">
+            	Two's complement
+            </div>
+            <br>
+            This format is more common when compared to Sign and magnitude, but
+            it is slightly harder to understand. But why use this instead of
+            Sign and magnitude? Because Sign and magnitude has two vaules for
+            0: +0 (<div class="num-brackets"><b>0</b>|0|0|0|0|0|0|0</div>), and
+            -0 (<div class="num-brackets"><b>1</b>|0|0|0|0|0|0|0</div>). Even
+            though these two values are exactly the same, they have differing
+            Sign and magnitude representations. Two's complement fixes this
+            problem.
+            <br><br>
+            Step 1: Choose a number. (I'll choose 10)<br>
+            Step 2: Find positive binary value. (10 = <div class="num-brackets">0|0|0|0|1|0|1|0</div>)<br>
+            Step 3: Flip all the bits. (<div class="num-brackets">0|0|0|0|1|0|1|0</div> becomes <div class="num-brackets">1|1|1|1|0|1|0|1</div>)<br>
+            Step 4: Add 1 (<div class="num-brackets">1|1|1|1|0|1|0|1</div> +
+            <div class="num-brackets">1</div> = <div class="num-brackets">1|1|1|1|0|1|<b>1</b>|<b>0</b></div>)
+            <br><br>
+            <h2 style="color: #00a8ff" id="hexUsage">
+				Using hexadecimal
+		    </h2>
+            Hexadecimal looks like this:
+            <div class="num">
+            	ffffff
+            </div>
+            
+	    </div>
+	</body>
+</html>
