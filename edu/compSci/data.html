@@ -30,8 +30,21 @@
             .num-brackets {
             	color: #222222;
                 background-color: #eeeeee;
-                padding: 0px 2px;
+                padding: 2px;
                 display: inline-block;
+            }
+            table {
+                border-collapse: collapse;
+            }
+
+            td, th {
+                border: 4px solid #888888;
+                text-align: left;
+                padding: 6px 12px;
+            }
+
+            tr:nth-child(1) {
+                background-color: #666666;
             }
             .dataNav {
             	background-color: #0032ff;
@@ -210,7 +223,6 @@
             <div class="sub">
             	Two's complement
             </div>
-            <br>
             This format is more common when compared to Sign and magnitude, but
             it is slightly harder to understand. But why use this instead of
             Sign and magnitude? Because Sign and magnitude has two vaules for
@@ -226,14 +238,62 @@
             Step 4: Add 1 (<div class="num-brackets">1|1|1|1|0|1|0|1</div> +
             <div class="num-brackets">1</div> = <div class="num-brackets">1|1|1|1|0|1|<b>1</b>|<b>0</b></div>)
             <br><br>
+            <h2 style="color: #00a8ff" id="binMath">
+				Binary mathematics
+		    </h2>
+            So you want to do some addition and multiplication too? Maybe even some
+            subtraction and division? Well, this is your place!
+            <br><br>
+            <div class="sub">
+            	Addition
+            </div>
+            In addition, there are 4 different rules you'll need to follow:
+            <br>
+            <table>
+                <tr>
+                    <th>Company</th>
+                    <th>Contact</th>
+                    <th>Country</th>
+                </tr>
+                <tr>
+                    <td>Alfreds Futterkiste</td>
+                    <td>Maria Anders</td>
+                    <td>Germany</td>
+                </tr>
+                <tr>
+                    <td>Centro comercial Moctezuma</td>
+                    <td>Francisco Chang</td>
+                    <td>Mexico</td>
+                </tr>
+                <tr>
+                    <td>Ernst Handel</td>
+                    <td>Roland Mendel</td>
+                    <td>Austria</td>
+                </tr>
+                <tr>
+                    <td>Island Trading</td>
+                    <td>Helen Bennett</td>
+                    <td>UK</td>
+                </tr>
+                <tr>
+                    <td>Laughing Bacchus Winecellars</td>
+                    <td>Yoshi Tannamuri</td>
+                    <td>Canada</td>
+                </tr>
+                <tr>
+                    <td>Magazzini Alimentari Riuniti</td>
+                    <td>Giovanni Rovelli</td>
+                    <td>Italy</td>
+                </tr>
+            </table>
             <h2 style="color: #00a8ff" id="hexUsage">
 				Using hexadecimal
 		    </h2>
             Hexadecimal looks like this:
+            <br>
             <div class="num">
             	ffffff
             </div>
-            
 	    </div>
 	</body>
 </html>
