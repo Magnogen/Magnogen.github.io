@@ -1,1 +1,111 @@
-
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Magnogen - Education: Computer science
+		</title>
+		<base href="https://magnogen.github.io/">
+		<link rel="icon" href="/src/logo_icon.png">
+		<link rel="stylesheet" type="text/css" href="/src/style.css">
+		
+		<style>
+			body {
+				background-color: #222222;
+				font-family: Verdana, sans-serif;
+			}
+			.edu {
+				background-color: #0000a8;
+			}
+            .sub {
+            	color: #00dfff;
+            	font-weight:bold;
+            }
+            .num {
+            	color: #222222;
+                background-color: #eeeeee;
+                padding: 4px 8px;
+                margin: 2px 2px 2px 5%;
+                display: inline-block;
+            }
+            .num-brackets {
+            	color: #222222;
+                background-color: #eeeeee;
+                padding: 2px;
+                display: inline-block;
+            }
+            .dataNav {
+            	background-color: #0032ff;
+                padding: 2px 5%;
+                text-align: center;
+            }
+            .dataNav a {
+            	color: #ffffff;
+                text-decoration: none;
+                font-weight: bold;
+            }
+		</style>
+	</head>
+	<body>
+		<script src="https://www.w3schools.com/lib/w3.js"></script>
+		<div w3-include-html="/src/navbar.html"></div> 
+		<script>
+			w3.includeHTML();
+		</script>
+		
+		<div style="padding: 0% 10% 12% 10%;color: #EEEEEE;">
+			<h1 style="text-align: center;">
+				Computer science: Programming
+			</h1>
+            <div class="dataNav">
+            	<a href="/edu/compSci/programming.html#subPrograms">SUB-PROGRAMS</a> |
+                <a href="/edu/compSci/programming.html#other">OTHER</a>
+            </div>
+		    <h2 style="color: #00a8ff" id="subPrograms">
+				Sub-programs
+		    </h2>
+			Sub-programs are used when you don't want to type out the same code repeatedly
+            throughout your program. There are two different types of sub-program:
+            procedures and functions.<br>
+            <br>
+            <div class="sub">
+            	How to use it
+            </div>
+            In python, you can define a sub-program with the
+            'def' command. You use it like so:<br><br>
+            <div class="num">
+            	1| <span style="color: #003AFF;">def</span> <span style="color: #888888;">mySubProgram</span>(<i>arguments</i>):<br>
+                2| &nbsp&nbsp&nbsp&nbsp<span style="color: #4FAB5B;">#Code to be executed
+                	when sub-program is called</span>
+            </div><br><br>
+            You can replace the "mySubProgram" with anything you wish to call your sub
+            program. And I'll talk about the "<i>arguments</i>" later on. After line 1, you
+            can type out any code you wish to run when the sub-program is called.<br>
+            <br>
+            <div class="sub">
+            	Arguments - what are they?
+            </div>
+            Arguments are used to you can pass data into the subprogram. This allows it to
+            perform more tasks when compared to when it doesn't have any of these little
+            rascals. As soon as you use an argument in the subprogram, this makes it a
+            function, instead of a procedure. You can 'reference' an argument in the code
+            by treating it as a variable. For example:<br><br>
+            <div class="num">
+            	1| <span style="color: #003AFF;">def</span> <span style="color: #888888;">test</span>(input1):<br>
+                2| &nbsp&nbsp&nbsp&nbsp<span style="color: #003AFF;">print</span>(input1)
+            </div><br><br>
+            The code when written like this:
+            <br><br>
+            <div class="num">
+            	1| test("Hello World!")
+            </div><br><br>
+            Will output this:
+            <br><br>
+            <div class="num">
+            	>>><br>
+            	<span style="color: #888888;">Hello World!</span><br>
+                >>>
+            </div><br><br>
+            Because the string being passed into the sub-program, and the subprogram prints out the string with the 'print' command.
+	    </div>
+	</body>
+</html>
