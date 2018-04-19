@@ -26,12 +26,14 @@
                 padding: 4px 8px;
                 margin: 2px 2px 2px 5%;
                 display: inline-block;
+                font-family: Consolas
             }
             .num-brackets {
             	color: #222222;
                 background-color: #eeeeee;
                 padding: 2px;
                 display: inline-block;
+                font-family: Consolas
             }
             .dataNav {
             	background-color: #0032ff;
@@ -73,9 +75,9 @@
             In python, you can define a sub-program with the
             'def' command. You use it like so:<br><br>
             <div class="num">
-            	1| <span style="color: #003AFF;">def</span> <span style="color: #888888;">mySubProgram</span>(<i>arguments</i>):<br>
-                2| &nbsp&nbsp&nbsp&nbsp<span style="color: #4FAB5B;">#Code to be executed
-                	when sub-program is called</span>
+            	1| <span style="color: #003AFF;">def</span> <span style="color: #888888;"><b>mySubProgram</b></span>(<i>arguments</i>):<br>
+                2| &nbsp&nbsp&nbsp&nbsp<span style="color: #4FAB5B;"><i>#Code to be
+                executed when sub-program is called</i></span>
             </div><br><br>
             You can replace the "mySubProgram" with anything you wish to call your sub
             program. And I'll talk about the "<i>arguments</i>" later on. After line 1, you
@@ -90,7 +92,7 @@
             function, instead of a procedure. You can 'reference' an argument in the code
             by treating it as a variable. For example:<br><br>
             <div class="num">
-            	1| <span style="color: #003AFF;">def</span> <span style="color: #888888;">test</span>(input1):<br>
+            	1| <span style="color: #003AFF;">def</span> <span style="color: #888888;"><b>test</b></span>(input1):<br>
                 2| &nbsp&nbsp&nbsp&nbsp<span style="color: #003AFF;">print</span>(input1)
             </div><br><br>
             The code when written like this:
@@ -105,7 +107,21 @@
             	<span style="color: #888888;">Hello World!</span><br>
                 >>>
             </div><br><br>
-            Because the string being passed into the sub-program, and the subprogram prints out the string with the 'print' command.
+            Because the string being passed into the sub-program, and the subprogram prints
+            out the string with the 'print' command.<br>
+            <br>
+            <div class="sub">
+            	More examples
+            </div><br>
+            This sub-program finds the mean value of all the values in the list given.<br>
+            <div class="num">
+            	1| <span style="color: #003AFF;">def</span> <span style="color: #888888;"><b>findMeanOf</b></span>(inputList):<br>
+                2| &nbsp&nbsp&nbsp total = <span style="color: #888888;">0</span><br>
+                3| &nbsp&nbsp&nbsp&nbsp<span style="color: #003AFF;">for</span> i <span style="color: #003AFF;">in range</span>(<span style="color: #888888;">1</span>, <span style="color: #003AFF;">len</span>(inputList)):<br>
+                4| &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp total = total + <span style="color: #003AFF;">int</span>(inputList[i])<br>
+                5| &nbsp&nbsp&nbsp total = total / <span style="color: #003AFF;">len</span>(inputList)<br>
+                6| &nbsp&nbsp&nbsp <span style="color: #003AFF;">return</span> total
+            </div><br><br>
 	    </div>
 	</body>
 </html>
