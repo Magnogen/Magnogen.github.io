@@ -60,7 +60,7 @@
 			</h1>
             <div class="dataNav">
             	<a href="/edu/compSci/programming.html#subPrograms">SUB-PROGRAMS</a> |
-                <a href="/edu/compSci/programming.html#other">OTHER</a>
+                <a href="/edu/compSci/programming.html#classes">CLASSES</a>
             </div>
 		    <h2 style="color: #00a8ff" id="subPrograms">
 				Sub-programs
@@ -70,14 +70,14 @@
             procedures and functions.<br>
             <br>
             <div class="sub">
-            	How to use it
+            	How to use them
             </div>
             In python, you can define a sub-program with the
             'def' command. You use it like so:<br>
             <br>
             <div class="num">
             	1| <span style="color: #003AFF;">def</span> <span style="color: #888888;"><b>mySubProgram</b></span>(<i>arguments</i>):<br>
-                2| &nbsp&nbsp&nbsp&nbsp<span style="color: #4FAB5B;"><i>#Code to be
+                2| &nbsp&nbsp&nbsp&nbsp<span style="color: #1C7828;"><i>#Code to be
                 executed when sub-program is called</i></span>
             </div><br>
             <br>
@@ -138,7 +138,7 @@
                 >>>
             </div><br>
             <br>
-            <div class="sub" id="examples">
+            <div class="sub" id="subProgramExamples">
             	More examples
             </div>
             This sub-program finds the mean value of all the values in the list given.<br>
@@ -166,6 +166,56 @@
             	1| <span style="color: #003AFF;">def</span> <span style="color: #888888;"><b>greet</b></span>(name="everybody"):<br>
     			2| &nbsp&nbsp&nbsp <span style="color: #003AFF;"><i>""" Greets a person """</i></span><br>
     			3| &nbsp&nbsp&nbsp print("Hello " + name + "!")<br>
+            </div>
+            <h2 style="color: #00a8ff" id="classes">
+				Classes
+		    </h2>
+            Classes are used when you want to bind multiple sub-programs with a similar
+            topic together.<br>
+            <br>
+            <div class="sub">
+            	How to use them
+            </div>
+            In python, you can create a class with the 'class' command. You use it like so:<br>
+            <br>
+            <div class="num">
+            	1| <span style="color: #003AFF;">class</span> <span style="color: #003AFF;"><b>myClass</b></span>:<br>
+                2| &nbsp&nbsp&nbsp&nbsp<span style="color: #1C7828;"><i>#Subprograms to be
+                binded together</i></span>
+            </div><br>
+            <br>
+            You can replace the "myClass" with anything you wish to call your class. After
+            line 1, you can type out any sub-program you wish to run when the sub-program
+            is called within the class.<br>
+            <br>
+            <div class="sub">
+            	How to call a class
+            </div>
+            But how do you call a sub-program that is referenced within a class? The answer
+            is quite simple, actually. Here is the class:<br>
+            <br>
+            <div class="num">
+            	1| <span style="color: #003AFF;">class</span> <span style="color: #003AFF;"><b>myClass</b></span>:<br>
+                2| &nbsp&nbsp&nbsp <span style="color: #003AFF;">def</span> <span style="color: #888888;"><b>mySubProgram1</b></span>():<br>
+                3| &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span style="color: #003AFF;">print</span>(<span style="color: #1C7828;">"Code!!!"</span>)<br>
+                4| &nbsp&nbsp&nbsp <span style="color: #003AFF;">def</span> <span style="color: #888888;"><b>mySubProgram2</b></span>():<br>
+                5| &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span style="color: #003AFF;">print</span>(<span style="color: #1C7828;">"More code!!!"</span>)
+            </div><br>
+            <br>
+            And here is the reference:<br>
+            <br>
+            <div class="num">
+            	1| myClass.mySubProgram1() <span style="color: #1C7828;">#Calls mySubProgram1 sub-program under myClass class</span><br>
+                2| myClass.mySubProgram2() <span style="color: #1C7828;">#Calls mySubProgram2 sub-program under myClass class</span>
+            </div><br>
+            <br>
+            Then, once the program is run, it will profuce this output:<br>
+            <br>
+            <div class="num">
+            	>>><br>
+            	<span style="color: #888888;">Code!!!<br>
+                More code!!!</span><br>
+                >>>
             </div>
 	    </div>
 	</body>
