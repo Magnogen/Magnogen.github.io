@@ -7,6 +7,33 @@
 		<base href="https://magnogen.github.io/">
 		<link rel="icon" href="/src/logo_icon.png">
 		<link rel="stylesheet" type="text/css" href="/src/style.css">
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/amplitudejs@3.3.3/dist/amplitude.js">
+        	Amplitude.init({
+                "songs": [
+                    {
+                        "name": "Automate",
+                        "artist": "Magnogen",
+                        "album": "Phizix",
+                        "url": "/projects/music/Magnogen - Automate.mp3",
+                        "cover_art_url": "/cover/art/url.jpg"
+                    },
+                    {
+                        "name": "Song Name 2",
+                        "artist": "Artist Name",
+                        "album": "Album Name",
+                        "url": "/song/url.mp3",
+                        "cover_art_url": "/cover/art/url.jpg"
+                    },
+                    {
+                        "name": "Song Name 3",
+                        "artist": "Artist Name",
+                        "album": "Album Name",
+                        "url": "/song/url.mp3",
+                        "cover_art_url": "/cover/art/url.jpg"
+                    }
+                ]
+            });
+        </script>
 		
 		<style>
             		body {
@@ -62,9 +89,9 @@
         function phizix() {
             document.getElementById("songs").innerHTML = "\
             	<div style=\"font-size: 20px;color: #00a8ff;\">Phizix</div><br> \
-                Magnogen - Automate<img src=\"/src/play.jpg\" style=\"float: right\" onclick=\"play_song(\"automate\")\"><br> \
-                Magnogen - Breeze<img src=\"/src/play.jpg\" style=\"float: right\" onclick=\"play_song(\"breeze\")\"><br> \
-                Magnogen - Renegade<img src=\"/src/play.jpg\" style=\"float: right\" onclick=\"play_song(\"renegade\")\"><br> \
+                Magnogen - Automate<br> \
+                Magnogen - Breeze<br> \
+                Magnogen - Renegade<br> \
             ";
         }
         function youtubeats() {
