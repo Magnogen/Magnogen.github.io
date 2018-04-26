@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<title>
-			Magnogen - Home
+			Magnogen - JavaScript
 		</title>
 		<base href="https://magnogen.github.io/">
 		<link rel="icon" href="/src/logo_icon.png">
@@ -12,9 +12,9 @@
 				background-color: #222222;
 				font-family: Verdana, sans-serif;
 			}
-            .scriptTest {
-                background-color: #0000a8;
-            }
+            		.javaScript {
+                		background-color: #0000a8;
+            		}
 		</style>
 	</head>
 	<body>
@@ -24,18 +24,16 @@
 			w3.includeHTML();
 		</script>
 		
-		<div style="text-align: center;color: #EEEEEE;">
-			<h1>
+		<div style="color: #EEEEEE;margin: 0px 5%;">
+			<h1 style="text-align: center;">
 				JavaScript testing
 			</h1>
 			<p></p>
-			<h3 id="content">
-				
-			</h3>
+			<div id="content"></div>
 		</div>
         <script>
-        	var parsedUrl = new URL(window.location.href);
-            document.getElementById('content').innerHTML = parsedUrl.searchParams.get("data");
+		var parsedUrl = new URL(window.location.href);
+            	document.getElementById('content').innerHTML = parsedUrl.searchParams.get("data");
         </script>
 	</body>
 </html>
