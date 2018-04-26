@@ -31,7 +31,7 @@ if (parsedUrl.searchParams.get("action") == "search") {
     </style> \
     <input type=\"text\" id=\"myInput\" onkeyup=\"myFunction()\" placeholder=\"Search for inputs...\"> \
     <ul id=\"myUL\"> \
-      <li><a href=\"/javaScriptTesting/?action=\">action</a></li> \
+      <li><a onclick=\"askAction()\">action</a></li> \
       <li><a href=\"/javaScriptTesting/?content=\">content</a></li> \
     </ul> \
     ";
@@ -51,4 +51,10 @@ function myFunction() {
             li[i].style.display = "none";
         }
     }
+}
+function askAction() {
+    var content = prompt("Enter content:", "Example");
+        if (content != null) {
+            window.location.href = "https://magnogen.github.io/javaScriptTesting/?action="+content;
+        }
 }
