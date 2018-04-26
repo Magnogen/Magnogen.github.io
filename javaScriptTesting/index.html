@@ -12,9 +12,9 @@
 				background-color: #222222;
 				font-family: Verdana, sans-serif;
 			}
-            		.javaScript {
-                		background-color: #0000a8;
-            		}
+            .javaScript {
+            	background-color: #0000a8;
+            }
 		</style>
 	</head>
 	<body>
@@ -32,8 +32,9 @@
 			<div id="content"></div>
 		</div>
         <script>
-		var parsedUrl = new URL(window.location.href);
-            	document.getElementById('content').innerHTML = parsedUrl.searchParams.get("data");
+			var parsedUrl = new URL(window.location.href);
+            document.getElementById('content').innerHTML = parsedUrl.searchParams.get("filename");
+            if 
         </script>
 	</body>
 </html>
