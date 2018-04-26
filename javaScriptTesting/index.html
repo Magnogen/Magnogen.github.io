@@ -28,7 +28,9 @@
 			<h1 style="text-align: center;">
 				JavaScript testing
 			</h1>
-			<p></p>
+			This page is domain-interactive, this means that if you type in the correct variable and then a value for it in the address bar (domain), it will respond in the correct way.<br>
+            <br>
+            Try typing: ?action=search after the current domain, or click <a href="/javaScriptTesting/?action=search">here</a>.
 			<div id="content"></div>
 		</div>
         <script>
@@ -44,11 +46,13 @@
                         border: 1px solid #ddd; \
                         margin-bottom: 12px; \
                     } \
+ \
                     #myUL { \
                         list-style-type: none; \
                         padding: 0; \
                         margin: 0; \
                     } \
+ \
                     #myUL li a { \
                         border: 1px solid #ddd; \
                         margin-top: -1px; \
@@ -59,14 +63,15 @@
                         color: #ffffff; \
                         display: block; \
                     } \
+ \
                     #myUL li a:hover:not(.header) { \
                         background-color: \#666666; \
                     } \
                 </style> \
                 <input type=\"text\" id=\"myInput\" onkeyup=\"myFunction()\" placeholder=\"Search for inputs...\"> \
-		<ul id=\"myUL\"> \
+				<ul id=\"myUL\"> \
                 	<li><a href=\"/javaScriptTesting/?action=\">action</a></li> \
-  			<li><a href=\"/javaScriptTesting/?content=\">content</a></li> \
+  					<li><a href=\"/javaScriptTesting/?content=\">content</a></li> \
                 </ul> \
                 ";
             }
