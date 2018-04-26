@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Magnogen - Home
+		</title>
+		<base href="https://magnogen.github.io/">
+		<link rel="icon" href="/src/logo_icon.png">
+		<link rel="stylesheet" type="text/css" href="/src/style.css">
+		<style>
+			body {
+				background-color: #222222;
+				font-family: Verdana, sans-serif;
+			}
+            .scriptTest {
+                background-color: #0000a8;
+            }
+		</style>
+	</head>
+	<body>
+		<script src="https://www.w3schools.com/lib/w3.js"></script>
+		<div w3-include-html="/src/navbar.html"></div> 
+		<script>
+			w3.includeHTML();
+		</script>
+		
+		<div style="text-align: center;color: #EEEEEE;">
+			<h1>
+				Javascript testing
+			</h1>
+			<p></p>
+			<h3 id="content">
+				
+			</h3>
+		</div>
+        <script>
+        	var parsedUrl = new URL(window.location.href);
+            document.getElementById('content').innerHTML = parsedUrl.searchParams.get("data");
+        </script>
+	</body>
+</html>
