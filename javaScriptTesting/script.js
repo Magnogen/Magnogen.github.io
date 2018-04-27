@@ -32,7 +32,7 @@ if (parsedUrl.searchParams.get("action") == "search") {
     <input type=\"text\" id=\"myInput\" onkeyup=\"myFunction()\" placeholder=\"Search for inputs...\"> \
     <ul id=\"myUL\"> \
       <li><a onclick=\"askAction()\">action</a></li> \
-      <li><a href=\"/javaScriptTesting/?content=\">content</a></li> \
+      <li><a onclick=\"askContent()\">content</a></li> \
     </ul> \
     ";
 }
@@ -53,8 +53,14 @@ function myFunction() {
     }
 }
 function askAction() {
+    var action = prompt("Enter action:", "Example");
+        if (content != null) {
+            window.location.href = "https://magnogen.github.io/javaScriptTesting/?action="+action;
+        }
+}
+function askContent() {
     var content = prompt("Enter content:", "Example");
         if (content != null) {
-            window.location.href = "https://magnogen.github.io/javaScriptTesting/?action="+content;
+            window.location.href = "https://magnogen.github.io/javaScriptTesting/?content="+content;
         }
 }
