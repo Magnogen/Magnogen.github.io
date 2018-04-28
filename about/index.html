@@ -13,12 +13,29 @@
 				font-family: Verdana, sans-serif;
 			}
 			.contrib {
-            	background-color: #0000a8;
-            }
-            .about-person {
-            	float: right;
-                width: 75%
-            }
+				background-color: #0000a8;
+			}
+
+			.about_area { padding: 0% 10% 12% 10%; color: #EEEEEE; }
+			.about_area > img {
+				display: inline-block;
+				width: 50px; height: 50px;
+				margin: 0 0 1em 2em;
+
+				border: 1px solid rgba(0,0,0,0);
+				-webkit-border-radius: 0.3em;
+				-moz-border-radius: 0.3em;
+				border-radius: 0.3em;
+			}
+			.about_area > div {
+				float: right;
+				width: 75%;
+			}
+			.about_area > div[data-empty] > * {
+				display: none;
+			} .about_area > div[data-empty] > div:first-child {
+				display: block;
+			}
 		</style>
 	</head>
 	<body>
@@ -28,23 +45,33 @@
 			w3.includeHTML();
 		</script>
 		
-		<div style="padding: 0% 10% 12% 10%;color: #EEEEEE;">
+		<div class="about_area">
 			<h1>
 				About this website
 			</h1>
 			<h3 class="sub">
 				Contributors
 			</h3>
-			<div id="about-person" class="about-person">Select a contributor...</div>
-			<img src="/about/hydronesium.jpg" alt="hydronesium profile picture" width="50px" height="50px" onclick="showHydronesium()">
-			<br><br>
-			<img src="/about/user-e.jpg" alt="user-e profile picture" width="50px" height="50px" onclick="showUserE()">
-			<br><br>
-			<img src="/about/yoyofoxdrawingstuff.jpg" alt="yoyofox profile picture" width="50px" height="50px" onclick="showYoyofox()">
-            </h4>
+			<img src="/about/hydronesium.jpg" alt="hydronesium profile picture" onclick="show_info(0)">
+			<img src="/about/user-e.jpg" alt="user-e profile picture" onclick="show_info(1)">
+			<img src="/about/yoyofoxdrawingstuff.jpg" alt="yoyofox profile picture" onclick="show_info(2)">
+			
+			<div id="about_info" data-empty>
+				<div style="display: none;">Select a contributor...</div>
+				<div style="font-size: 20px;color: #00a8ff;"></div>
+				<i>Developer</i><br><br>
+				<div></div>
+			</div>
 		</div>
   	</body>
-    <script>
+	<script>
+	var about_data = [[
+		],[
+		],[
+	]];
+	function show_info (person) {
+		// add here
+	};
         function showHydronesium() {
             document.getElementById("about-person").innerHTML = "\
             	<div style=\"font-size: 20px;color: #00a8ff;\">hydronesium</div> \
@@ -105,5 +132,5 @@
                  \
             ";
         }
-    </script>
+	</script>
 </html>
