@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<title>
-			Magnogen - Contributors
+			Magnogen - About
 		</title>
 		<base href="https://magnogen.github.io/">
 		<link rel="icon" href="/src/logo_icon.png">
@@ -15,16 +15,9 @@
 			.contrib {
             	background-color: #0000a8;
             }
-			.people { 
-    			position: relative;
-			}
-            .people .text {
-                position: relative;
-    			top: 25%;
-                transform: translateY(75%);
-            }
-            .people img {
-                float: left;
+            .about-person {
+            	float: right;
+                width: 75%
             }
 		</style>
 	</head>
@@ -42,20 +35,75 @@
 			<h3 class="sub">
 				Contributors
 			</h3>
-            <div class="people">
-				<img src="/about/hydronesium.jpg" alt="hydronesium profile picture" width="50px" height="50px"> 
-                <div class="text">
-                	hydronesium [<i>Developer</i>]
-                </div>
-            </div>
+			<div id="about-person" class="about-person">Select a contributor...</div>
+			<img src="/about/hydronesium.jpg" alt="hydronesium profile picture" width="50px" height="50px" onclick="showHydronesium()">
 			<br><br>
-			<div class="people">
-				<img src="/about/user-e.jpg" alt="user-e profile picture" width="50px" height="50px"> 
-                <div class="text">
-                	user-e [<i>Developer</i>]
-                </div>
-            </div>
+			<img src="/about/user-e.jpg" alt="user-e profile picture" width="50px" height="50px" onclick="showUserE()">
+			<br><br>
+			<img src="/about/yoyofoxdrawingstuff.jpg" alt="yoyofox profile picture" width="50px" height="50px" onclick="showYoyofox()">
             </h4>
 		</div>
   	</body>
+    <script>
+        function showHydronesium() {
+            document.getElementById("about-person").innerHTML = "\
+            	<div style=\"font-size: 20px;color: #00a8ff;\">hydronesium</div> \
+                <i>Developer</i><br><br> \
+                Website: <a href=\"http://magnogen.github.io/\"> \
+					Magnogen - Home \
+				</a><br> \
+                Scratch profile: <a href=\"https://scratch.mit.edu/users/hydronesium/\"> \
+					hydronesium on Scratch \
+				</a><br> \
+                YouTube channel: <a href=\"https://www.youtube.com/channel/UCosxKKKPJk4aZlwF_EFe2pw\"> \
+						hydronesium \
+				</a><br> \
+                Github: <a href=\"https://github.com/Magnogen\"> \
+						Magnogen \
+				</a><br><br> \
+                Hi there, I'm Connor and I've always wanted a website and now \
+                that I've got one, I'm so happy! I'm going to do maths and \
+                computing at A level buecause I quite like them currently. \
+                I enjoy making music and writing stories (you can see them \
+                under the projects tab in the navigation bar). \
+            ";
+        }
+        function showUserE() {
+            document.getElementById("about-person").innerHTML = "\
+            	<div style=\"font-size: 20px;color: #00a8ff;\">user-e</div> \
+                <i>Developer</i><br><br> \
+                Website: <a href=\"http://192.168.1.77/a/\"> \
+					my Raspberry Pi server \
+					<span style=\"font-style: italic;\">(non-public)</span> \
+				</a><br> \
+                Scratch profile: <a href=\"https://scratch.mit.edu/users/user-e/\"> \
+					user-e \
+				</a><br> \
+                Google+ page: <a href=\"https://plus.google.com/107507296915460932126\"> \
+						Edward J \
+				</a><br> \
+                Github: <a href=\"https://github.com/user-e\"> \
+						user-e \
+				</a><br><br> \
+                Hello, I’m someone called Edward.<br> \
+				I don't know much about Github and version control systems \
+				but I'm quite good at programming and maths. \
+				I'm going to do Computing at A level, not taking the GCSE. \
+				Here to help out with the webpage making, using my skills. \
+            ";
+        }
+        function showYoyofox() {
+            document.getElementById("about-person").innerHTML = "\
+            	<div style=\"font-size: 20px;color: #00a8ff;\">Yoyofox</div> \
+                <i>Inspirational colleague</i><br><br> \
+                Website: <a href=\"https://magnogen.github.io/stupididit/\"> \
+					Yoyofox \
+				</a><br> \
+                Deviantart: <a href=\"https://yoyofoxdrawingstuff.deviantart.com/\"> \
+						yoyofoxdrawingstuff (Yoyofx) | Deviantart \
+				</a><br><br> \
+                 \
+            ";
+        }
+    </script>
 </html>

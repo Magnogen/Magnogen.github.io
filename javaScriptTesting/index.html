@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Magnogen - JavaScript
+		</title>
+		<base href="https://magnogen.github.io/">
+		<link rel="icon" href="/src/logo_icon.png">
+		<link rel="stylesheet" type="text/css" href="/src/style.css">
+		<style>
+			body {
+				background-color: #222222;
+				font-family: Verdana, sans-serif;
+			}
+			.javaScript {
+				background-color: #0000a8;
+			}
+		</style>
+	</head>
+	<body>
+		<script src="https://www.w3schools.com/lib/w3.js"></script>
+		<div w3-include-html="/src/navbar.html"></div> 
+		<script>
+			w3.includeHTML();
+		</script>
+		
+		<div style="color: #EEEEEE;margin: 0px 5%;">
+			<h1 style="text-align: center;">
+				JavaScript testing
+			</h1>
+			This page is domain-interactive, this means that if you type in the correct variable and then a value for it in the address bar (domain), it will respond in the correct way.<br>
+            		<br>
+            		Try typing: ?action=search after the current domain, or click <a href="/javaScriptTesting/?action=search">here</a>.<br>
+			<br>
+			<div id="content"></div>
+		</div>
+        	<script src="/javaScriptTesting/script.js"></script>
+	</body>
+</html>

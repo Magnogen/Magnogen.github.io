@@ -7,6 +7,33 @@
 		<base href="https://magnogen.github.io/">
 		<link rel="icon" href="/src/logo_icon.png">
 		<link rel="stylesheet" type="text/css" href="/src/style.css">
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/amplitudejs@3.2.3/dist/amplitude.js">
+        	Amplitude.init({
+                "songs": [
+                    {
+                        "name": "Automate",
+                        "artist": "Magnogen",
+                        "album": "Phizix",
+                        "url": "/projects/music/Magnogen - Automate.mp3",
+                        "cover_art_url": "/cover/art/url.jpg"
+                    },
+                    {
+                        "name": "Song Name 2",
+                        "artist": "Artist Name",
+                        "album": "Album Name",
+                        "url": "/song/url.mp3",
+                        "cover_art_url": "/cover/art/url.jpg"
+                    },
+                    {
+                        "name": "Song Name 3",
+                        "artist": "Artist Name",
+                        "album": "Album Name",
+                        "url": "/song/url.mp3",
+                        "cover_art_url": "/cover/art/url.jpg"
+                    }
+                ]
+            });
+        </script>
 		
 		<style>
             		body {
@@ -20,6 +47,10 @@
 			.projects {
 				background-color: #0000a8;
 			}
+            .songs {
+            	float: right;
+                width: 75%;
+            }
 		</style>
 	</head>
 	<body>
@@ -30,76 +61,16 @@
 		</script>
 		
 		<div style="padding: 0% 10% 12% 10%;color: #EEEEEE;">
-			<h1 style="text-align: center;color: #0064ff">
-				My music
+			<h1 style="text-align: center;">
+				Music
 			</h1>
 		    <h2 style="color: #00a8ff" id="originals">
-				Originals
+				Albums
 		    </h2>
-            <img src="/projects/music/Phyzix.png" alt="Phyzix album art" width="50px" height="50px">
-            <audio controls>
-              <source src="/projects/music/Magnogen - Automate.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-            </audio>
-            <br>
-            <div class="sub">
-            	Magnogen - Automate
-            </div>
-            A simple Alan-Walker-style track with a tempo change.
-            <br><br>
-            <img src="/projects/music/Phyzix.png" alt="Phyzix album art" width="50px" height="50px">
-            <audio controls>
-              <source src="/projects/music/Magnogen - Breeze.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-            </audio>
-            <div class="sub">
-            	Magnogen - Breeze
-            </div>
-            A calmer track.
-            <br><br>
-            <img src="/projects/music/Phyzix.png" alt="Phyzix album art" width="50px" height="50px">
-            <audio controls>
-              <source src="/projects/music/Magnogen - Renegade.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-            </audio>
-            <div class="sub">
-            	Magnogen - Renegade
-            </div>
-            Inspired by dubstep.
-            <br><br>
-	    	<img src="/projects/music/Phyzix.png" alt="Emotions album art" width="50px" height="50px">
-            <audio controls>
-              <source src="/projects/music/Magnogen - Continuum.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-            </audio>
-            <br>
-            <div class="sub">
-            	Magnogen - Continuum
-            </div>
-            A relatively slow track, inspired by another one of my tracks...
-            <br><br>
-            <img src="/projects/music/YoutuBeats.png" alt="YoutuBeats album art" width="50px" height="50px">
-            <audio controls>
-              <source src="/projects/music/Magnogen - Vsauce.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-            </audio>
-            <br>
-            <div class="sub">
-            	Magnogen - Vsauce
-            </div>
-            A track with samples from Vsauce, quite spacey.
-            <br><br>
-	    <img src="/projects/music/Emotions.png" alt="Emotions album art" width="50px" height="50px">
-            <audio controls>
-              <source src="/projects/music/Magnogen - Laughter.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-            </audio>
-            <br>
-            <div class="sub">
-            	Magnogen - Laughter
-            </div>
-            Haha... Mario... So funny...
-            <br><br>
+            <div id="songs" class="songs">Select an album...</div>
+            <img src="/projects/music/Phyzix.png" alt="Phyzix album art" width="50px" height="50px" onclick="phizix()"><br>
+            <img src="/projects/music/YoutuBeats.png" alt="YoutuBeats album art" width="50px" height="50px" onclick="youtubeats()"><br>
+            <img src="/projects/music/Emotions.png" alt="Emotions album art" width="50px" height="50px" onclick="emotions()">
             <h2 style="color: #00a8ff" id="remixes">
 				Remixes
 		    </h2>
@@ -114,5 +85,25 @@
             Zyzyx hosted a remix competition recently, I thought I'd take advantage of it...
             <br><br>
 	    </div>
+        <script>
+        function phizix() {
+            document.getElementById("songs").innerHTML = "\
+            	<div style=\"font-size: 20px;color: #00a8ff;\">Phizix</div><br> \
+                Magnogen - Automate<br> \
+                Magnogen - Breeze<br> \
+                Magnogen - Renegade<br> \
+            ";
+        }
+        function youtubeats() {
+            document.getElementById("songs").innerHTML = "\
+            	<div style=\"font-size: 20px;color: #00a8ff;\">YoutuBeats</div> \
+            ";
+        }
+        function emotions() {
+            document.getElementById("songs").innerHTML = "\
+            	<div style=\"font-size: 20px;color: #00a8ff;\">Emotions</div> \
+            ";
+        }
+    </script>
 	</body>
 </html>

@@ -26,12 +26,25 @@
                 padding: 4px 8px;
                 margin: 2px 2px 2px 5%;
                 display: inline-block;
+		font-family: Consolas
             }
             .num-brackets {
             	color: #222222;
                 background-color: #eeeeee;
-                padding: 0px 2px;
+                padding: 2px;
                 display: inline-block;
+		font-family: Consolas
+            }
+            table {
+                border-collapse: collapse;
+            }
+            td, th {
+                border: 4px solid #888888;
+                text-align: left;
+                padding: 6px 12px;
+            }
+            tr:nth-child(1) {
+                background-color: #666666;
             }
             .dataNav {
             	background-color: #0032ff;
@@ -210,7 +223,6 @@
             <div class="sub">
             	Two's complement
             </div>
-            <br>
             This format is more common when compared to Sign and magnitude, but
             it is slightly harder to understand. But why use this instead of
             Sign and magnitude? Because Sign and magnitude has two vaules for
@@ -224,16 +236,221 @@
             Step 2: Find positive binary value. (10 = <div class="num-brackets">0|0|0|0|1|0|1|0</div>)<br>
             Step 3: Flip all the bits. (<div class="num-brackets">0|0|0|0|1|0|1|0</div> becomes <div class="num-brackets">1|1|1|1|0|1|0|1</div>)<br>
             Step 4: Add 1 (<div class="num-brackets">1|1|1|1|0|1|0|1</div> +
-            <div class="num-brackets">1</div> = <div class="num-brackets">1|1|1|1|0|1|<b>1</b>|<b>0</b></div>)
+            <div class="num-brackets">1</div> = <div class="num-brackets">1|1|1|1|0|1|<b>1</b>|<b>0</b></div>)<br>
+            Done! That was quick!
             <br><br>
+            <h2 style="color: #00a8ff" id="binMath">
+				Binary mathematics
+		    </h2>
+            So you want to do some addition and multiplication too? Maybe even
+            some subtraction and division? Well, this is your place! (Except
+            for division, that process involves 13 steps, so you'll likely
+            forget it quickly.)
+            <br><br>
+            <div class="sub">
+            	Addition
+            </div>
+            In addition, there are 5 different rules you'll need to follow:
+            <br><br>
+            <table>
+                <tr>
+                    <th>Inputs</th>
+                    <th>Write</th>
+                    <th>Carry</th>
+                </tr>
+                <tr>
+                    <th>0 0</th>
+                    <th>0</th>
+                    <th>0</th>
+                </tr>
+                <tr>
+                    <th>1 0</th>
+                    <th>1</th>
+                    <th>0</th>
+                </tr>
+                <tr>
+                    <th>0 1</th>
+                    <th>1</th>
+                    <th>0</th>
+                </tr>
+                <tr>
+                    <th>1 1</th>
+                    <th>0</th>
+                    <th>1</th>
+                </tr>
+                <tr>
+                    <th>1 1 1</th>
+                    <th>1</th>
+                    <th>1</th>
+                </tr>
+            </table>
+            <br>
+            <div class="sub">
+            	Subtraction
+            </div>
+            There are only 4 rules for this one:
+            <br><br>
+            <table>
+                <tr>
+                    <th>Inputs</th>
+                    <th>Write</th>
+                    <th>Take from next significant bit</th>
+                </tr>
+                <tr>
+                    <th>0 0</th>
+                    <th>0</th>
+                    <th>0</th>
+                </tr>
+                <tr>
+                    <th>1 0</th>
+                    <th>1</th>
+                    <th>0</th>
+                </tr>
+                <tr>
+                    <th>0 1</th>
+                    <th>1</th>
+                    <th>1</th>
+                </tr>
+                <tr>
+                    <th>1 1</th>
+                    <th>0</th>
+                    <th>0</th>
+                </tr>
+            </table>
+            <div class="sub">
+            	Multiplication
+            </div>
+            This one's a bit harder, there are 3 steps:
+            <br><br>
+            <table>
+            	<tr>
+                	<th>Step number</th>
+                    <th>Step</th>
+                </tr>
+                <tr>
+                	<th>1</th>
+                    <th>Multiply out the right-most bit of the number we are
+                    	multiplying by, follow these rules:<br>
+                        <br>
+                        <table>
+                        	<tr>
+                            	<th>Inputs</th>
+                                <th>Write</th>
+                            </tr>
+                            <tr>
+                            	<th>0 0</th>
+                                <th>0</th>
+                            </tr>
+                            <tr>
+                            	<th>1 0</th>
+                                <th>0</th>
+                            </tr>
+                            <tr>
+                            	<th>0 1</th>
+                                <th>0</th>
+                            </tr>
+                            <tr>
+                            	<th>1 1</th>
+                                <th>1</th>
+                            </tr>
+                        </table>
+                        (table-ception!)<br><br>
+                        For example:<br>
+                        0110x<br>
+                        __10<br>
+                        - - - -<br>
+                        0000<br>
+                        ____<br>
+                        - - - -<br>
+                        ____<br>
+                    </th>
+                </tr>
+                <tr>
+                	<th>2</th>
+                    <th>Now we add a zero into the last column,<br>
+                    	<br>
+                    	For example:<br>
+                        0110x<br>
+                        __10<br>
+                        - - - -<br>
+                        0000<br>
+                        ___0<br>
+                        - - - -<br>
+                        ____<br>
+                        <br>
+                        And do exactly the same thing for the second digit.<br>
+                        <br>
+                        For example:<br>
+                        0110x<br>
+                        __10<br>
+                        - - - -<br>
+                        0000<br>
+                        1100<br>
+                        - - - -<br>
+                        ____<br>
+                        <br>
+                        Continue repeating with the appropriate amount of 0s
+                        for each of the digits of the number we are multiplying
+                        by. (Because we only have two digits, we'll stop here.)
+                    </th>
+                </tr>
+                <tr>
+                	<th>3</th>
+                    <th>Now add all the digits together in the middle row with
+                    	the following rules:<br>
+                        <br>
+                        <table>
+                            <tr>
+                                <th>Inputs</th>
+                                <th>Write</th>
+                                <th>Take from next significant bit</th>
+                            </tr>
+                            <tr>
+                                <th>0 0</th>
+                                <th>0</th>
+                                <th>0</th>
+                            </tr>
+                            <tr>
+                                <th>1 0</th>
+                                <th>1</th>
+                                <th>0</th>
+                            </tr>
+                            <tr>
+                                <th>0 1</th>
+                                <th>1</th>
+                                <th>1</th>
+                            </tr>
+                            <tr>
+                                <th>1 1</th>
+                                <th>0</th>
+                                <th>0</th>
+                            </tr>
+                        </table>
+                        (table-ception! Again...)<br>
+                    	<br>
+                        For example:<br>
+                        0110x<br>
+                        __10<br>
+                        - - - -<br>
+                        0000<br>
+                        1100<br>
+                        - - - -<br>
+                        1100<br>
+                    </th>
+                </tr>
+            </table>
             <h2 style="color: #00a8ff" id="hexUsage">
 				Using hexadecimal
 		    </h2>
             Hexadecimal looks like this:
+            <br>
             <div class="num">
             	ffffff
+            </div><br>
+            It is used very often in HTML, as it is a faster way to represent
+            colours. For example, the code above to make this colour:
+            <div style="background-color: #ffffff">
             </div>
-            
 	    </div>
 	</body>
 </html>
