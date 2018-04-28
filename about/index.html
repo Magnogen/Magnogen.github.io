@@ -20,12 +20,12 @@
 			.about_area > img {
 				display: inline-block;
 				width: 50px; height: 50px;
-				margin: 0 0 1.5em 1.6em;
+				margin: 0 0 1.5em 1.4em;
 
 				border: 1px solid rgba(0,0,0,0);
-				-webkit-border-radius: 0.3em;
-				-moz-border-radius: 0.3em;
-				border-radius: 0.3em;
+				-webkit-border-radius: 0.4em;
+				-moz-border-radius: 0.4em;
+				border-radius: 0.4em;
 			}
 			.about_area > div {
 				float: right;
@@ -65,72 +65,40 @@
 		</div>
   	</body>
 	<script>
-	var about_data = [[
-		],[
-		],[
-	]];
 	function show_info (person) {
+		// document.getElementById("about-person").innerHTML =
 		// add here
 	};
-        function showHydronesium() {
-            document.getElementById("about-person").innerHTML = "\
-            	<div style=\"font-size: 20px;color: #00a8ff;\">hydronesium</div> \
-                <i>Developer</i><br><br> \
-                Website: <a href=\"http://magnogen.github.io/\"> \
-					Magnogen - Home \
-				</a><br> \
+	var about_data = [["hydronesium", "Developer", "\
+                Website: <a href=\"http://magnogen.github.io/\">Magnogen - Home</a><br> \
                 Scratch profile: <a href=\"https://scratch.mit.edu/users/hydronesium/\"> \
-					hydronesium on Scratch \
-				</a><br> \
+			hydronesium on Scratch</a><br> \
                 YouTube channel: <a href=\"https://www.youtube.com/channel/UCosxKKKPJk4aZlwF_EFe2pw\"> \
-						hydronesium \
-				</a><br> \
-                Github: <a href=\"https://github.com/Magnogen\"> \
-						Magnogen \
-				</a><br><br> \
+			hydronesium</a><br> \
+                Github: <a href=\"https://github.com/Magnogen\">Magnogen</a><br><br> \
                 Hi there, I'm Connor and I've always wanted a website and now \
                 that I've got one, I'm so happy! I'm going to do maths and \
                 computing at A level buecause I quite like them currently. \
                 I enjoy making music and writing stories (you can see them \
-                under the projects tab in the navigation bar). \
-            ";
-        }
-        function showUserE() {
-            document.getElementById("about-person").innerHTML = "\
-            	<div style=\"font-size: 20px;color: #00a8ff;\">user-e</div> \
-                <i>Developer</i><br><br> \
+                under the projects tab in the navigation bar)."
+			],
+			["user-e", "Developer", "\
                 Website: <a href=\"http://192.168.1.77/a/\"> \
-					my Raspberry Pi server \
-					<span style=\"font-style: italic;\">(non-public)</span> \
-				</a><br> \
-                Scratch profile: <a href=\"https://scratch.mit.edu/users/user-e/\"> \
-					user-e \
-				</a><br> \
-                Google+ page: <a href=\"https://plus.google.com/107507296915460932126\"> \
-						Edward J \
-				</a><br> \
-                Github: <a href=\"https://github.com/user-e\"> \
-						user-e \
-				</a><br><br> \
-                Hello, I’m someone called Edward.<br> \
-				I don't know much about Github and version control systems \
-				but I'm quite good at programming and maths. \
-				I'm going to do Computing at A level, not taking the GCSE. \
-				Here to help out with the webpage making, using my skills. \
-            ";
-        }
-        function showYoyofox() {
-            document.getElementById("about-person").innerHTML = "\
-            	<div style=\"font-size: 20px;color: #00a8ff;\">Yoyofox</div> \
-                <i>Inspirational colleague</i><br><br> \
-                Website: <a href=\"https://magnogen.github.io/stupididit/\"> \
-					Yoyofox \
-				</a><br> \
+			   my Raspberry Pi server <i>(non-public)</i></a><br> \
+		Scratch profile: <a href=\"https://scratch.mit.edu/users/user-e/\">user-e</a><br> \
+		Google+ page: <a href=\"https://plus.google.com/107507296915460932126\"> \
+			   Edward J</a><br> \
+		Github: <a href=\"https://github.com/user-e\">user-e</a><br><br> \
+		Hello, I’m someone called Edward.<br> \
+		I don't know much about Github and version control systems \
+		but I'm quite good at programming and maths.<br> \
+		I'm going to do Computing at A level, not taking the GCSE.<br> \
+		Here to help out with the webpage making, using my skills."
+			],
+			["Yoyofox", "Inspirational colleague", "\
+                Website: <a href=\"https://magnogen.github.io/stupididit/\">Yoyofox</a><br> \
                 Deviantart: <a href=\"https://yoyofoxdrawingstuff.deviantart.com/\"> \
-						yoyofoxdrawingstuff (Yoyofx) | Deviantart \
-				</a><br><br> \
-                 \
-            ";
-        }
+			   yoyofoxdrawingstuff (Yoyofx) | Deviantart</a><br><br>"
+	]];
 	</script>
 </html>
