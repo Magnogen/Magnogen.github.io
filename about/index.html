@@ -26,12 +26,13 @@
 				-webkit-border-radius: 0.4em;
 				-moz-border-radius: 0.4em;
 				border-radius: 0.4em;
+			} .about_area > img[data-selected] {
+				border-left: 2px solid #00a8ff;
 			}
 			.about_area > div {
 				float: right;
 				width: 75%;
-			}
-			.about_area > div[data-empty] > * {
+			} .about_area > div[data-empty] > * {
 				display: none;
 			} .about_area > div[data-empty] > div:first-child {
 				display: block !important;
@@ -54,7 +55,7 @@
 			</h3>
 			<div id="about_info" data-empty>
 				<div style="display: none;">Select a contributor...</div>
-				<div style="font-size: 20px;color: #00a8ff;"></div>
+				<div style="font-size: 20px; color: #00a8ff;"></div>
 				<i>Developer</i><br><br>
 				<div></div>
 			</div>
@@ -65,9 +66,18 @@
 		</div>
   	</body>
 	<script>
-	function show_info (person) {
-		// document.getElementById("about-person").innerHTML =
-		// add here
+	function show_info (event, person) {
+		var info_box = document.getElementById("about_info"),
+		    images = event.currentTarget.parentElement.
+		    getElementsByTagName("img");
+		for (var i = 0; i < images.length; i++) {
+			images[i].removeAttribute("data-selected");
+		}; event.currentTarget.setAttribute("data-selected","");
+		
+		info_box.removeAttribute("data-empty");
+		for (var i = 1; i < info_box.children.length; i++) {
+			info_box.children[i].innerHTML = (about_data[person])[i-1];
+		};
 	};
 	var about_data = [["hydronesium", "Developer", "\
                 Website: <a href=\"http://magnogen.github.io/\">Magnogen - Home</a><br> \
