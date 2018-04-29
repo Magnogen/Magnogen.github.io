@@ -28,6 +28,7 @@
 				border-radius: 0.4em;
 			} .about_area > img[data-selected] {
 				border-left: 2px solid #00a8ff;
+				padding-left: 2px;
 			}
 			.about_area > div {
 				float: right;
@@ -36,6 +37,8 @@
 				display: none;
 			} .about_area > div[data-empty] > div:first-child {
 				display: block !important;
+			} .about_area > div > i {
+				margin-bottom: 1em;
 			}
 		</style>
 	</head>
@@ -56,7 +59,7 @@
 			<div id="about_info" data-empty>
 				<div style="display: none;">Select a contributor...</div>
 				<div style="font-size: 20px; color: #00a8ff;"></div>
-				<i>Developer</i><br><br>
+				<i>Developer</i>
 				<div></div>
 			</div>
 			
