@@ -18,24 +18,20 @@
 			}
             .sub {
             	color: #00dfff;
-            	font-weight:bold;
+            	font-weight: bold;
             }
-            .num {
+            .num, .num-brackets {
+		display: inline-block;
+		margin: 2px 2px 2px 5%;
+		padding: 4px 8px;
             	color: #222222;
                 background-color: #eeeeee;
-                padding: 4px 8px;
-                margin: 2px 2px 2px 5%;
-                display: inline-block;
-				font-family: Consolas
+		font-family: Consolas;
             }
             .num-brackets {
-            	color: #222222;
-                background-color: #eeeeee;
-                padding: 2px;
-                display: inline-block;
-				font-family: Consolas
+                padding: 2px !important;
             }
-            .textarea {
+            textarea {	
             	width: 100%;
                 max-width: 100%;
                 height: auto;
@@ -49,17 +45,19 @@
 			w3.includeHTML();
 		</script>
 		
-		<div style="padding: 0% 10% 12% 10%;color: #EEEEEE;">
+		<div style="padding: 0% 10% 12% 10%; color: #EEEEEE;">
 			<h1 style="text-align: center;">
 				Computer science: Encryption
 			</h1>
-            <textarea id="input" class="textarea" placeholder="Input..."></textarea><br>
-            <br>
-            <button onclick="convert()">Convert!</button><br>
-            <br>
-            <textarea readonly id="output" class="textarea" placeholder="Output..."></textarea>
-	    </div>
+			<textarea id="input" placeholder="Input...">
+			</textarea>
+			<br><br>
+			<button onclick="convert()">Convert!</button>
+			<br><br>
+			<textarea readonly id="output" placeholder="Output...">
+			</textarea>
+		</div>
+		 <!-- src="/edu/compSci/encrypt.js" -->
+		<script src="/edu/compSci/encrypt.js"></script>
 	</body>
-    <!-- src="/edu/compSci/encrypt.js" -->
-    <script src="/edu/compSci/encrypt.js"></script>
 </html>
