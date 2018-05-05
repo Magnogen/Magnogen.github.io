@@ -31,7 +31,7 @@ body>div>ul > li a:hover:not(.active),
 }
 /* Education page styles: */
 
-.sub {/* colour not working? */
+.sub {
   color: #00dfff;
   font-weight: bold;
   padding: 0 0 0.5em 0;
