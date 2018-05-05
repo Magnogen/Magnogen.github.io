@@ -31,9 +31,9 @@ body>div>ul > li a:hover:not(.active),
 }
 /* Education page styles: */
 .sub {
-  padding-bottom: 0.5em;
   color: #00dfff;
   font-weight: bold;
+  padding: 0 0 0.5em 0;
 }
 .num, .num-brackets {
   display: inline-block;
