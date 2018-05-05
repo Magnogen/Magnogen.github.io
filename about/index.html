@@ -19,7 +19,7 @@
 			.about_area { padding: 0% 10% 12% 10%; color: #EEEEEE; }
 			.about_area > img {
 				display: inline-block;
-				width: 50px; height: 50px;
+				width: 3em; height: 3em;
 				margin: 0 0 1.5em 1.4em;
 
 				border: 1px solid rgba(0,0,0,0);
@@ -27,8 +27,7 @@
 				-moz-border-radius: 0.4em;
 				border-radius: 0.4em;
 			} .about_area > img[data-selected] {
-				border-left: 2px solid #00a8ff;
-				padding-left: 2px;
+				border-left: 0.1em solid #00a8ff;
 			}
 			.about_area > div {
 				float: right;
@@ -37,9 +36,10 @@
 				display: none;
 			} .about_area > div[data-empty] > div:first-child {
 				display: block !important;
+			} .about_area > div > .add_padding {
+				padding: 0.8em 0 1em 0;
 			} .about_area > div > em {
 				font-style: italic;
-				margin-bottom: 1em;
 			}
 		</style>
 	</head>
@@ -59,8 +59,9 @@
 			</h3>
 			<div id="about_info" data-empty>
 				<div style="display: none;">Select a contributor...</div>
-				<div style="font-size: 20px; color: #00a8ff;"></div>
+				<div style="font-size: 1.25em; color: #00a8ff;"></div>
 				<em>Developer</em>
+				<div class="add_padding"></div>
 				<div></div>
 			</div>
 			
@@ -89,8 +90,8 @@
 			hydronesium on Scratch</a><br> \
                 YouTube channel: <a href=\"https://www.youtube.com/channel/UCosxKKKPJk4aZlwF_EFe2pw\"> \
 			hydronesium</a><br> \
-                Github: <a href=\"https://github.com/Magnogen\">Magnogen</a><br><br> \
-                Hi there, I'm Connor and I've always wanted a website and now \
+                Github: <a href=\"https://github.com/Magnogen\">Magnogen</a>",
+                "Hi there, I'm Connor and I've always wanted a website and now \
                 that I've got one, I'm so happy! I'm going to do maths and \
                 computing at A level buecause I quite like them currently. \
                 I enjoy making music and writing stories (you can see them \
@@ -102,8 +103,8 @@
 		Scratch profile: <a href=\"https://scratch.mit.edu/users/user-e/\">user-e</a><br> \
 		Google+ page: <a href=\"https://plus.google.com/107507296915460932126\"> \
 			   Edward J</a><br> \
-		Github: <a href=\"https://github.com/user-e\">user-e</a><br><br> \
-		Hello, I’m someone called Edward.<br> \
+		Github: <a href=\"https://github.com/user-e\">user-e</a>",
+		"Hello, I’m someone called Edward.<br> \
 		I don't know much about Github and version control systems \
 		but I'm quite good at programming and maths.<br> \
 		I'm going to do Computing at A level, not taking the GCSE.<br> \
@@ -112,7 +113,8 @@
 			["Yoyofox", "Inspirational colleague", "\
                 Website: <a href=\"https://magnogen.github.io/stupididit/\">Yoyofox</a><br> \
                 Deviantart: <a href=\"https://yoyofoxdrawingstuff.deviantart.com/\"> \
-			   yoyofoxdrawingstuff (Yoyofx) | Deviantart</a><br><br>"
+			   yoyofoxdrawingstuff (Yoyofx) | Deviantart</a>",
+		"<em>This user appears to like having an air of mystery about them.</em>"
 	]];
 	</script>
 </html>
