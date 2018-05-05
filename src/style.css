@@ -29,7 +29,7 @@ body>div>ul > li a:hover:not(.active),
 .active {
   background-color: #0033cc;
 }
-// Education page styles:
+/* Education page styles: */
 .sub {
   padding-bottom: 0.5em;
   color: #00dfff;
