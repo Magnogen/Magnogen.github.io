@@ -18,38 +18,34 @@
 			}
             .sub {
             	color: #00dfff;
-            	font-weight:bold;
+            	font-weight: bold;
             }
-            .num {
+            .num, .num-brackets {
+		display: inline-block;
+		margin: 2px 2px 2px 5%;
+		padding: 4px 8px;
             	color: #222222;
                 background-color: #eeeeee;
-                padding: 4px 8px;
-                margin: 2px 2px 2px 5%;
-                display: inline-block;
-		font-family: Consolas
+		font-family: Consolas;
             }
             .num-brackets {
-            	color: #222222;
-                background-color: #eeeeee;
-                padding: 2px;
-                display: inline-block;
-		font-family: Consolas
+                padding: 2px !important;
             }
             table {
                 border-collapse: collapse;
             }
             td, th {
                 border: 4px solid #888888;
+		padding: 6px 12px;
                 text-align: left;
-                padding: 6px 12px;
             }
             tr:nth-child(1) {
                 background-color: #666666;
             }
             .dataNav {
-            	background-color: #0032ff;
                 padding: 2px 5%;
                 text-align: center;
+            	background-color: #0032ff;
             }
             .dataNav a {
             	color: #ffffff;
@@ -65,49 +61,49 @@
 			w3.includeHTML();
 		</script>
 		
-		<div style="padding: 0% 10% 12% 10%;color: #EEEEEE;">
+		<div style="padding: 0% 10% 12% 10%; color: #EEEEEE;">
 			<h1 style="text-align: center;">
 				Computer science: Data
 			</h1>
-            <div class="dataNav">
-            	<a href="/edu/compSci/data.html#binaryUsage">BINARY</a> |
-                <a href="/edu/compSci/data.html#hexUsage">HEXADECIMAL</a>
-            </div>
-		    <h2 style="color: #00a8ff" id="binaryUsage">
+			<div class="dataNav">
+				<a href="/edu/compSci/data.html#binaryUsage">BINARY</a> |
+				<a href="/edu/compSci/data.html#hexUsage">HEXADECIMAL</a>
+			</div>
+			<h2 style="color: #00a8ff" id="binaryUsage">
 				Using binary
-		    </h2>
-				Binary is used to represent data and instructions in a program.
-		    <br><br>
-		    <div class="sub">
-			But what's so special about binary?
-		    </div>
-				Computer processors contain billions of transistors (like
-		    a switch) that only have two states: on and off (like a
-		    switch again).
-		    <br>
-		    Because there are only 2 states, binary is used to represent
-		    these states and thus determine what the computer should do.
-		    <br><br>
-		    <div class="sub">
+			</h2>
+			Binary is used to represent data and instructions in a program.
+		   	<br><br>
+		    	<div class="sub">
+				But what's so special about binary?
+			</div>
+			Computer processors contain billions of transistors (like
+		  	a switch) that only have two states: on and off (like a
+		    	switch again).
+		    	<br>
+		   	Because there are only 2 states, binary is used to represent
+		    	these states and thus determine what the computer should do.
+		    	<br><br>
+		    	<div class="sub">
 				The binary system
-		    </div>
-		    The two states in binary are represented by 1 (on) and 0 (off).
-		    These are called 'binary digits' or 'bits'. All instructions and
-		    data including graphics and sound are represented as millions of
-		    bits.
-		    <br><br>
-		    <div class="sub">
-            	Why are binary numbers so long?
-            </div>
-		    Because binary only has two numbers, you need multiple digits to
-		    symbolise the same value. (For example, 42, while only needing 2
-		    digits in 'standard' numbering, requires 6 digits in binary
-		    numbering [101010]) This results in a generally longer number, when
-            compared to other forms of numbering.
-		    <br><br>
-		    <h2 style="color: #00a8ff" id="conversion">
+		    	</div>
+		   	The two states in binary are represented by 1 (on) and 0 (off).
+		  	These are called 'binary digits' or 'bits'. All instructions and		   
+			data including graphics and sound are represented as millions of
+			bits.
+			<br><br>
+			<div class="sub">
+				Why are binary numbers so long?
+			</div>
+			Because binary only has two numbers, you need multiple digits to
+			symbolise the same value. (For example, 42, while only needing 2
+			digits in 'standard' numbering, requires 6 digits in binary
+			numbering [101010]) This results in a generally longer number, when
+			compared to other forms of numbering.
+			<br><br>
+			<h2 style="color: #00a8ff" id="conversion">
 				Converting to binary
-		    </h2>
+			</h2>
             You can convert 'standard' (also called 'decimal' or 'denary')
             numbers with values between 0 and 255 into 8-bit binary numbers
             (binary numbers with 8 digits). Denary numbers above 255 need more
@@ -445,12 +441,32 @@
             Hexadecimal looks like this:
             <br>
             <div class="num">
-            	ffffff
+            	012345
             </div><br>
             It is used very often in HTML, as it is a faster way to represent
-            colours. For example, the code above to make this colour:
-            <div style="background-color: #ffffff">
+            colours. For example, the code above to make this colour:<br>
+            <div style="background-color: #012345; width: 100%; padding: 4px 8px; border: 2px solid; margin: 4px;">
+            	The colour "#012345"
+            </div><br>
+            <div class="sub">
+            	Hexadecimal and Binary
             </div>
+            Hexadecimal is very easily converted into Binary. All you have to
+            do is focus on one hex digit and convert it into a simple 4-bit
+            binary number (also know as a nibble). Once you do that, all you
+            need to do is stick the nibbles together. For example:<br>
+            <br>
+            <div class="num">
+            	012345
+            </div><br>
+            <br>
+            Would become:<br>
+            <br>
+            <div class="num">
+            	0000|0001|0010|0011|0100|0101 (000000010010001101000101)
+            </div><br>
+            <br>
+            When converted to binary
 	    </div>
 	</body>
 </html>

@@ -29,14 +29,21 @@ body>div>ul > li a:hover:not(.active),
 .active {
   background-color: #0033cc;
 }
+/* Education page styles: */
+
 .sub {
   color: #00dfff;
-  font-weight:bold;
+  font-weight: bold;
+  padding: 0 0 0.5em 0;
 }
-.num {
+.num, .num-brackets {
+  display: inline-block;
+  margin: 2px 2px 2px 5%;
+  padding: 4px 8px;
   color: #222222;
   background-color: #eeeeee;
-  padding: 4px 8px;
-  margin: 2px 2px 2px 5%;
-  display: inline-block;
+  font-family: Consolas;
+}
+.num-brackets {
+  padding: 2px !important;
 }

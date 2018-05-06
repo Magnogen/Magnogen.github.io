@@ -19,22 +19,27 @@
 			.about_area { padding: 0% 10% 12% 10%; color: #EEEEEE; }
 			.about_area > img {
 				display: inline-block;
-				width: 50px; height: 50px;
-				margin: 0 0 1em 2em;
+				width: 3em; height: 3em;
+				margin: 0 0 1.5em 1.4em;
 
 				border: 1px solid rgba(0,0,0,0);
-				-webkit-border-radius: 0.3em;
-				-moz-border-radius: 0.3em;
-				border-radius: 0.3em;
+				-webkit-border-radius: 0.4em;
+				-moz-border-radius: 0.4em;
+				border-radius: 0.4em;
+			} .about_area > img[data-selected] {
+				border-left: 0.1em solid #0077b3;
 			}
 			.about_area > div {
 				float: right;
 				width: 75%;
-			}
-			.about_area > div[data-empty] > * {
+			} .about_area > div[data-empty] > * {
 				display: none;
 			} .about_area > div[data-empty] > div:first-child {
-				display: block;
+				display: block !important;
+			} .about_area > div > .add_padding {
+				padding: 0.8em 0 1em 0;
+			} .about_area > div em {
+				font-style: italic;
 			}
 		</style>
 	</head>
@@ -52,85 +57,65 @@
 			<h3 class="sub">
 				Contributors
 			</h3>
-			<img src="/about/hydronesium.jpg" alt="hydronesium profile picture" onclick="show_info(0)">
-			<img src="/about/user-e.jpg" alt="user-e profile picture" onclick="show_info(1)">
-			<img src="/about/yoyofoxdrawingstuff.jpg" alt="yoyofox profile picture" onclick="show_info(2)">
-			
-			<div id="about_info" data-empty>
+			<div data-empty>
 				<div style="display: none;">Select a contributor...</div>
-				<div style="font-size: 20px;color: #00a8ff;"></div>
-				<i>Developer</i><br><br>
+				<div style="font-size: 1.25em; color: #00a8ff;"></div>
+				<em>Developer</em>
+				<div class="add_padding"></div>
 				<div></div>
 			</div>
+			
+			<img src="/about/hydronesium.jpg" alt="hydronesium profile picture" onclick="show_info(event,0)"><br>
+			<img src="/about/user-e.jpg" alt="user-e profile picture" onclick="show_info(event,1)"><br>
+			<img src="/about/yoyofox.jpg" alt="yoyofox profile picture" onclick="show_info(event,2)">
 		</div>
-  	</body>
-	<script>
-	var about_data = [[
-		],[
-		],[
-	]];
-	function show_info (person) {
-		// add here
-	};
-        function showHydronesium() {
-            document.getElementById("about-person").innerHTML = "\
-            	<div style=\"font-size: 20px;color: #00a8ff;\">hydronesium</div> \
-                <i>Developer</i><br><br> \
-                Website: <a href=\"http://magnogen.github.io/\"> \
-					Magnogen - Home \
-				</a><br> \
-                Scratch profile: <a href=\"https://scratch.mit.edu/users/hydronesium/\"> \
-					hydronesium on Scratch \
-				</a><br> \
-                YouTube channel: <a href=\"https://www.youtube.com/channel/UCosxKKKPJk4aZlwF_EFe2pw\"> \
-						hydronesium \
-				</a><br> \
-                Github: <a href=\"https://github.com/Magnogen\"> \
-						Magnogen \
-				</a><br><br> \
-                Hi there, I'm Connor and I've always wanted a website and now \
-                that I've got one, I'm so happy! I'm going to do maths and \
-                computing at A level buecause I quite like them currently. \
-                I enjoy making music and writing stories (you can see them \
-                under the projects tab in the navigation bar). \
-            ";
-        }
-        function showUserE() {
-            document.getElementById("about-person").innerHTML = "\
-            	<div style=\"font-size: 20px;color: #00a8ff;\">user-e</div> \
-                <i>Developer</i><br><br> \
-                Website: <a href=\"http://192.168.1.77/a/\"> \
-					my Raspberry Pi server \
-					<span style=\"font-style: italic;\">(non-public)</span> \
-				</a><br> \
-                Scratch profile: <a href=\"https://scratch.mit.edu/users/user-e/\"> \
-					user-e \
-				</a><br> \
-                Google+ page: <a href=\"https://plus.google.com/107507296915460932126\"> \
-						Edward J \
-				</a><br> \
-                Github: <a href=\"https://github.com/user-e\"> \
-						user-e \
-				</a><br><br> \
-                Hello, I’m someone called Edward.<br> \
-				I don't know much about Github and version control systems \
-				but I'm quite good at programming and maths. \
-				I'm going to do Computing at A level, not taking the GCSE. \
-				Here to help out with the webpage making, using my skills. \
-            ";
-        }
-        function showYoyofox() {
-            document.getElementById("about-person").innerHTML = "\
-            	<div style=\"font-size: 20px;color: #00a8ff;\">Yoyofox</div> \
-                <i>Inspirational colleague</i><br><br> \
-                Website: <a href=\"https://magnogen.github.io/stupididit/\"> \
-					Yoyofox \
-				</a><br> \
-                Deviantart: <a href=\"https://yoyofoxdrawingstuff.deviantart.com/\"> \
-						yoyofoxdrawingstuff (Yoyofx) | Deviantart \
-				</a><br><br> \
-                 \
-            ";
-        }
-	</script>
+		<script>
+		function show_info (event, person) {
+			var images = event.currentTarget.parentElement.
+				getElementsByTagName("img"), info_box = event.
+				currentTarget.parentElement.children[2];
+			for (var i = 0; i < images.length; i++) {
+				images[i].removeAttribute("data-selected");
+			}; event.currentTarget.setAttribute("data-selected","");
+			
+			info_box.removeAttribute("data-empty");
+			for (var i = 1; i < info_box.children.length; i++) {
+				info_box.children[i].innerHTML = (about_data[person])[i-1];
+			};
+		};
+		var about_data = [[
+			"hydronesium", "Developer", "\
+			Website: <a href=\"http://magnogen.github.io/\">Magnogen - Home</a><br>\
+			Scratch profile: <a href=\"https://scratch.mit.edu/users/hydronesium/\">\
+				hydronesium on Scratch</a><br>\
+			YouTube channel: <a href=\"https://www.youtube.com/channel/UCosxKKKPJk4aZlwF_EFe2pw\">\
+				hydronesium</a><br>\
+			Github: <a href=\"https://github.com/Magnogen\">Magnogen</a>",
+			"Hi there, my name is Connor. I've always wanted a website and \
+			now that I have one, I'm so happy! For my A levels, I'm going to do \
+			maths and computing because I quite like them currently.<br>\
+			I enjoy making music and writing stories (you can see them under \
+			the projects tab in the navigation bar)."
+			],[
+			"user-e", "Developer", "\
+			Website: <a href=\"http://192.168.1.77/a/\">\
+				my Raspberry Pi server <i>(non-public)</i></a><br>\
+			Scratch profile: <a href=\"https://scratch.mit.edu/users/user-e/\">user-e</a><br>\
+			Google+ page: <a href=\"https://plus.google.com/107507296915460932126\">\
+				Edward J</a><br>\
+			Github: <a href=\"https://github.com/user-e\">user-e</a>",
+			"Hello, I’m someone called Edward. I am good at programming (have coded my own \
+			website) and Maths. Also, I know some things about version control systems/Github. \
+			<br>I'm going to do Computing at A level, not taking the GCSE.<br> \
+			Here to help out with the webpage making, using my skills."
+			],[
+			"Yoyofox", "Inspirational colleague", "\
+			Website: <a href=\"https://magnogen.github.io/stupididit/\">Yoyofox</a><br>\
+			Deviantart: <a href=\"https://yoyofoxdrawingstuff.deviantart.com/\">\
+				yoyofoxdrawingstuff (Yoyofx)</a>",
+			"<em>This user appears to like having an air of mystery about them.</em><br>\
+			(no about info to show here, try the links above)"
+		]];
+		</script>
+	</body>
 </html>
