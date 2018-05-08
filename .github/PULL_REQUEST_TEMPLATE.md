@@ -1,6 +1,6 @@
 # Hello!
 
-## I, [your name here], would like to make a pull request!
+I, [your name here], would like to make a pull request!
 
 ## Describe the changes you have made:
 
