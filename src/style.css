@@ -4,6 +4,18 @@
 body {
   margin: 0;
 }
+a:link {
+    color: #ffff00;
+}
+a:visited {
+    color: #00ff00;
+}
+a:hover {
+    text-shadow: 1px 1px #000000;
+}
+a:active {
+    color: #0000ff;
+}
 body>div>ul {
   list-style-type: none;
   margin: 0 0 0 0.5em;
