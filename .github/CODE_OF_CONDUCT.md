@@ -1,4 +1,4 @@
-# Contributor Covenant Code of Conduct
+# Code of Conduct _- Contributor Covenant_
 
 ## Our Pledge
 
@@ -40,7 +40,4 @@ Project maintainers who do not follow or enforce the Code of Conduct in good fai
 
 ## Attribution
 
-This Code of Conduct is adapted from the [Contributor Covenant][homepage], version 1.4, available at [http://contributor-covenant.org/version/1/4][version]
-
-[homepage]: http://magnogen.github.io
-[version]: http://magnogen.github.io/version/1/4/
+This Code of Conduct is adapted from the Contributor Covenant, version 1.4, available at <http://contributor-covenant.org/version/1/4> and as the version [in this repository](https://github.com/Magnogen/magnogen.github.io/blob/master/.github/CODE_OF_CONDUCT.md).
