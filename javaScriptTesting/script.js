@@ -33,11 +33,11 @@ if (parsedUrl.searchParams.get("action") == "search") {
     <ul id=\"myUL\"> \
       <li><a onclick=\"askAction()\">action</a></li> \
       <li><a onclick=\"askContent()\">content</a></li> \
-      <li><a onclick=\"askMessage()\">message</a></li> \
     </ul> \
     ";
-} else if (indexOf('?message=') != -1) {
-	alert(parsedUrl.searchParams.get("message"))
+} else if (parsedUrl.searchParams.get("action") == "getCookieValue") {
+  document.getElementById('content').innerHTML = document.cookie;
+  document.getElementById('cookieTrue').innerHTML = "The page does contain cookies now.";
 }
 function myFunction() {
     var input, filter, ul, li, a, i;
@@ -65,11 +65,5 @@ function askContent() {
     var content = prompt("Enter content:", "Example");
         if (content != null) {
             window.location.href = "https://magnogen.github.io/javaScriptTesting/?content="+content;
-        }
-}
-function askMessage() {
-    var content = prompt("Enter content:", "Example");
-        if (content != null) {
-            window.location.href = "https://magnogen.github.io/javaScriptTesting/?message="+content;
         }
 }
