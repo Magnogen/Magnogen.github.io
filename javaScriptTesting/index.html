@@ -15,40 +15,9 @@
 			.javaScript {
 				background-color: #0000a8;
 			}
-            .tooltip {
-                position: relative;
-                display: inline-block;
-                color: #ffff00;
-            }
-            .tooltip .tooltiptext {
-                visibility: hidden;
-                width: 220px;
-                background-color: #555;
-                color: #fff;
-                text-align: center;
-                padding: 5px 0;
-                border-radius: 6px;
-                position: absolute;
-                z-index: 1;
-                bottom: 125%;
-                left: 50%;
-                margin-left: -110px;
-                opacity: 0;
-                transition: opacity 0.2s;
-            }
-            .tooltip .tooltiptext::after {
-                content: "";
-                position: absolute;
-                top: 100%;
-                left: 50%;
-                margin-left: -5px;
-                border-width: 5px;
-                border-style: solid;
-                border-color: #555 transparent transparent transparent;
-            }
-            .tooltip:hover .tooltiptext {
-                visibility: visible;
-                opacity: 1;
+            .content {
+            	color: #00a8ff;
+                font-size: 120%
             }
 		</style>
 	</head>
@@ -68,7 +37,8 @@
             </div><br>
             		Try typing: ?action=search after the current domain, or click <a href="/javaScriptTesting/?action=search">here</a>.<br>
 			<br>
-			<div id="content"></div>
+			<div id="content" class="content">
+            </div>
 		</div>
         	<script src=/javaScriptTesting/script.js>
             </script>
