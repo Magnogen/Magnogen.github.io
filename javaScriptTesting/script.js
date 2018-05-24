@@ -35,8 +35,11 @@ if (parsedUrl.searchParams.get("action") == "search") {
       <li><a onclick=\"askContent()\">content</a></li> \
     </ul> \
     ";
-} else if (parsedUrl.searchParams.get("filename") == "tryhtml_basic") {
+} else if (parsedUrl.searchParams.get("action") == "getCookieValue") {
   document.getElementById('content').innerHTML = document.cookie;
+  document.getElementById('cookiesTrue').innerHTML = "The page utilises cookies now.";
+} else if (parsedUrl.searchParams.get("action") == "setCookieValue") {
+  document.cookie = prompt("Set cookie value:");
   document.getElementById('cookiesTrue').innerHTML = "The page utilises cookies now.";
 }
 function myFunction() {
