@@ -35,9 +35,9 @@ if (parsedUrl.searchParams.get("action") == "search") {
       <li><a onclick=\"askContent()\">content</a></li> \
     </ul> \
     ";
-} else if (parsedUrl.searchParams.get("action") == "getCookieValue") {
+} else if (parsedUrl.searchParams.get("filename") == "tryhtml_basic") {
   document.getElementById('content').innerHTML = document.cookie;
-  document.getElementById('cookieTrue').innerHTML = "The page does contain cookies now.";
+  document.getElementById('cookiesTrue').innerHTML = "The page utilises cookies now.";
 }
 function myFunction() {
     var input, filter, ul, li, a, i;
