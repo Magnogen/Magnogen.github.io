@@ -62,10 +62,3 @@ body>div>ul > li a:hover:not(.active),
 .num-brackets {
   padding: 2px !important;
 }
-
-/* Begin Agunderman10 styles */
-#gradient-background {
-  height: 100%;
-  background-color: blue; /* for older browsers that do not support gradients */
-	background-image: linear-gradient(blue, white); /*gradient background */
-}
