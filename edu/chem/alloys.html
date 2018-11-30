@@ -9,8 +9,13 @@
 		<link rel="stylesheet" type="text/css" href="/src/style.css">
 		
 		<style>
+            html {
+                height: 100%;
+            }
 			body {
-				background-color: #222222;
+				height: 100%;
+				background-color: blue; /* for older browsers that do not support gradients */
+				background-image: linear-gradient(blue, white,blue); /*gradient background */
 				font-family: Verdana, sans-serif;
 			}
 			.edu {
@@ -39,7 +44,7 @@
                 text-align: center;
             }
             .dataNav a {
-            	color: #ffffff;
+            	color: black;
                 text-decoration: none;
                 font-weight: bold;
             }
@@ -52,7 +57,7 @@
 			w3.includeHTML();
 		</script>
 		
-		<div style="padding: 0% 10% 12% 10%;color: #EEEEEE;">
+		<div style="padding: 0% 10% 12% 10%;color: black;">
 			<h1 style="text-align: center;">
 				Chemistry: Alloys
 			</h1>
