@@ -51,6 +51,9 @@ body>div>ul > li a:hover:not(.active),
   font-weight: bold;
   padding: 0 0 0.5em 0;
 }
+h2.title {
+  color: #0000a8;
+}
 .num, .num-brackets {
   display: inline-block;
   margin: 2px 2px 2px 5%;
