@@ -2,20 +2,45 @@
 <html>
 	<head>
 		<title>
-			Magnogen - Home
+			Magnogen - About
 		</title>
 		<base href="https://magnogen.github.io/">
 		<link rel="icon" href="/src/logo_icon.png">
 		<link rel="stylesheet" type="text/css" href="/src/style.css">
 		<style>
-			html {
-				height: 100%;
-			}
+			
 			body {
 				height: 100%;
 				background-color: blue; /* for older browsers that do not support gradients */
-				background-image: linear-gradient(blue, white,blue); /*gradient background */
+				background-image: linear-gradient(#00a2ff,#0000ff); /*gradient background */
 				font-family: Verdana, sans-serif;
+			}
+			.contrib {
+				background-color: #0000a8;
+			}
+			.about_area { padding: 0% 10% 12% 10%; color: black; }
+			.about_area > img {
+				display: inline-block;
+				width: 3em; height: 3em;
+				margin: 0 0 1.5em 1.4em;
+				border: 1px solid rgba(0,0,0,0);
+				-webkit-border-radius: 0.4em;
+				-moz-border-radius: 0.4em;
+				border-radius: 0.4em;
+			} .about_area > img[data-selected] {
+				border-left: 0.1em solid #2a2a2a;
+			}
+			.about_area > div {
+				float: right;
+				width: 75%;
+			} .about_area > div[data-empty] > * {
+				display: none;
+			} .about_area > div[data-empty] > div:first-child {
+				display: block !important;
+			} .about_area > div > .add_padding {
+				padding: 0.8em 0 1em 0;
+			} .about_area > div em {
+				font-style: italic;
 			}
 		</style>
 	</head>
@@ -26,22 +51,71 @@
 			w3.includeHTML();
 		</script>
 		
-		<div style="color: #EEEEEE; padding: 0% 10% 12% 10%;">
-			<h1 style="text-align: center;">
-				Magnogen / hydronesium
+		<div class="about_area">
+			<h1>
+				About this website
 			</h1>
-			<p></p>
-			<h3 style="text-align: center;">
-			    Inspiring the next generation<span style="font-size: 6px;">#</span>
-            </h3>
-			<br>
-			Welcome to the official Magnogen website! There have been a few contributors to help this website, especially in it's infant stages, you can see those individuals <a href="/about/">here</a>.<br>
-            <br>
-            We've got a few projects on the go at the moment, you can see them all under the projects tab above. ^ There are stories, <a href="/projects/music.html">songs</a> and <a href="/apps/">apps</a>! We hope you'll be interested!<br>
-            <br>
-            There is also a bit of interesting JavaScript-related stuff on the <a href="/javaScriptTesting/">JavaScript page</a> for you to have a look at (also above ^).<br>
-            <br>
-            Want to contact us? Feel free to do so under the <a href="/about/">about section</a>.
+			<h3 class="sub">
+				Contributors
+			</h3>
+			<div data-empty>
+				<div style="display: none;">Select a contributor...</div>
+				<div style="font-size: 1.25em; color: #000000;"></div>
+				<em>Developer</em>
+				<div class="add_padding"></div>
+				<div></div>
+			</div>
+			
+			<img src="/about/hydronesium.jpg" alt="Hydronesium profile picture" onclick="show_info(event,0)"><br>
+			<img src="/about/user-e.jpg" alt="user-e profile picture" onclick="show_info(event,1)"><br>
+			<img src="/about/jimbob123x.jpg" alt="Agunderman10 profile picture" onclick="show_info(event,2)">
 		</div>
+		<script>
+		function show_info (event, person) {
+			var images = event.currentTarget.parentElement.
+				getElementsByTagName("img"), info_box = event.
+				currentTarget.parentElement.children[2];
+			for (var i = 0; i < images.length; i++) {
+				images[i].removeAttribute("data-selected");
+			}; event.currentTarget.setAttribute("data-selected","");
+			
+			info_box.removeAttribute("data-empty");
+			for (var i = 1; i < info_box.children.length; i++) {
+				info_box.children[i].innerHTML = (about_data[person])[i-1];
+			};
+		};
+		var about_data = [[
+			"Hydronesium", "Developer", "\
+			Website: <a href=\"http://magnogen.github.io/\">Magnogen - Home</a><br>\
+			Scratch profile: <a href=\"https://scratch.mit.edu/users/hydronesium/\">\
+				hydronesium on Scratch</a><br>\
+			YouTube channel: <a href=\"https://www.youtube.com/channel/UCosxKKKPJk4aZlwF_EFe2pw\">\
+				hydronesium</a><br>\
+			Github: <a href=\"https://github.com/Magnogen\">Magnogen</a>",
+			"Hi there, my name is Connor. I've always wanted a website and \
+			now that I have one, I'm so happy! For my A levels, I'm going to do \
+			maths and computing because I quite like them currently.<br>\
+			I enjoy making music and writing stories (you can see them under \
+			the projects tab in the navigation bar)."
+			],[
+			"user-e", "Developer", "\
+			Website: <a href=\"http://192.168.1.77/a/\">\
+				my Raspberry Pi server <i>(non-public)</i></a><br>\
+			Scratch profile: <a href=\"https://scratch.mit.edu/users/user-e/\">user-e</a><br>\
+			Google+ page: <a href=\"https://plus.google.com/107507296915460932126\">\
+				Edward J</a><br>\
+			Github: <a href=\"https://github.com/user-e\">user-e</a>",
+			"Hello, I’m someone called Edward. I am good at programming (have coded my own \
+			website) and Maths. Also, I know some things about version control systems/Github. \
+			<br>I'm going to do Computing at A level, not taking the GCSE.<br> \
+			Here to help out with the webpage making, using my skills."
+			],[
+			"Agunderman10", "Developer", "\
+			Github: <a href=\"https://github.com/Agunderman10\">Agunderman10</a><br>",
+			"Hello, my names's Andrew. I love code of any kind and I enjoy contributing to\
+			open source projects. Feel free to contact me at my email listed on my Github page."
+			]
+        ];
+		</script>
 	</body>
 </html>
