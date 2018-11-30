@@ -8,8 +8,13 @@
 		<link rel="icon" href="/src/logo_icon.png">
 		<link rel="stylesheet" type="text/css" href="/src/style.css">
 		<style>
+			html {
+				height: 100%;
+			}
 			body {
-				background-color: #222222;
+				height: 100%;
+				background-color: blue; /* for older browsers that do not support gradients */
+				background-image: linear-gradient(blue, white,blue); /*gradient background */
 				font-family: Verdana, sans-serif;
 			}
 			.javaScript { background-color: #0000a8; }
@@ -27,7 +32,7 @@
 			w3.includeHTML();
 		</script>
 		
-		<div style="margin: 0 5%; color: #EEEEEE;">
+		<div style="margin: 0 5%; color: black;">
 			<h1>
 				JavaScript testing
 			</h1>

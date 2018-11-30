@@ -12,9 +12,14 @@
 			@font-face {
                 font-family: complex;
                 src: url('/src/miahand.ttf');
-            } 
+			} 
+			html {
+				height: 100%;
+			}
             body {
-				background-color: #222222;
+				height: 100%;
+				background-color: blue; /* for older browsers that do not support gradients */
+				background-image: linear-gradient(blue, white,blue); /*gradient background */
 				font-family: Verdana, sans-serif;
 			}
 			.edu {
@@ -40,7 +45,7 @@
 			w3.includeHTML();
 		</script>
 		
-		<div style="padding: 0% 10% 12% 10%;color: #EEEEEE;">
+		<div style="padding: 0% 10% 12% 10%;color: black;">
 			<h1 style="text-align: center;">
 				Maths: Complex numbers
 			</h1>

@@ -36,14 +36,19 @@
         </script>
 		
 		<style>
-            		body {
-				background-color: #222222;
+            html {
+                height: 100%;
+            }
+            body {
+                height: 100%;
+				background-color: blue; /* for older browsers that do not support gradients */
+				background-image: linear-gradient(blue, white,blue); /*gradient background */
 				font-family: Verdana, sans-serif;
 			}
-            		.sub {
-            			color: #00dfff;
-            			font-weight:bold;
-            		}
+            .sub {
+            	color: #00dfff;
+            	font-weight:bold;
+            }
 			.proj {
 				background-color: #0000a8;
 			}
@@ -60,7 +65,7 @@
 			w3.includeHTML();
 		</script>
 		
-		<div style="padding: 0% 10% 12% 10%;color: #EEEEEE;">
+		<div style="padding: 0% 10% 12% 10%;color: black;">
 			<h1 style="text-align: center;">
 				Music
 			</h1>
