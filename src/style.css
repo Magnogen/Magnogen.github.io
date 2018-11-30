@@ -3,6 +3,12 @@
 }
 body {
   margin: 0;
+  height: 100vh;
+  background-color: blue; /* for older browsers that do not support gradients */
+  background-image: linear-gradient(#00a2ff,#0000ff); /*gradient background */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Verdana, sans-serif;
 }
 a:link {
     color: #ffff00;
@@ -41,7 +47,7 @@ body>div>ul > li a:hover:not(.active),
 /* Education page styles: */
 
 .sub {
-  color: #00dfff;
+  color: #000064;
   font-weight: bold;
   padding: 0 0 0.5em 0;
 }
