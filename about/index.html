@@ -8,31 +8,27 @@
 		<link rel="icon" href="/src/logo_icon.png">
 		<link rel="stylesheet" type="text/css" href="/src/style.css">
 		<style>
-			html{
-				height: 100%;
-			}
+			
 			body {
 				height: 100%;
 				background-color: blue; /* for older browsers that do not support gradients */
-				background-image: linear-gradient(blue,white,blue); /*gradient background */
+				background-image: linear-gradient(#00a2ff,#0000ff); /*gradient background */
 				font-family: Verdana, sans-serif;
 			}
 			.contrib {
 				background-color: #0000a8;
 			}
-
 			.about_area { padding: 0% 10% 12% 10%; color: black; }
 			.about_area > img {
 				display: inline-block;
 				width: 3em; height: 3em;
 				margin: 0 0 1.5em 1.4em;
-
 				border: 1px solid rgba(0,0,0,0);
 				-webkit-border-radius: 0.4em;
 				-moz-border-radius: 0.4em;
 				border-radius: 0.4em;
 			} .about_area > img[data-selected] {
-				border-left: 0.1em solid #0077b3;
+				border-left: 0.1em solid #2a2a2a;
 			}
 			.about_area > div {
 				float: right;
@@ -64,16 +60,15 @@
 			</h3>
 			<div data-empty>
 				<div style="display: none;">Select a contributor...</div>
-				<div style="font-size: 1.25em; color: #00a8ff;"></div>
+				<div style="font-size: 1.25em; color: #000000;"></div>
 				<em>Developer</em>
 				<div class="add_padding"></div>
 				<div></div>
 			</div>
 			
-			<img src="/about/hydronesium.jpg" alt="hydronesium profile picture" onclick="show_info(event,0)"><br>
+			<img src="/about/hydronesium.jpg" alt="Hydronesium profile picture" onclick="show_info(event,0)"><br>
 			<img src="/about/user-e.jpg" alt="user-e profile picture" onclick="show_info(event,1)"><br>
-			<img src="/about/yoyofox.jpg" alt="yoyofox profile picture" onclick="show_info(event,2)"><br>
-			<img src="/about/jimbob123x.jpg" alt="Agunderman10 profile picture" onclick="show_info(event,3)"><br>
+			<img src="/about/jimbob123x.jpg" alt="Agunderman10 profile picture" onclick="show_info(event,2)">
 		</div>
 		<script>
 		function show_info (event, person) {
@@ -90,7 +85,7 @@
 			};
 		};
 		var about_data = [[
-			"hydronesium", "Developer", "\
+			"Hydronesium", "Developer", "\
 			Website: <a href=\"http://magnogen.github.io/\">Magnogen - Home</a><br>\
 			Scratch profile: <a href=\"https://scratch.mit.edu/users/hydronesium/\">\
 				hydronesium on Scratch</a><br>\
@@ -114,12 +109,6 @@
 			website) and Maths. Also, I know some things about version control systems/Github. \
 			<br>I'm going to do Computing at A level, not taking the GCSE.<br> \
 			Here to help out with the webpage making, using my skills."
-			],[
-			"Yoyofox", "Inspirational pizzaria", "\
-			Website: <a href=\"https://magnogen.github.io/stupididit/\">Yoyofox</a><br>",
-			"Note from Yoyofox: \"Please have a seizure.\" (when you see my website homepage) \
-			<br><img src=\"/about/spageti.png\" alt=\"pixeti (spageti)\" style=\" \
-			width: 3em; height: 3em; image-rendering: pixelated;\">"
 			],[
 			"Agunderman10", "Developer", "\
 			Github: <a href=\"https://github.com/Agunderman10\">Agunderman10</a><br>",
