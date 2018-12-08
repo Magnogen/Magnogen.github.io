@@ -59,8 +59,10 @@
 				<div></div>
 			</div>
 			
-			<img src="/about/hydronesium.png" alt="Hydronesium profile picture" onclick="show_info(event,0)"><br>
-			<img src="/about/user-e.jpg" alt="user-e profile picture" onclick="show_info(event,1)"><br>
+			<img src="/about/hydronesium.png" alt="Hydronesium profile picture" onclick="show_info(event,0)">
+			<br>
+			<img src="/about/user-e.jpg" alt="user-e profile picture" onclick="show_info(event,1)">
+			<br>
 			<img src="/about/agunderman10.jpg" alt="Agunderman10 profile picture" onclick="show_info(event,2)">
 		</div>
 		<script>
@@ -70,7 +72,7 @@
 				currentTarget.parentElement.children[2];
 			for (var i = 0; i < images.length; i++) {
 				images[i].removeAttribute("data-selected");
-			}; event.currentTarget.setAttribute("data-selected","");
+			}; event.currentTarget.setAttribute("data-selected", "");
 			
 			info_box.removeAttribute("data-empty");
 			for (var i = 1; i < info_box.children.length; i++) {
@@ -93,7 +95,7 @@
 			],[
 			"user-e", "Developer", "\
 			Website: <a href=\"http://192.168.1.77/a/\">\
-				my Raspberry Pi server <i>(non-public)</i></a><br>\
+				my Raspberry Pi server <em>(non-public)</em></a><br>\
 			Scratch profile: <a href=\"https://scratch.mit.edu/users/user-e/\">user-e</a><br>\
 			Google+ page: <a href=\"https://plus.google.com/107507296915460932126\">\
 				Edward J</a><br>\
@@ -105,8 +107,8 @@
 			],[
 			"Agunderman10", "Developer", "\
 			Github: <a href=\"https://github.com/Agunderman10\">Agunderman10</a><br>",
-			"Hello, my name is Andrew. I love code of any kind and I enjoy contributing to\
-			open source projects. Feel free to contact me at my email listed on my Github page."
+			"Hello, my name is Andrew. I love code of any kind and I enjoy contributing to \
+			open source projects. Feel free to contact me at the email listed on my Github page."
 			]
         ];
 		</script>
