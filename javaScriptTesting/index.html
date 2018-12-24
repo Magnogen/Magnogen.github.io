@@ -8,12 +8,11 @@
 		<link rel="icon" href="/src/logo_icon.png">
 		<link rel="stylesheet" type="text/css" href="/src/style.css">
 		<style>
-			body {
-				background-color: #222222;
-				font-family: Verdana, sans-serif;
-			}
-			.javaScript {
-				background-color: #0000a8;
+			.javaScript { background-color: #0000a8; }
+			h1 { text-align: center; }
+			#content {
+				font-size: 120%;
+				color: #00a8ff;
 			}
 		</style>
 	</head>
@@ -24,16 +23,24 @@
 			w3.includeHTML();
 		</script>
 		
-		<div style="color: #EEEEEE;margin: 0px 5%;">
-			<h1 style="text-align: center;">
+		<div style="margin: 0 5%; color: black;">
+			<h1>
 				JavaScript testing
 			</h1>
-			This page is domain-interactive, this means that if you type in the correct variable and then a value for it in the address bar (domain), it will respond in the correct way.<br>
-            		<br>
-            		Try typing: ?action=search after the current domain, or click <a href="/javaScriptTesting/?action=search">here</a>.<br>
+			This page is domain-interactive, this means that if you type in the correct variable
+			and then a value for it in the address bar (domain), it will respond in the correct way.
+			Please be advised that, for some operations, this page uses cookies.
+			<div id="cookiesTrue">
+				The page doesn't utilise cookies at the moment.
+			</div>
 			<br>
-			<div id="content"></div>
+            		Try typing: ?action=search after the current domain, or click
+			<a href="/javaScriptTesting/?action=search">here</a>.
+			<br><br>
+			<div id="content">
+			</div>
 		</div>
-        	<script src="/javaScriptTesting/script.js"></script>
+        	<script src=/javaScriptTesting/script.js>
+            </script>
 	</body>
 </html>

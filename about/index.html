@@ -8,26 +8,20 @@
 		<link rel="icon" href="/src/logo_icon.png">
 		<link rel="stylesheet" type="text/css" href="/src/style.css">
 		<style>
-			body {
-				background-color: #222222;
-				font-family: Verdana, sans-serif;
-			}
 			.contrib {
 				background-color: #0000a8;
 			}
-
-			.about_area { padding: 0% 10% 12% 10%; color: #EEEEEE; }
+			.about_area { padding: 0% 10% 12% 10%; color: black; }
 			.about_area > img {
 				display: inline-block;
 				width: 3em; height: 3em;
 				margin: 0 0 1.5em 1.4em;
-
 				border: 1px solid rgba(0,0,0,0);
 				-webkit-border-radius: 0.4em;
 				-moz-border-radius: 0.4em;
 				border-radius: 0.4em;
 			} .about_area > img[data-selected] {
-				border-left: 0.1em solid #0077b3;
+				border-left: 0.1em solid #2a2a2a;
 			}
 			.about_area > div {
 				float: right;
@@ -59,15 +53,17 @@
 			</h3>
 			<div data-empty>
 				<div style="display: none;">Select a contributor...</div>
-				<div style="font-size: 1.25em; color: #00a8ff;"></div>
+				<div style="font-size: 1.25em; color: #000000;"></div>
 				<em>Developer</em>
 				<div class="add_padding"></div>
 				<div></div>
 			</div>
 			
-			<img src="/about/hydronesium.jpg" alt="hydronesium profile picture" onclick="show_info(event,0)"><br>
-			<img src="/about/user-e.jpg" alt="user-e profile picture" onclick="show_info(event,1)"><br>
-			<img src="/about/yoyofox.jpg" alt="yoyofox profile picture" onclick="show_info(event,2)">
+			<img src="/about/hydronesium.png" alt="Hydronesium profile picture" onclick="show_info(event,0)">
+			<br>
+			<img src="/about/user-e.jpg" alt="user-e profile picture" onclick="show_info(event,1)">
+			<br>
+			<img src="/about/agunderman10.jpg" alt="Agunderman10 profile picture" onclick="show_info(event,2)">
 		</div>
 		<script>
 		function show_info (event, person) {
@@ -76,7 +72,7 @@
 				currentTarget.parentElement.children[2];
 			for (var i = 0; i < images.length; i++) {
 				images[i].removeAttribute("data-selected");
-			}; event.currentTarget.setAttribute("data-selected","");
+			}; event.currentTarget.setAttribute("data-selected", "");
 			
 			info_box.removeAttribute("data-empty");
 			for (var i = 1; i < info_box.children.length; i++) {
@@ -84,7 +80,7 @@
 			};
 		};
 		var about_data = [[
-			"hydronesium", "Developer", "\
+			"Hydronesium", "Developer", "\
 			Website: <a href=\"http://magnogen.github.io/\">Magnogen - Home</a><br>\
 			Scratch profile: <a href=\"https://scratch.mit.edu/users/hydronesium/\">\
 				hydronesium on Scratch</a><br>\
@@ -99,7 +95,7 @@
 			],[
 			"user-e", "Developer", "\
 			Website: <a href=\"http://192.168.1.77/a/\">\
-				my Raspberry Pi server <i>(non-public)</i></a><br>\
+				my Raspberry Pi server <em>(non-public)</em></a><br>\
 			Scratch profile: <a href=\"https://scratch.mit.edu/users/user-e/\">user-e</a><br>\
 			Google+ page: <a href=\"https://plus.google.com/107507296915460932126\">\
 				Edward J</a><br>\
@@ -109,9 +105,10 @@
 			<br>I'm going to do Computing at A level, not taking the GCSE.<br> \
 			Here to help out with the webpage making, using my skills."
 			],[
-			"Yoyofox", "Inspirational pizzaria", "\
-			Website: <a href=\"https://magnogen.github.io/stupididit/\">Yoyofox</a><br>",
-			"Note from Yoyofox: \"Please have a seizure.\"<br><img src=\"/about/spageti.png\" alt=\"pixeti\" style=\"width: 50px; height: 50px; image-rendering: pixelated;\">"
+			"Agunderman10", "Developer", "\
+			Github: <a href=\"https://github.com/Agunderman10\">Agunderman10</a><br>",
+			"Hello, my name is Andrew. I love code of any kind and I enjoy contributing to \
+			open source projects. Feel free to contact me at the email listed on my Github page."
 			]
         ];
 		</script>
