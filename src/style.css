@@ -4,21 +4,22 @@
 body {
   margin: 0;
   height: 100vh;
-  background-color: #0065ff; /* for older browsers that do not support gradients */
-  background-image: linear-gradient(#00a2ff, #0028ff); /*gradient background */
+  background-color: #0032a8; /* for older browsers that do not support gradients */
+  background-image: linear-gradient(#0032ff, #0032a8); /*gradient background */
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-family: Verdana, sans-serif;
+  color: #ffffff
 }
 
 a:link {
-    color: #ffff00;
+    color: #ffffff;
 }
 a:visited {
-    color: #00ff00;
+    color: #ffff64;
 }
 a:active {
-    color: #0000ff;
+    color: #32a8ff;
 }
 
 body>div>ul {
@@ -33,7 +34,7 @@ body>div>ul {
 body>div>ul > li { float: left; }
 body>div>ul > li a, ul.sub_menu>li>a {
   display: block;
-  color: white;
+  color: #ffffff;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -44,7 +45,7 @@ body>div>ul > li a:hover:not(.active),
   background-color: #111111;
 }
 .active {
-  background-color: #0033cc;
+  background-color: #0032a8;
 }
 
 /* Education page styles: */
