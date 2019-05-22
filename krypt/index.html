@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+	<title>
+		Home | Magnogen
+	</title>
+    	<base href="https://magnogen.github.io">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="/krypt/krypt.js"></script>
+	<style>
+		body, h1,h2, h3, h4, h5, h6 {
+			font-family: "Lato", sans-serif;
+		}
+		body, html {
+			height: 100%;
+			line-height: 1.6;
+		}
+        	.bars-hover:hover{
+        		color: #fff !important;
+        		background-color: #0032a8 !important;
+        	}
+		
+		.bgimg-1, .bgimg-2, .bgimg-3 {
+			background-color: #ffffff;
+		}
+		.bgimg-1{
+			min-height: 100%;
+		}
+		.bgimg-2, .bg-img-3 {
+			min-height: 400px;
+		}
+        
+        textarea, input {
+            background: #ffffff;
+            border: none;
+            border-bottom: 1px solid #000000;
+            width: 100%;
+            height: 100%;
+            padding: 4px 16px;
+		}
+        input {
+        	width: 50%;
+        }
+        textarea:hover {
+            background: #eeeeee;
+		}
+        
+        select {
+        	background: #ffffff;
+            border: none;
+            border-bottom: 1px solid #000000;
+            width: 50%;
+            height: 100%;
+            padding: 4px 16px;
+        }
+		
+        .go {
+        	border:none;
+            display:inline-block;
+            padding:8px 16px;
+            vertical-align:middle;
+            overflow:hidden;
+            text-decoration:none;
+            text-align:center;
+            cursor:pointer;
+            white-space:nowrap;
+            background-color: #0032a8;
+            color: #ffffff
+        }
+        .go:hover {
+            background-color: #0016a8;
+        }
+        
+		.w3-wide{letter-spacing: 6px;}
+		
+		@media only screen and (max-device-width: 1600px){
+			.bgimg-1, .bgimg-2, .bgimg-3{
+				background-attachment: scroll;
+				min-height: 400px;
+			}
+		}
+	</style>
+	<body>
+		<div class="w3-top">
+			<div class="w3-bar" id="myNavbar">
+				<a class="w3-bar-item w3-button bars-hover w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+					<i class="fa fa-bars"></i>
+				</a>
+				<a href="/" class="w3-bar-item w3-button">
+					HOME
+				</a>
+				<a href="/about" class="w3-bar-item w3-button w3-hide-small">
+					<i class="fa fa-user"></i>
+					ABOUT
+				</a>
+				<a href="/music" class="w3-bar-item w3-button w3-hide-small">
+					<i class="fa fa-music"></i>
+					TRACKS
+				</a>
+				<a href="/contact" class="w3-bar-item w3-button w3-hide-small">
+					<i class="fa fa-envelope"></i>
+					CONTACT
+				</a>
+                		<a href="https://github.com/Magnogen/magnogen.github.io/" class="w3-bar-item w3-button w3-hide-small" style="float:right;">
+					<i class="fa fa-code"></i>
+					SOURCE
+				</a>
+			</div>
+			<div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+				<a href="/about" class="w3-bar-item w3-button" onclick="toggleFunction()">
+					ABOUT
+				</a>
+				<a href="/music" class="w3-bar-item w3-button" onclick="toggleFunction()">
+					TRACKS
+				</a>
+				<a href="/contact" class="w3-bar-item w3-button" onclick="toggleFunction()">
+					CONTACT
+				</a>
+                		<a href="https://github.com/Magnogen/magnogen.github.io/" class="w3-bar-item w3-button" onclick="toggleFunction()">
+					SOURCE CODE
+				</a>
+			</div>
+		</div>
+		<div class="bgimg-1 w3-display-container" id="home">
+			<div class="w3-display-middle" style="white-space:nowrap;">
+				<span style="background-color: #0032a8; color: #ffffff;" class="w3-center w3-padding-large w3-xlarge w3-wide w3-animate-opacity">
+					KRYPT
+				</span>
+			</div>
+		</div>
+		<div class="w3-content w3-container w3-padding-64" id="about">
+			<h3 class="w3-center">
+				WELCOME!
+			</h3>
+			<div class="w3-row">
+				<div class="w3-padding-large">
+					<p>
+						Want to decrypt a message somebody sent you?<br>
+                        Do you want to encrypt a message of your own?<br>
+                        This is the place for you! With lots of different ways to encode and decode ciphers and anagrams, Krypt is a good tool that you can use, just type in the phrase you want to translate, select the method and click Encrypt or Decrypt, depending on what you want to do.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div style="background-color: #0032a8; color: #ffffff;" class="w3-row w3-center w3-padding-16">
+            <div class="w3-third w3-section">
+                <span class="w3-xlarge">
+                    2
+                </span>
+                <br>
+                Methods
+            </div>
+            <div class="w3-third w3-section">
+                <span class="w3-xlarge">
+                    2
+                </span>
+                <br>
+                Directions
+            </div>
+            <a href="/samples" style="text-decoration:none;">
+                <div class="w3-third w3-section">
+                    <span class="w3-xlarge">
+                        Limitless
+                    </span>
+                    <br>
+                    Possibilities
+                </div>
+            </a>
+		</div>
+		<div class="w3-content w3-container w3-padding-64" id="contact">
+			<h3 class="w3-center">
+				Krypt
+			</h3>
+			<textarea id="input" rows="3" placeholder="This will be encrypted"></textarea>
+            <br><br>
+            <select id="method">
+  				<option value="caesar">
+                	Caesar cipher
+                </option>
+                <option value="keyword">
+               		Keyword cipher
+                </option>
+			</select>
+            <br><br>
+            <input id="key" placeholder="Key"></input>
+            <br><br>
+            <button class="go" onclick="encode()">
+				<i class="fa fa-lock w3-margin-right"></i>
+				Encode
+			</button>
+            <button class="go" onclick="decode()">
+				<i class="fa fa-unlock w3-margin-right"></i>
+				Decode
+			</button>
+            <br><br>
+            <textarea rows="3" id="output" placeholder="This is the output" readonly></textarea>
+		</div>
+		<footer class="w3-center w3-padding-64" style="background-color: #0032a8; color: #ffffff">
+			<a href="#home" class="w3-button w3-white">
+				<i class="fa fa-arrow-up w3-margin-right"></i>
+				To the top
+			</a>
+			<div class="w3-xlarge w3-section">
+            			<a href="https://www.instagram.com/hydronesium/" style="text-decoration: none;">
+					<i class="fa fa-instagram w3-hover-opacity"></i>
+                		</a>
+                		<a href="https://www.youtube.com/channel/UCosxKKKPJk4aZlwF_EFe2pw" style="text-decoration: none;">
+					<i class="fa fa-youtube-play w3-hover-opacity"></i>
+                		</a>
+			</div>
+			<p>
+				Powered by
+				<a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank">
+					w3.css
+				</a>
+			</p>
+		</footer>
+		<script>
+			function onClick(element) {
+				document.getElementById("img01").src=element.src;
+				document.getElementById("modal01").style.display="block";
+				var captionText=document.getElementById("caption");
+				captionText.innerHTML=element.alt;
+			}
+			window.onscroll=function(){
+				myFunction()
+			};
+			function myFunction(){
+				var navbar=document.getElementById("myNavbar");
+				if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
+					navbar.className="w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+				}else{
+					navbar.className=navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+				}
+			}
+			function toggleFunction(){
+				var x=document.getElementById("navDemo");
+				if (x.className.indexOf("w3-show")==-1){
+					x.className +=" w3-show";
+				}else{
+					x.className=x.className.replace(" w3-show", "");
+				}
+			}
+            </script>
+	</body>
+</html>
