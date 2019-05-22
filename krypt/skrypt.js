@@ -42,7 +42,7 @@ function encode(){
 	}
         document.getElementById("output").value = output;
 }
-function encode(){
+function decode(){
 	var entity;
 	var input;
 	var output = "";
