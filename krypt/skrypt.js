@@ -4,7 +4,8 @@ function encode(){
 	var output = "";
 	var method;
 	var key;
-	var letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+	var letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+    var morse = [".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--.."];
 	entity = document.getElementById("input");
 	input = entity.value;
 	entity = document.getElementById("method");
@@ -39,6 +40,15 @@ function encode(){
                 			
                         }
                 }
+	} else if (method == "morse") {
+        	for (var i = 0; i < input.length; i++) {
+                    	if (letters.indexOf(input[i].toLowerCase()) == -1) {
+                        	output = output + input[i].toLowerCase();
+                        } else {
+                        	output = output + morse[letters.indexOf(input[i].toLowerCase())] + "|";
+                        }
+                }
+                output = output.slice(0, -1);
 	}
         document.getElementById("output").value = output;
 }
@@ -48,7 +58,8 @@ function decode(){
 	var output = "";
 	var method;
 	var key;
-	var letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+	var letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+    var morse = [".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--.."];
 	entity = document.getElementById("input");
 	input = entity.value;
 	entity = document.getElementById("method");
@@ -81,6 +92,15 @@ function decode(){
                             		output = output + letters[(letters.length + letters.indexOf(input[i].toLowerCase()) - parseInt(key[i % key.length])) % letters.length];
                             	}
                 			
+                        }
+                }
+	} else if (method == "morse") {
+    	input = input.split("|");
+        	for (var i = 0; i < input.length; i++) {
+                    	if (morse.indexOf(input[i]) == -1) {
+                        	output = output + input[i];
+                        } else {
+                        	output = output + letters[morse.indexOf(input[i])];
                         }
                 }
 	}
