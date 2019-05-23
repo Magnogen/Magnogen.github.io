@@ -33,46 +33,46 @@
 			min-height: 400px;
 		}
         
-        textarea, input {
-            background: #ffffff;
-            border: none;
-            border-bottom: 1px solid #000000;
-            width: 100%;
-            height: 100%;
-            padding: 4px 16px;
+		textarea, input {
+			background: #ffffff;
+			border: none;
+			border-bottom: 1px solid #000000;
+			width: 100%;
+			height: 100%;
+			padding: 4px 16px;
 		}
-        input {
-        	width: 50%;
-        }
-        textarea:hover {
-            background: #eeeeee;
+		input {
+			width: 50%;
+		}
+		textarea:hover {
+		    	background: #eeeeee;
 		}
         
-        select {
-        	background: #ffffff;
-            border: none;
-            border-bottom: 1px solid #000000;
-            width: 50%;
-            height: 100%;
-            padding: 4px 16px;
-        }
+        	select {
+        		background: #ffffff;
+			border: none;
+			border-bottom: 1px solid #000000;
+			width: 50%;
+			height: 100%;
+			padding: 4px 16px;
+        	}
 		
-        .go {
-        	border:none;
-            display:inline-block;
-            padding:8px 16px;
-            vertical-align:middle;
-            overflow:hidden;
-            text-decoration:none;
-            text-align:center;
-            cursor:pointer;
-            white-space:nowrap;
-            background-color: #0032a8;
-            color: #ffffff
-        }
-        .go:hover {
-            background-color: #0016a8;
-        }
+        	.go {
+			border:none;
+			display:inline-block;
+			padding:8px 16px;
+			vertical-align:middle;
+			overflow:hidden;
+			text-decoration:none;
+			text-align:center;
+			cursor:pointer;
+			white-space:nowrap;
+			background-color: #0032a8;
+			color: #ffffff
+		}
+		.go:hover {
+			background-color: #0016a8;
+		}
         
 		.w3-wide{letter-spacing: 6px;}
 		
@@ -139,64 +139,65 @@
 				<div class="w3-padding-large">
 					<p>
 						Want to decrypt a message somebody sent you?<br>
-                        Do you want to encrypt a message of your own?<br>
-                        This is the place for you! With lots of different ways to encode and decode ciphers and anagrams, Krypt is a good tool that you can use, just type in the phrase you want to translate, select the method and click Encrypt or Decrypt, depending on what you want to do.
+                        			Do you want to encrypt a message of your own?<br>
+                        			This is the place for you! With lots of different ways to encode and decode ciphers and anagrams, Krypt is a good tool that you can use, just type in the phrase you want to translate, select the method and click Encrypt or Decrypt, depending on what you want to do.
 					</p>
 				</div>
 			</div>
 		</div>
 		<div style="background-color: #0032a8; color: #ffffff;" class="w3-row w3-center w3-padding-16">
-            <div class="w3-third w3-section">
-                <span class="w3-xlarge">
-                    2
-                </span>
-                <br>
-                Methods
-            </div>
-            <div class="w3-third w3-section">
-                <span class="w3-xlarge">
-                    2
-                </span>
-                <br>
-                Directions
-            </div>
-            <a href="/samples" style="text-decoration:none;">
-                <div class="w3-third w3-section">
-                    <span class="w3-xlarge">
-                        Limitless
-                    </span>
-                    <br>
-                    Possibilities
-                </div>
-            </a>
+            		<div class="w3-third w3-section">
+                		<span class="w3-xlarge">
+                    			3
+                		</span>
+                		<br>
+                		Methods
+            		</div>
+			<div class="w3-third w3-section">
+				<span class="w3-xlarge">
+					2
+				</span>
+				<br>
+				Directions
+			</div>
+			<div class="w3-third w3-section">
+				<span class="w3-xlarge">
+					Limitless
+				</span>
+				<br>
+				Possibilities
+			</div>
 		</div>
 		<div class="w3-content w3-container w3-padding-64" id="contact">
 			<h3 class="w3-center">
 				Krypt
 			</h3>
 			<textarea id="input" rows="3" placeholder="This will be encrypted"></textarea>
-            <br><br>
-            <select id="method">
+            		<br><br>
+            		<select id="method" onchange="adaptWith(this.value);">
   				<option value="caesar">
-                	Caesar cipher
-                </option>
-                <option value="keyword">
-               		Keyword cipher
-                </option>
+					Caesar Cipher
+				</option>
+				<option value="keyword">
+					Keyword Cipher
+				</option>
+				<option value="morse">
+					Morse Code
+				</option>
 			</select>
-            <br><br>
-            <input id="key" placeholder="Key"></input>
-            <br><br>
-            <button class="go" onclick="encode()">
+			<br><br>
+			<input id="key" placeholder="Key"></input>
+			<br><br>
+			<button class="go" onclick="encode()">
 				<i class="fa fa-lock w3-margin-right"></i>
 				Encode
 			</button>
-            <button class="go" onclick="decode()">
+            		<button class="go" onclick="decode()">
 				<i class="fa fa-unlock w3-margin-right"></i>
 				Decode
 			</button>
-            <br><br>
-            <textarea rows="3" id="output" placeholder="This is the output" readonly></textarea>
+            		<br><br>
+            		<textarea rows="3" id="output" placeholder="This is the output" readonly></textarea>
 		</div>
 		<footer class="w3-center w3-padding-64" style="background-color: #0032a8; color: #ffffff">
 			<a href="#home" class="w3-button w3-white">
@@ -244,6 +245,14 @@
 					x.className=x.className.replace(" w3-show", "");
 				}
 			}
+            		function adaptWith(value){
+            			if (value == "morse") {
+                			document.getElementById("key").style.visibility = "hidden";
+                		} else {
+					document.getElementById("key").style.visibility = "visible";
+    				}
+			}
             </script>
 	</body>
 </html>
+=
