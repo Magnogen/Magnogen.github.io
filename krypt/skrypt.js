@@ -43,7 +43,7 @@ function encode(){
 	} else if (method == "morse") {
         	for (var i = 0; i < input.length; i++) {
                     	if (letters.indexOf(input[i].toLowerCase()) == -1) {
-                        	output = output + input[i].toLowerCase();
+                        	output = output + input[i].toLowerCase() + "|";
                         } else {
                         	output = output + morse[letters.indexOf(input[i].toLowerCase())] + "|";
                         }
