@@ -1,454 +1,480 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>
-			Magnogen - Education: Computer science
-		</title>
-		<base href="https://magnogen.github.io/">
-		<link rel="icon" href="/src/logo_icon.png">
-		<link rel="stylesheet" type="text/css" href="/src/style.css">
+	<title>
+		Data | Computer topics | Magnogen
+	</title>
+    	<base href="https://magnogen.github.io">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="/krypt/skrypt.js"></script>
+	<style>
+		body, h1,h2, h3, h4, h5, h6 {
+			font-family: "Lato", sans-serif;
+		}
+		body, html {
+			height: 100%;
+			line-height: 1.6;
+		}
+        	.bars-hover:hover{
+        		color: #fff !important;
+        		background-color: #0032a8 !important;
+        	}
 		
-		<style>
-			.edu {
-				background-color: #0000a8;
+		.bgimg-1, .bgimg-2, .bgimg-3 {
+			background-color: #ffffff;
+		}
+		.bgimg-1{
+			min-height: 100%;
+		}
+		.bgimg-2, .bg-img-3 {
+			min-height: 400px;
+		}
+		table {
+		      	border-collapse: collapse;
+        	}
+		td, th {
+			border: 2px solid #0032a8;
+			padding: 6px 12px;
+			text-align: left;
+		}
+		tr:nth-child(1) {
+			background-color: #64a8ff;
+		}
+        
+		.w3-wide{letter-spacing: 6px;}
+		
+		@media only screen and (max-device-width: 1600px){
+			.bgimg-1, .bgimg-2, .bgimg-3{
+				background-attachment: scroll;
+				min-height: 400px;
 			}
-            		table {
-                		border-collapse: collapse;
-            		}
-            		td, th {
-                		border: 4px solid #888888;
-				padding: 6px 12px;
-                		text-align: left;
-            		}
-            		tr:nth-child(1) {
-                		background-color: #666666;
-            		}
-            		.dataNav {
-               			padding: 2px 5%;
-                		text-align: center;
-            			background-color: #0032ff;
-            		}
-            		.dataNav a {
-            			color: #ffffff;
-                		text-decoration: none;
-                		font-weight: bold;
-            		}
-		</style>
-	</head>
+		}
+	</style>
 	<body>
-		<script src="https://www.w3schools.com/lib/w3.js"></script>
-		<div w3-include-html="/src/navbar.html"></div> 
-		<script>
-			w3.includeHTML();
-		</script>
-		
-		<div class="page">
-			<h1 style="text-align: center;">
-				Computer science: Data
-			</h1>
-			<div class="dataNav">
-				<a href="/edu/compSci/data.html#binaryUsage">BINARY</a> |
-				<a href="/edu/compSci/data.html#hexUsage">HEXADECIMAL</a>
+		<div class="w3-top">
+			<div class="w3-bar" id="myNavbar">
+				<a class="w3-bar-item w3-button bars-hover w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+					<i class="fa fa-bars"></i>
+				</a>
+				<a href="/" class="w3-bar-item w3-button">
+					HOME
+				</a>
+				<a href="/about" class="w3-bar-item w3-button w3-hide-small">
+					<i class="fa fa-user"></i>
+					ABOUT
+				</a>
+				<a href="/music" class="w3-bar-item w3-button w3-hide-small">
+					<i class="fa fa-music"></i>
+					TRACKS
+				</a>
+				<a href="/contact" class="w3-bar-item w3-button w3-hide-small">
+					<i class="fa fa-envelope"></i>
+					CONTACT
+				</a>
+                		<a href="https://github.com/Magnogen/magnogen.github.io/" class="w3-bar-item w3-button w3-hide-small" style="float:right;">
+					<i class="fa fa-code"></i>
+					SOURCE
+				</a>
 			</div>
-			<h2 class="title" id="binaryUsage">
-				Using binary
-			</h2>
-			Binary is used to represent data and instructions in a program.
-		   	<br><br>
-		    	<div class="sub">
+			<div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+				<a href="/about" class="w3-bar-item w3-button" onclick="toggleFunction()">
+					ABOUT
+				</a>
+				<a href="/music" class="w3-bar-item w3-button" onclick="toggleFunction()">
+					TRACKS
+				</a>
+				<a href="/contact" class="w3-bar-item w3-button" onclick="toggleFunction()">
+					CONTACT
+				</a>
+                		<a href="https://github.com/Magnogen/magnogen.github.io/" class="w3-bar-item w3-button" onclick="toggleFunction()">
+					SOURCE CODE
+				</a>
+			</div>
+		</div>
+		<div class="bgimg-1 w3-display-container" id="home">
+			<div class="w3-display-middle w3-center" style="white-space:nowrap;">
+				<span style="background-color: #0032a8; color: #ffffff;" class="w3-center w3-padding-large w3-xlarge w3-wide w3-animate-opacity">
+					EDUCATION
+				</span>
+                		<br>
+               			<br>
+                		<span style="background-color: #0032a8; color: #ffffff;" class="w3-center w3-padding-large w3-xlarge w3-wide w3-animate-opacity">
+					DATA
+				</span>
+			</div>
+		</div>
+        	<div style="background-color: #0032a8; color: #ffffff;" class="w3-row w3-center w3-padding-16">
+            		<div class="w3-half w3-section">
+                		<span class="w3-xlarge">
+                    			Binary
+                		</span>
+            		</div>
+			<div class="w3-half w3-section">
+				<span class="w3-xlarge">
+					Hexadecimal
+				</span>
+			</div>
+		</div>
+		<div class="w3-content w3-container w3-padding-64" id="about">
+			<h3 class="w3-center">
+				USING BINARY
+			</h3>
+			<div class="w3-padding-large">
+				Binary is used to represent data and instructions in a program.
+			</div>
+            		<h3 class="w3-padding-large">
 				But what's so special about binary?
+			</h3>
+			<div class="w3-row w3-padding-large">
+				Computer processors contain billions of transistors (like a switch) that only have two states: on and off (like a switch again). Because there are only 2 states, binary is used to represent these states and thus determine what the computer should do. 
 			</div>
-			Computer processors contain billions of transistors (like
-		  	a switch) that only have two states: on and off (like a
-		    	switch again).
-		    	<br>
-		   	Because there are only 2 states, binary is used to represent
-		    	these states and thus determine what the computer should do.
-		    	<br><br>
-		    	<div class="sub">
+            		<h3 class="w3-padding-large">
 				The binary system
-		    	</div>
-		   	The two states in binary are represented by 1 (on) and 0 (off).
-		  	These are called 'binary digits' or 'bits'. All instructions and		   
-			data including graphics and sound are represented as millions of
-			bits.
-			<br><br>
-			<div class="sub">
-				Why are binary numbers so long?
+			</h3>
+			<div class="w3-row w3-padding-large">
+				The two states in binary are represented by 1 (on) and 0 (off). These are called 'binary digits' or 'bits'. All instructions and data including graphics and sound are represented as millions of bits. 
 			</div>
-			Because binary only has two numbers, you need multiple digits to
-			symbolise the same value. (For example, 42, while only needing 2
-			digits in 'standard' numbering, requires 6 digits in binary
-			numbering [101010]) This results in a generally longer number, when
-			compared to other forms of numbering.
-			<br><br>
-			<h2 class="title" id="conversion">
-				Converting to binary
-			</h2>
-            You can convert 'standard' (also called 'decimal' or 'denary')
-            numbers with values between 0 and 255 into 8-bit binary numbers
-            (binary numbers with 8 digits). Denary numbers above 255 need more
-            digits. I have made a video on YouTube for converting denar
-            numbers to binary and vice versa. You can see it here:
-            <br><br>
-            <center>
-            	<iframe width="75%" height="315" src="https://www.youtube.com/embed/PL2TQmsXm6Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-            		iFrames aren't supported by your browser.
-            	</iframe>
-            </center>
-            <br><br>
-            <h2 class="title" id="shifts">
-				Shifts
-		    </h2>
-            <div class="sub">
-            	What are they?
-            </div>
-            Shifts are used when you want to multiply or divide binary
-            numbers by a number which is a power of 2 (including: 2, 4, 8, 16,
-            32, 64, etc). Shifts aren't just restricted to binary
-            though, it is also used in decimal, except what you do is multiply
-            or divide by a number which is a power of 10 (including: 10, 100,
-            1000, etc.). There are 2 types of shift: Logical shift and
-            Arithmetic shift, the difference is that Arithmetic shifts are used
-            for binary numbers with a negative value. You can learn about that <a href="/edu/compSci/data.html#negativeBinary">here</a>
-            <br><br>
-            <div class="sub">
-            	How do I perform a logical shift?
-            </div>
-            To perform a logical shift, just move all the digits along a
-            column, for instance,
-            <br>
-            <div class="num">
-            	0|0|0|1|0|1|1|1 (23)
-            </div>
-            <br>
-            would become:
-            <br>
-            <div class="num">
-            	0|0|1|0|1|1|1|0 (46)
-            </div>
-            <br>
-            When performing a logical shift of +1 (also called x2).
-            <br><br>
-            And the same number, once a logical shift of -1 has taken place,
-            would become this:
-            <br>
-            <div class="num">
-            	0|0|0|0|1|0|1|1 (11)
-            </div>
-            <br>
-            However this example would not also be called ÷2 because the one on
-            the end has been lost to oblivion and so it will be 0.5 less than
-            the half of 00010111.
-            <br><br>
-            <div class="sub">
-            	How do I perform an arithmetic shift?
-            </div>To perform an arithmetic shift, just move all but the first
-            digit along a column, for instance,
-            <br>
-            <div class="num">
-            	1|0|0|1|0|1|1|1 (23)
-            </div>
-            <br>
-            would become:
-            <br>
-            <div class="num">
-            	1|0|1|0|1|1|1|0 (46)
-            </div>
-            <br>
-            When performing an arithmetic shift of +1 (also called x2).
-            <br><br>
-            And the same number, once a logical shift of -1 has taken place,
-            would become this:
-            <br>
-            <div class="num">
-            	1|1|0|0|1|0|1|1 (11)
-            </div>
-            <br>
-            Notice that the 1 on the left-most end of the number stays as it
-            is. This is the case no matter which number it is. Also notice that
-            the second digit from the left is a 1, this is because the number
-            is carried along. More about this in the <a href="/edu/compSci/data.html#negativeBinary">Negative numbers</a> section.
-            <br><br>
-            <h2 class="title" id="negativeBinary">
+            		<h3 class="w3-padding-large">
+				Why are binary numbers so long?
+			</h3>
+			<div class="w3-row w3-padding-large">
+				Because binary only has two numbers, you need multiple digits to symbolise the same value. (For example, 42, while only needing 2 digits in 'standard' numbering, requires 6 digits in binary numbering [101010]) This results in a generally longer number, when compared to other forms of numbering. 
+			</div>
+            		<br><br>
+            		<h3 class="w3-center">
+				CONVERTING TO BINARY
+			</h3>
+			<div class="w3-padding-large">
+				You can convert regular (also called 'decimal' or 'denary') numbers with values between 0 and 255 into 8-bit binary numbers (binary numbers with 8 digits). Denary numbers above 255 need more digits.
+			</div>
+            		<br><br>
+            		<h3 class="w3-center">
+				SHIFTS
+			</h3>
+			<div class="w3-padding-large">
+				Shifts are used when you want to multiply or divide binary numbers by a number which is a power of 2 (including: 2, 4, 8, 16, 32, 64, etc). Shifts aren't just restricted to binary though, it is also used in decimal, except what you do is multiply or divide by a number which is a power of 10 (including: 10, 100, 1000, etc.). There are 2 types of shift: Logical shift and Arithmetic shift, the difference is that Arithmetic shifts are used for binary numbers with a negative value. I'll talk about negative numbers later on.
+			</div>
+            		<h3 class="w3-padding-large">
+				How do I perform a logical shift?
+			</h3>
+			<div class="w3-row w3-padding-large">
+				To perform a logical shift, just move all the digits along a column, for instance, <br><br>
+				0|0|0|1|0|1|1|1 (23) <br><br>
+				would become: <br><br>
+				0|0|1|0|1|1|1|0 (46) <br><br>
+				When performing a logical shift of +1 (also called x2). <br>
+				<br>
+				And the same number, once a logical shift of -1 has taken place, would become this: <br><br>
+				0|0|0|0|1|0|1|1 (11) <br><br>
+				However this example would not also be called ÷2 because the one on the end has been lost to oblivion and so it will be 0.5 less than the half of 00010111.
+			</div>
+            		<h3 class="w3-padding-large">
+				How do I perform an arithmetic shift?
+			</h3>
+			<div class="w3-row w3-padding-large">
+				To perform an arithmetic shift, just move all but the first digit along a column, for instance, <br><br>
+				1|0|0|1|0|1|1|1 (23) <br><br>
+				would become: <br><br>
+				1|0|1|0|1|1|1|0 (46) <br><br>
+				When performing an arithmetic shift of +1 (also called x2). <br>
+				<br>
+				And the same number, once a logical shift of -1 has taken place, would become this: <br><br>
+				1|1|0|0|1|0|1|1 (11) <br><br>
+				Notice that the 1 on the left-most end of the number stays as it is. This is the case no matter which number it is. Also notice that the second digit from the left is a 1, this is because the number is carried along. More about this in the next section.
+			</div>
+		    	<br><br>
+		    	<h3 class="w3-center">
 				Negative numbers
-		    </h2>
-            Negative numbers are useful, there's almost no doubt about that,
-            but how can you write down a negative number in binary? There are
-            two ways: "Sign and magnitude" and "Two's complement". Each have
-            their limitations, but I'll show you how to use both.
-            <br><br>
-            <div class="sub">
-            	Sign and magnitude
-            </div>
-            In this method, the digit at the far left is known as the Most
-            Significant Bit (MSB). The MSB is used to determine wether or not
-            the number is positive (when it is 0) or negative (when it is 1).
-            The MSB is the sign and the rest of the number is the magnitude,
-            hence why this method is called "Sign and magnitude".
-            <br><br>
-            Examples:
-            <br>
-            <div class="num">
-            	<b>0</b>|0|0|0|1|0|1|0 (+10)
-            </div>
-            <br>
-            <div class="num">
-            	<b>1</b>|0|0|0|1|0|1|0 (-10)
-            </div>
-            <br><br>
-            <div class="sub">
-            	Two's complement
-            </div>
-            This format is more common when compared to Sign and magnitude, but
-            it is slightly harder to understand. But why use this instead of
-            Sign and magnitude? Because Sign and magnitude has two vaules for
-            0: +0 (<div class="num-brackets"><b>0</b>|0|0|0|0|0|0|0</div>), and
-            -0 (<div class="num-brackets"><b>1</b>|0|0|0|0|0|0|0</div>). Even
-            though these two values are exactly the same, they have differing
-            Sign and magnitude representations. Two's complement fixes this
-            problem.
-            <br><br>
-            Step 1: Choose a number. (I'll choose 10)<br>
-            Step 2: Find positive binary value. (10 = <div class="num-brackets">0|0|0|0|1|0|1|0</div>)<br>
-            Step 3: Flip all the bits. (<div class="num-brackets">0|0|0|0|1|0|1|0</div> becomes <div class="num-brackets">1|1|1|1|0|1|0|1</div>)<br>
-            Step 4: Add 1 (<div class="num-brackets">1|1|1|1|0|1|0|1</div> +
-            <div class="num-brackets">1</div> = <div class="num-brackets">1|1|1|1|0|1|<b>1</b>|<b>0</b></div>)<br>
-            Done! That was quick!
-            <br><br>
-            <h2 class="title" id="binMath">
+			</h3>
+			<div class="w3-padding-large">
+				Negative numbers are useful, there's almost no doubt about that, but how can you write down a negative number in binary? There are two ways: "Sign and magnitude" and "Two's complement". Each have their limitations, but I'll show you how to use both. 
+			</div>
+            		<h3 class="w3-padding-large">
+				Sign and magnitude
+			</h3>
+			<div class="w3-row w3-padding-large">
+				In this method, the digit at the far left is known as the Most Significant Bit (MSB). The MSB is used to determine wether or not the number is positive (when it is 0) or negative (when it is 1). The MSB is the sign and the rest of the number is the magnitude, hence why this method is called "Sign and magnitude". <br>
+				<br>
+				Examples: <br>
+				0|0|0|0|1|0|1|0 (+10) <br>
+				1|0|0|0|1|0|1|0 (-10)
+			</div>
+			<h3 class="w3-padding-large">
+				Two's complement
+			</h3>
+			<div class="w3-row w3-padding-large">
+				This format is more common when compared to Sign and magnitude, but
+				it is slightly harder to understand. But why use this instead of
+				Sign and magnitude? Because Sign and magnitude has two vaules for
+				0: +0 (<b>0</b>|0|0|0|0|0|0|0), and
+				-0 (<b>1</b>|0|0|0|0|0|0|0). Even
+				though these two values are exactly the same, they have differing
+				Sign and magnitude representations. Two's complement fixes this
+				problem.
+				<br><br>
+				Step 1: Choose a number. (I'll choose 10)<br>
+				Step 2: Find positive binary value. (10 = 0|0|0|0|1|0|1|0)<br>
+				Step 3: Flip all the bits. (0|0|0|0|1|0|1|0 becomes 1|1|1|1|0|1|0|1)<br>
+				Step 4: Add 1 (1|1|1|1|0|1|0|1 +
+				1 = 1|1|1|1|0|1|<b>1</b>|<b>0</b>)<br>
+				Done! That was quick!
+			</div>
+			<br><br>
+			<h3 class="w3-center">
 				Binary mathematics
-		    </h2>
-            So you want to do some addition and multiplication too? Maybe even
-            some subtraction and division? Well, this is your place! (Except
-            for division, that process involves 13 steps, so you'll likely
-            forget it quickly.)
-            <br><br>
-            <div class="sub">
-            	Addition
-            </div>
-            In addition, there are 5 different rules you'll need to follow:
-            <br><br>
-            <table>
-                <tr>
-                    <th>Inputs</th>
-                    <th>Write</th>
-                    <th>Carry</th>
-                </tr>
-                <tr>
-                    <th>0 0</th>
-                    <th>0</th>
-                    <th>0</th>
-                </tr>
-                <tr>
-                    <th>1 0</th>
-                    <th>1</th>
-                    <th>0</th>
-                </tr>
-                <tr>
-                    <th>0 1</th>
-                    <th>1</th>
-                    <th>0</th>
-                </tr>
-                <tr>
-                    <th>1 1</th>
-                    <th>0</th>
-                    <th>1</th>
-                </tr>
-                <tr>
-                    <th>1 1 1</th>
-                    <th>1</th>
-                    <th>1</th>
-                </tr>
-            </table>
-            <br>
-            <div class="sub">
-            	Subtraction
-            </div>
-            There are only 4 rules for this one:
-            <br><br>
-            <table>
-                <tr>
-                    <th>Inputs</th>
-                    <th>Write</th>
-                    <th>Take from next significant bit</th>
-                </tr>
-                <tr>
-                    <th>0 0</th>
-                    <th>0</th>
-                    <th>0</th>
-                </tr>
-                <tr>
-                    <th>1 0</th>
-                    <th>1</th>
-                    <th>0</th>
-                </tr>
-                <tr>
-                    <th>0 1</th>
-                    <th>1</th>
-                    <th>1</th>
-                </tr>
-                <tr>
-                    <th>1 1</th>
-                    <th>0</th>
-                    <th>0</th>
-                </tr>
-            </table>
-	    <br>
-            <div class="sub">
-            	Multiplication
-            </div>
-            This one's a bit harder, there are 3 steps:
-            <br><br>
-            <table>
-            	<tr>
-                	<th>Step number</th>
-                    <th>Step</th>
-                </tr>
-                <tr>
-                	<th>1</th>
-                    <th>Multiply out the right-most bit of the number we are
-                    	multiplying by, follow these rules:<br>
-                        <br>
-                        <table>
-                        	<tr>
-                            	<th>Inputs</th>
-                                <th>Write</th>
-                            </tr>
-                            <tr>
-                            	<th>0 0</th>
-                                <th>0</th>
-                            </tr>
-                            <tr>
-                            	<th>1 0</th>
-                                <th>0</th>
-                            </tr>
-                            <tr>
-                            	<th>0 1</th>
-                                <th>0</th>
-                            </tr>
-                            <tr>
-                            	<th>1 1</th>
-                                <th>1</th>
-                            </tr>
-                        </table>
-                        (table-ception!)<br><br>
-                        For example:<br>
-                        0110x<br>
-                        __10<br>
-                        - - - -<br>
-                        0000<br>
-                        ____<br>
-                        - - - -<br>
-                        ____<br>
-                    </th>
-                </tr>
-                <tr>
-                	<th>2</th>
-                    <th>Now we add a zero into the last column,<br>
-                    	<br>
-                    	For example:<br>
-                        0110x<br>
-                        __10<br>
-                        - - - -<br>
-                        0000<br>
-                        ___0<br>
-                        - - - -<br>
-                        ____<br>
-                        <br>
-                        And do exactly the same thing for the second digit.<br>
-                        <br>
-                        For example:<br>
-                        0110x<br>
-                        __10<br>
-                        - - - -<br>
-                        0000<br>
-                        1100<br>
-                        - - - -<br>
-                        ____<br>
-                        <br>
-                        Continue repeating with the appropriate amount of 0s
-                        for each of the digits of the number we are multiplying
-                        by. (Because we only have two digits, we'll stop here.)
-                    </th>
-                </tr>
-                <tr>
-                	<th>3</th>
-                    <th>Now add all the digits together in the middle row with
-                    	the following rules:<br>
-                        <br>
-                        <table>
-                            <tr>
-                                <th>Inputs</th>
-                                <th>Write</th>
-                                <th>Take from next significant bit</th>
-                            </tr>
-                            <tr>
-                                <th>0 0</th>
-                                <th>0</th>
-                                <th>0</th>
-                            </tr>
-                            <tr>
-                                <th>1 0</th>
-                                <th>1</th>
-                                <th>0</th>
-                            </tr>
-                            <tr>
-                                <th>0 1</th>
-                                <th>1</th>
-                                <th>1</th>
-                            </tr>
-                            <tr>
-                                <th>1 1</th>
-                                <th>0</th>
-                                <th>0</th>
-                            </tr>
-                        </table>
-                        (table-ception! Again...)<br>
-                    	<br>
-                        For example:<br>
-                        0110x<br>
-                        __10<br>
-                        - - - -<br>
-                        0000<br>
-                        1100<br>
-                        - - - -<br>
-                        1100<br>
-                    </th>
-                </tr>
-            </table>
-            <h2 class="title" id="hexUsage">
-				Using hexadecimal
-		    </h2>
-            Hexadecimal looks like this:
-            <br>
-            <div class="num">
-            	012345
-            </div><br>
-            It is used very often in HTML, as it is a faster way to represent
-            colours. For example, the code above to make this colour:<br>
-            <div style="background-color: #012345; width: 100%; padding: 4px 8px; border: 2px solid; margin: 4px;">
-            	The colour "#012345"
-            </div><br>
-            <div class="sub">
-            	Hexadecimal and Binary
-            </div>
-            Hexadecimal is very easily converted into Binary. All you have to
-            do is focus on one hex digit and convert it into a simple 4-bit
-            binary number (also know as a nibble). Once you do that, all you
-            need to do is stick the nibbles together. For example:<br>
-            <br>
-            <div class="num">
-            	012345
-            </div><br>
-            <br>
-            Would become:<br>
-            <br>
-            <div class="num">
-            	0000|0001|0010|0011|0100|0101 (000000010010001101000101)
-            </div><br>
-            <br>
-            When converted to binary
-	    </div>
+			</h3>
+			<div class="w3-padding-large">
+				So you want to do some addition and multiplication too? Maybe even some subtraction and division? Well, this is your place! (Except for division, that process involves 13 steps, so you'll likely forget it quickly.) 
+			</div>
+            		<h3 class="w3-padding-large">
+            			Addition 
+            		</h3>
+            		<div class="w3-row w3-padding-large">
+				In addition, there are 5 different rules you'll need to follow:
+				<table>
+					<tr>
+						<th>Inputs</th>
+						<th>Write</th>
+						<th>Carry</th>
+					</tr>
+					<tr>
+						<th>0 0</th>
+						<th>0</th>
+						<th>0</th>
+					</tr>
+					<tr>
+						<th>1 0</th>
+						<th>1</th>
+						<th>0</th>
+					</tr>
+					<tr>
+						<th>0 1</th>
+						<th>1</th>
+						<th>0</th>
+					</tr>
+					<tr>
+						<th>1 1</th>
+						<th>0</th>
+						<th>1</th>
+					</tr>
+					<tr>
+						<th>1 1 1</th>
+						<th>1</th>
+						<th>1</th>
+					</tr>
+				</table>
+            		</div>
+			<h3 class="w3-padding-large">
+				Subtraction
+			</h3>
+			<div class="w3-row w3-padding-large">
+				There are only 4 rules for this one: 
+				<br><br>
+				<table>
+					<tr>
+						<th>Inputs</th>
+						<th>Write</th>
+						<th>Take from next significant bit</th>
+					</tr>
+					<tr>
+						<th>0 0</th>
+						<th>0</th>
+						<th>0</th>
+					</tr>
+					<tr>
+						<th>1 0</th>
+						<th>1</th>
+						<th>0</th>
+					</tr>
+					<tr>
+						<th>0 1</th>
+						<th>1</th>
+						<th>1</th>
+					</tr>
+					<tr>
+						<th>1 1</th>
+						<th>0</th>
+						<th>0</th>
+					</tr>
+				</table>
+			</div>
+			<h3 class="w3-padding-large">
+				Multiplication
+			</h3>
+			<div class="w3-row w3-padding-large">
+				This one's a bit harder, there are 3 steps: 
+				<br><br>
+				<table>
+					<tr>
+						<th>Step number</th>
+						<th>Step</th>
+					</tr>
+					<tr>
+						<th>1</th>
+						<th>
+							Multiply out the right-most bit of the number we are multiplying by,
+							follow these rules:<br>
+							<br>
+							<table>
+								<tr>
+									<th>Inputs</th>
+									<th>Write</th>
+								</tr>
+								<tr>
+									<th>0 0</th>
+									<th>0</th>
+								</tr>
+								<tr>
+									<th>1 0</th>
+									<th>0</th>
+								</tr>
+								<tr>
+									<th>0 1</th>
+									<th>0</th>
+								</tr>
+								<tr>
+									<th>1 1</th>
+									<th>1</th>
+								</tr>
+							</table>
+							(table-ception!)<br><br>
+							For example:<br>
+							0110x<br>
+							__10<br>
+							- - - -<br>
+							0000<br>
+							____<br>
+							- - - -<br>
+							____<br>
+						</th>
+					</tr>
+					<tr>
+						<th>2</th>
+						<th>
+							Now we add a zero into the last column,<br>
+							<br>
+							For example:<br>
+							0110x<br>
+							__10<br>
+							- - - -<br>
+							0000<br>
+							___0<br>
+							- - - -<br>
+							____<br>
+							<br>
+							And do exactly the same thing for the second digit.<br>
+							<br>
+							For example:<br>
+							0110x<br>
+							__10<br>
+							- - - -<br>
+							0000<br>
+							1100<br>
+							- - - -<br>
+							____<br>
+							<br>
+							Continue repeating with the appropriate amount of 0s
+							for each of the digits of the number we are multiplying
+							by. (Because we only have two digits, we'll stop here.)
+						</th>
+					</tr>
+					<tr>
+						<th>3</th>
+						<th>
+							Now add all the digits together in the middle row with the following rules:<br>
+							<br>
+							<table>
+								<tr>
+									<th>Inputs</th>
+									<th>Write</th>
+									<th>Take from next significant bit</th>
+								</tr>
+								<tr>
+									<th>0 0</th>
+									<th>0</th>
+									<th>0</th>
+								</tr>
+								<tr>
+									<th>1 0</th>
+									<th>1</th>
+									<th>0</th>
+								</tr>
+								<tr>
+									<th>0 1</th>
+									<th>1</th>
+									<th>1</th>
+								</tr>
+								<tr>
+									<th>1 1</th>
+									<th>0</th>
+									<th>0</th>
+								</tr>
+							</table>
+							(table-ception! Again...)<br>
+							<br>
+							For example:<br>
+							0110x<br>
+							__10<br>
+							- - - -<br>
+							0000<br>
+							1100<br>
+							- - - -<br>
+							1100<br>
+						</th>
+					</tr>
+				</table>
+			</div>
+			I hope this page was informative, even if it's not useful in your situation... :/
+		</div>
+		<footer class="w3-center w3-padding-64" style="background-color: #0032a8; color: #ffffff">
+			<a href="#home" class="w3-button w3-white">
+				<i class="fa fa-arrow-up w3-margin-right"></i>
+				To the top
+			</a>
+			<div class="w3-xlarge w3-section">
+            			<a href="https://www.instagram.com/hydronesium/" style="text-decoration: none;">
+					<i class="fa fa-instagram w3-hover-opacity"></i>
+                		</a>
+                		<a href="https://www.youtube.com/channel/UCosxKKKPJk4aZlwF_EFe2pw" style="text-decoration: none;">
+					<i class="fa fa-youtube-play w3-hover-opacity"></i>
+                		</a>
+			</div>
+			<p>
+				Powered by
+				<a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank">
+					w3.css
+				</a>
+			</p>
+		</footer>
+		<script>
+			function onClick(element) {
+				document.getElementById("img01").src=element.src;
+				document.getElementById("modal01").style.display="block";
+				var captionText=document.getElementById("caption");
+				captionText.innerHTML=element.alt;
+			}
+			window.onscroll=function(){
+				myFunction()
+			};
+			function myFunction(){
+				var navbar=document.getElementById("myNavbar");
+				if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
+					navbar.className="w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+				}else{
+					navbar.className=navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+				}
+			}
+			function toggleFunction(){
+				var x=document.getElementById("navDemo");
+				if (x.className.indexOf("w3-show")==-1){
+					x.className +=" w3-show";
+				}else{
+					x.className=x.className.replace(" w3-show", "");
+				}
+			}
+            </script>
 	</body>
 </html>
