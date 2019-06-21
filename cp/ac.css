@@ -1,0 +1,614 @@
+/* Background colors */
+.ac-bg-red,.ac-bg-red-hover:hover{background-color:#F44336}
+.ac-bg-red-s9,.ac-bg-red-s9-hover:hover{background-color:#FFCDD2}
+.ac-bg-red-s8,.ac-bg-red-s8-hover:hover{background-color:#EF9A9A}
+.ac-bg-red-s7,.ac-bg-red-s7-hover:hover{background-color:#E57373}
+.ac-bg-red-s6,.ac-bg-red-s6-hover:hover{background-color:#EF5350}
+.ac-bg-red-s5,.ac-bg-red-s5-hover:hover{background-color:#F44336}
+.ac-bg-red-s4,.ac-bg-red-s4-hover:hover{background-color:#E53935}
+.ac-bg-red-s3,.ac-bg-red-s3-hover:hover{background-color:#D32F2F}
+.ac-bg-red-s2,.ac-bg-red-s2-hover:hover{background-color:#C62828}
+.ac-bg-red-s1,.ac-bg-red-s1-hover:hover{background-color:#B71C1C}
+.ac-bg-pink,.ac-bg-pink-hover:hover{background-color:#E91E63}
+.ac-bg-pink-s9,.ac-bg-pink-s9-hover:hover{background-color:#F8BBD0}
+.ac-bg-pink-s8,.ac-bg-pink-s8-hover:hover{background-color:#F48FB1}
+.ac-bg-pink-s7,.ac-bg-pink-s7-hover:hover{background-color:#F06292}
+.ac-bg-pink-s6,.ac-bg-pink-s6-hover:hover{background-color:#EC407A}
+.ac-bg-pink-s5,.ac-bg-pink-s5-hover:hover{background-color:#E91E63}
+.ac-bg-pink-s4,.ac-bg-pink-s4-hover:hover{background-color:#D81B60}
+.ac-bg-pink-s3,.ac-bg-pink-s3-hover:hover{background-color:#C2185B}
+.ac-bg-pink-s2,.ac-bg-pink-s2-hover:hover{background-color:#AD1457}
+.ac-bg-pink-s1,.ac-bg-pink-s1-hover:hover{background-color:#880E4F}
+.ac-bg-purple,.ac-bg-purple-hover:hover{background-color:#9C27B0}
+.ac-bg-purple-s9,.ac-bg-purple-s9-hover:hover{background-color:#E1BEE7}
+.ac-bg-purple-s8,.ac-bg-purple-s8-hover:hover{background-color:#CE93D8}
+.ac-bg-purple-s7,.ac-bg-purple-s7-hover:hover{background-color:#BA68C8}
+.ac-bg-purple-s6,.ac-bg-purple-s6-hover:hover{background-color:#AB47BC}
+.ac-bg-purple-s5,.ac-bg-purple-s5-hover:hover{background-color:#9C27B0}
+.ac-bg-purple-s4,.ac-bg-purple-s4-hover:hover{background-color:#8E24AA}
+.ac-bg-purple-s3,.ac-bg-purple-s3-hover:hover{background-color:#7B1FA2}
+.ac-bg-purple-s2,.ac-bg-purple-s2-hover:hover{background-color:#6A1B9A}
+.ac-bg-purple-s1,.ac-bg-purple-s1-hover:hover{background-color:#4A148C}
+.ac-bg-dpurple,.ac-bg-dpurple-hover:hover{background-color:#673AB7}
+.ac-bg-dpurple-s9,.ac-bg-dpurple-s9-hover:hover{background-color:#D1C4E9}
+.ac-bg-dpurple-s8,.ac-bg-dpurple-s8-hover:hover{background-color:#B39DDB}
+.ac-bg-dpurple-s7,.ac-bg-dpurple-s7-hover:hover{background-color:#9575CD}
+.ac-bg-dpurple-s6,.ac-bg-dpurple-s6-hover:hover{background-color:#7E57C2}
+.ac-bg-dpurple-s5,.ac-bg-dpurple-s5-hover:hover{background-color:#673AB7}
+.ac-bg-dpurple-s4,.ac-bg-dpurple-s4-hover:hover{background-color:#5E35B1}
+.ac-bg-dpurple-s3,.ac-bg-dpurple-s3-hover:hover{background-color:#512DA8}
+.ac-bg-dpurple-s2,.ac-bg-dpurple-s2-hover:hover{background-color:#4527A0}
+.ac-bg-dpurple-s1,.ac-bg-dpurple-s1-hover:hover{background-color:#311B92}
+.ac-bg-indigo,.ac-bg-indigo-hover:hover{background-color:#3F51B5}
+.ac-bg-indigo-s9,.ac-bg-indigo-s9-hover:hover{background-color:#C5CAE9}
+.ac-bg-indigo-s8,.ac-bg-indigo-s8-hover:hover{background-color:#9FA8DA}
+.ac-bg-indigo-s7,.ac-bg-indigo-s7-hover:hover{background-color:#7986CB}
+.ac-bg-indigo-s6,.ac-bg-indigo-s6-hover:hover{background-color:#5C6BC0}
+.ac-bg-indigo-s5,.ac-bg-indigo-s5-hover:hover{background-color:#3F51B5}
+.ac-bg-indigo-s4,.ac-bg-indigo-s4-hover:hover{background-color:#3949AB}
+.ac-bg-indigo-s3,.ac-bg-indigo-s3-hover:hover{background-color:#303F9F}
+.ac-bg-indigo-s2,.ac-bg-indigo-s2-hover:hover{background-color:#283593}
+.ac-bg-indigo-s1,.ac-bg-indigo-s1-hover:hover{background-color:#1A237E}
+.ac-bg-blue,.ac-bg-blue-hover:hover{background-color:#2196F3}
+.ac-bg-blue-s9,.ac-bg-blue-s9-hover:hover{background-color:#BBDEFB}
+.ac-bg-blue-s8,.ac-bg-blue-s8-hover:hover{background-color:#90CAF9}
+.ac-bg-blue-s7,.ac-bg-blue-s7-hover:hover{background-color:#64B5F6}
+.ac-bg-blue-s6,.ac-bg-blue-s6-hover:hover{background-color:#42A5F5}
+.ac-bg-blue-s5,.ac-bg-blue-s5-hover:hover{background-color:#2196F3}
+.ac-bg-blue-s4,.ac-bg-blue-s4-hover:hover{background-color:#1E88E5}
+.ac-bg-blue-s3,.ac-bg-blue-s3-hover:hover{background-color:#1976D2}
+.ac-bg-blue-s2,.ac-bg-blue-s2-hover:hover{background-color:#1565C0}
+.ac-bg-blue-s1,.ac-bg-blue-s1-hover:hover{background-color:#0D47A1}
+.ac-bg-lblue,.ac-bg-lblue-hover:hover{background-color:#03A9F4}
+.ac-bg-lblue-s9,.ac-bg-lblue-s9-hover:hover{background-color:#B3E5FC}
+.ac-bg-lblue-s8,.ac-bg-lblue-s8-hover:hover{background-color:#81D4FA}
+.ac-bg-lblue-s7,.ac-bg-lblue-s7-hover:hover{background-color:#4FC3F7}
+.ac-bg-lblue-s6,.ac-bg-lblue-s6-hover:hover{background-color:#29B6F6}
+.ac-bg-lblue-s5,.ac-bg-lblue-s5-hover:hover{background-color:#03A9F4}
+.ac-bg-lblue-s4,.ac-bg-lblue-s4-hover:hover{background-color:#039BE5}
+.ac-bg-lblue-s3,.ac-bg-lblue-s3-hover:hover{background-color:#0288D1}
+.ac-bg-lblue-s2,.ac-bg-lblue-s2-hover:hover{background-color:#0277BD}
+.ac-bg-lblue-s1,.ac-bg-lblue-s1-hover:hover{background-color:#01579B}
+.ac-bg-cyan,.ac-bg-cyan-hover:hover{background-color:#00BCD4}
+.ac-bg-cyan-s9,.ac-bg-cyan-s9-hover:hover{background-color:#B2EBF2}
+.ac-bg-cyan-s8,.ac-bg-cyan-s8-hover:hover{background-color:#80DEEA}
+.ac-bg-cyan-s7,.ac-bg-cyan-s7-hover:hover{background-color:#4DD0E1}
+.ac-bg-cyan-s6,.ac-bg-cyan-s6-hover:hover{background-color:#26C6DA}
+.ac-bg-cyan-s5,.ac-bg-cyan-s5-hover:hover{background-color:#00BCD4}
+.ac-bg-cyan-s4,.ac-bg-cyan-s4-hover:hover{background-color:#00ACC1}
+.ac-bg-cyan-s3,.ac-bg-cyan-s3-hover:hover{background-color:#0097A7}
+.ac-bg-cyan-s2,.ac-bg-cyan-s2-hover:hover{background-color:#00838F}
+.ac-bg-cyan-s1,.ac-bg-cyan-s1-hover:hover{background-color:#006064}
+.ac-bg-teal,.ac-bg-teal-hover:hover{background-color:#009688}
+.ac-bg-teal-s9,.ac-bg-teal-s9-hover:hover{background-color:#B2DFDB}
+.ac-bg-teal-s8,.ac-bg-teal-s8-hover:hover{background-color:#80CBC4}
+.ac-bg-teal-s7,.ac-bg-teal-s7-hover:hover{background-color:#4DB6AC}
+.ac-bg-teal-s6,.ac-bg-teal-s6-hover:hover{background-color:#26A69A}
+.ac-bg-teal-s5,.ac-bg-teal-s5-hover:hover{background-color:#009688}
+.ac-bg-teal-s4,.ac-bg-teal-s4-hover:hover{background-color:#00897B}
+.ac-bg-teal-s3,.ac-bg-teal-s3-hover:hover{background-color:#00796B}
+.ac-bg-teal-s2,.ac-bg-teal-s2-hover:hover{background-color:#00695C}
+.ac-bg-teal-s1,.ac-bg-teal-s1-hover:hover{background-color:#004D40}
+.ac-bg-green,.ac-bg-green-hover:hover{background-color:#4CAF50}
+.ac-bg-green-s9,.ac-bg-green-s9-hover:hover{background-color:#C8E6C9}
+.ac-bg-green-s8,.ac-bg-green-s8-hover:hover{background-color:#A5D6A7}
+.ac-bg-green-s7,.ac-bg-green-s7-hover:hover{background-color:#81C784}
+.ac-bg-green-s6,.ac-bg-green-s6-hover:hover{background-color:#66BB6A}
+.ac-bg-green-s5,.ac-bg-green-s5-hover:hover{background-color:#4CAF50}
+.ac-bg-green-s4,.ac-bg-green-s4-hover:hover{background-color:#43A047}
+.ac-bg-green-s3,.ac-bg-green-s3-hover:hover{background-color:#388E3C}
+.ac-bg-green-s2,.ac-bg-green-s2-hover:hover{background-color:#2E7D32}
+.ac-bg-green-s1,.ac-bg-green-s1-hover:hover{background-color:#1B5E20}
+.ac-bg-lgreen,.ac-bg-lgreen-hover:hover{background-color:#8BC34A}
+.ac-bg-lgreen-s9,.ac-bg-lgreen-s9-hover:hover{background-color:#DCEDC8}
+.ac-bg-lgreen-s8,.ac-bg-lgreen-s8-hover:hover{background-color:#C5E1A5}
+.ac-bg-lgreen-s7,.ac-bg-lgreen-s7-hover:hover{background-color:#AED581}
+.ac-bg-lgreen-s6,.ac-bg-lgreen-s6-hover:hover{background-color:#9CCC65}
+.ac-bg-lgreen-s5,.ac-bg-lgreen-s5-hover:hover{background-color:#8BC34A}
+.ac-bg-lgreen-s4,.ac-bg-lgreen-s4-hover:hover{background-color:#7CB342}
+.ac-bg-lgreen-s3,.ac-bg-lgreen-s3-hover:hover{background-color:#689F38}
+.ac-bg-lgreen-s2,.ac-bg-lgreen-s2-hover:hover{background-color:#558B2F}
+.ac-bg-lgreen-s1,.ac-bg-lgreen-s1-hover:hover{background-color:#33691E}
+.ac-bg-lime,.ac-bg-lime-hover:hover{background-color:#CDDC39}
+.ac-bg-lime-s9,.ac-bg-lime-s9-hover:hover{background-color:#F0F4C3}
+.ac-bg-lime-s8,.ac-bg-lime-s8-hover:hover{background-color:#E6EE9C}
+.ac-bg-lime-s7,.ac-bg-lime-s7-hover:hover{background-color:#DCE775}
+.ac-bg-lime-s6,.ac-bg-lime-s6-hover:hover{background-color:#D4E157}
+.ac-bg-lime-s5,.ac-bg-lime-s5-hover:hover{background-color:#CDDC39}
+.ac-bg-lime-s4,.ac-bg-lime-s4-hover:hover{background-color:#C0CA33}
+.ac-bg-lime-s3,.ac-bg-lime-s3-hover:hover{background-color:#AFB42B}
+.ac-bg-lime-s2,.ac-bg-lime-s2-hover:hover{background-color:#9E9D24}
+.ac-bg-lime-s1,.ac-bg-lime-s1-hover:hover{background-color:#827717}
+.ac-bg-yellow,.ac-bg-yellow-hover:hover{background-color:#FFEB3B}
+.ac-bg-yellow-s9,.ac-bg-yellow-s9-hover:hover{background-color:#FFF9C4}
+.ac-bg-yellow-s8,.ac-bg-yellow-s8-hover:hover{background-color:#FFF59D}
+.ac-bg-yellow-s7,.ac-bg-yellow-s7-hover:hover{background-color:#FFF176}
+.ac-bg-yellow-s6,.ac-bg-yellow-s6-hover:hover{background-color:#FFEE58}
+.ac-bg-yellow-s5,.ac-bg-yellow-s5-hover:hover{background-color:#FFEB3B}
+.ac-bg-yellow-s4,.ac-bg-yellow-s4-hover:hover{background-color:#FDD835}
+.ac-bg-yellow-s3,.ac-bg-yellow-s3-hover:hover{background-color:#FBC02D}
+.ac-bg-yellow-s2,.ac-bg-yellow-s2-hover:hover{background-color:#F9A825}
+.ac-bg-yellow-s1,.ac-bg-yellow-s1-hover:hover{background-color:#F57F17}
+.ac-bg-amber,.ac-bg-amber-hover:hover{background-color:#FFC107}
+.ac-bg-amber-s9,.ac-bg-amber-s9-hover:hover{background-color:#FFECB3}
+.ac-bg-amber-s8,.ac-bg-amber-s8-hover:hover{background-color:#FFE082}
+.ac-bg-amber-s7,.ac-bg-amber-s7-hover:hover{background-color:#FFD54F}
+.ac-bg-amber-s6,.ac-bg-amber-s6-hover:hover{background-color:#FFCA28}
+.ac-bg-amber-s5,.ac-bg-amber-s5-hover:hover{background-color:#FFC107}
+.ac-bg-amber-s4,.ac-bg-amber-s4-hover:hover{background-color:#FFB300}
+.ac-bg-amber-s3,.ac-bg-amber-s3-hover:hover{background-color:#FFA000}
+.ac-bg-amber-s2,.ac-bg-amber-s2-hover:hover{background-color:#FF8F00}
+.ac-bg-amber-s1,.ac-bg-amber-s1-hover:hover{background-color:#FF6F00}
+.ac-bg-orange,.ac-bg-orange-hover:hover{background-color:#FF9800}
+.ac-bg-orange-s9,.ac-bg-orange-s9-hover:hover{background-color:#FFE0B2}
+.ac-bg-orange-s8,.ac-bg-orange-s8-hover:hover{background-color:#FFCC80}
+.ac-bg-orange-s7,.ac-bg-orange-s7-hover:hover{background-color:#FFB74D}
+.ac-bg-orange-s6,.ac-bg-orange-s6-hover:hover{background-color:#FFA726}
+.ac-bg-orange-s5,.ac-bg-orange-s5-hover:hover{background-color:#FF9800}
+.ac-bg-orange-s4,.ac-bg-orange-s4-hover:hover{background-color:#FB8C00}
+.ac-bg-orange-s3,.ac-bg-orange-s3-hover:hover{background-color:#F57C00}
+.ac-bg-orange-s2,.ac-bg-orange-s2-hover:hover{background-color:#EF6C00}
+.ac-bg-orange-s1,.ac-bg-orange-s1-hover:hover{background-color:#E65100}
+.ac-bg-dorange,.ac-bg-dorange-hover:hover{background-color:#FF5722}
+.ac-bg-dorange-s9,.ac-bg-dorange-s9-hover:hover{background-color:#FFCCBC}
+.ac-bg-dorange-s8,.ac-bg-dorange-s8-hover:hover{background-color:#FFAB91}
+.ac-bg-dorange-s7,.ac-bg-dorange-s7-hover:hover{background-color:#FF8A65}
+.ac-bg-dorange-s6,.ac-bg-dorange-s6-hover:hover{background-color:#FF7043}
+.ac-bg-dorange-s5,.ac-bg-dorange-s5-hover:hover{background-color:#FF5722}
+.ac-bg-dorange-s4,.ac-bg-dorange-s4-hover:hover{background-color:#F4511E}
+.ac-bg-dorange-s3,.ac-bg-dorange-s3-hover:hover{background-color:#E64A19}
+.ac-bg-dorange-s2,.ac-bg-dorange-s2-hover:hover{background-color:#D84315}
+.ac-bg-dorange-s1,.ac-bg-dorange-s1-hover:hover{background-color:#BF360C}
+.ac-bg-brown,.ac-bg-brown-hover:hover{background-color:#795548}
+.ac-bg-brown-s9,.ac-bg-brown-s9-hover:hover{background-color:#D7CCC8}
+.ac-bg-brown-s8,.ac-bg-brown-s8-hover:hover{background-color:#BCAAA4}
+.ac-bg-brown-s7,.ac-bg-brown-s7-hover:hover{background-color:#A1887F}
+.ac-bg-brown-s6,.ac-bg-brown-s6-hover:hover{background-color:#8D6E63}
+.ac-bg-brown-s5,.ac-bg-brown-s5-hover:hover{background-color:#795548}
+.ac-bg-brown-s4,.ac-bg-brown-s4-hover:hover{background-color:#6D4C41}
+.ac-bg-brown-s3,.ac-bg-brown-s3-hover:hover{background-color:#5D4037}
+.ac-bg-brown-s2,.ac-bg-brown-s2-hover:hover{background-color:#4E342E}
+.ac-bg-brown-s1,.ac-bg-brown-s1-hover:hover{background-color:#3E2723}
+.ac-bg-bluegray,.ac-bg-bluegray-hover:hover{background-color:#607D8B}
+.ac-bg-bluegray-s9,.ac-bg-bluegray-s9-hover:hover{background-color:#CFD8DC}
+.ac-bg-bluegray-s8,.ac-bg-bluegray-s8-hover:hover{background-color:#B0BEC5}
+.ac-bg-bluegray-s7,.ac-bg-bluegray-s7-hover:hover{background-color:#90A4AE}
+.ac-bg-bluegray-s6,.ac-bg-bluegray-s6-hover:hover{background-color:#78909C}
+.ac-bg-bluegray-s5,.ac-bg-bluegray-s5-hover:hover{background-color:#607D8B}
+.ac-bg-bluegray-s4,.ac-bg-bluegray-s4-hover:hover{background-color:#546E7A}
+.ac-bg-bluegray-s3,.ac-bg-bluegray-s3-hover:hover{background-color:#455A64}
+.ac-bg-bluegray-s2,.ac-bg-bluegray-s2-hover:hover{background-color:#37474F}
+.ac-bg-bluegray-s1,.ac-bg-bluegray-s1-hover:hover{background-color:#263238}
+.ac-bg-gray,.ac-bg-s,.ac-bg-gray-hover:hover{background-color:#9E9E9E}
+.ac-bg-gray-s9,.ac-bg-s9,.ac-bg-gray-s9-hover:hover,.ac-bg-s9-hover:hover{background-color:#F5F5F5}
+.ac-bg-gray-s8,.ac-bg-s8,.ac-bg-gray-s8-hover:hover,.ac-bg-s8-hover:hover{background-color:#EEEEEE}
+.ac-bg-gray-s7,.ac-bg-s7,.ac-bg-gray-s7-hover:hover,.ac-bg-s7-hover:hover{background-color:#E0E0E0}
+.ac-bg-gray-s6,.ac-bg-s6,.ac-bg-gray-s6-hover:hover,.ac-bg-s6-hover:hover{background-color:#BDBDBD}
+.ac-bg-gray-s5,.ac-bg-s5,.ac-bg-gray-s5-hover:hover,.ac-bg-s5-hover:hover{background-color:#9E9E9E}
+.ac-bg-gray-s4,.ac-bg-s4,.ac-bg-gray-s4-hover:hover,.ac-bg-s4-hover:hover{background-color:#757575}
+.ac-bg-gray-s3,.ac-bg-s3,.ac-bg-gray-s3-hover:hover,.ac-bg-s3-hover:hover{background-color:#616161}
+.ac-bg-gray-s2,.ac-bg-s2,.ac-bg-gray-s2-hover:hover,.ac-bg-s2-hover:hover{background-color:#424242}
+.ac-bg-gray-s1,.ac-bg-s1,.ac-bg-gray-s1-hover:hover,.ac-bg-s1-hover:hover{background-color:#212121}
+.ac-bg-black,.ac-bg-rgb,.ac-bg-black-hover:hover,.ac-bg-rgb-hover:hover{background-color:#000000}
+.ac-bg-white,.ac-bg-RGB,.ac-bg-white-hover:hover,.ac-bg-RGB-hover:hover{background-color:#FFFFFF}
+.ac-bg-Rgb,.ac-bg-Rgb-hover:hover{background-color:#FF0000}
+.ac-bg-RGb,.ac-bg-RGb-hover:hover{background-color:#FFFF00}
+.ac-bg-rGb,.ac-bg-rGb-hover:hover{background-color:#00FF00}
+.ac-bg-rGB,.ac-bg-rGB-hover:hover{background-color:#00FFFF}
+.ac-bg-rgB,.ac-bg-rgB-hover:hover{background-color:#0000FF}
+.ac-bg-RgB,.ac-bg-RgB-hover:hover{background-color:#FF00FF}
+
+/* Text colors */
+.ac-txt-red,.ac-txt-red-hover:hover{color:#F44336}
+.ac-txt-red-s9,.ac-txt-red-s9-hover:hover{color:#FFCDD2}
+.ac-txt-red-s8,.ac-txt-red-s8-hover:hover{color:#EF9A9A}
+.ac-txt-red-s7,.ac-txt-red-s7-hover:hover{color:#E57373}
+.ac-txt-red-s6,.ac-txt-red-s6-hover:hover{color:#EF5350}
+.ac-txt-red-s5,.ac-txt-red-s5-hover:hover{color:#F44336}
+.ac-txt-red-s4,.ac-txt-red-s4-hover:hover{color:#E53935}
+.ac-txt-red-s3,.ac-txt-red-s3-hover:hover{color:#D32F2F}
+.ac-txt-red-s2,.ac-txt-red-s2-hover:hover{color:#C62828}
+.ac-txt-red-s1,.ac-txt-red-s1-hover:hover{color:#B71C1C}
+.ac-txt-pink,.ac-txt-pink-hover:hover{color:#E91E63}
+.ac-txt-pink-s9,.ac-txt-pink-s9-hover:hover{color:#F8BBD0}
+.ac-txt-pink-s8,.ac-txt-pink-s8-hover:hover{color:#F48FB1}
+.ac-txt-pink-s7,.ac-txt-pink-s7-hover:hover{color:#F06292}
+.ac-txt-pink-s6,.ac-txt-pink-s6-hover:hover{color:#EC407A}
+.ac-txt-pink-s5,.ac-txt-pink-s5-hover:hover{color:#E91E63}
+.ac-txt-pink-s4,.ac-txt-pink-s4-hover:hover{color:#D81B60}
+.ac-txt-pink-s3,.ac-txt-pink-s3-hover:hover{color:#C2185B}
+.ac-txt-pink-s2,.ac-txt-pink-s2-hover:hover{color:#AD1457}
+.ac-txt-pink-s1,.ac-txt-pink-s1-hover:hover{color:#880E4F}
+.ac-txt-purple,.ac-txt-purple-hover:hover{color:#9C27B0}
+.ac-txt-purple-s9,.ac-txt-purple-s9-hover:hover{color:#E1BEE7}
+.ac-txt-purple-s8,.ac-txt-purple-s8-hover:hover{color:#CE93D8}
+.ac-txt-purple-s7,.ac-txt-purple-s7-hover:hover{color:#BA68C8}
+.ac-txt-purple-s6,.ac-txt-purple-s6-hover:hover{color:#AB47BC}
+.ac-txt-purple-s5,.ac-txt-purple-s5-hover:hover{color:#9C27B0}
+.ac-txt-purple-s4,.ac-txt-purple-s4-hover:hover{color:#8E24AA}
+.ac-txt-purple-s3,.ac-txt-purple-s3-hover:hover{color:#7B1FA2}
+.ac-txt-purple-s2,.ac-txt-purple-s2-hover:hover{color:#6A1B9A}
+.ac-txt-purple-s1,.ac-txt-purple-s1-hover:hover{color:#4A148C}
+.ac-txt-dpurple,.ac-txt-dpurple-hover:hover{color:#673AB7}
+.ac-txt-dpurple-s9,.ac-txt-dpurple-s9-hover:hover{color:#D1C4E9}
+.ac-txt-dpurple-s8,.ac-txt-dpurple-s8-hover:hover{color:#B39DDB}
+.ac-txt-dpurple-s7,.ac-txt-dpurple-s7-hover:hover{color:#9575CD}
+.ac-txt-dpurple-s6,.ac-txt-dpurple-s6-hover:hover{color:#7E57C2}
+.ac-txt-dpurple-s5,.ac-txt-dpurple-s5-hover:hover{color:#673AB7}
+.ac-txt-dpurple-s4,.ac-txt-dpurple-s4-hover:hover{color:#5E35B1}
+.ac-txt-dpurple-s3,.ac-txt-dpurple-s3-hover:hover{color:#512DA8}
+.ac-txt-dpurple-s2,.ac-txt-dpurple-s2-hover:hover{color:#4527A0}
+.ac-txt-dpurple-s1,.ac-txt-dpurple-s1-hover:hover{color:#311B92}
+.ac-txt-indigo,.ac-txt-indigo-hover:hover{color:#3F51B5}
+.ac-txt-indigo-s9,.ac-txt-indigo-s9-hover:hover{color:#C5CAE9}
+.ac-txt-indigo-s8,.ac-txt-indigo-s8-hover:hover{color:#9FA8DA}
+.ac-txt-indigo-s7,.ac-txt-indigo-s7-hover:hover{color:#7986CB}
+.ac-txt-indigo-s6,.ac-txt-indigo-s6-hover:hover{color:#5C6BC0}
+.ac-txt-indigo-s5,.ac-txt-indigo-s5-hover:hover{color:#3F51B5}
+.ac-txt-indigo-s4,.ac-txt-indigo-s4-hover:hover{color:#3949AB}
+.ac-txt-indigo-s3,.ac-txt-indigo-s3-hover:hover{color:#303F9F}
+.ac-txt-indigo-s2,.ac-txt-indigo-s2-hover:hover{color:#283593}
+.ac-txt-indigo-s1,.ac-txt-indigo-s1-hover:hover{color:#1A237E}
+.ac-txt-blue,.ac-txt-blue-hover:hover{color:#2196F3}
+.ac-txt-blue-s9,.ac-txt-blue-s9-hover:hover{color:#BBDEFB}
+.ac-txt-blue-s8,.ac-txt-blue-s8-hover:hover{color:#90CAF9}
+.ac-txt-blue-s7,.ac-txt-blue-s7-hover:hover{color:#64B5F6}
+.ac-txt-blue-s6,.ac-txt-blue-s6-hover:hover{color:#42A5F5}
+.ac-txt-blue-s5,.ac-txt-blue-s5-hover:hover{color:#2196F3}
+.ac-txt-blue-s4,.ac-txt-blue-s4-hover:hover{color:#1E88E5}
+.ac-txt-blue-s3,.ac-txt-blue-s3-hover:hover{color:#1976D2}
+.ac-txt-blue-s2,.ac-txt-blue-s2-hover:hover{color:#1565C0}
+.ac-txt-blue-s1,.ac-txt-blue-s1-hover:hover{color:#0D47A1}
+.ac-txt-lblue,.ac-txt-lblue-hover:hover{color:#03A9F4}
+.ac-txt-lblue-s9,.ac-txt-lblue-s9-hover:hover{color:#B3E5FC}
+.ac-txt-lblue-s8,.ac-txt-lblue-s8-hover:hover{color:#81D4FA}
+.ac-txt-lblue-s7,.ac-txt-lblue-s7-hover:hover{color:#4FC3F7}
+.ac-txt-lblue-s6,.ac-txt-lblue-s6-hover:hover{color:#29B6F6}
+.ac-txt-lblue-s5,.ac-txt-lblue-s5-hover:hover{color:#03A9F4}
+.ac-txt-lblue-s4,.ac-txt-lblue-s4-hover:hover{color:#039BE5}
+.ac-txt-lblue-s3,.ac-txt-lblue-s3-hover:hover{color:#0288D1}
+.ac-txt-lblue-s2,.ac-txt-lblue-s2-hover:hover{color:#0277BD}
+.ac-txt-lblue-s1,.ac-txt-lblue-s1-hover:hover{color:#01579B}
+.ac-txt-cyan,.ac-txt-cyan-hover:hover{color:#00BCD4}
+.ac-txt-cyan-s9,.ac-txt-cyan-s9-hover:hover{color:#B2EBF2}
+.ac-txt-cyan-s8,.ac-txt-cyan-s8-hover:hover{color:#80DEEA}
+.ac-txt-cyan-s7,.ac-txt-cyan-s7-hover:hover{color:#4DD0E1}
+.ac-txt-cyan-s6,.ac-txt-cyan-s6-hover:hover{color:#26C6DA}
+.ac-txt-cyan-s5,.ac-txt-cyan-s5-hover:hover{color:#00BCD4}
+.ac-txt-cyan-s4,.ac-txt-cyan-s4-hover:hover{color:#00ACC1}
+.ac-txt-cyan-s3,.ac-txt-cyan-s3-hover:hover{color:#0097A7}
+.ac-txt-cyan-s2,.ac-txt-cyan-s2-hover:hover{color:#00838F}
+.ac-txt-cyan-s1,.ac-txt-cyan-s1-hover:hover{color:#006064}
+.ac-txt-teal,.ac-txt-teal-hover:hover{color:#009688}
+.ac-txt-teal-s9,.ac-txt-teal-s9-hover:hover{color:#B2DFDB}
+.ac-txt-teal-s8,.ac-txt-teal-s8-hover:hover{color:#80CBC4}
+.ac-txt-teal-s7,.ac-txt-teal-s7-hover:hover{color:#4DB6AC}
+.ac-txt-teal-s6,.ac-txt-teal-s6-hover:hover{color:#26A69A}
+.ac-txt-teal-s5,.ac-txt-teal-s5-hover:hover{color:#009688}
+.ac-txt-teal-s4,.ac-txt-teal-s4-hover:hover{color:#00897B}
+.ac-txt-teal-s3,.ac-txt-teal-s3-hover:hover{color:#00796B}
+.ac-txt-teal-s2,.ac-txt-teal-s2-hover:hover{color:#00695C}
+.ac-txt-teal-s1,.ac-txt-teal-s1-hover:hover{color:#004D40}
+.ac-txt-green,.ac-txt-green-hover:hover{color:#4CAF50}
+.ac-txt-green-s9,.ac-txt-green-s9-hover:hover{color:#C8E6C9}
+.ac-txt-green-s8,.ac-txt-green-s8-hover:hover{color:#A5D6A7}
+.ac-txt-green-s7,.ac-txt-green-s7-hover:hover{color:#81C784}
+.ac-txt-green-s6,.ac-txt-green-s6-hover:hover{color:#66BB6A}
+.ac-txt-green-s5,.ac-txt-green-s5-hover:hover{color:#4CAF50}
+.ac-txt-green-s4,.ac-txt-green-s4-hover:hover{color:#43A047}
+.ac-txt-green-s3,.ac-txt-green-s3-hover:hover{color:#388E3C}
+.ac-txt-green-s2,.ac-txt-green-s2-hover:hover{color:#2E7D32}
+.ac-txt-green-s1,.ac-txt-green-s1-hover:hover{color:#1B5E20}
+.ac-txt-lgreen,.ac-txt-lgreen-hover:hover{color:#8BC34A}
+.ac-txt-lgreen-s9,.ac-txt-lgreen-s9-hover:hover{color:#DCEDC8}
+.ac-txt-lgreen-s8,.ac-txt-lgreen-s8-hover:hover{color:#C5E1A5}
+.ac-txt-lgreen-s7,.ac-txt-lgreen-s7-hover:hover{color:#AED581}
+.ac-txt-lgreen-s6,.ac-txt-lgreen-s6-hover:hover{color:#9CCC65}
+.ac-txt-lgreen-s5,.ac-txt-lgreen-s5-hover:hover{color:#8BC34A}
+.ac-txt-lgreen-s4,.ac-txt-lgreen-s4-hover:hover{color:#7CB342}
+.ac-txt-lgreen-s3,.ac-txt-lgreen-s3-hover:hover{color:#689F38}
+.ac-txt-lgreen-s2,.ac-txt-lgreen-s2-hover:hover{color:#558B2F}
+.ac-txt-lgreen-s1,.ac-txt-lgreen-s1-hover:hover{color:#33691E}
+.ac-txt-lime,.ac-txt-lime-hover:hover{color:#CDDC39}
+.ac-txt-lime-s9,.ac-txt-lime-s9-hover:hover{color:#F0F4C3}
+.ac-txt-lime-s8,.ac-txt-lime-s8-hover:hover{color:#E6EE9C}
+.ac-txt-lime-s7,.ac-txt-lime-s7-hover:hover{color:#DCE775}
+.ac-txt-lime-s6,.ac-txt-lime-s6-hover:hover{color:#D4E157}
+.ac-txt-lime-s5,.ac-txt-lime-s5-hover:hover{color:#CDDC39}
+.ac-txt-lime-s4,.ac-txt-lime-s4-hover:hover{color:#C0CA33}
+.ac-txt-lime-s3,.ac-txt-lime-s3-hover:hover{color:#AFB42B}
+.ac-txt-lime-s2,.ac-txt-lime-s2-hover:hover{color:#9E9D24}
+.ac-txt-lime-s1,.ac-txt-lime-s1-hover:hover{color:#827717}
+.ac-txt-yellow,.ac-txt-yellow-hover:hover{color:#FFEB3B}
+.ac-txt-yellow-s9,.ac-txt-yellow-s9-hover:hover{color:#FFF9C4}
+.ac-txt-yellow-s8,.ac-txt-yellow-s8-hover:hover{color:#FFF59D}
+.ac-txt-yellow-s7,.ac-txt-yellow-s7-hover:hover{color:#FFF176}
+.ac-txt-yellow-s6,.ac-txt-yellow-s6-hover:hover{color:#FFEE58}
+.ac-txt-yellow-s5,.ac-txt-yellow-s5-hover:hover{color:#FFEB3B}
+.ac-txt-yellow-s4,.ac-txt-yellow-s4-hover:hover{color:#FDD835}
+.ac-txt-yellow-s3,.ac-txt-yellow-s3-hover:hover{color:#FBC02D}
+.ac-txt-yellow-s2,.ac-txt-yellow-s2-hover:hover{color:#F9A825}
+.ac-txt-yellow-s1,.ac-txt-yellow-s1-hover:hover{color:#F57F17}
+.ac-txt-amber,.ac-txt-amber-hover:hover{color:#FFC107}
+.ac-txt-amber-s9,.ac-txt-amber-s9-hover:hover{color:#FFECB3}
+.ac-txt-amber-s8,.ac-txt-amber-s8-hover:hover{color:#FFE082}
+.ac-txt-amber-s7,.ac-txt-amber-s7-hover:hover{color:#FFD54F}
+.ac-txt-amber-s6,.ac-txt-amber-s6-hover:hover{color:#FFCA28}
+.ac-txt-amber-s5,.ac-txt-amber-s5-hover:hover{color:#FFC107}
+.ac-txt-amber-s4,.ac-txt-amber-s4-hover:hover{color:#FFB300}
+.ac-txt-amber-s3,.ac-txt-amber-s3-hover:hover{color:#FFA000}
+.ac-txt-amber-s2,.ac-txt-amber-s2-hover:hover{color:#FF8F00}
+.ac-txt-amber-s1,.ac-txt-amber-s1-hover:hover{color:#FF6F00}
+.ac-txt-orange,.ac-txt-orange-hover:hover{color:#FF9800}
+.ac-txt-orange-s9,.ac-txt-orange-s9-hover:hover{color:#FFE0B2}
+.ac-txt-orange-s8,.ac-txt-orange-s8-hover:hover{color:#FFCC80}
+.ac-txt-orange-s7,.ac-txt-orange-s7-hover:hover{color:#FFB74D}
+.ac-txt-orange-s6,.ac-txt-orange-s6-hover:hover{color:#FFA726}
+.ac-txt-orange-s5,.ac-txt-orange-s5-hover:hover{color:#FF9800}
+.ac-txt-orange-s4,.ac-txt-orange-s4-hover:hover{color:#FB8C00}
+.ac-txt-orange-s3,.ac-txt-orange-s3-hover:hover{color:#F57C00}
+.ac-txt-orange-s2,.ac-txt-orange-s2-hover:hover{color:#EF6C00}
+.ac-txt-orange-s1,.ac-txt-orange-s1-hover:hover{color:#E65100}
+.ac-txt-dorange,.ac-txt-dorange-hover:hover{color:#FF5722}
+.ac-txt-dorange-s9,.ac-txt-dorange-s9-hover:hover{color:#FFCCBC}
+.ac-txt-dorange-s8,.ac-txt-dorange-s8-hover:hover{color:#FFAB91}
+.ac-txt-dorange-s7,.ac-txt-dorange-s7-hover:hover{color:#FF8A65}
+.ac-txt-dorange-s6,.ac-txt-dorange-s6-hover:hover{color:#FF7043}
+.ac-txt-dorange-s5,.ac-txt-dorange-s5-hover:hover{color:#FF5722}
+.ac-txt-dorange-s4,.ac-txt-dorange-s4-hover:hover{color:#F4511E}
+.ac-txt-dorange-s3,.ac-txt-dorange-s3-hover:hover{color:#E64A19}
+.ac-txt-dorange-s2,.ac-txt-dorange-s2-hover:hover{color:#D84315}
+.ac-txt-dorange-s1,.ac-txt-dorange-s1-hover:hover{color:#BF360C}
+.ac-txt-brown,.ac-txt-brown-hover:hover{color:#795548}
+.ac-txt-brown-s9,.ac-txt-brown-s9-hover:hover{color:#D7CCC8}
+.ac-txt-brown-s8,.ac-txt-brown-s8-hover:hover{color:#BCAAA4}
+.ac-txt-brown-s7,.ac-txt-brown-s7-hover:hover{color:#A1887F}
+.ac-txt-brown-s6,.ac-txt-brown-s6-hover:hover{color:#8D6E63}
+.ac-txt-brown-s5,.ac-txt-brown-s5-hover:hover{color:#795548}
+.ac-txt-brown-s4,.ac-txt-brown-s4-hover:hover{color:#6D4C41}
+.ac-txt-brown-s3,.ac-txt-brown-s3-hover:hover{color:#5D4037}
+.ac-txt-brown-s2,.ac-txt-brown-s2-hover:hover{color:#4E342E}
+.ac-txt-brown-s1,.ac-txt-brown-s1-hover:hover{color:#3E2723}
+.ac-txt-bluegray,.ac-txt-bluegray-hover:hover{color:#607D8B}
+.ac-txt-bluegray-s9,.ac-txt-bluegray-s9-hover:hover{color:#CFD8DC}
+.ac-txt-bluegray-s8,.ac-txt-bluegray-s8-hover:hover{color:#B0BEC5}
+.ac-txt-bluegray-s7,.ac-txt-bluegray-s7-hover:hover{color:#90A4AE}
+.ac-txt-bluegray-s6,.ac-txt-bluegray-s6-hover:hover{color:#78909C}
+.ac-txt-bluegray-s5,.ac-txt-bluegray-s5-hover:hover{color:#607D8B}
+.ac-txt-bluegray-s4,.ac-txt-bluegray-s4-hover:hover{color:#546E7A}
+.ac-txt-bluegray-s3,.ac-txt-bluegray-s3-hover:hover{color:#455A64}
+.ac-txt-bluegray-s2,.ac-txt-bluegray-s2-hover:hover{color:#37474F}
+.ac-txt-bluegray-s1,.ac-txt-bluegray-s1-hover:hover{color:#263238}
+.ac-txt-gray,.ac-txt-s,.ac-txt-gray-hover:hover{color:#9E9E9E}
+.ac-txt-gray-s9,.ac-txt-s9,.ac-txt-gray-s9-hover:hover,.ac-txt-s9-hover:hover{color:#F5F5F5}
+.ac-txt-gray-s8,.ac-txt-s8,.ac-txt-gray-s8-hover:hover,.ac-txt-s8-hover:hover{color:#EEEEEE}
+.ac-txt-gray-s7,.ac-txt-s7,.ac-txt-gray-s7-hover:hover,.ac-txt-s7-hover:hover{color:#E0E0E0}
+.ac-txt-gray-s6,.ac-txt-s6,.ac-txt-gray-s6-hover:hover,.ac-txt-s6-hover:hover{color:#BDBDBD}
+.ac-txt-gray-s5,.ac-txt-s5,.ac-txt-gray-s5-hover:hover,.ac-txt-s5-hover:hover{color:#9E9E9E}
+.ac-txt-gray-s4,.ac-txt-s4,.ac-txt-gray-s4-hover:hover,.ac-txt-s4-hover:hover{color:#757575}
+.ac-txt-gray-s3,.ac-txt-s3,.ac-txt-gray-s3-hover:hover,.ac-txt-s3-hover:hover{color:#616161}
+.ac-txt-gray-s2,.ac-txt-s2,.ac-txt-gray-s2-hover:hover,.ac-txt-s2-hover:hover{color:#424242}
+.ac-txt-gray-s1,.ac-txt-s1,.ac-txt-gray-s1-hover:hover,.ac-txt-s1-hover:hover{color:#212121}
+.ac-txt-black,.ac-txt-rgb,.ac-txt-black-hover:hover,.ac-txt-rgb-hover:hover{color:#000000}
+.ac-txt-white,.ac-txt-RGB,.ac-txt-white-hover:hover,.ac-txt-RGB-hover:hover{color:#FFFFFF}
+.ac-txt-Rgb,.ac-txt-Rgb-hover:hover{color:#FF0000}
+.ac-txt-RGb,.ac-txt-RGb-hover:hover{color:#FFFF00}
+.ac-txt-rGb,.ac-txt-rGb-hover:hover{color:#00FF00}
+.ac-txt-rGB,.ac-txt-rGB-hover:hover{color:#00FFFF}
+.ac-txt-rgB,.ac-txt-rgB-hover:hover{color:#0000FF}
+.ac-txt-RgB,.ac-txt-RgB-hover:hover{color:#FF00FF}
+
+/* Border colors */
+.ac-bdr-red,.ac-bdr-red-hover:hover{border:solid #F44336}
+.ac-bdr-red-s9,.ac-bdr-red-s9-hover:hover{border:solid #FFCDD2}
+.ac-bdr-red-s8,.ac-bdr-red-s8-hover:hover{border:solid #EF9A9A}
+.ac-bdr-red-s7,.ac-bdr-red-s7-hover:hover{border:solid #E57373}
+.ac-bdr-red-s6,.ac-bdr-red-s6-hover:hover{border:solid #EF5350}
+.ac-bdr-red-s5,.ac-bdr-red-s5-hover:hover{border:solid #F44336}
+.ac-bdr-red-s4,.ac-bdr-red-s4-hover:hover{border:solid #E53935}
+.ac-bdr-red-s3,.ac-bdr-red-s3-hover:hover{border:solid #D32F2F}
+.ac-bdr-red-s2,.ac-bdr-red-s2-hover:hover{border:solid #C62828}
+.ac-bdr-red-s1,.ac-bdr-red-s1-hover:hover{border:solid #B71C1C}
+.ac-bdr-pink,.ac-bdr-pink-hover:hover{border:solid #E91E63}
+.ac-bdr-pink-s9,.ac-bdr-pink-s9-hover:hover{border:solid #F8BBD0}
+.ac-bdr-pink-s8,.ac-bdr-pink-s8-hover:hover{border:solid #F48FB1}
+.ac-bdr-pink-s7,.ac-bdr-pink-s7-hover:hover{border:solid #F06292}
+.ac-bdr-pink-s6,.ac-bdr-pink-s6-hover:hover{border:solid #EC407A}
+.ac-bdr-pink-s5,.ac-bdr-pink-s5-hover:hover{border:solid #E91E63}
+.ac-bdr-pink-s4,.ac-bdr-pink-s4-hover:hover{border:solid #D81B60}
+.ac-bdr-pink-s3,.ac-bdr-pink-s3-hover:hover{border:solid #C2185B}
+.ac-bdr-pink-s2,.ac-bdr-pink-s2-hover:hover{border:solid #AD1457}
+.ac-bdr-pink-s1,.ac-bdr-pink-s1-hover:hover{border:solid #880E4F}
+.ac-bdr-purple,.ac-bdr-purple-hover:hover{border:solid #9C27B0}
+.ac-bdr-purple-s9,.ac-bdr-purple-s9-hover:hover{border:solid #E1BEE7}
+.ac-bdr-purple-s8,.ac-bdr-purple-s8-hover:hover{border:solid #CE93D8}
+.ac-bdr-purple-s7,.ac-bdr-purple-s7-hover:hover{border:solid #BA68C8}
+.ac-bdr-purple-s6,.ac-bdr-purple-s6-hover:hover{border:solid #AB47BC}
+.ac-bdr-purple-s5,.ac-bdr-purple-s5-hover:hover{border:solid #9C27B0}
+.ac-bdr-purple-s4,.ac-bdr-purple-s4-hover:hover{border:solid #8E24AA}
+.ac-bdr-purple-s3,.ac-bdr-purple-s3-hover:hover{border:solid #7B1FA2}
+.ac-bdr-purple-s2,.ac-bdr-purple-s2-hover:hover{border:solid #6A1B9A}
+.ac-bdr-purple-s1,.ac-bdr-purple-s1-hover:hover{border:solid #4A148C}
+.ac-bdr-dpurple,.ac-bdr-dpurple-hover:hover{border:solid #673AB7}
+.ac-bdr-dpurple-s9,.ac-bdr-dpurple-s9-hover:hover{border:solid #D1C4E9}
+.ac-bdr-dpurple-s8,.ac-bdr-dpurple-s8-hover:hover{border:solid #B39DDB}
+.ac-bdr-dpurple-s7,.ac-bdr-dpurple-s7-hover:hover{border:solid #9575CD}
+.ac-bdr-dpurple-s6,.ac-bdr-dpurple-s6-hover:hover{border:solid #7E57C2}
+.ac-bdr-dpurple-s5,.ac-bdr-dpurple-s5-hover:hover{border:solid #673AB7}
+.ac-bdr-dpurple-s4,.ac-bdr-dpurple-s4-hover:hover{border:solid #5E35B1}
+.ac-bdr-dpurple-s3,.ac-bdr-dpurple-s3-hover:hover{border:solid #512DA8}
+.ac-bdr-dpurple-s2,.ac-bdr-dpurple-s2-hover:hover{border:solid #4527A0}
+.ac-bdr-dpurple-s1,.ac-bdr-dpurple-s1-hover:hover{border:solid #311B92}
+.ac-bdr-indigo,.ac-bdr-indigo-hover:hover{border:solid #3F51B5}
+.ac-bdr-indigo-s9,.ac-bdr-indigo-s9-hover:hover{border:solid #C5CAE9}
+.ac-bdr-indigo-s8,.ac-bdr-indigo-s8-hover:hover{border:solid #9FA8DA}
+.ac-bdr-indigo-s7,.ac-bdr-indigo-s7-hover:hover{border:solid #7986CB}
+.ac-bdr-indigo-s6,.ac-bdr-indigo-s6-hover:hover{border:solid #5C6BC0}
+.ac-bdr-indigo-s5,.ac-bdr-indigo-s5-hover:hover{border:solid #3F51B5}
+.ac-bdr-indigo-s4,.ac-bdr-indigo-s4-hover:hover{border:solid #3949AB}
+.ac-bdr-indigo-s3,.ac-bdr-indigo-s3-hover:hover{border:solid #303F9F}
+.ac-bdr-indigo-s2,.ac-bdr-indigo-s2-hover:hover{border:solid #283593}
+.ac-bdr-indigo-s1,.ac-bdr-indigo-s1-hover:hover{border:solid #1A237E}
+.ac-bdr-blue,.ac-bdr-blue-hover:hover{border:solid #2196F3}
+.ac-bdr-blue-s9,.ac-bdr-blue-s9-hover:hover{border:solid #BBDEFB}
+.ac-bdr-blue-s8,.ac-bdr-blue-s8-hover:hover{border:solid #90CAF9}
+.ac-bdr-blue-s7,.ac-bdr-blue-s7-hover:hover{border:solid #64B5F6}
+.ac-bdr-blue-s6,.ac-bdr-blue-s6-hover:hover{border:solid #42A5F5}
+.ac-bdr-blue-s5,.ac-bdr-blue-s5-hover:hover{border:solid #2196F3}
+.ac-bdr-blue-s4,.ac-bdr-blue-s4-hover:hover{border:solid #1E88E5}
+.ac-bdr-blue-s3,.ac-bdr-blue-s3-hover:hover{border:solid #1976D2}
+.ac-bdr-blue-s2,.ac-bdr-blue-s2-hover:hover{border:solid #1565C0}
+.ac-bdr-blue-s1,.ac-bdr-blue-s1-hover:hover{border:solid #0D47A1}
+.ac-bdr-lblue,.ac-bdr-lblue-hover:hover{border:solid #03A9F4}
+.ac-bdr-lblue-s9,.ac-bdr-lblue-s9-hover:hover{border:solid #B3E5FC}
+.ac-bdr-lblue-s8,.ac-bdr-lblue-s8-hover:hover{border:solid #81D4FA}
+.ac-bdr-lblue-s7,.ac-bdr-lblue-s7-hover:hover{border:solid #4FC3F7}
+.ac-bdr-lblue-s6,.ac-bdr-lblue-s6-hover:hover{border:solid #29B6F6}
+.ac-bdr-lblue-s5,.ac-bdr-lblue-s5-hover:hover{border:solid #03A9F4}
+.ac-bdr-lblue-s4,.ac-bdr-lblue-s4-hover:hover{border:solid #039BE5}
+.ac-bdr-lblue-s3,.ac-bdr-lblue-s3-hover:hover{border:solid #0288D1}
+.ac-bdr-lblue-s2,.ac-bdr-lblue-s2-hover:hover{border:solid #0277BD}
+.ac-bdr-lblue-s1,.ac-bdr-lblue-s1-hover:hover{border:solid #01579B}
+.ac-bdr-cyan,.ac-bdr-cyan-hover:hover{border:solid #00BCD4}
+.ac-bdr-cyan-s9,.ac-bdr-cyan-s9-hover:hover{border:solid #B2EBF2}
+.ac-bdr-cyan-s8,.ac-bdr-cyan-s8-hover:hover{border:solid #80DEEA}
+.ac-bdr-cyan-s7,.ac-bdr-cyan-s7-hover:hover{border:solid #4DD0E1}
+.ac-bdr-cyan-s6,.ac-bdr-cyan-s6-hover:hover{border:solid #26C6DA}
+.ac-bdr-cyan-s5,.ac-bdr-cyan-s5-hover:hover{border:solid #00BCD4}
+.ac-bdr-cyan-s4,.ac-bdr-cyan-s4-hover:hover{border:solid #00ACC1}
+.ac-bdr-cyan-s3,.ac-bdr-cyan-s3-hover:hover{border:solid #0097A7}
+.ac-bdr-cyan-s2,.ac-bdr-cyan-s2-hover:hover{border:solid #00838F}
+.ac-bdr-cyan-s1,.ac-bdr-cyan-s1-hover:hover{border:solid #006064}
+.ac-bdr-teal,.ac-bdr-teal-hover:hover{border:solid #009688}
+.ac-bdr-teal-s9,.ac-bdr-teal-s9-hover:hover{border:solid #B2DFDB}
+.ac-bdr-teal-s8,.ac-bdr-teal-s8-hover:hover{border:solid #80CBC4}
+.ac-bdr-teal-s7,.ac-bdr-teal-s7-hover:hover{border:solid #4DB6AC}
+.ac-bdr-teal-s6,.ac-bdr-teal-s6-hover:hover{border:solid #26A69A}
+.ac-bdr-teal-s5,.ac-bdr-teal-s5-hover:hover{border:solid #009688}
+.ac-bdr-teal-s4,.ac-bdr-teal-s4-hover:hover{border:solid #00897B}
+.ac-bdr-teal-s3,.ac-bdr-teal-s3-hover:hover{border:solid #00796B}
+.ac-bdr-teal-s2,.ac-bdr-teal-s2-hover:hover{border:solid #00695C}
+.ac-bdr-teal-s1,.ac-bdr-teal-s1-hover:hover{border:solid #004D40}
+.ac-bdr-green,.ac-bdr-green-hover:hover{border:solid #4CAF50}
+.ac-bdr-green-s9,.ac-bdr-green-s9-hover:hover{border:solid #C8E6C9}
+.ac-bdr-green-s8,.ac-bdr-green-s8-hover:hover{border:solid #A5D6A7}
+.ac-bdr-green-s7,.ac-bdr-green-s7-hover:hover{border:solid #81C784}
+.ac-bdr-green-s6,.ac-bdr-green-s6-hover:hover{border:solid #66BB6A}
+.ac-bdr-green-s5,.ac-bdr-green-s5-hover:hover{border:solid #4CAF50}
+.ac-bdr-green-s4,.ac-bdr-green-s4-hover:hover{border:solid #43A047}
+.ac-bdr-green-s3,.ac-bdr-green-s3-hover:hover{border:solid #388E3C}
+.ac-bdr-green-s2,.ac-bdr-green-s2-hover:hover{border:solid #2E7D32}
+.ac-bdr-green-s1,.ac-bdr-green-s1-hover:hover{border:solid #1B5E20}
+.ac-bdr-lgreen,.ac-bdr-lgreen-hover:hover{border:solid #8BC34A}
+.ac-bdr-lgreen-s9,.ac-bdr-lgreen-s9-hover:hover{border:solid #DCEDC8}
+.ac-bdr-lgreen-s8,.ac-bdr-lgreen-s8-hover:hover{border:solid #C5E1A5}
+.ac-bdr-lgreen-s7,.ac-bdr-lgreen-s7-hover:hover{border:solid #AED581}
+.ac-bdr-lgreen-s6,.ac-bdr-lgreen-s6-hover:hover{border:solid #9CCC65}
+.ac-bdr-lgreen-s5,.ac-bdr-lgreen-s5-hover:hover{border:solid #8BC34A}
+.ac-bdr-lgreen-s4,.ac-bdr-lgreen-s4-hover:hover{border:solid #7CB342}
+.ac-bdr-lgreen-s3,.ac-bdr-lgreen-s3-hover:hover{border:solid #689F38}
+.ac-bdr-lgreen-s2,.ac-bdr-lgreen-s2-hover:hover{border:solid #558B2F}
+.ac-bdr-lgreen-s1,.ac-bdr-lgreen-s1-hover:hover{border:solid #33691E}
+.ac-bdr-lime,.ac-bdr-lime-hover:hover{border:solid #CDDC39}
+.ac-bdr-lime-s9,.ac-bdr-lime-s9-hover:hover{border:solid #F0F4C3}
+.ac-bdr-lime-s8,.ac-bdr-lime-s8-hover:hover{border:solid #E6EE9C}
+.ac-bdr-lime-s7,.ac-bdr-lime-s7-hover:hover{border:solid #DCE775}
+.ac-bdr-lime-s6,.ac-bdr-lime-s6-hover:hover{border:solid #D4E157}
+.ac-bdr-lime-s5,.ac-bdr-lime-s5-hover:hover{border:solid #CDDC39}
+.ac-bdr-lime-s4,.ac-bdr-lime-s4-hover:hover{border:solid #C0CA33}
+.ac-bdr-lime-s3,.ac-bdr-lime-s3-hover:hover{border:solid #AFB42B}
+.ac-bdr-lime-s2,.ac-bdr-lime-s2-hover:hover{border:solid #9E9D24}
+.ac-bdr-lime-s1,.ac-bdr-lime-s1-hover:hover{border:solid #827717}
+.ac-bdr-yellow,.ac-bdr-yellow-hover:hover{border:solid #FFEB3B}
+.ac-bdr-yellow-s9,.ac-bdr-yellow-s9-hover:hover{border:solid #FFF9C4}
+.ac-bdr-yellow-s8,.ac-bdr-yellow-s8-hover:hover{border:solid #FFF59D}
+.ac-bdr-yellow-s7,.ac-bdr-yellow-s7-hover:hover{border:solid #FFF176}
+.ac-bdr-yellow-s6,.ac-bdr-yellow-s6-hover:hover{border:solid #FFEE58}
+.ac-bdr-yellow-s5,.ac-bdr-yellow-s5-hover:hover{border:solid #FFEB3B}
+.ac-bdr-yellow-s4,.ac-bdr-yellow-s4-hover:hover{border:solid #FDD835}
+.ac-bdr-yellow-s3,.ac-bdr-yellow-s3-hover:hover{border:solid #FBC02D}
+.ac-bdr-yellow-s2,.ac-bdr-yellow-s2-hover:hover{border:solid #F9A825}
+.ac-bdr-yellow-s1,.ac-bdr-yellow-s1-hover:hover{border:solid #F57F17}
+.ac-bdr-amber,.ac-bdr-amber-hover:hover{border:solid #FFC107}
+.ac-bdr-amber-s9,.ac-bdr-amber-s9-hover:hover{border:solid #FFECB3}
+.ac-bdr-amber-s8,.ac-bdr-amber-s8-hover:hover{border:solid #FFE082}
+.ac-bdr-amber-s7,.ac-bdr-amber-s7-hover:hover{border:solid #FFD54F}
+.ac-bdr-amber-s6,.ac-bdr-amber-s6-hover:hover{border:solid #FFCA28}
+.ac-bdr-amber-s5,.ac-bdr-amber-s5-hover:hover{border:solid #FFC107}
+.ac-bdr-amber-s4,.ac-bdr-amber-s4-hover:hover{border:solid #FFB300}
+.ac-bdr-amber-s3,.ac-bdr-amber-s3-hover:hover{border:solid #FFA000}
+.ac-bdr-amber-s2,.ac-bdr-amber-s2-hover:hover{border:solid #FF8F00}
+.ac-bdr-amber-s1,.ac-bdr-amber-s1-hover:hover{border:solid #FF6F00}
+.ac-bdr-orange,.ac-bdr-orange-hover:hover{border:solid #FF9800}
+.ac-bdr-orange-s9,.ac-bdr-orange-s9-hover:hover{border:solid #FFE0B2}
+.ac-bdr-orange-s8,.ac-bdr-orange-s8-hover:hover{border:solid #FFCC80}
+.ac-bdr-orange-s7,.ac-bdr-orange-s7-hover:hover{border:solid #FFB74D}
+.ac-bdr-orange-s6,.ac-bdr-orange-s6-hover:hover{border:solid #FFA726}
+.ac-bdr-orange-s5,.ac-bdr-orange-s5-hover:hover{border:solid #FF9800}
+.ac-bdr-orange-s4,.ac-bdr-orange-s4-hover:hover{border:solid #FB8C00}
+.ac-bdr-orange-s3,.ac-bdr-orange-s3-hover:hover{border:solid #F57C00}
+.ac-bdr-orange-s2,.ac-bdr-orange-s2-hover:hover{border:solid #EF6C00}
+.ac-bdr-orange-s1,.ac-bdr-orange-s1-hover:hover{border:solid #E65100}
+.ac-bdr-dorange,.ac-bdr-dorange-hover:hover{border:solid #FF5722}
+.ac-bdr-dorange-s9,.ac-bdr-dorange-s9-hover:hover{border:solid #FFCCBC}
+.ac-bdr-dorange-s8,.ac-bdr-dorange-s8-hover:hover{border:solid #FFAB91}
+.ac-bdr-dorange-s7,.ac-bdr-dorange-s7-hover:hover{border:solid #FF8A65}
+.ac-bdr-dorange-s6,.ac-bdr-dorange-s6-hover:hover{border:solid #FF7043}
+.ac-bdr-dorange-s5,.ac-bdr-dorange-s5-hover:hover{border:solid #FF5722}
+.ac-bdr-dorange-s4,.ac-bdr-dorange-s4-hover:hover{border:solid #F4511E}
+.ac-bdr-dorange-s3,.ac-bdr-dorange-s3-hover:hover{border:solid #E64A19}
+.ac-bdr-dorange-s2,.ac-bdr-dorange-s2-hover:hover{border:solid #D84315}
+.ac-bdr-dorange-s1,.ac-bdr-dorange-s1-hover:hover{border:solid #BF360C}
+.ac-bdr-brown,.ac-bdr-brown-hover:hover{border:solid #795548}
+.ac-bdr-brown-s9,.ac-bdr-brown-s9-hover:hover{border:solid #D7CCC8}
+.ac-bdr-brown-s8,.ac-bdr-brown-s8-hover:hover{border:solid #BCAAA4}
+.ac-bdr-brown-s7,.ac-bdr-brown-s7-hover:hover{border:solid #A1887F}
+.ac-bdr-brown-s6,.ac-bdr-brown-s6-hover:hover{border:solid #8D6E63}
+.ac-bdr-brown-s5,.ac-bdr-brown-s5-hover:hover{border:solid #795548}
+.ac-bdr-brown-s4,.ac-bdr-brown-s4-hover:hover{border:solid #6D4C41}
+.ac-bdr-brown-s3,.ac-bdr-brown-s3-hover:hover{border:solid #5D4037}
+.ac-bdr-brown-s2,.ac-bdr-brown-s2-hover:hover{border:solid #4E342E}
+.ac-bdr-brown-s1,.ac-bdr-brown-s1-hover:hover{border:solid #3E2723}
+.ac-bdr-bluegray,.ac-bdr-bluegray-hover:hover{border:solid #607D8B}
+.ac-bdr-bluegray-s9,.ac-bdr-bluegray-s9-hover:hover{border:solid #CFD8DC}
+.ac-bdr-bluegray-s8,.ac-bdr-bluegray-s8-hover:hover{border:solid #B0BEC5}
+.ac-bdr-bluegray-s7,.ac-bdr-bluegray-s7-hover:hover{border:solid #90A4AE}
+.ac-bdr-bluegray-s6,.ac-bdr-bluegray-s6-hover:hover{border:solid #78909C}
+.ac-bdr-bluegray-s5,.ac-bdr-bluegray-s5-hover:hover{border:solid #607D8B}
+.ac-bdr-bluegray-s4,.ac-bdr-bluegray-s4-hover:hover{border:solid #546E7A}
+.ac-bdr-bluegray-s3,.ac-bdr-bluegray-s3-hover:hover{border:solid #455A64}
+.ac-bdr-bluegray-s2,.ac-bdr-bluegray-s2-hover:hover{border:solid #37474F}
+.ac-bdr-bluegray-s1,.ac-bdr-bluegray-s1-hover:hover{border:solid #263238}
+.ac-bdr-gray,.ac-bdr-s,.ac-bdr-gray-hover:hover{border:solid #9E9E9E}
+.ac-bdr-gray-s9,.ac-bdr-s9,.ac-bdr-gray-s9-hover:hover,.ac-bdr-s9-hover:hover{border:solid #F5F5F5}
+.ac-bdr-gray-s8,.ac-bdr-s8,.ac-bdr-gray-s8-hover:hover,.ac-bdr-s8-hover:hover{border:solid #EEEEEE}
+.ac-bdr-gray-s7,.ac-bdr-s7,.ac-bdr-gray-s7-hover:hover,.ac-bdr-s7-hover:hover{border:solid #E0E0E0}
+.ac-bdr-gray-s6,.ac-bdr-s6,.ac-bdr-gray-s6-hover:hover,.ac-bdr-s6-hover:hover{border:solid #BDBDBD}
+.ac-bdr-gray-s5,.ac-bdr-s5,.ac-bdr-gray-s5-hover:hover,.ac-bdr-s5-hover:hover{border:solid #9E9E9E}
+.ac-bdr-gray-s4,.ac-bdr-s4,.ac-bdr-gray-s4-hover:hover,.ac-bdr-s4-hover:hover{border:solid #757575}
+.ac-bdr-gray-s3,.ac-bdr-s3,.ac-bdr-gray-s3-hover:hover,.ac-bdr-s3-hover:hover{border:solid #616161}
+.ac-bdr-gray-s2,.ac-bdr-s2,.ac-bdr-gray-s2-hover:hover,.ac-bdr-s2-hover:hover{border:solid #424242}
+.ac-bdr-gray-s1,.ac-bdr-s1,.ac-bdr-gray-s1-hover:hover,.ac-bdr-s1-hover:hover{border:solid #212121}
+.ac-bdr-black,.ac-bdr-rgb,.ac-bdr-black-hover:hover,.ac-bdr-rgb-hover:hover{border:solid #000000}
+.ac-bdr-white,.ac-bdr-RGB,.ac-bdr-white-hover:hover,.ac-bdr-RGB-hover:hover{border:solid #FFFFFF}
+.ac-bdr-Rgb,.ac-bdr-Rgb-hover:hover{border:solid #FF0000}
+.ac-bdr-RGb,.ac-bdr-RGb-hover:hover{border:solid #FFFF00}
+.ac-bdr-rGb,.ac-bdr-rGb-hover:hover{border:solid #00FF00}
+.ac-bdr-rGB,.ac-bdr-rGB-hover:hover{border:solid #00FFFF}
+.ac-bdr-rgB,.ac-bdr-rgB-hover:hover{border:solid #0000FF}
+.ac-bdr-RgB,.ac-bdr-RgB-hover:hover{border:solid #FF00FF}
+
+/* Misc. */
+.ac-bdr-round-smallest{border-radius:4px;padding:4px}
+.ac-bdr-round-smaller{border-radius:8px;padding:6px}
+.ac-bdr-round-small{border-radius:16px;padding:10px}
+.ac-bdr-round-medium{border-radius:24px;padding:16px}
+.ac-bdr-round-big{border-radius:32px;padding:24px}
+.ac-bdr-round-bigger{border-radius:48px;padding:32px}
+.ac-bdr-round-biggest{border-radius:64px;padding:42px}
+.ac-bdr-round-huge{border-radius:128px;padding:86px}
+.ac-pad-thinner{padding:0em 0.2em}
+.ac-pad-thin{padding:0.2em 0.4em}
+.ac-pad-medium{padding:0.4em 0.6em}
+.ac-pad-thick{padding:0.6em 0.8em}
+.ac-pad-thicker{padding:1em 1.4em}
