@@ -31,7 +31,44 @@
 		.bgimg-2, .bg-img-3 {
 			min-height: 400px;
 		}
-		
+		textarea, input {
+			background: #ffffff;
+			border: none;
+			border-bottom: 1px solid #000000;
+			width: 100%;
+			height: 100%;
+			padding: 4px 16px;
+		}
+		input {
+			width: 70%;
+		}
+		textarea:hover {
+		    	background: #eeeeee;
+		}
+        	select {
+        		background: #ffffff;
+			border: none;
+			border-bottom: 1px solid #000000;
+			width: 50%;
+			height: 100%;
+			padding: 4px 16px;
+        	}
+        	.go {
+			border:none;
+			display:inline-block;
+			padding:8px 16px;
+			vertical-align:middle;
+			overflow:hidden;
+			text-decoration:none;
+			text-align:center;
+			cursor:pointer;
+			white-space:nowrap;
+			background-color: #0032a8;
+			color: #ffffff
+		}
+		.go:hover {
+			background-color: #0016a8;
+		}
 		.w3-wide{letter-spacing: 6px;}
 		
 		@media only screen and (max-device-width: 1600px){
@@ -94,45 +131,21 @@
 				Have a listen and I hope you enjoy!
 			</h3>
 			<p class="w3-large w3-center w3-padding-16">
-				Here are a the links to each of my songs, newest to oldest.
+				Search below to find my tracks.
 			</p>
-			<p class="w3-wide">
-				<i class="fa fa-music"></i>
-				Calm stuff
-			</p>
-			<a href="/music/calm.html" style="text-decoration:none;">
-				<div class="w3-light-grey">
-					<div class="w3-container w3-padding-small w3-center" style="width: 30%; background-color: #0032a8; color: #ffffff;">
-						4 / 13
-				    	</div>
-				</div>
-			</a>
-			<p class="w3-wide">
-				<i class="fa fa-music"></i>
-				Heavy stuff
-			</p>
-			<a href="/music/heavy.html" style="text-decoration:none;">
-				<div class="w3-light-grey">
-					<div class="w3-container w3-padding-small w3-center" style="width: 38.5%; background-color: #0032a8; color: #ffffff;">
-						5 / 13
-				    	</div>
-				</div>
-			</a>
-			<p class="w3-wide">
-				<i class="fa fa-music">
-				</i>
-				Other
-			</p>
-            		<a href="/music/unknown.html" style="text-decoration:none;">
-                		<div class="w3-light-grey">
-                    			<div class="w3-container w3-padding-small w3-center" style="width: 30%; background-color: #0032a8; color: #ffffff;">
-                       				4 / 13
-                    			</div>
-                		</div>
-            		</a>
+			<div class="w3-center">
+				<input type="text" id="input" placeholder="Genre, name, etc.">
+				<button class="go w3-hide-medium w3-hide-large" onclick="search()">
+					<i class="fa fa-search"></i>
+				</button>
+				<button class="go w3-hide-small" onclick="search()">
+					<i class="fa fa-search w3-margin-right"></i>
+					Search
+				</button>
+			</div>
 		</div>
 		<div style="background-color: #0032a8; color: #ffffff;" class="w3-row w3-center w3-padding-16">
-        	<a href="/music/collabs.html" style="text-decoration:none;">
+        		<a href="/music/collabs.html" style="text-decoration:none;">
 				<div class="w3-half w3-section">
 					<span class="w3-xlarge">
 						0
@@ -141,16 +154,16 @@
 					Collaborations<br>
                 			<em>[So far]</em>
 				</div>
-            	</a>
-            	<a href="/music/all.html" style="text-decoration:none;">
-                	<div class="w3-half w3-section">
-                    		<span class="w3-xlarge">
-                        		13
-                    		</span>
-                    		<br>
-                    		Tracks Released
-                	</div>
-            	</a>
+            		</a>
+            		<a href="/music/all.html" style="text-decoration:none;">
+                		<div class="w3-half w3-section">
+                    			<span class="w3-xlarge">
+                        			13
+                    			</span>
+                    			<br>
+                    			Tracks Released
+                		</div>
+            		</a>
 		</div>
 		<div class="bgimg-3 w3-display-container">
 			<div class="w3-display-middle">
@@ -168,19 +181,14 @@
 					I'd love to hear what you want me to produce next!
 				</em>
 			</p>
-			<div class="w3-row w3-padding-32 w3-section">
-				<div class="w3-col m4 w3-container">
-					<img src="/w3images/map.jpg" class="w3-image w3-round" style="width:100%">
-				</div>
-				<div class="w3-col m8 w3-panel">
-					<div class="w3-large w3-margin-bottom">
-						<i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
-						Email: hydronesium@gmail.com
-						<br>
-						<i class="fa fa-comment fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
-						Comment on <a href="https://www.youtube.com/channel/UCosxKKKPJk4aZlwF_EFe2pw">my YouTube channel</a>
-						<br>
-					</div>
+			<div class="w3-col w3-panel w3-padding-32 w3-center">
+				<div class="w3-large w3-margin-bottom">
+					<i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
+					Email: hydronesium@gmail.com
+					<br>
+					<i class="fa fa-comment fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
+					Comment on <a href="https://www.youtube.com/channel/UCosxKKKPJk4aZlwF_EFe2pw">my YouTube channel</a>
+					<br>
 				</div>
 			</div>
 		</div>
@@ -231,6 +239,13 @@
 					x.className=x.className.replace(" w3-show", "");
 				}
 			}
+			function search(){
+				var entity;
+				var input;
+				entity = document.getElementById("input");
+				input = entity.value;
+				window.location.href = "https://magnogen.github.io/search?q=" + input;
+            		}
 		</script>
 	</body>
 </html>
