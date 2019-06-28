@@ -10,7 +10,7 @@ var allTracks = [
 	["insane", "Insane", "Magnogen", "Drumstep", ["insane", "drum", "step", "dub", "dubstep", ""]],
 	["radius", "Radius", "Magnogen", "Chillstep", ["radius", "chillstep", "chill", "dub", "step", "dubstep", "relaxed", "calm"]],
 	["heartbeat", "Heartbeat", "Magnogen", "Trance", ["heartbeat", "trance", "chill", "psytrance", "psy", "heart", "beat", "electronic", "electro"]],
-	["dejavu", "Déjà vu", "Magnogen", "Trap", ["deja", "déjà", "vu", "trap", "dejavu", "bass", "heavy"]],
+	["dejavu", "Déjà Vu", "Magnogen", "Trap", ["deja", "déjà", "vu", "trap", "dejavu", "bass", "heavy"]],
 	["avocado", "Avocado", "Magnogen", "Deathstep", ["death", "dub", "step", "dubstep", "deathstep", "avocado", "choir", "ahh", "spooky"]],
 	["pixelate", "Pixelate", "Magnogen", "Electro", ["squres", "pixel", "pixels", "pixelate", "electro", "electronic", "electric", "8bit"]]
 ]
