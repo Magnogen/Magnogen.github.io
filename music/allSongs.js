@@ -14,3 +14,19 @@ var allTracks = [
 	["avocado", "Avocado", "Magnogen", "Deathstep", ["death", "dub", "step", "dubstep", "deathstep", "avocado", "choir", "ahh", "spooky"]],
 	["pixelate", "Pixelate", "Magnogen", "Electro", ["squres", "pixel", "pixels", "pixelate", "electro", "electronic", "electric", "8bit"]]
 ]
+var ids = [
+	"automate",
+	"breeze",
+	"vsauce",
+	"renegade",
+	"scars",
+	"laughter",
+	"adrenaline",
+	"impurity",
+	"insane",
+	"radius",
+	"heartbeat",
+	"dejavu",
+	"avocado",
+	"pixelate",
+]
