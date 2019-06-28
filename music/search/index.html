@@ -263,7 +263,32 @@
 				var input;
 				entity = document.getElementById("input");
 				input = entity.value;
-				window.location.href = "https://magnogen.github.io/music/search?q=" + input;
+				search = input;
+            			var accepted = []
+            			for (var i = 0; i < allTracks.length; i++){
+            				if (allTracks[i][4].includes(search.toLowerCase())){
+                				accepted[accepted.length] = i.toString();
+                			}
+            			}
+				var temp = [];
+				for (i = 0; i < accepted.length; i++){
+            				temp.splice(0, 0, accepted[i]);
+				}
+				accepted = temp;
+				var a = "";
+				for (i = 0; i < accepted.length; i++){
+            				a = a + "<br>\
+<a style=\"text-decoration:none\" href=/music/view?t=" + allTracks[accepted[i]][0] + ">\
+	<div class=\"w3-card-4\">\
+		<div style=\"background-color:#0032a8;font-size:120%;\" class=\"w3-padding w3-text-white w3-container\">\
+			[" + allTracks[accepted[i]][3] + "] - " + allTracks[accepted[i]][2] + " - " + allTracks[accepted[i]][1] + "\
+		</div>\
+		<div class=\"w3-padding w3-container\">\
+			<i class=\"fa fa-play w3-margin-right\"></i>Listen\
+		</div>\
+	</div>\
+</a>";
+                			document.getElementById("tracks").innerHTML = a;
             		}
 		</script>
 	</body>
