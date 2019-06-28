@@ -1,4 +1,4 @@
-var tracks = [
+var allTracks = [
 	["automate", "Automate", "Magnogen", "Unspecified", ["old", "style", "alan", "walker", "automate", "unspecified", "planet"]],
 	["breeze", "Breeze", "Magnogen", "Unspecified", ["old", "style", "breeze", "unspecified", "planet", "calm"]],
 	["vsauce", "Vsauce", "Magnogen", "Unspecified", ["unspecified", "old", "style", "vsauce", "spacey", "space", "youtube", "channel", "hey", "calm"]],
