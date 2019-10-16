@@ -16,5 +16,5 @@ var quotes = [
 	["There's a snake on my boot", "Woody Pride"],
 	["42", "Deep Thought"],
 	["Life is fun.", "Odd1sOut"],
-	["", ""]
+	["RIP Milo 2019 - 2019", "Wilbur Soot"]
 ];
