@@ -7,7 +7,7 @@ var allTracks = [
 	["laughter", "Laughter", "Magnogen", "Electro", ["everything", "emotions", "emotion", "laughter", "laugh", "mario", "game", "electro", "electronic", "electric", "8bit", "upbeat", "fast", "happy"]],
 	["adrenaline", "Adrenaline", "Magnogen", "Hardcore", ["everything", "hardcore", "hard", "adrenaline", "fast", "singles", "electro", "bass"]],
 	["impurity", "Impurity", "Magnogen", "DnB/Hardcore/Future Bass", ["everything", "genres", "genre", "flavour", "full", "drum", "bass", "future", "dnb", "hard", "hardcore"]],
-	["insane", "Insane", "Magnogen", "Drumstep", ["everything", "insane", "drum", "step", "dub", "dubstep", ""]],
+	["insane", "Insane", "Magnogen", "Drumstep", ["everything", "insane", "drum", "step", "dub", "dubstep"]],
 	["radius", "Radius", "Magnogen", "Chillstep", ["everything", "radius", "chillstep", "chill", "dub", "step", "dubstep", "relaxed", "calm"]],
 	["heartbeat", "Heartbeat", "Magnogen", "Trance", ["everything", "heartbeat", "trance", "chill", "psytrance", "psy", "heart", "beat", "electronic", "electro"]],
 	["dejavu", "Déjà Vu", "Magnogen", "Trap", ["everything", "deja", "déjà", "vu", "trap", "dejavu", "bass", "heavy"]],
