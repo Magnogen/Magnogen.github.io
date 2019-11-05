@@ -1,7 +1,7 @@
 var quotes = [
 	["Don't cry because it's over, smile because it happened.", "Dr. Seuss"],
 	["Be yourself; everyone else is already taken.", "Oscar Wilde"],
-	["Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.", "Albert Einstein"],
+	["Two things are infinite: The Universe and human stupidity; and I'm not sure about The Universe.", "Albert Einstein"],
 	["You know you're in love when you can't fall asleep because reality is finally better than your dreams.", "Dr. Seuss"],
 	["Be the change that you wish to see in the world.", "Mahatma Gandhi"],
 	["A friend is someone who knows all about you and still loves you.", "Elbert Hubbard"],
@@ -10,11 +10,11 @@ var quotes = [
 	["Dear Math, please grow up and solve your own problems, I'm tired of solving them for you.", "Anonymous"],
 	["I try to contain my craziness, but the lid keeps popping off.", "Anonymous"],
 	["I'm not stubborn, my way is just better than yours.", "Anonymous"],
-	["Everybody is a genius. But if you judge a fish by its ability to climb a tree, it will live its whole life believing that it is stupid", "Albert Einstein"],
-	["Teamwork - working together towards a common goal... until a 'difference of opinion' gets someone dropped into molten lava.", "Anonymous"],
+	["Everybody is a genius. But if you judge a fish by its ability to climb a tree, it will live its whole life believing that it is stupid.", "Albert Einstein"],
+	["Teamwork - working together towards a common goal... Until a 'difference of opinion' gets someone dropped into molten lava.", "Anonymous"],
 	["When you fall, get back up. Otherwise you're stuck on the ground wondering what you did wrong.", "Anonymous"],
-	["There's a snake on my boot", "Woody Pride"],
-	["42", "Deep Thought"],
+	["There's a snake in my boot.", "Woody Pride"],
+	["42.", "Deep Thought"],
 	["Life is fun.", "Odd1sOut"],
-	["RIP Milo 2019 - 2019", "Wilbur Soot"]
+	["RIP Milo 2019 - 2019.", "Wilbur Soot"]
 ];
