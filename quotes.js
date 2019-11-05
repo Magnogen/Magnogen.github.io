@@ -16,5 +16,16 @@ var quotes = [
 	["There's a snake in my boot.", "Woody Pride"],
 	["42.", "Deep Thought"],
 	["Life is fun.", "Odd1sOut"],
-	["RIP Milo 2019 - 2019.", "Wilbur Soot"]
+	["RIP Milo 2019 - 2019.", "Wilbur Soot"],
+	["If I won the award for laziness, I would send somebody to pick it up for me.", "Anonymous"],
+	["Why do they call it beauty sleep when you wake up looking terrible?", "Anonymous"],
+	["Some people aren't just missing a screw, the whole toolbox is gone.", "Anonymous"],
+	["Stop worrying about the world ending today. It's already tomorrow in Australia.", "Charles M. Schulz"],
+	["A mind is like a parachute. It doesn't work if it is not open.", "Frank Zappa"],
+	["A cop pulled me over and told me \"Papers\", so I said \"Scissors, I win!\" and drove off.", "Anonymous"],
+	["The difference between stupidity and genius is that genius has its limits.", "Albert Einstein"],
+	["If what you've done is stupid but it works, then it really isn't that stupid at all.", "David Letterman"],
+	["I told the doctor I broke my leg in two places. He told me to quit going to those places.", "Henny Youngman"],
+	["Flying is learning how to throw yourself at the ground and miss.", "Douglas Adams"],
+	["A girl asked me once if I was married, I said: \"No, I'm Alone in this life, you?\"", "Anonymous"]
 ];
