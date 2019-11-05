@@ -31,6 +31,12 @@
 		.bgimg-2, .bg-img-3 {
 			min-height: 400px;
 		}
+        	.quote{
+            		border-style: solid;
+            		border-color: #0032a8;
+            		white-space: normal;
+        	}
+		.quote > 
 		
 		.w3-wide{letter-spacing: 6px;}
 		
@@ -82,14 +88,17 @@
 				</a>
 			</div>
 		</div>
+		
 		<div class="bgimg-1 w3-display-container" id="home">
 			<div class="w3-display-middle" style="white-space:nowrap;">
 				<span style="background-color: #0032a8; color: #ffffff;" class="w3-center w3-padding-large w3-xlarge w3-wide w3-animate-opacity">
 					MAGNOGEN
 				</span>
+                
 			</div>
 		</div>
 		<div class="w3-content w3-container w3-padding-64" id="about">
+        		<div id="quotes" class="quote w3-padding-large"></div>
 			<h3 class="w3-center">
 				WELCOME!
 			</h3>
@@ -190,7 +199,11 @@
 				</a>
 			</p>
 		</footer>
+        	<script src="/quotes.js"></script>
 		<script>
+        		var rand = Math.random();
+            		rand = Math.round(rand * quotes.length);
+            		document.getElementById("quotes").innerHTML = "<span style=\"color:#0032a8;font-size:150%;\"><i class=\"fa fa-quote-left\"></i> </span>" + quotes[rand][0] + "<br> - " + quotes[rand][1];
 			function onClick(element) {
 				document.getElementById("img01").src=element.src;
 				document.getElementById("modal01").style.display="block";
