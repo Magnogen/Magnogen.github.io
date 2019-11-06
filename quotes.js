@@ -27,5 +27,6 @@ var quotes = [
 	["If what you've done is stupid but it works, then it really isn't that stupid at all.", "David Letterman"],
 	["I told the doctor I broke my leg in two places. He told me to quit going to those places.", "Henny Youngman"],
 	["Flying is learning how to throw yourself at the ground and miss.", "Douglas Adams"],
-	["A girl asked me once if I was married, I said: \"No, I'm Alone in this life, you?\"", "Anonymous"]
+	["A girl asked me once if I was married, I said: \"No, I'm Alone in this life, you?\"", "Anonymous"],
+	["What are you delivering? Get outta here; I'm delivering people - the most valuable of all goods.", "Wilbur Soot"]
 ];
