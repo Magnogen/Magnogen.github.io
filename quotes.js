@@ -30,5 +30,6 @@ var quotes = [
 	["A girl asked me once if I was married, I said: \"No, I'm Alone in this life, you?\"", "Anonymous"],
 	["What are you delivering? Get outta here; I'm delivering people - the most valuable of all goods.", "Wilbur Soot"],
 	["The best way to make your dreams come true is to wake up.", "Paul Valery"],
-	["Hello World!", "My first computer program"]
+	["Hello World!", "My first computer program"],
+	["Meow.", "Nyan Cat"]
 ];
