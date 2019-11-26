@@ -31,5 +31,9 @@ var quotes = [
 	["What are you delivering? Get outta here; I'm delivering people - the most valuable of all goods.", "Wilbur Soot"],
 	["The best way to make your dreams come true is to wake up.", "Paul Valery"],
 	["Hello World!", "My first computer program"],
-	["Meow.", "Nyan Cat"]
+	["Meow.", "Nyan Cat"],
+	["Until man duplicates a blade of grass, nature can laugh at his so-called scientific knowledge.", "Thomas Alva Edison"],
+	["Very simple ideas lie within the reach only of complex minds.", "Remy de Gourmant"],
+	["Blind faith in your leaders, or in anything, will get you killed.", "Bruce Springsteen"],
+	["Everybody wants to be Cary Grant. Even I want to be Cary Grant.", "Cary Grant"]
 ];
