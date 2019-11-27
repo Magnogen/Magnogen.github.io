@@ -35,5 +35,14 @@ var quotes = [
 	["Until man duplicates a blade of grass, nature can laugh at his so-called scientific knowledge.", "Thomas Alva Edison"],
 	["Very simple ideas lie within the reach only of complex minds.", "Remy de Gourmant"],
 	["Blind faith in your leaders, or in anything, will get you killed.", "Bruce Springsteen"],
-	["Everybody wants to be Cary Grant. Even I want to be Cary Grant.", "Cary Grant"]
+	["Everybody wants to be Cary Grant. Even I want to be Cary Grant.", "Cary Grant"],
+	["Spring is when you feel like whistling even with a shoe full of slush.", "Doug Larson"],
+	["To be or not to be?", "Shakespeare"],
+	["There's no way I'm giving you a quote to make a stupid quote thing.", "Lucas Lehman"],
+	["If a pregnant woman swims, she is a human submarine.", "Anonymous"],
+	["I can picture in my mind a world without war, a world without hate. And I can picture us attacking that worldbecause they'd never expect it.", "Anonymous"],
+	["For some reason, the crows keep calling my name. I don't know why.", "Caw Jackson"],
+	["If the mind is quiet, the soul will speak.", "Anonymous"],
+	["Inside every person you know there's a lot of different organs.", "Anonymous"],
+	["There is a light at the end of every tunnel, just pray it's not a train.", "Anonymous"]
 ];
