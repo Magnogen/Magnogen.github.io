@@ -23,7 +23,7 @@ var quotes = [
 	["Stop worrying about the world ending today. It's already tomorrow in Australia.", "Charles M. Schulz"],
 	["A mind is like a parachute. It doesn't work if it is not open.", "Frank Zappa"],
 	["A cop pulled me over and told me \"Papers\", so I said \"Scissors, I win!\" and drove off.", "Anonymous"],
-	["The difference between stupidity and genius is that genius has its limits.", "Albert Einstein"],
+	["The difference between stupidity and genius is that genius has its limits.", "Anonymous"],
 	["If what you've done is stupid but it works, then it really isn't that stupid at all.", "David Letterman"],
 	["I told the doctor I broke my leg in two places. He told me to quit going to those places.", "Henny Youngman"],
 	["Flying is learning how to throw yourself at the ground and miss.", "Douglas Adams"],
@@ -44,5 +44,15 @@ var quotes = [
 	["For some reason, the crows keep calling my name. I don't know why.", "Caw Jackson"],
 	["If the mind is quiet, the soul will speak.", "Anonymous"],
 	["Inside every person you know there's a lot of different organs.", "Anonymous"],
-	["There is a light at the end of every tunnel, just pray it's not a train.", "Anonymous"]
+	["There is a light at the end of every tunnel, just pray it's not a train.", "Anonymous"],
+	["\"Hello, World!\"", "Every Software Designer, Ever"],
+	["I dream of a better tomorrow, where chickens can cross the road and not be questioned about their motives.", "Ralph Waldo Emerson"],
+	["Can you identify yourself? Certainly. I'd know me anywhere.", "Terry Pratchett"],
+	["One of the great things about books is sometimes there are some fantastic pictures.", "George W. Bush"],
+	["If you shoot a duck, I'll be scared of toasters.", "Anonymous"],
+	["In the future, people will write all kinds of nonsense and claim that I said it.", "Albert Einstein"],
+	["I'm not perfect, but I'm starting to get comfortable, like a sweater you want to wear all the time.", "Leslie Jones"],
+	["Those who critisise our generation forget who rasied it.", "Millennials"],
+	["I believe knowledge and observation must precede action.", "Stephen Strange"],
+	["Alone is what I have. Alone protects me.", "Sherlock Holmes"]
 ];
