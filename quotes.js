@@ -53,5 +53,8 @@ var quotes = [
 	["I'm not perfect, but I'm starting to get comfortable, like a sweater you want to wear all the time.", "Leslie Jones"],
 	["Those who critisise our generation forget who rasied it.", "Millennials"],
 	["I believe knowledge and observation must precede action.", "Stephen Strange"],
-	["Alone is what I have. Alone protects me.", "Sherlock Holmes"]
+	["Alone is what I have. Alone protects me.", "Sherlock Holmes"],
+	["You shouldn't use a straw. I know, I know, it's bad for the environment. It's just a weird way to eat spaghetti.", "Wilbur Soot and Jshlatt"],
+	["AAAAAAAAAAAAAAAAAAAAA", "Jshlatt"],
+	["Oh, look at that, your tie matches the lava.", "FitMC"]
 ];
