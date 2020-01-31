@@ -40,7 +40,7 @@ var quotes = [
 	["To be or not to be?", "Shakespeare"],
 	["There's no way I'm giving you a quote to make a stupid quote thing.", "Lucas Lehman"],
 	["If a pregnant woman swims, she is a human submarine.", "Anonymous"],
-	["I can picture in my mind a world without war, a world without hate. And I can picture us attacking that worldbecause they'd never expect it.", "Anonymous"],
+	["I can picture in my mind a world without war, a world without hate. And I can picture us attacking that world because they'd never expect it.", "Anonymous"],
 	["For some reason, the crows keep calling my name. I don't know why.", "Caw Jackson"],
 	["If the mind is quiet, the soul will speak.", "Anonymous"],
 	["Inside every person you know there's a lot of different organs.", "Anonymous"],
