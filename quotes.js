@@ -56,5 +56,10 @@ var quotes = [
 	["Alone is what I have. Alone protects me.", "Sherlock Holmes"],
 	["You shouldn't use a straw. I know, I know, it's bad for the environment. It's just a weird way to eat spaghetti.", "Wilbur Soot and Jshlatt"],
 	["AAAAAAAAAAAAAAAAAAAAA", "Jshlatt"],
-	["Oh, look at that, your tie matches the lava.", "FitMC"]
+	["Oh, look at that, your tie matches the lava.", "FitMC"],
+	["Friends are like birds, they die if you kill them.", "Sandra Przekoracka"],
+	["Friends are like birds, they fly away if you get too close.", "Tegan Gailor"],
+	["Instead of calling me a snack, call me a candle because I am warm and small good and I might burn your house down if you forget about me for too long", "Anonymous"],
+	["I'm sarcastic because punching people is frowned upon.", "Taryn Reddy"],
+	["You're cuter than a baby hedgehog wearing a stripey knitted cardigan and a party hat.", "Google Assistant, in response to \"Am I cute?\""]
 ];
