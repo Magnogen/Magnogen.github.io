@@ -62,5 +62,9 @@ var quotes = [
 	["Instead of calling me a snack, call me a candle because I am warm and smell good and I might burn your house down if you forget about me for too long", "Anonymous"],
 	["I'm sarcastic because punching people is frowned upon.", "Taryn Reddy"],
 	["You're cuter than a baby hedgehog wearing a stripey knitted cardigan and a party hat.", "Google Assistant, in response to \"Am I cute?\""],
-	["I need to be taken out. On a date or by a sniper, I don't really care - suprise me.", "Taryn Reddy"]
+	["I need to be taken out. On a date or by a sniper, I don't really care - suprise me.", "Taryn Reddy"],
+	["Suicide is the one mistake you won't live to regret.", "Sherlock Holmes"],
+	["Taking your own life. Interesting expression. Taking it from who? Once it's over, it's not you who will miss it...", "Sherlock Holmes"],
+	["Uh oh spaghettio", "Skeppy"],
+	["I'm an excellent housekeeper. Every time I get a divorce, I keep the house.", "Zsa Zsa Gabor"]
 ];
