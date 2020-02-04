@@ -66,5 +66,11 @@ var quotes = [
 	["Suicide is the one mistake you won't live to regret.", "Sherlock Holmes"],
 	["Taking your own life. Interesting expression. Taking it from who? Once it's over, it's not you who will miss it...", "Sherlock Holmes"],
 	["Uh oh spaghettio", "Skeppy"],
-	["I'm an excellent housekeeper. Every time I get a divorce, I keep the house.", "Zsa Zsa Gabor"]
+	["I'm an excellent housekeeper. Every time I get a divorce, I keep the house.", "Zsa Zsa Gabor"],
+	["Happiness is something that comes into our lives through doors we don't even remember leaving open.", "Rose Lane"],
+	["There is only one blasphemy, and that is the refusal to experience joy.", "Paul Rudnick"],
+	["If this was adulthood the only improvement she could detect in her situation was that she could now eat dessert without eating her vegetables.", "Lisa Alther"],
+	["You're not a finished product. You're still in the process of being created.", "Alfred Osmond"],
+	["I pretended to be somebody I wanted to be until finally I became that person. Or he became me.", "Cary Grant"],
+	["I don't understand a word you just said.", "Anonymous"]
 ];
