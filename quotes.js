@@ -73,5 +73,6 @@ var quotes = [
 	["If this was adulthood the only improvement she could detect in her situation was that she could now eat dessert without eating her vegetables.", "Lisa Alther"],
 	["You're not a finished product. You're still in the process of being created.", "Alfred Osmond"],
 	["I pretended to be somebody I wanted to be until finally I became that person. Or he became me.", "Cary Grant"],
-	["I don't understand a word you just said.", "Anonymous"]
+	["I don't understand a word you just said.", "Anonymous"],
+	["It's much more difficult to play tennis with a bowling ball than it is to bowl with a tennis ball.", "<a href=\"https://inspirobot.me/\">InspiroBot.me</a>"]
 ];
