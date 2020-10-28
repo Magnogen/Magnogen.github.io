@@ -74,5 +74,17 @@ var quotes = [
 	["You're not a finished product. You're still in the process of being created.", "Alfred Osmond"],
 	["I pretended to be somebody I wanted to be until finally I became that person. Or he became me.", "Cary Grant"],
 	["I don't understand a word you just said.", "Anonymous"],
-	["It's much more difficult to play tennis with a bowling ball than it is to bowl with a tennis ball.", "<a href=\"https://inspirobot.me/\">InspiroBot.me</a>"]
+	["It's much more difficult to play tennis with a bowling ball than it is to bowl with a tennis ball.", "<a href=\"https://inspirobot.me/\">InspiroBot.me</a>"],
+	["Make it so that wisdom becomes your dream girl, and your dream girl becomes your cat.", "<a href=\"https://inspirobot.me/\">InspiroBot.me</a>"],
+	["Stop it. Stop pretending you're not smart.","<a href=\"https://inspirobot.me/\">InspiroBot.me</a>"],
+	["We are friends... Right Agnes?", "Jens"],
+	["Don't be racist. Hate everyone equally and don't forget to wear a mask.","aaa bbb"],
+	["Yoo dude this slaps hard, anxiety never sounded so good before", "Dani"],
+	["i am are have stupid", "Anonymous"],
+	["right after the choom choom i like to have some wetness into some dry donk", "Eliminate"],
+	["Reaching for perfection, we will always come up short; but perhaps, we can manage to get closer in the process.", "Anonymous"],
+	["Don't believe everything you read on the internet.", "Abraham Lincoln"],
+	["Men don't cry for themselves but for their comrades.", "Final Fantasy Crisis Core"],
+	["A man just attacked me with some cheese and milk! How dairy!!!", "Unknown"],
+	["If the girls get one look at my masterful physique, they'll never let me alone.". "Shaggy"]
 ];
