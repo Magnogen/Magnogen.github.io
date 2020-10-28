@@ -86,5 +86,5 @@ var quotes = [
 	["Don't believe everything you read on the internet.", "Abraham Lincoln"],
 	["Men don't cry for themselves but for their comrades.", "Final Fantasy Crisis Core"],
 	["A man just attacked me with some cheese and milk! How dairy!!!", "Unknown"],
-	["If the girls get one look at my masterful physique, they'll never let me alone.". "Shaggy"]
+	["If the girls get one look at my masterful physique, they'll never let me alone.", "Shaggy"]
 ];
