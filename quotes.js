@@ -86,5 +86,10 @@ var quotes = [
 	["Don't believe everything you read on the internet.", "Abraham Lincoln"],
 	["Men don't cry for themselves but for their comrades.", "Final Fantasy Crisis Core"],
 	["A man just attacked me with some cheese and milk! How dairy!!!", "Unknown"],
-	["If the girls get one look at my masterful physique, they'll never let me alone.", "Shaggy"]
+	["If the girls get one look at my masterful physique, they'll never let me alone.", "Shaggy"],
+	["Peace was never an option.", "The Goose"],
+	["You see, Tommy, you're speaking words. But the thing about this world, Tommy, is that the only universal language is violence, and we've had that discussion.", "Technoblade"],
+	["Even if you don't like halloween, you have to appreciate its position as the sole thing keeping Christmas from advancing even earlier into the year like a cancerous growth.", "Kvitoya"],
+	["Hard times happen, but every day is a new day. Keep moving forward.", "Anonymous"],
+	["I'm not sure what World War 3 will be fought with, but in World War 4 they will fight with sticks and stones.", "Albert Einstein"]
 ];
