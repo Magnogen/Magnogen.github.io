@@ -94,5 +94,6 @@ var quotes = [
 	["I'm not sure what World War 3 will be fought with, but in World War 4 they will fight with sticks and stones.", "Albert Einstein"],
 	["Aspire to success. Don't just embrace your dark side.", "<a href=\"https://inspirobot.me/\">InspiroBot.me</a>"],
 	["X is always the unknown, Let us use W to make it seem as though we have advanced above the usual!", "Richard Feynman"],
-	["The problem with developing a perpetual motion machine, is that it would take forever to test it.", "Professor Kompressor"]
+	["The problem with developing a perpetual motion machine, is that it would take forever to test it.", "Professor Kompressor"],
+	["You're canonically a villager now.", "Technoblade"]
 ];
