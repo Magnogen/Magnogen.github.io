@@ -27,7 +27,7 @@ body, html {
 .bgimg-2, .bg-img-3 {
 	min-height: 400px;
 }
-.quote{
+.quote, .pack{
   border-style: solid;
 	border-color: #0032a8;
 	white-space: normal;
