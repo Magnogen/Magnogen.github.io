@@ -3,7 +3,7 @@
 	<title>
 		Home | Magnogen
 	</title>
-    	<base href="https://magnogen.net">
+  <base href="https://magnogen.net">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Magnogen's Official Website - Find my Tracks, Apps, and Datapacks! Plus a few handy tools too...">
@@ -14,10 +14,9 @@
 	<link rel="stylesheet" href="/src/basics.css">
 	<body>
 		<div class="w3-top">
-			<div class="w3-bar" id="myNavbar">
+			<div class="w3-bar nav">
 				<a class="w3-bar-item w3-button bars-hover w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
 					<i class="fa fa-bars"></i>
-				</a>
 				<a href="/" class="w3-bar-item w3-button">
 					HOME
 				</a>
@@ -33,12 +32,12 @@
 					<i class="fa fa-envelope"></i>
 					CONTACT
 				</a>
-                		<a href="https://github.com/Magnogen/magnogen.github.io/" class="w3-bar-item w3-button w3-hide-small" style="float:right;">
+        <a href="https://github.com/Magnogen/magnogen.github.io/" class="w3-bar-item w3-button w3-hide-small" style="float:right;">
 					<i class="fa fa-code"></i>
 					SOURCE
 				</a>
 			</div>
-			<div id="navDemo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium">
+			<div id="mobileNav" class="nav w3-bar-block w3-hide w3-hide-large w3-hide-medium">
 				<a href="/about" class="w3-bar-item w3-button" onclick="toggleFunction()">
 					ABOUT
 				</a>
@@ -48,21 +47,37 @@
 				<a href="/contact" class="w3-bar-item w3-button" onclick="toggleFunction()">
 					CONTACT
 				</a>
-                		<a href="https://github.com/Magnogen/magnogen.github.io/" class="w3-bar-item w3-button" onclick="toggleFunction()">
+        <a href="https://github.com/Magnogen/magnogen.github.io/" class="w3-bar-item w3-button" onclick="toggleFunction()">
 					SOURCE CODE
 				</a>
 			</div>
 		</div>
-		
-		<div class="bgimg-1 w3-display-container" id="home">
+
+		<div class="w3-display-container hero">
 			<div class="w3-display-middle" style="white-space:nowrap;">
-				<span style="background-color: #0032a8; color: #ffffff;" class="w3-center w3-padding-large w3-xlarge w3-wide w3-animate-opacity">
+				<span style="" class="w3-xlarge w3-wide">
 					MAGNOGEN
 				</span>
 			</div>
+      <div class="shape-divider">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
+          ></path>
+        </svg>
+      </div>
 		</div>
-		<div class="w3-content w3-container w3-padding-64" id="about">
-        		<div id="quotes" class="quote w3-padding-large"></div>
+
+		<div class="w3-content w3-container w3-padding-64">
+    <div id="quotes" class="quote w3-padding-large">
+			<span style="color:#a83200;font-size:150%;"><i class="fa fa-quote-left"></i> </span>
+			Ewwor - Qwotes are broken uwu<br>(If you can see this, please report it on GitHub)
+		</div>
 			<br>
 			<h3 class="w3-center">
 				WELCOME!
@@ -87,17 +102,17 @@
 			</p>
 			<p class="w3-wide">
 				<i class="fa fa-music"></i>
-				Music and ambiences
+				Music and Ambiences
 			</p>
-                	<a href="/music" style="text-decoration:none;">
+      <a href="/music" style="text-decoration:none;">
 				<div class="w3-light-grey">
 					<div class="w3-container w3-padding-small w3-center" style="width:80%;background-color: #0032a8; color: #ffffff;">
 					</div>
 				</div>
-            		</a>
+      </a>
 			<p class="w3-wide">
-				<i class="fa fa-mobile"></i>
-				Android apps
+				<i class="fa fa-cube"></i>
+				Minecraft Mods and Datapacks
 			</p>
 			<a href="/apps" style="text-decoration:none;">
 				<div class="w3-light-grey">
@@ -106,76 +121,41 @@
 				</div>
 			</a>
 			<p class="w3-wide">
-				<i class="fa fa-file-audio-o">
+				<i class="fa fa-cogs">
 				</i>
-				Samples
+				Other Projects
 			</p>
 			<a href="/samples" style="text-decoration:none;">
 				<div class="w3-light-grey">
 					<div class="w3-container w3-padding-small w3-center" style="width:25%; background-color: #0032a8; color: #ffffff;">
 					</div>
 				</div>
-			</a>		</div>
-		<div style="background-color: #0032a8; color: #ffffff;" class="w3-row w3-center w3-padding-16">
-        	<a href="/about" style="text-decoration:none;">
-			<div class="w3-third w3-section">
-				<span class="w3-xlarge">
-					2
-				</span>
-				<br>
-				Partners
-			</div>
-		</a>
-		<a href="/music" style="text-decoration:none;">
-			<div class="w3-third w3-section">
-				<span class="w3-xlarge">
-					21
-				</span>
-				<br>
-				Tracks Released
-			</div>
-		</a>
-		<a href="/samples" style="text-decoration:none;">
-			<div class="w3-third w3-section">
-				<span class="w3-xlarge">
-					0
-				</span>
-				<br>
-				Sample packs
-				<br>
-				<em>[So far]</em>
-			</div>
-		</a>
+			</a>
 		</div>
+
 		<footer class="w3-center w3-padding-64" style="background-color: #0032a8; color: #ffffff">
 			<div class="w3-xlarge w3-section">
-            			<a href="https://www.instagram.com/magnogenofficial/" style="text-decoration: none;">
+        <a href="https://www.instagram.com/magnogenofficial/" style="text-decoration: none;">
 					<i class="fa fa-instagram w3-hover-opacity"></i>
-                		</a>
-                		<a href="https://www.youtube.com/channel/UCosxKKKPJk4aZlwF_EFe2pw" style="text-decoration: none;">
+        </a>&nbsp
+        <a href="https://www.youtube.com/channel/UCosxKKKPJk4aZlwF_EFe2pw" style="text-decoration: none;">
 					<i class="fa fa-youtube-play w3-hover-opacity"></i>
-                		</a>
+        </a>&nbsp
+				<a href="https://www.reddit.com/user/MagnogenOnTheMoon" style="text-decoration: none;">
+					<i class="fa fa-reddit-alien w3-hover-opacity"></i>
+        </a>
 			</div>
 			<p>
-				Powered by
-				<a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank">
-					w3.css
-				</a>
+				Follow Me On My Socials!
 			</p>
 		</footer>
-        	<script src="/quotes.js"></script>
+        <script src="/quotes.js"></script>
 		<script>
-        		var rand = Math.random();
-            		rand = Math.round(rand * quotes.length);
-            		document.getElementById("quotes").innerHTML = "<span style=\"color:#0032a8;font-size:150%;\"><i class=\"fa fa-quote-left\"></i> </span>" + quotes[rand][0] + "<br> - " + quotes[rand][1];
-			function onClick(element) {
-				document.getElementById("img01").src=element.src;
-				document.getElementById("modal01").style.display="block";
-				var captionText=document.getElementById("caption");
-				captionText.innerHTML=element.alt;
-			}
+      var rand = Math.random();
+			rand = Math.round(rand * quotes.length);
+      document.getElementById("quotes").innerHTML = "<span style=\"color:#0032a8;font-size:150%;\"><i class=\"fa fa-quote-left\"></i> </span>" + quotes[rand][0] + "<br> - " + quotes[rand][1];
 			function toggleFunction(){
-				var x=document.getElementById("navDemo");
+				var x=document.getElementById("mobileNav");
 				if (x.className.indexOf("w3-show")==-1){
 					x.className +=" w3-show";
 				}else{
