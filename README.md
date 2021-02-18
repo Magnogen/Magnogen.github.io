@@ -1,4 +1,5 @@
-## Magnogen.github.io
+## Magnogen.github.io / Magnogen.net
+
 This is a project made by Magnogen, user-e and Agunderman10.  
 If you don't like it, please feel free to email us how to make it better at hydronesium@gmail.com.
 
