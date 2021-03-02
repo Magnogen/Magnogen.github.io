@@ -5,26 +5,17 @@ body, html {
 	height: 100%;
 	line-height: 1.6;
 }
-#myNavbar,#navDemo {
-  background-color: #ffffff64;
-  backdrop-filter: blur(2.5px);
-}
-#myNavbar a,#navDemo a {
-  background-color: #ffffff00;
-  backdrop-filter: blur(0px);
-}
+
 .nav {
-	background-color: #0032a8a8;
-	backdrop-filter: blur(1em);
+	background-color: #0032a8;
 	color: #ffffff;
 }
 .nav a {
 	background-color: #ffffff00;
-	backdrop-filter: blur(0px);
 }
 .bars-hover:hover{
-  color: #fff !important;
-  background-color: #0032a8 !important;
+  color: #0032a8;
+  background-color: #ffffff;
 }
 
 .hero {

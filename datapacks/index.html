@@ -3,7 +3,7 @@
 	<title>
 		Datapacks | Magnogen
 	</title>
-    	<base href="https://magnogen.net">
+  <base href="https://magnogen.net">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Magnogen: My official website provides online access to my music, musical sample packs, and a new edition: a random quote generator! Just make sure to have fun when browsing my site!">
@@ -11,10 +11,10 @@
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="/src/basics.css">
+	<link rel="stylesheet" href="https://magnogen.net/src/basics.css">
 	<body>
 		<div class="w3-top">
-			<div class="w3-bar" id="myNavbar">
+			<div class="w3-bar nav">
 				<a class="w3-bar-item w3-button bars-hover w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
 					<i class="fa fa-bars"></i>
 				</a>
@@ -29,38 +29,44 @@
 					<i class="fa fa-music"></i>
 					TRACKS
 				</a>
-				<a href="/contact" class="w3-bar-item w3-button w3-hide-small">
-					<i class="fa fa-envelope"></i>
-					CONTACT
-				</a>
-                		<a href="https://github.com/Magnogen/magnogen.github.io/" class="w3-bar-item w3-button w3-hide-small" style="float:right;">
+        <a href="https://github.com/Magnogen/magnogen.github.io/" class="w3-bar-item w3-button w3-hide-small" style="float:right;">
 					<i class="fa fa-code"></i>
 					SOURCE
 				</a>
 			</div>
-			<div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+			<div id="mobileNav" class="nav w3-bar-block w3-hide w3-hide-large w3-hide-medium">
 				<a href="/about" class="w3-bar-item w3-button" onclick="toggleFunction()">
 					ABOUT
 				</a>
 				<a href="/music" class="w3-bar-item w3-button" onclick="toggleFunction()">
 					TRACKS
 				</a>
-				<a href="/contact" class="w3-bar-item w3-button" onclick="toggleFunction()">
-					CONTACT
-				</a>
-                		<a href="https://github.com/Magnogen/magnogen.github.io/" class="w3-bar-item w3-button" onclick="toggleFunction()">
+        <a href="https://github.com/Magnogen/magnogen.github.io/" class="w3-bar-item w3-button" onclick="toggleFunction()">
 					SOURCE CODE
 				</a>
 			</div>
 		</div>
-		
-		<div class="bgimg-1 w3-display-container" id="home">
+
+		<div class="w3-display-container hero">
 			<div class="w3-display-middle" style="white-space:nowrap;">
-				<span style="background-color: #0032a8; color: #ffffff;" class="w3-center w3-padding-large w3-xlarge w3-wide w3-animate-opacity">
+				<span class="w3-xlarge w3-wide">
 					DATAPACKS
 				</span>
 			</div>
+      <div class="shape-divider">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
+          ></path>
+        </svg>
+      </div>
 		</div>
+
 		<div class="w3-content w3-container w3-padding-64" id="about">
 			<h3 class="w3-center">
 				WELCOME!
@@ -69,44 +75,44 @@
 				<div class="w3-padding-large">
 					<p>
 						Hello there! This is where you can download and use Dapacks that I've made for Minecraft. Currently they work for Java Edition, and I'm not sure if the same thing applies to Bedrock too.<br>
-                        <br>
+            <br>
 						I've got a few projects on the go at the moment.
 						But there are <a href="/story">stories</a>, <a href="/music">tracks</a> and <a href="/apps">apps</a> that you can check out that I've made before. I hope you'll be interested!<br>
-                        <br>
+            <br>
 						Want to suggest ideas for Datapacks? Feel free to do so in the contact section, or at the bottom of this page.<br>
 					</p>
-                    <a href="/datapacks/golden_eggs.zip" style="text-decoration: none;" download>
-                    	<div class="pack w3-padding-large">
-                        	<i class="fa fa-download"></i>&nbsp
-                            Golden Eggs
-                    	</div>
-                    </a>
+          <a href="/datapacks/golden_eggs.zip" style="text-decoration: none;" download>
+          	<div class="pack w3-padding-large">
+              	<i class="fa fa-download"></i>&nbsp
+                  Golden Eggs
+          	</div>
+          </a><br>
+					<a href="/datapacks/defooder_v1-3.zip" style="text-decoration: none;" download>
+          	<div class="pack w3-padding-large">
+              	<i class="fa fa-download"></i>&nbsp
+                  Defooder v1.3
+          	</div>
+          </a>
 				</div>
 			</div>
-        </div>
+    </div>
 		<footer class="w3-center w3-padding-64" style="background-color: #0032a8; color: #ffffff">
 			<div class="w3-xlarge w3-section">
-            			<a href="https://www.instagram.com/magnogenofficial/" style="text-decoration: none;">
+        <a href="https://www.instagram.com/magnogenofficial/" style="text-decoration: none;">
 					<i class="fa fa-instagram w3-hover-opacity"></i>
-                		</a>&nbsp
-                		<a href="https://www.youtube.com/channel/UCosxKKKPJk4aZlwF_EFe2pw" style="text-decoration: none;">
+        </a>&nbsp
+        <a href="https://www.youtube.com/channel/UCosxKKKPJk4aZlwF_EFe2pw" style="text-decoration: none;">
 					<i class="fa fa-youtube-play w3-hover-opacity"></i>
-                		</a>
+        </a>&nbsp
+				<a href="https://www.reddit.com/user/MagnogenOnTheMoon" style="text-decoration: none;">
+					<i class="fa fa-reddit-alien w3-hover-opacity"></i>
+        </a>
 			</div>
 			<p>
-				Powered by
-				<a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank">
-					w3.css
-				</a>
+				Follow Me On My Socials!
 			</p>
 		</footer>
 		<script>
-			function onClick(element) {
-				document.getElementById("img01").src=element.src;
-				document.getElementById("modal01").style.display="block";
-				var captionText=document.getElementById("caption");
-				captionText.innerHTML=element.alt;
-			}
 			function toggleFunction(){
 				var x=document.getElementById("navDemo");
 				if (x.className.indexOf("w3-show")==-1){

@@ -3,17 +3,18 @@
 	<title>
 		404 | Magnogen
 	</title>
-    	<base href="https://magnogen.github.io">
+	<base href="https://magnogen.net">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="/src/icon.ico" rel="shortcut icon">
+	<meta name="description" content="Error 404 - Page not found on Magnogen's website">
+	<link rel="shortcut icon" href="https://magnogen.net/src/icon.ico">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="/src/basics.css">
+	<link rel="stylesheet" href="https://magnogen.net/src/basics.css">
 	<body>
 		<div class="w3-top">
-			<div class="w3-bar" id="myNavbar">
+			<div class="w3-bar nav">
 				<a class="w3-bar-item w3-button bars-hover w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
 					<i class="fa fa-bars"></i>
 				</a>
@@ -28,38 +29,45 @@
 					<i class="fa fa-music"></i>
 					TRACKS
 				</a>
-				<a href="/contact" class="w3-bar-item w3-button w3-hide-small">
-					<i class="fa fa-envelope"></i>
-					CONTACT
-				</a>
-                		<a href="https://github.com/Magnogen/magnogen.github.io/" class="w3-bar-item w3-button w3-hide-small" style="float:right;">
+        <a href="https://github.com/Magnogen/magnogen.github.io/" class="w3-bar-item w3-button w3-hide-small" style="float:right;">
 					<i class="fa fa-code"></i>
 					SOURCE
 				</a>
 			</div>
-			<div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+			<div id="mobileNav" class="nav w3-bar-block w3-hide w3-hide-large w3-hide-medium">
 				<a href="/about" class="w3-bar-item w3-button" onclick="toggleFunction()">
 					ABOUT
 				</a>
 				<a href="/music" class="w3-bar-item w3-button" onclick="toggleFunction()">
 					TRACKS
 				</a>
-				<a href="/contact" class="w3-bar-item w3-button" onclick="toggleFunction()">
-					CONTACT
-				</a>
-                		<a href="https://github.com/Magnogen/magnogen.github.io/" class="w3-bar-item w3-button" onclick="toggleFunction()">
+        <a href="https://github.com/Magnogen/magnogen.github.io/" class="w3-bar-item w3-button" onclick="toggleFunction()">
 					SOURCE CODE
 				</a>
 			</div>
 		</div>
-		<div class="bgimg-1 w3-display-container" id="home">
+
+		<div class="w3-display-container hero">
 			<div class="w3-display-middle" style="white-space:nowrap;">
-				<span style="background-color: #0032a8; color: #ffffff;" class="w3-center w3-padding-large w3-xlarge w3-wide w3-animate-opacity">
+				<span class="w3-xlarge w3-wide">
 					404 - PAGE NOT FOUND
 				</span>
 			</div>
+			<div class="shape-divider">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
+          ></path>
+        </svg>
+      </div>
 		</div>
-		<div class="w3-content w3-container w3-padding-64" id="about">
+
+		<div class="w3-content w3-container w3-padding-64">
 			<h3 class="w3-center">
 				How embarrassing...
 			</h3>
@@ -67,59 +75,54 @@
 				<div class="w3-padding-large">
 					<p>
 						It looks like I've failed in finding that page, maybe I can redirect you back to the last page you visited?<br><br>
-                				<a href="javascript:history.back()">Click to go back</a><br><br>
+						<a href="javascript:history.back()">Click to go back</a><br><br>
 						There are also quite a few pages you can go to in the navigation bar above.
 						<br><br>
 						Or, the following problems could be the case:<br>
-                        			<ul>
-                        				<li>
-								The link is types in incorrectly, check for spelling mistaeks in the url
-                        				</li>
+      			<ul>
+      				<li>
+								The link was typed out incorrectly - check for spelling mistaeks in the URL
+              </li>
 							<li>
-                            					The page you're looking for never existed
-                           				</li>
-                            				<li>
-                            					This page has been temporarily removed by an admin, it should be back again soon in this case
-                            				</li>
-                            				<li>
-                            					Someone had a complaint against this page or its contents and it had to be taken down
-                            				</li>
-                        			</ul>
+                The page you're looking for never existed
+              </li>
+      				<li>
+      					This page has been temporarily removed by an admin - it should be back again soon then
+      				</li>
+      				<li>
+      					Someone had a complaint against this page or its contents and it had to be taken down
+      				</li>
+  					</ul>
 					</p>
 				</div>
 			</div>
 		</div>
+
 		<footer class="w3-center w3-padding-64" style="background-color: #0032a8; color: #ffffff">
 			<div class="w3-xlarge w3-section">
-            			<a href="https://www.instagram.com/magnogenofficial/" style="text-decoration: none;">
+        <a href="https://www.instagram.com/magnogenofficial/" style="text-decoration: none;">
 					<i class="fa fa-instagram w3-hover-opacity"></i>
-                		</a>&nbsp
-                		<a href="https://www.youtube.com/channel/UCosxKKKPJk4aZlwF_EFe2pw" style="text-decoration: none;">
+        </a>&nbsp
+        <a href="https://www.youtube.com/channel/UCosxKKKPJk4aZlwF_EFe2pw" style="text-decoration: none;">
 					<i class="fa fa-youtube-play w3-hover-opacity"></i>
-                		</a>
+        </a>&nbsp
+				<a href="https://www.reddit.com/user/MagnogenOnTheMoon" style="text-decoration: none;">
+					<i class="fa fa-reddit-alien w3-hover-opacity"></i>
+        </a>
 			</div>
 			<p>
-				Powered by
-				<a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank">
-					w3.css
-				</a>
+				Follow Me On My Socials!
 			</p>
 		</footer>
 		<script>
-			function onClick(element) {
-				document.getElementById("img01").src=element.src;
-				document.getElementById("modal01").style.display="block";
-				var captionText=document.getElementById("caption");
-				captionText.innerHTML=element.alt;
+		function toggleFunction(){
+			var x=document.getElementById("mobileNav");
+			if (x.className.indexOf("w3-show")==-1){
+				x.className +=" w3-show";
+			}else{
+				x.className=x.className.replace(" w3-show", "");
 			}
-			function toggleFunction(){
-				var x=document.getElementById("navDemo");
-				if (x.className.indexOf("w3-show")==-1){
-					x.className +=" w3-show";
-				}else{
-					x.className=x.className.replace(" w3-show", "");
-				}
-			}
+		}
 		</script>
 	</body>
 </html>
