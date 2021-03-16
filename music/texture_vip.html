@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<title>
+		Texture VIP | Magnogen
+	</title>
+  <base href="https://magnogen.net">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="/src/icon.ico" rel="shortcut icon">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://magnogen.net/src/basics.css">
+	<style>
+		.downloadlink:hover {
+			background-color: #000000 !important;
+		}
+	</style>
+	<body>
+		<div class="w3-top">
+			<div class="w3-bar nav">
+				<a class="w3-bar-item w3-button bars-hover w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+					<i class="fa fa-bars"></i>
+				</a>
+				<a href="/" class="w3-bar-item w3-button">
+					HOME
+				</a>
+				<a href="/about" class="w3-bar-item w3-button w3-hide-small">
+					<i class="fa fa-user"></i>
+					ABOUT
+				</a>
+				<a href="/music" class="w3-bar-item w3-button w3-hide-small">
+					<i class="fa fa-music"></i>
+					TRACKS
+				</a>
+				<a href="https://github.com/Magnogen/magnogen.github.io/" class="w3-bar-item w3-button w3-hide-small" style="float:right;">
+					<i class="fa fa-code"></i>
+					SOURCE
+				</a>
+			</div>
+			<div id="mobileNav" class="nav w3-bar-block w3-hide w3-hide-large w3-hide-medium">
+				<a href="/about" class="w3-bar-item w3-button" onclick="toggleFunction()">
+					ABOUT
+				</a>
+				<a href="/music" class="w3-bar-item w3-button" onclick="toggleFunction()">
+					TRACKS
+				</a>
+				<a href="https://github.com/Magnogen/magnogen.github.io/" class="w3-bar-item w3-button" onclick="toggleFunction()">
+					SOURCE CODE
+				</a>
+			</div>
+		</div>
+
+		<div class="w3-display-container hero">
+			<div class="w3-display-middle" style="white-space:nowrap;">
+				<span class="w3-xlarge w3-wide">
+					MUSIC
+				</span>
+			</div>
+      <div class="shape-divider">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
+          ></path>
+        </svg>
+      </div>
+		</div>
+
+		<div class="w3-content w3-container w3-padding-64" id="about">
+			<div class="w3-row">
+				<div class="w3-padding-large">
+					<br><br><br>
+					<span style="background-color: #0032a8; color: #ffffff;" class="w3-center w3-padding-large w3-xlarge w3-wide">
+						Texture VIP</span>
+					<br><br>
+					<span class="w3-center w3-padding-small w3-large">
+						Made by Magnogen
+					</span>
+					<br><br><p>
+						So... Texture... Turns out you guys liked that song quite a bit. So I decided to remaster it! Hope you like this version too. And if you liked this version, be sure to check out <a href="/music/texture.html">the original</a> on my channel!
+					</p>
+					<iframe width="100%" height="315" src="https://www.youtube.com/embed/DlnWMa0pwlU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<p>
+						If you like what you hear, please like the YouTube video and subscribe to me so I know how large my fanbase is and what genres you guys like the most. Much appreciated. :)
+					</p>
+					<br>
+					<div style="background-color: #0032a8; color: #ffffff;" class="w3-row w3-center w3-padding-8">
+        		<a href="/music/files/Magnogen_Texture_vip.wav" style="text-decoration:none;" class="downloadlink" download>
+							<div class="w3-half w3-section">
+								<span class="w3-large">
+									Full Song
+								</span>
+								<br>
+								<i class="fa fa-download"></i> Download
+							</div>
+						</a>
+						<a href="/music/files/Magnogen_Texture_vip_STEMS.zip" style="text-decoration:none; background-color: #424242;" download>
+							<div class="w3-half w3-section">
+								<span class="w3-large">
+									STEMS
+								</span>
+								<br>
+								<i class="fa fa-download"></i> Download
+							</div>
+						</a>
+					</div>
+					</div>
+				</div>
+			</div>
+			<footer class="w3-center w3-padding-64" style="background-color: #0032a8; color: #ffffff">
+				<div class="w3-xlarge w3-section">
+	        <a href="https://www.instagram.com/magnogenofficial/" style="text-decoration: none;">
+						<i class="fa fa-instagram w3-hover-opacity"></i>
+	        </a>&nbsp
+	        <a href="https://www.youtube.com/channel/UCosxKKKPJk4aZlwF_EFe2pw" style="text-decoration: none;">
+						<i class="fa fa-youtube-play w3-hover-opacity"></i>
+	        </a>&nbsp
+					<a href="https://www.reddit.com/user/MagnogenOnTheMoon" style="text-decoration: none;">
+						<i class="fa fa-reddit-alien w3-hover-opacity"></i>
+	        </a>
+				</div>
+				<p>
+					Follow Me On My Socials!
+				</p>
+			</footer>
+		<script>
+			function toggleFunction(){
+				var x=document.getElementById("mobileNav");
+				if (x.className.indexOf("w3-show")==-1){
+					x.className +=" w3-show";
+				}else{
+					x.className=x.className.replace(" w3-show", "");
+				}
+			}
+		</script>
+	</body>
+</html>
