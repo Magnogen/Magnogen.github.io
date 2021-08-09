@@ -7,155 +7,112 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Magnogen's Official Website - Find my Tracks, Apps, and Datapacks! Plus a few handy tools too...">
-	<link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/25611707?s=64">
+	<link rel="shortcut icon" href="https://magnogen.net/src/icon.ico">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://magnogen.net/src/basics.css">
 	<body>
-		<div class="w3-top">
-			<div class="w3-bar nav">
-				<a class="w3-bar-item w3-button bars-hover w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-					<i class="fa fa-bars"></i>
-				</a>
-				<a href="/" class="w3-bar-item w3-button">
-					HOME
-				</a>
-				<a href="/about" class="w3-bar-item w3-button w3-hide-small">
-					<i class="fa fa-user"></i>
-					ABOUT
-				</a>
-				<a href="/music" class="w3-bar-item w3-button w3-hide-small">
-					<i class="fa fa-music"></i>
-					TRACKS
-				</a>
-        <a href="https://github.com/Magnogen/magnogen.github.io/" class="w3-bar-item w3-button w3-hide-small" style="float:right;">
-					<i class="fa fa-code"></i>
-					SOURCE
-				</a>
-			</div>
-			<div id="mobileNav" class="nav w3-bar-block w3-hide w3-hide-large w3-hide-medium">
-				<a href="/about" class="w3-bar-item w3-button" onclick="toggleFunction()">
-					ABOUT
-				</a>
-				<a href="/music" class="w3-bar-item w3-button" onclick="toggleFunction()">
-					TRACKS
-				</a>
-        <a href="https://github.com/Magnogen/magnogen.github.io/" class="w3-bar-item w3-button" onclick="toggleFunction()">
-					SOURCE CODE
-				</a>
-			</div>
-		</div>
-
-		<div class="w3-display-container hero">
+    <script src="navbar.js" path="HOME" rules="HOME:.here" nav></script>
+	  <header class="w3-display-container">
 			<div class="w3-display-middle" style="white-space:nowrap;">
-				<span class="w3-xlarge w3-wide">
-					MAGNOGEN
-				</span>
+				<span class="w3-xxlarge w3-wide">
+				MAGNOGEN
+				</span><br>
+				<span greeting><span></span>
+					Hey! I'm Mag
+				<span></span></span>
 			</div>
-      <div class="shape-divider">
-        <svg
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
-          ></path>
-        </svg>
-      </div>
-		</div>
+			<div class="shape-divider"><svg
+				viewbox="0 0 1200 120"
+				preserveaspectratio="none">
+				<path d="M1200 120L0 0 0 0 1200 0 1200 120z"></path>
+			</svg></div>
+		</header>
 
 		<div class="w3-content w3-container w3-padding-64">
-    	<div id="quotes" class="quote w3-padding-large">
-				<span style="color:#a83200;font-size:150%;"><i class="fa fa-quote-left"></i> </span>
-				Ewwor - Qwotes are broken uwu<br>(If you can see this, please report it on GitHub)
-			</div>
-			<br>
-			<h3 class="w3-center">
-				WELCOME!
-			</h3>
-			<div class="w3-row">
-				<div class="w3-padding-large">
-					<p>
-						Hello there! Welcome to the official Magnogen website!<br>
-						There have been a few contributors to help this website, especially in it's infant stages, you can see those individuals <a href="/about">here</a>.<br>
-						<br>
-						I've got a few projects on the go at the moment.
-						But there are <a href="/apps">Android apps</a>, <a href="/music">tracks</a> and <a href="/datapacks">Minecraft datapacks</a> that you can check out that I've made before. I hope you'll be interested!<br>
-						<br>
-						There is also a small project that encrypts and decrypts codes and ciphers. It's called <a href="/krypt">Krypt</a>, you're welcome play around with it.<br>
-						<br>
-						Want to contact me? Feel free to do so on my Instagram and YouTube accounts - you can find them at the bottom of this page.<br>
-					</p>
-				</div>
-			</div>
-			<p class="w3-large w3-center w3-padding-16">
-				I like to create:
-			</p>
-			<p class="w3-wide">
-				<i class="fa fa-music"></i>
-				Music and Ambiences
-			</p>
-      <a href="/music" style="text-decoration:none;">
-				<div class="w3-light-grey">
-					<div class="w3-container w3-padding-small w3-center" style="width:80%;background-color: #0032a8; color: #ffffff;">
-					</div>
-				</div>
-      </a>
-			<p class="w3-wide">
-				<i class="fa fa-cube"></i>
-				Minecraft Mods and Datapacks
-			</p>
-			<a href="/apps" style="text-decoration:none;">
-				<div class="w3-light-grey">
-					<div class="w3-container w3-padding-small w3-center" style="width:70%; background-color: #0032a8; color: #ffffff;">
-					</div>
-				</div>
-			</a>
-			<p class="w3-wide">
-				<i class="fa fa-cogs">
-				</i>
-				Other Projects
-			</p>
-			<a href="/samples" style="text-decoration:none;">
-				<div class="w3-light-grey">
-					<div class="w3-container w3-padding-small w3-center" style="width:25%; background-color: #0032a8; color: #ffffff;">
-					</div>
-				</div>
-			</a>
-		</div>
-
-		<footer class="w3-center w3-padding-64" style="background-color: #0032a8; color: #ffffff">
-			<div class="w3-xlarge w3-section">
-        <a href="https://www.instagram.com/magnogenofficial/" style="text-decoration: none;">
-					<i class="fa fa-instagram w3-hover-opacity"></i>
-        </a>&nbsp
-        <a href="https://www.youtube.com/channel/UCosxKKKPJk4aZlwF_EFe2pw" style="text-decoration: none;">
-					<i class="fa fa-youtube-play w3-hover-opacity"></i>
-        </a>&nbsp
-				<a href="https://www.reddit.com/user/MagnogenOnTheMoon" style="text-decoration: none;">
-					<i class="fa fa-reddit-alien w3-hover-opacity"></i>
+    	<div id="quotes" class="w3-padding-large" quotes>
+          <span style="color:#a83200;font-size:150%;"><i class="fa fa-quote-left"></i> </span>
+          Ewwor - Qwotes are broken uwu<br>(If you can see this, please report it on GitHub)
+        </div>
+        <br>
+        <h3 class="w3-center">
+          WELCOME!
+        </h3>
+        <div class="w3-row">
+          <div class="w3-padding-large">
+            <p>
+              Hello there! Welcome to the official Magnogen website!<br>
+              There have been a few contributors to help this website, especially in it's infant stages, you can see those individuals <a href="/about">here</a>.<br>
+              <br>
+              I've got a few projects on the go at the moment.
+              But there are <a href="/apps">Android apps</a>, <a href="/music">tracks</a> and <a href="/datapacks">Minecraft datapacks</a> that you can check out that I've made before. I hope you'll be interested!<br>
+              <br>
+              There is also a small project that encrypts and decrypts codes and ciphers. It's called <a href="/krypt">Krypt</a>, you're welcome play around with it.<br>
+              <br>
+              Want to contact me? Feel free to do so on my Instagram and YouTube accounts - you can find them at the bottom of this page.<br>
+            </p>
+          </div>
+        </div>
+        <p class="w3-large w3-center w3-padding-16">
+          I like to create:
+        </p>
+        <p>
+          <i class="fa fa-music"></i>
+          Music and Ambiences
+        </p>
+        <a href="/music" style="text-decoration:none;">
+          <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-center" style="width:80%" bar>
+            </div>
+          </div>
         </a>
-			</div>
-			<p>
-				Follow Me On My Socials!
-			</p>
-		</footer>
-    <script src="https://magnogen.net/quotes.js"></script>
-		<script>
-      var rand = Math.random();
-			rand = Math.round(rand * quotes.length);
-      document.getElementById("quotes").innerHTML = "<span style=\"color:#0032a8;font-size:150%;\"><i class=\"fa fa-quote-left\"></i> </span>" + quotes[rand][0] + "<br> - " + quotes[rand][1];
-			function toggleFunction(){
-				var x=document.getElementById("mobileNav");
-				if (x.className.indexOf("w3-show")==-1){
-					x.className +=" w3-show";
-				}else{
-					x.className=x.className.replace(" w3-show", "");
-				}
-			}
-		</script>
+        <p>
+          <i class="fa fa-cube"></i>
+          Minecraft Mods and Datapacks
+        </p>
+        <a href="/apps" style="text-decoration:none;">
+          <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-center" style="width:70%" bar>
+            </div>
+          </div>
+        </a>
+        <p>
+          <i class="fa fa-cogs"></i>
+          Other Projects
+        </p>
+        <a href="/samples" style="text-decoration:none;">
+          <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-center" style="width:25%" bar>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <footer class="w3-center w3-padding-64">
+        <div class="w3-xlarge w3-section">
+          <a href="https://www.instagram.com/magnogenofficial/" style="text-decoration: none;">
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+          </a>&nbsp
+          <a href="https://www.youtube.com/channel/UCosxKKKPJk4aZlwF_EFe2pw" style="text-decoration: none;">
+            <i class="fa fa-youtube-play w3-hover-opacity"></i>
+          </a>&nbsp
+          <a href="https://www.reddit.com/user/MagnogenOnTheMoon" style="text-decoration: none;">
+            <i class="fa fa-reddit-alien w3-hover-opacity"></i>
+          </a>
+        </div>
+        <p>Follow Me On My Socials!</p>
+      </footer>
+      <script src="https://magnogen.net/quotes.js"></script>
+      <script>
+        let rand = Math.random();
+        rand = Math.round(rand * quotes.length);
+        document.getElementById("quotes").innerHTML = `<span style="color:#0032a8;font-size:150%;"><i class="fa fa-quote-left"></i> </span>${quotes[rand][0]}<br> - ${quotes[rand][1]}`;
+        function toggleFunction(){
+          let x=document.getElementById("mobileNav");
+          if (x.className.indexOf("w3-show")==-1) x.className +=" w3-show";
+          else x.className=x.className.replace(" w3-show", "");
+        }
+      </script>
 	</body>
 </html>
