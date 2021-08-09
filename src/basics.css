@@ -1,43 +1,91 @@
-body, h1,h2, h3, h4, h5, h6 {
-	font-family: "Lato", sans-serif;
-}
-body, html {
-	height: 100%;
-	line-height: 1.6;
+/*  Colours: 
+    - DarkBlue: #0032a8[ff];
+    - LightBlue: #004cff[ff];
+    - LightestBlue: #80a8ff[ff];
+    - White: #fff[ff];
+*/
+
+body {
+  background-color: #fff;
+  font-family: "Lato", sans-serif;
+  height: 100%;
+  line-height: 1.6;
 }
 
-.nav {
-	background-color: #0032a8;
-	color: #ffffff;
+.wide{ letter-spacing: 12px; }
+
+header {
+  background: linear-gradient(#004cff calc(1em + 16px), #0032a8 100%);
+  color: #ffffff;
+  height: 80vh;
+  min-height: 20em;
+} header .shape-divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: translateY(1px) rotate(180deg);
+  fill: #ffffff;
+} header .shape-divider svg {
+  height: 4em;
+  width: 100%;
+} span[greeting] {
+  display: flex;
+  justify-content: space-evenly;
+} span[greeting] > span {
+  width: 100%;
+  margin: auto 1em;
+  height: 1px;
 }
-.nav a {
-	background-color: #ffffff00;
-}
-.bars-hover:hover{
-  color: #0032a8;
-  background-color: #ffffff;
+span[greeting] > span:first-child { background: linear-gradient(to left, #ffff, #fff0); }
+span[greeting] > span:last-child { background: linear-gradient(to right, #ffff, #fff0); }
+
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: #004cff;
+  color: #ffffff;
+} nav > a {
+  margin: 6px 8px;
+  padding: 2px 8px;
+  display: inline-block;
+  text-decoration: none;
+} nav > a.here {
+  /* Underline styles - details of technique here:
+     https://nickymeuleman.netlify.app/blog/css-animated-wrapping-underline */
+  background: 
+    linear-gradient(to right, #80a8ff, #004cff),
+    linear-gradient(to right, #fff, #80a8ff);
+  background-size: 100% 0.15em, 0 0.15em;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size .8s;
+} nav > a.here:hover, nav > a.here:focus {
+  background-size: 0 0.15em, 100% 0.15em;
 }
 
-.hero {
-	background-color: #0032a8;
-	color: #ffffff;
-	height: 66.667vh;
-}
-.hero .shape-divider {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	overflow: hidden;
-	line-height: 0;
-	transform: translateY(1px) rotate(180deg);
-	fill: #ffffff;
+div[quotes], div[pack] {
+  position: relative;
+  background-color: #fff;
+} div[quotes]:before, div[pack]:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  margin: -4px;
+  background: #004cff;
 }
 
-.quote, .pack{
-  border-style: solid;
-	border-color: #0032a8;
-	white-space: normal;
-}
+div[bar] { background: #004cff; }
 
-.w3-wide{letter-spacing: 6px;}
+footer {
+  background: radial-gradient(circle at 50%, #004cff, #0032a8);
+  color: #ffffff;
+}
