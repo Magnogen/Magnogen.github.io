@@ -8,9 +8,9 @@ let html = "", upto = "";
 for (let node of path) {
   let css = "";
   if (rules.hasOwnProperty(node)) {
-    upto += rules[node] + "/";
     if (rules[node].charAt(0) == ".")
       css = rules[node].slice(1);
+    else upto += rules[node] + "/";
   } else upto += node + "/";
   html += `<a href="${upto.slice(0, -1)}"${css == "" ? "" : ` class="${css}"`}>${node}</a>/`;
 }
