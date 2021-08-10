@@ -1,3 +1,4 @@
+
 /*  Colours: 
     - DarkBlue: #0032a8[ff];
     - LightBlue: #004cff[ff];
@@ -61,13 +62,13 @@ nav {
      https://nickymeuleman.netlify.app/blog/css-animated-wrapping-underline */
   background: 
     linear-gradient(to right, #80a8ff, #004cff),
-    linear-gradient(to right, #fff, #80a8ff);
-  background-size: 100% 0.15em, 0 0.15em;
+    linear-gradient(to left, #fff, #80a8ff);
+  background-size: 100% 1px, 0 1px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
   transition: background-size .8s;
 } nav > a.here:hover, nav > a.here:focus {
-  background-size: 0 0.15em, 100% 0.15em;
+  background-size: 0 1px, 100% 1px;
 }
 
 div[quotes], div[pack] {
