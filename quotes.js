@@ -95,5 +95,12 @@ var quotes = [
 	["Aspire to success. Don't just embrace your dark side.", "<a href=\"https://inspirobot.me/\">InspiroBot.me</a>"],
 	["X is always the unknown, Let us use W to make it seem as though we have advanced above the usual!", "Richard Feynman"],
 	["The problem with developing a perpetual motion machine, is that it would take forever to test it.", "Professor Kompressor"],
-	["You're canonically a villager now.", "Technoblade"]
+	["You're canonically a villager now.", "Technoblade"],
+	["E", "E"],
+	["It's just the microchip taking effect, don't worry", "Spider2153"],
+	["chovekus", "LobsterSir"],
+	["fight an ancient beings...with a <i><b>S P O O N</b></i>", "edmord"],
+	["sometimes you just gotta bend the spacetime continuum to get it out the box", "Chovek"],
+	["And eventually you'll realise your life has become a math problem", "Chovek"],
+	["contained nuclear waste is significantly less dangerous than spraying CO2 everywhere", "Sire John"]
 ];
