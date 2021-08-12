@@ -8,14 +8,13 @@
 body {
   background-color: #fff;
   font-family: "Lato", sans-serif;
-  height: 100%;
-  line-height: 1.6;
+  line-height: 1.667em;
 }
 
 .wide{ letter-spacing: 8px; }
 
 header {
-  background: linear-gradient(#004cff calc(1em + 16px), #0032a8 100%);
+  background: linear-gradient(#004cff calc(1em + 24px), #0032a8 100%);
   color: #ffffff;
   height: 80vh;
   min-height: 20em;
@@ -42,15 +41,19 @@ header {
 span[greeting] > span:first-child { background: linear-gradient(to left, #ffff, #fff0); }
 span[greeting] > span:last-child { background: linear-gradient(to right, #ffff, #fff0); }
 
-nav {
+div[nav] {
+  background-color: #004cff;
+  color: #ffffff;
   position: fixed;
   width: 100%;
   z-index: 1;
   top: 0;
-  width: 100%;
+}
+nav {
+  width: calc(100% - 8px);
   overflow: hidden;
-  background-color: #004cff;
-  color: #ffffff;
+  padding: 0 calc(50vw - 490px - 8px);
+  margin: 4px;
 } nav > a {
   margin: 6px 8px;
   padding: 2px 8px;
@@ -58,7 +61,8 @@ nav {
   text-decoration: none;
 } nav > a.here {
   /* Underline styles - details of technique here:
-     https://nickymeuleman.netlify.app/blog/css-animated-wrapping-underline */
+   * https://nickymeuleman.netlify.app/blog/css-animated-wrapping-underline
+   */
   background: 
     linear-gradient(to right, #80a8ff, #004cff),
     linear-gradient(to left, #fff, #80a8ff);
@@ -86,6 +90,6 @@ div[quotes], div[pack] {
 div[bar] { background: #004cff; }
 
 footer {
-  background: radial-gradient(circle at 50%, #004cff, #0032a8);
+  background: radial-gradient(circle at 50% 100%, #004cff 0%, #003FD4 33.333%, #0032a8 100%);
   color: #ffffff;
 }
