@@ -103,5 +103,6 @@ var quotes = [
 	["sometimes you just gotta bend the spacetime continuum to get it out the box", "Chovek"],
 	["And eventually you'll realise your life has become a math problem", "Chovek"],
 	["contained nuclear waste is significantly less dangerous than spraying CO2 everywhere", "Sire John"],
-	["Yo dudes, The Empire's pretty chill. Maybe you could, like, join it or something.", "Darth Vader <a href=\"https://youtu.be/EWTYnsikfWE\">(Danksolutely)</a>"]
+	["Yo dudes, The Empire's pretty chill. Maybe you could, like, join it or something.", "Darth Vader <a href=\"https://youtu.be/EWTYnsikfWE\">(Danksolutely)</a>"],
+	["lemon, would you please edit that", "Chovek"]
 ];
