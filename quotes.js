@@ -105,5 +105,6 @@ var quotes = [
 	["contained nuclear waste is significantly less dangerous than spraying CO2 everywhere", "Sire John"],
 	["Yo dudes, The Empire's pretty chill. Maybe you could, like, join it or something.", "Darth Vader <a href=\"https://youtu.be/EWTYnsikfWE\">(Danksolutely)</a>"],
 	["lemon, would you please edit that", "Chovek"], 
-        ["I hate the Internet", "skadoodly_dave"]
+        ["I hate the Internet", "skadoodly_dave"],
+	["itd about those spheres", "LobsterSir"]
 ];
