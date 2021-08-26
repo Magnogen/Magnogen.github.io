@@ -110,5 +110,11 @@ var quotes = [
 	["There are time when a psychic is just a psychic.", "<a href=\"https://inspirobot.me/\">InspiroBot.me</a>"],
 	["Say no to. Be insecure about. Transcend. Bow down to. Expose.", "<a href=\"https://inspirobot.me/\">InspiroBot.me</a>"],
 	["You shouldn't let the scientific method mess up your date", "<a href=\"https://inspirobot.me/\">InspiroBot.me</a>"],
-	["I got a jar of dirt. I got a jar of dirt. And guess whats inside it?", "Jack Sparrow"]
+	["I got a jar of dirt. I got a jar of dirt. And guess whats inside it?", "Jack Sparrow"],
+	["Somehow Palpatine returned", "Poe Dameron but it's bad writing"],
+	["We should pull some Holdo maneuver, do some real damage", "Meriadoc \"Merry\" Brandybuck"],
+	["C'mon that move is one in a million", "Finn"],
+	["The dark side of the force is a pathway to many abilities, some considered to be unnatural", "Palpatine"],
+	["The dark side of the force is a pathway to many abilities, some considered to be unnatural", "Plagiarism"],
+	["I don't like sand", "Anakin Skywalker"]
 ];
