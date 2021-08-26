@@ -109,5 +109,6 @@ var quotes = [
 	["itd about those spheres", "LobsterSir"],
 	["There are time when a psychic is just a psychic.", "<a href=\"https://inspirobot.me/\">InspiroBot.me</a>"],
 	["Say no to. Be insecure about. Transcend. Bow down to. Expose.", "<a href=\"https://inspirobot.me/\">InspiroBot.me</a>"],
-	["You shouldn't let the scientific method mess up your date", "<a href=\"https://inspirobot.me/\">InspiroBot.me</a>"]
+	["You shouldn't let the scientific method mess up your date", "<a href=\"https://inspirobot.me/\">InspiroBot.me</a>"],
+	["I got a jar of dirt. I got a jar of dirt. And guess whats inside it?", "Jack Sparrow"]
 ];
