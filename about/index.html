@@ -1,212 +1,179 @@
 <!DOCTYPE html>
 <html>
-	<title>
-		About | Magnogen
-	</title>
-  <base href="https://magnogen.net">
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="/src/icon.ico" rel="shortcut icon">
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://magnogen.net/src/basics.css">
-	<body>
-		<div class="w3-top">
-			<div class="w3-bar nav">
-				<a class="w3-bar-item w3-button bars-hover w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-					<i class="fa fa-bars"></i>
-				</a>
-				<a href="/" class="w3-bar-item w3-button">
-					HOME
-				</a>
-				<a href="/about" class="w3-bar-item w3-button w3-hide-small">
-					<i class="fa fa-user"></i>
-					ABOUT
-				</a>
-				<a href="/music" class="w3-bar-item w3-button w3-hide-small">
-					<i class="fa fa-music"></i>
-					TRACKS
-				</a>
-        <a href="https://github.com/Magnogen/magnogen.github.io/" class="w3-bar-item w3-button w3-hide-small" style="float:right;">
-					<i class="fa fa-code"></i>
-					SOURCE
-				</a>
-			</div>
-			<div id="mobileNav" class="nav w3-bar-block w3-hide w3-hide-large w3-hide-medium">
-				<a href="/about" class="w3-bar-item w3-button" onclick="toggleFunction()">
-					ABOUT
-				</a>
-				<a href="/music" class="w3-bar-item w3-button" onclick="toggleFunction()">
-					TRACKS
-				</a>
-        <a href="https://github.com/Magnogen/magnogen.github.io/" class="w3-bar-item w3-button" onclick="toggleFunction()">
-					SOURCE CODE
-				</a>
-			</div>
-		</div>
+	<head>
+  	<title>About | Magnogen</title>
+  	<base href="https://magnogen.net" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Magnogen's Official Website - Find my Tracks, Apps, and Datapacks! Plus a few handy tools too..." />
+    <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/25611707?s=64" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://magnogen.net/src/basics.css" />
+	</head>
+  <body>
+    <script src="https://magnogen.net/src/navbar.js"
+      path="HOME / about"
+      rules="HOME:,about:_.here"
+    nav></script>
 
-		<div class="w3-display-container hero">
-			<div class="w3-display-middle" style="white-space:nowrap;">
-				<span class="w3-xlarge w3-wide">
-					ABOUT
-				</span>
-			</div>
+    <header class="w3-display-container">
+      <div class="w3-display-middle" style="white-space:nowrap;">
+        <span class="w3-xxlarge wide" title>ABOUT</span>
+        <span greeting><span></span>
+          Learn More
+        <span></span></span>
+      </div>
       <div class="shape-divider">
-        <svg
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
-          ></path>
+        <svg viewbox="0 0 1200 120" preserveaspectratio="none">
+          <path d="M1200 120L0 0 0 0 1200 0 1200 120z"></path>
         </svg>
       </div>
-		</div>
+    </header>
 
-		<div class="w3-content w3-container w3-padding-64" id="about">
-			<h3 class="w3-center">
-				CONTRIBUTORS
-			</h3>
-			<p class="w3-center">
-				<em>
-					Say hi to the team!
-				</em>
-			</p>
-  		<div class="w3-row">
-				<div class="w3-col m5 w3-center w3-padding-large">
-					<p id="hydronesium">
-						<b>
-							<i class="fa fa-user w3-margin-right"></i>
-							Magnogen
-						</b>
-					</p>
-					<img src="https://avatars0.githubusercontent.com/u/25611707" class="w3-round w3-image" alt="Image" width="500" height="333">
-				</div>
-				<div class="w3-col m7 w3-hide-small w3-padding-large">
-					<p>
-    				<br>
-						Website:
-      			<a href="http://magnogen.net/">
-      				Magnogen website
-						</a>
-      			<br>
-						YouTube channel:
-      			<a href="https://www.youtube.com/channel/UCosxKKKPJk4aZlwF_EFe2pw">
-							Magnogen
-      			</a>
-						<br>
-						Instagram:
-      			<a href="https://www.instagram.com/magnogenofficial/">
-      				Magnogen on Instagram
-						</a>
-      			<br>
-						Github:
-		  			<a href="https://github.com/Magnogen">
-		  				Magnogen on Github
-		 				</a>
-		  			<br><br>
-		  			Hey there, my name is Connor. I've always wanted a website and now that I have one, I'm so happy! It contains a lot of... <i>unique</i> things. If you want to check them out, feel free to do so!
-		  			<br><br>
-		  			I enjoy doing mathematics and computational sciences as they both provide a lot of inspiration for me to make things with.
-						I have fun making <a href="/music">music</a>, <a href="/samples">sample packs</a> and <a href="/apps">Android apps</a>. Check out what I've made by clicking on the links.
-					</p>
-				</div>
-			</div>
-  		<div class="w3-row">
-				<div class="w3-col m5 w3-center w3-padding-large">
-					<p id="user-e">
-						<b>
-							<i class="fa fa-user w3-margin-right"></i>
-							User-E
-						</b>
-					</p>
-					<img src="https://avatars3.githubusercontent.com/u/13541254" class="w3-round w3-image" alt="Image" width="500" height="333">
-				</div>
-				<div class="w3-col m7 w3-hide-small w3-padding-large">
-					<p>
-    				<br>
-						Website:
-      			<a href="http://192.168.1.77/a/">
-							my Raspberry Pi server <em>(non-public)</em>
-						</a>
-						<br>
-						Google+ page: <a href="https://plus.google.com/107507296915460932126">
-							Edward J
-						</a>
-						<br>
-						Github:
-						<a href="https://github.com/user-e">
-							user-e
-						</a>
-						<br><br>
-						Hello, I’m someone called Edward. I am good at programming (have coded my own website) and Maths.
-						Also, I know some things about version control systems/Github.
-						<br>
-						I'm going to do Computing at College, but I am not taking the GCSE.
-						<br>
-						Here to help out with the webpage making, using my skills.
-					</p>
-				</div>
-			</div>
-  		<div class="w3-row">
-				<div class="w3-col m5 w3-center w3-padding-large">
-					<p id="agunderman10">
-						<b>
-							<i class="fa fa-user w3-margin-right"></i>
-							Agunderman10
-						</b>
-					</p>
-					<img src="https://avatars1.githubusercontent.com/u/28486005" class="w3-round w3-image" alt="Image" width="500" height="333">
-				</div>
-				<div class="w3-col m7 w3-hide-small w3-padding-large">
-					<p>
-						<br>
-						Website:
-      			<a href="http://www.andrewgunderman.com/">
-							Home | Andrew Gunderman
-						</a>
-    				<br>
-						Github:
-						<a href="https://github.com/Agunderman10">
-							Agunderman10
-						</a>
-						<br><br>
-						Hello, my name is Andrew. I love code of any kind and I enjoy contributing to open source projects.
-						<br><br>
-						Feel free to contact me at the email listed on my Github page.
-					</p>
-				</div>
-     	</div>
-		</div>
+    <div class="w3-content w3-container w3-padding-64" id="about">
+      <h3 class="w3-center">CONTRIBUTORS</h3>
+      <p class="w3-center">
+        <em> Say hi to the team! </em>
+      </p>
+      <div class="w3-row">
+        <div class="w3-col m5 w3-center w3-padding-large">
+          <p id="hydronesium">
+            <i class="fa fa-user w3-margin-right"></i>
+            Magnogen
+          </p>
+          <img
+            src="https://avatars0.githubusercontent.com/u/25611707"
+            class="w3-round w3-image"
+            alt="Image"
+            width="500"
+            height="333"
+          />
+        </div>
+        <div class="w3-col m7 w3-hide-small w3-padding-large">
+          <p>
+            <br />
+            Website:
+            <a href="http://magnogen.net/"> Magnogen website </a>
+            <br />
+            YouTube channel:
+            <a href="https://www.youtube.com/channel/UCosxKKKPJk4aZlwF_EFe2pw">
+              Magnogen
+            </a>
+            <br />
+            Instagram:
+            <a href="https://www.instagram.com/magnogenofficial/">
+              Magnogen on Instagram
+            </a>
+            <br />
+            Github:
+            <a href="https://github.com/Magnogen"> Magnogen on Github </a>
+            <br /><br />
+            Hey! I'm Mag! I've always wanted a website and now
+            that I have one, I'm so happy! It contains a lot of...
+            <i>unique</i> things. If you want to check them out, feel free to do
+            so!
+          </p>
+        </div>
+      </div>
+      <div class="w3-row">
+        <div class="w3-col m5 w3-center w3-padding-large">
+          <p id="user-e">
+            <i class="fa fa-user w3-margin-right"></i>
+            User-E
+          </p>
+          <img
+            src="https://avatars3.githubusercontent.com/u/13541254"
+            class="w3-round w3-image"
+            alt="Image"
+            width="500"
+            height="333"
+          />
+        </div>
+        <div class="w3-col m7 w3-hide-small w3-padding-large">
+          <p>
+            <br />
+            Website:
+            <a href="http://192.168.1.77/a/">
+              my Raspberry Pi server <em>(non-public)</em>
+            </a>
+            <br />
+            Google+ page:
+            <a href="https://plus.google.com/107507296915460932126">
+              Edward J
+            </a>
+            <br />
+            Github:
+            <a href="https://github.com/user-e"> user-e </a>
+            <br /><br />
+            Hello, I’m someone called Edward. I am good at programming (have
+            coded my own website) and Maths. Also, I know some things about
+            version control systems/Github.
+            <br />
+            I'm going to do Computing at College, but I am not taking the GCSE.
+            <br />
+            Here to help out with the webpage making, using my skills.
+          </p>
+        </div>
+      </div>
+      <div class="w3-row">
+        <div class="w3-col m5 w3-center w3-padding-large">
+          <p id="agunderman10">
+            <i class="fa fa-user w3-margin-right"></i>
+            Agunderman10
+          </p>
+          <img
+            src="https://avatars1.githubusercontent.com/u/28486005"
+            class="w3-round w3-image"
+            alt="Image"
+            width="500"
+            height="333"
+          />
+        </div>
+        <div class="w3-col m7 w3-hide-small w3-padding-large">
+          <p>
+            <br />
+            Website:
+            <a href="http://www.andrewgunderman.com/">
+              Home | Andrew Gunderman
+            </a>
+            <br />
+            Github:
+            <a href="https://github.com/Agunderman10"> Agunderman10 </a>
+            <br /><br />
+            Hello, my name is Andrew. I love code of any kind and I enjoy
+            contributing to open source projects.
+            <br /><br />
+            Feel free to contact me at the email listed on my Github page.
+          </p>
+        </div>
+      </div>
+    </div>
 
-		<footer class="w3-center w3-padding-64" style="background-color: #0032a8; color: #ffffff">
-			<div class="w3-xlarge w3-section">
-        <a href="https://www.instagram.com/magnogenofficial/" style="text-decoration: none;">
-					<i class="fa fa-instagram w3-hover-opacity"></i>
-        </a>&nbsp
-        <a href="https://www.youtube.com/channel/UCosxKKKPJk4aZlwF_EFe2pw" style="text-decoration: none;">
-					<i class="fa fa-youtube-play w3-hover-opacity"></i>
-        </a>&nbsp
-				<a href="https://www.reddit.com/user/MagnogenOnTheMoon" style="text-decoration: none;">
-					<i class="fa fa-reddit-alien w3-hover-opacity"></i>
-        </a>
-			</div>
-			<p>
-				Follow Me On My Socials!
-			</p>
-		</footer>
-		<script>
-			function toggleFunction(){
-				var x=document.getElementById("mobileNav");
-				if (x.className.indexOf("w3-show")==-1){
-					x.className +=" w3-show";
-				}else{
-					x.className=x.className.replace(" w3-show", "");
-				}
-			}
-		</script>
-	</body>
+    <footer class="w3-center w3-padding-64">
+      <div class="w3-xlarge w3-section">
+        <a style="text-decoration: none;"
+          href="https://www.instagram.com/magnogenofficial/"
+        > <i class="fa fa-instagram w3-hover-opacity"></i> </a> &nbsp
+        <a style="text-decoration: none;"
+          href="https://www.youtube.com/channel/UCosxKKKPJk4aZlwF_EFe2pw"
+        > <i class="fa fa-youtube-play w3-hover-opacity"></i> </a > &nbsp
+        <a style="text-decoration: none;"
+          href="https://www.reddit.com/user/MagnogenOnTheMoon"
+        > <i class="fa fa-reddit-alien w3-hover-opacity"></i> </a>
+      </div>
+      <p>Follow Me On My Socials!</p>
+    </footer>
+    <script>
+      function toggleFunction(){
+      	var x=document.getElementById("mobileNav");
+      	if (x.className.indexOf("w3-show")==-1){
+      		x.className +=" w3-show";
+      	}else{
+      		x.className=x.className.replace(" w3-show", "");
+      	}
+      }
+    </script>
+  </body>
 </html>
