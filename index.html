@@ -116,8 +116,7 @@
     </footer>
     <script src="https://magnogen.net/quotes.js"></script>
     <script>
-      let rand = Math.random();
-      rand = Math.round(rand * quotes.length);
+      let rand = Math.floor(Math.random() * quotes.length);
       document.getElementById("quotes").innerHTML = `<span style="color:#0032a8;font-size:150%;"><i class="fa fa-quote-left"></i> </span>${quotes[rand][0]}<br> - ${quotes[rand][1]}`;
       function toggleFunction(){
         let x = document.getElementById("mobileNav");
