@@ -106,5 +106,8 @@ var quotes = [
 	["Yo dudes, The Empire's pretty chill. Maybe you could, like, join it or something.", "Darth Vader <a href=\"https://youtu.be/EWTYnsikfWE\">(Danksolutely)</a>"],
 	["lemon, would you please edit that", "Chovek"], 
         ["I hate the Internet", "skadoodly_dave"],
-	["itd about those spheres", "LobsterSir"]
+	["itd about those spheres", "LobsterSir"],
+	["There are time when a psychic is just a psychic.", "<a href=\"https://inspirobot.me/\">InspiroBot.me</a>"],
+	["Say no to. Be insecure about. Transcend. Bow down to. Expose.", "<a href=\"https://inspirobot.me/\">InspiroBot.me</a>"],
+	["You shouldn't let the scientific method mess up your date", "<a href=\"https://inspirobot.me/\">InspiroBot.me</a>"]
 ];
