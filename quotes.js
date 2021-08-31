@@ -117,5 +117,6 @@ var quotes = [
 	["The dark side of the force is a pathway to many abilities, some considered to be unnatural", "Palpatine"],
 	["The dark side of the force is a pathway to many abilities, some considered to be unnatural", "Plagiarism"],
 	["I don't like sand", "Anakin Skywalker"],
-	["words are dumb, let us continue to communicate by telepathy", "Magnogen :)"]
+	["words are dumb, let us continue to communicate by telepathy", "Magnogen :)"],
+	["Cancel culture should cancel itself", "Magnogen"]
 ];
