@@ -119,5 +119,6 @@ var quotes = [
 	["I don't like sand", "Anakin Skywalker"],
 	["words are dumb, let us continue to communicate by telepathy", "Magnogen :)"],
 	["Cancel culture should cancel itself", "Magnogen"],
-	["hey don't worry about it, if a fat slob like me can get a gf, anyone can", "MELOD"]
+	["hey don't worry about it, if a fat slob like me can get a gf, anyone can", "MELOD"],
+        ["There are a thousand ways of saying \"no\", and only some of them mean \"yes\".", "Athos"]
 ];
