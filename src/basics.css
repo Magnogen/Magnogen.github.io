@@ -58,7 +58,8 @@ div[nav] {
   top: 0;
 }
 nav {
-  width: calc(100% - 8px);
+  width: 100vw;
+  min-width: calc(100vw - 8px);
   overflow: hidden;
   padding: 0 calc(50vw - 490px - 8px);
   margin: 4px;
