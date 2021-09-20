@@ -1,7 +1,6 @@
 let me = document.querySelector("script[nav]");
 let path = me.getAttribute('path')
-             .replace(/\s+/g, '')
-             .split(/[\/\\]/);
+             .split(/\s+[\/]\s+/);
 let rules = {};
 for (let rule of me.getAttribute('rules').split(","))
   rules[rule.split(":")[0]] = rule.split(":")[1];
