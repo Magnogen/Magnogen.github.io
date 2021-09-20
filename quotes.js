@@ -121,5 +121,6 @@ var quotes = [
 	["Cancel culture should cancel itself", "Magnogen"],
 	["hey don't worry about it, if a fat slob like me can get a gf, anyone can", "MELOD"],
         ["There are a thousand ways of saying \"no\", and only some of them mean \"yes\".", "Athos"],
-	["i broke it with my broken code pog", "Magnogen"]
+	["i broke it with my broken code pog", "Magnogen"],
+	["If I had to choose between You and JavaScript, I'd choose you every time. 💕", "Magnogen"]
 ];
