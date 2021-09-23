@@ -124,5 +124,8 @@ var quotes = [
 	["i broke it with my broken code pog", "Magnogen"],
 	["If I had to choose between You and JavaScript, I'd choose you every time. 💕", "Magnogen"],
 	["i'm just saying if you ping and dont get a response thats a you problem", "Eliminate"],
-	["Huge epic poggers mega gamer bruh champ moment", "Eliminate"]
+	["Huge epic poggers mega gamer bruh champ moment", "Eliminate"],
+	["Everyone has a story.", "Monika, Act 3 Topic 7"],
+	["Man, humans are complicated!", "Monika, Act 3 Topic 7"],
+	["I'm just saying, we're a pretty biased species, if you think about it.", "Monika, Act 3 Topic 12"]
 ];
