@@ -127,5 +127,6 @@ var quotes = [
 	["Huge epic poggers mega gamer bruh champ moment", "Eliminate"],
 	["Everyone has a story.", "Monika, Act 3 Topic 7"],
 	["Man, humans are complicated!", "Monika, Act 3 Topic 7"],
-	["I'm just saying, we're a pretty biased species, if you think about it.", "Monika, Act 3 Topic 12"]
+	["I'm just saying, we're a pretty biased species, if you think about it.", "Monika, Act 3 Topic 12"],
+	["Absolute carnage", "Real Civil Engineer"]
 ];
