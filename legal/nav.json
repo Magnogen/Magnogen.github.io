@@ -1,0 +1,13 @@
+{
+  "enabled": true,
+  "link": "https://magnogen.net/legal/",
+  "name": "legal",
+  "options": [
+    { "name": "about", "link": "https://magnogen.net/about/" },
+    { "name": "music", "link": "https://magnogen.net/music/" },
+    { "name": "krypt", "link": "https://magnogen.net/krypt/" }
+  ],
+  "branches": [
+    { "name": "privacy", "link": "https://magnogen.net/legal/privacy" }
+  ]
+}
