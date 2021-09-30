@@ -1,6 +1,6 @@
 {
   "enabled": true,
-  "mainfile": "https://magnogen.net/about/",
+  "link": "https://magnogen.net/about/",
   "name": "about",
   "options": [
     { "name": "music", "link": "https://magnogen.net/music/" },
