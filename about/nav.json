@@ -1,5 +1,11 @@
 {
   "enabled": true,
-  "mainfile": "index.html",
-  "name": "About"
+  "mainfile": "https://magnogen.net/about/",
+  "name": "about",
+  "options": [
+    { "name": "music", "link": "https://magnogen.net/music/" },
+    { "name": "krypt", "link": "https://magnogen.net/krypt/" },
+    { "name": "legal", "link": "https://magnogen.net/legal/" }
+  ],
+  "branches": []
 }
