@@ -1,5 +1,15 @@
 {
   "enabled": true,
-  "mainfile": "index.html",
-  "name": "HOME"
+  "link": "https://magnogen.net/",
+  "name": "HOME",
+  "options": [
+    { "name": "PROJECTS", "link": "https://projects.magnogen.net/" },
+    { "name": "ITAXATI", "link": "https://itaxati.magnogen.net/" }
+  ],
+  "branches": [
+    { "name": "about", "link": "https://magnogen.net/about/" },
+    { "name": "music", "link": "https://magnogen.net/music/" },
+    { "name": "krypt", "link": "https://magnogen.net/krypt/" },
+    { "name": "legal", "link": "https://magnogen.net/legal/" }
+  ]
 }
