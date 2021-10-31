@@ -130,5 +130,6 @@ var quotes = [
 	["I'm just saying, we're a pretty biased species, if you think about it.", "Monika, Act 3 Topic 12"],
 	["Absolute carnage", "Real Civil Engineer"],
 	["However, Gold is very dense. About 20 timesdenser than a duck.", "Kurzgesagt"],
-	["It's difficult to work in a group when your omnipotent.", "Q"]
+	["It's difficult to work in a group when your omnipotent.", "Q"],
+	["I pitch shifted it down.", "Andrew Huang"]
 ];
