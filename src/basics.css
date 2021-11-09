@@ -6,7 +6,8 @@
 */
 
 body {
-  background-color: #fff;
+  --bg: #fff;
+  background-color: var(--bg);
   font-family: "Lato", sans-serif;
   line-height: 1.667em;
 }
@@ -14,11 +15,19 @@ body {
 .wide{ letter-spacing: 8px; }
 
 header {
-  background: linear-gradient(#004cff calc(1em + 24px), #0032a8 100%);
+  position: relative;
   color: #ffffff;
   height: 80vh;
   min-height: 20em;
-} header .shape-divider {
+  /* and so the pain begins */
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+} header div[divider] {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -27,14 +36,28 @@ header {
   overflow: hidden;
   line-height: 0;
   transform: rotate(180deg);
-  fill: #ffffff;
-} header .shape-divider svg {
+  fill: var(--bg);
+} header div[divider] svg {
   height: 4em;
   width: 100%;
-} header > div {
+} header > div[content] {
+  opacity: 1;
+  transition: opacity 0.4s;
+  padding: 1em calc(1em - 8px) 1em 1em;
+  position:absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  white-space: nowrap;
   display: flex;
   flex-direction: column;
+} header:hover > div[content] {
+  opacity: 0.2;
+} header:hover > div[content]:hover {
+  opacity: 1;
 } span[title] {
+  font-size: 36px;
+  letter-spacing: 8px;
   align-self: center;
 } span[greeting] {
   padding-top: 1em;
@@ -49,9 +72,19 @@ header {
 span[greeting] > span:first-child { background: linear-gradient(to left, #ffff, #fff0); }
 span[greeting] > span:last-child { background: linear-gradient(to right, #ffff, #fff0); }
 
+header canvas {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 16em;
+  max-height: 80vh;
+  z-index: -1;
+}
+
 div[nav] {
   background-color: #004cff;
-  color: #ffffff;
+  color: #fff;
   position: fixed;
   width: 100%;
   z-index: 1;
@@ -85,7 +118,7 @@ nav {
 
 div[quotes], div[pack] {
   position: relative;
-  background-color: #fff;
+  background-color: var(--bg);
 } div[quotes]:before, div[pack]:before {
   content: "";
   position: absolute;
