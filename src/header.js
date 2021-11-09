@@ -1,7 +1,7 @@
 (_=>{
   let me = document.currentScript;
   let sides = +me.getAttribute('shape');
-  let cols = +me.getAttribute('colors');
+  let colors = me.getAttribute('colors').split(',').map(e=>e.trim());
 
   html = `
 <header>
@@ -79,8 +79,8 @@
     ctx.globalCompositeOperation = 'screen';
     var bg = ctx.createLinearGradient(0, 0, 0, c.height);
     let begin = parseFloat(getComputedStyle(document.querySelector('header')).fontSize) + 24
-    bg.addColorStop(begin/c.height, '#004cff');
-    bg.addColorStop(1, '#0032a8');
+    bg.addColorStop(begin/c.height, colors[1]);
+    bg.addColorStop(1, colors[0]);
     ctx.fillStyle = bg;
     ctx.fillRect(0, 0, c.width, c.height);
 
