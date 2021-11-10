@@ -120,7 +120,7 @@ var quotes = [
 	["words are dumb, let us continue to communicate by telepathy", "Magnogen"],
 	["Cancel culture should cancel itself", "Magnogen"],
 	["hey don't worry about it, if a fat slob like me can get a gf, anyone can", "MELOD"],
-  ["There are a thousand ways of saying \"no\", and only some of them mean \"yes\".", "Athos"],
+	["There are a thousand ways of saying \"no\", and only some of them mean \"yes\".", "Athos"],
 	["i broke it with my broken code pog", "Magnogen"],
 	["If I had to choose between You and JavaScript, I'd choose you every time. 💕", "Magnogen"],
 	["i'm just saying if you ping and dont get a response thats a you problem", "Eliminate"],
@@ -131,5 +131,6 @@ var quotes = [
 	["Absolute carnage", "Real Civil Engineer"],
 	["However, Gold is very dense. About 20 timesdenser than a duck.", "Kurzgesagt"],
 	["It's difficult to work in a group when your omnipotent.", "Q"],
-	["I pitch shifted it down.", "Andrew Huang"]
+	["I pitch shifted it down.", "Andrew Huang"],
+	["Are potatoes morally better than humans?", "Mumbo Jumbo"]
 ];
