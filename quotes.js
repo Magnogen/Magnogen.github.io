@@ -105,7 +105,7 @@ var quotes = [
 	["contained nuclear waste is significantly less dangerous than spraying CO2 everywhere", "Sire John"],
 	["Yo dudes, The Empire's pretty chill. Maybe you could, like, join it or something.", "Darth Vader <a href=\"https://youtu.be/EWTYnsikfWE\">(Danksolutely)</a>"],
 	["lemon, would you please edit that", "Chovek"], 
-  ["I hate the Internet", "skadoodly_dave"],
+	["I hate the Internet", "skadoodly_dave"],
 	["itd about those spheres", "LobsterSir"],
 	["There are time when a psychic is just a psychic.", "<a href=\"https://inspirobot.me/\">InspiroBot.me</a>"],
 	["Say no to. Be insecure about. Transcend. Bow down to. Expose.", "<a href=\"https://inspirobot.me/\">InspiroBot.me</a>"],
@@ -132,5 +132,6 @@ var quotes = [
 	["However, Gold is very dense. About 20 timesdenser than a duck.", "Kurzgesagt"],
 	["It's difficult to work in a group when your omnipotent.", "Q"],
 	["I pitch shifted it down.", "Andrew Huang"],
-	["Are potatoes morally better than humans?", "Mumbo Jumbo"]
+	["Are potatoes morally better than humans?", "Mumbo Jumbo"],
+	["This is like a never ending flow of potatoes. This is a very carb-based lava lamp.", "Mumbo Jumbo"]
 ];
