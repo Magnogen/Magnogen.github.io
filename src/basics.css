@@ -63,6 +63,7 @@ header {
   padding-top: 1em;
   display: flex;
   justify-content: space-evenly;
+  text-align: center;
 } span[greeting] > span {
   min-width: 4em;
   width: 100%;
