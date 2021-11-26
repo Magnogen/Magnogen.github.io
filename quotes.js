@@ -132,5 +132,6 @@ var quotes = [
 	["It's difficult to work in a group when your omnipotent.", "Q"],
 	["I pitch shifted it down.", "Andrew Huang"],
 	["Are potatoes morally better than humans?", "Mumbo Jumbo"],
-	["This is like a never ending flow of potatoes. This is a very carb-based lava lamp.", "Mumbo Jumbo"]
+	["This is like a never ending flow of potatoes. This is a very carb-based lava lamp.", "Mumbo Jumbo"],
+	["You don't need to know what you're doing if it sounds good.", "PieNinjaProductions"]
 ];
