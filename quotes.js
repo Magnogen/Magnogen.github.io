@@ -128,7 +128,7 @@ var quotes = [
 	["Man, humans are complicated!", "Monika, Act 3 Topic 7"],
 	["I'm just saying, we're a pretty biased species, if you think about it.", "Monika, Act 3 Topic 12"],
 	["Absolute carnage", "Real Civil Engineer"],
-	["However, Gold is very dense. About 20 timesdenser than a duck.", "Kurzgesagt"],
+	["However, Gold is very dense. About 20 times denser than a duck.", "Kurzgesagt"],
 	["It's difficult to work in a group when your omnipotent.", "Q"],
 	["I pitch shifted it down.", "Andrew Huang"],
 	["Are potatoes morally better than humans?", "Mumbo Jumbo"],
