@@ -1,0 +1,171 @@
+/*  Colours: 
+    - DarkBlue: #0032a];
+    - LightBlue: #004cff[ff];
+    - LightestBlue: #80a8ff[ff];
+    - White: #fff[ff];
+*/
+
+html {
+  padding: 0; margin: 0;
+  height: 100%;
+}
+body {
+  padding: 0; margin: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  line-height: 1.667em;
+  box-sizing: border-box;
+} body.dark {
+  background: #0d1a26;
+  color: #fff;
+} body.blue {
+  background: linear-gradient(to bottom, #004cff 9.75em, #0032a8);
+  background-attachment: fixed;
+  color: #fff;
+}
+
+header {
+  pointer-events : none;
+  position: -webkit-sticky; position: sticky;
+  padding: 3em 0em;
+  top: 0;
+  z-index: 1;
+} body.blue header {
+  background: #004cffaa;
+  backdrop-filter: blur(0.5em);
+} body.dark header {
+  background: linear-gradient(to bottom, #0d1a26ff 33.333%, #0d1a2600),
+              radial-gradient(closest-side, #0d1a26cc 25%, #0d1a2600 95%);
+/*   background: #00000010; */
+} body.dark header:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0; left: 0; right: 0; bottom: 0;
+  backdrop-filter: blur(0.1em);
+  -webkit-mask: linear-gradient(#000f 66.667%, #0000);
+          mask: linear-gradient(#000f 66.667%, #0000);
+} h1.title {
+  font-weight: normal;
+  margin: 0;
+  font-size: 2em;
+  letter-spacing: 0.5em;
+  text-align: center;
+} h2.greet {
+  font-weight: normal;
+  margin: 0;
+  margin-top: 1em;
+  font-size: 1.25em;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+} h2.greet > hr {
+  border-style: none;
+  max-width: 4em;
+  width: 20%;
+  margin: auto 0.5em;
+  height: 1px;
+}
+h2.greet > hr:first-child {
+  background: linear-gradient(to left, #ffff, #fff0);
+} h2.greet > hr:last-child {
+  background: linear-gradient(to right, #ffff, #fff0);
+}
+body.dark h2.greet > hr:first-child {
+  background: linear-gradient(to left, #88ff, #88f0);
+} body.dark h2.greet > hr:last-child {
+  background: linear-gradient(to right, #88ff, #88f0);
+}
+
+main {
+  max-width: calc(1024px - 2em);
+  margin: 0 auto;
+  padding: 0em 2em;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: start;
+} article {
+  width: calc(50% - 4em - 1.5em);
+  min-width: 18em;
+  padding: 1em 2em;
+  margin: 0.75em;
+  border-radius: 1em;
+} article:first-child {
+  width: calc(2*max(18em, 50%) + 4em + 1.5em);
+} @media (max-width: 49.1em) {
+  article {
+    width: 100%;
+    margin: 0.75em;
+  }
+} body.blue article {
+  background-color: #fff;
+  color: #000;
+  box-shadow:
+    1.4px 2.8px 2.2px rgba(0, 0, 0, 0.05),
+    3.4px 6.7px 5.3px rgba(0, 0, 0, 0.07),
+    6.2px 12.5px 10px rgba(0, 0, 0, 0.09),
+    11.1px 22.3px 17.9px rgba(0, 0, 0, 0.11);
+  transition: transform 0.2s;
+} body.dark article {
+  background-color: #fff2;
+  color: #fff;
+  backdrop-filter: blur(0.1em);
+  transition: 0.2s;
+} body.blue article.highlight {
+} body.dark article.highlight {
+  background-color: #ffffff28;
+  backdrop-filter: blur(0.25em);
+} article > h3 {
+  color: #0032a8;
+  font-size: 1.25em;
+  margin: 0;
+} body.dark article > h3 {
+  color: #a6c1ff;
+  font-size: 1.25em;
+  margin: 0;
+} article > h3 > i {
+  margin: 0 0.5em 0 0;
+} article > i {
+  margin: 0 0.5em;
+} article > p {
+  margin: 0.5em 0;
+}
+article a:link    { color: inherit; }
+article a:visited { color: #a6c1ff; }
+article a:hover   { color: #004cff; }
+article a:active  { color: #0032a8; }
+article code {
+  background-color: #00162888;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+div[space] { height: 120vh; }
+
+footer main > article:first-child > h3 {
+  text-align: center;
+} footer main > article:first-child > h3 > i {
+  margin: 0 0.5em;
+} footer main > article.locked {
+  color: #646464;
+  background-color: #00000044;
+} footer main > article.locked > h3 {
+  color: #828282;
+} footer main > article.locked > p {
+  display: none;
+}
+footer {
+  max-width: calc(1024px -2em);
+  margin: 0 auto;
+  padding: 1em 2em;
+}
+
+canvas[background] {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+

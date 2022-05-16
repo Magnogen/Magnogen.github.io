@@ -1,115 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Home | Magnogen</title>
     <base href="https://magnogen.net" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Magnogen's Official Website - Find my Tracks, Apps, and Datapacks! Plus a few handy tools too..." />
+    <meta name="description" content="Magnogen's Official Website - Find all my projects and other thingies!" />
     <link rel="shortcut icon" href="https://magnogen.net/src/favicon.png" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="https://magnogen.net/src/basics.css" />
-<!--     <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <script src="https://magnogen.net/src/navbar.js"
-            path="HOME"
-            rules="HOME:.here">
-    </script>
-    
-    <script src="https://magnogen.net/src/header.js"
-            colors="#0032a8,#004cff"
-            title="MAGNOGEN"
-            subtitle="Hey! I'm Mag"
-            shape="3">
-    </script>
-
-    <div class="w3-content w3-container w3-padding-64">
-      <div id="quotes" class="w3-padding-large" quotes>
-        <span style="color:#a83200;font-size:150%;">
-          <i class="fa fa-quote-left"></i>
-        </span>
-        Ewwor - Qwotes are bwoken<br />
-        (If you can see this, please report it on GitHub)
-      </div>
-      <br />
-      <h3 class="w3-center">WELCOME!</h3>
-      <div class="w3-row">
-        <div class="w3-padding-large">
+  <body class="dark">
+    <header>
+      <span></span>
+      <h1 class="title">MAGNOGEN</h1>
+      <h2 class="greet"><hr>Hey! I'm Mag<hr></h2>
+    </header>
+    <canvas background></canvas>
+    <main>
+      <article socials>
+        <h3><i class="fa fa-heart"></i>My Socials</h3>
+        <i class="fa-solid fa-shapes"></i><a href="https://blog.magnogen.net">Mag's Blog</a><br>
+        <i class="fa-brands fa-youtube"></i><a href="https://www.youtube.com/channel/UCosxKKKPJk4aZlwF_EFe2pw">YouTube - Magnogen</a><br>
+        <i class="fa-brands fa-twitter"></i><a href="https://twitter.com/Magnog3n">Twitter - @Magnog3n</a><br>
+        <i class="fa-brands fa-reddit-alien"></i><a href="https://www.reddit.com/user/MagnogenOnTheMoon">Reddit - u/MagnogenOnTheMoon</a><br>
+        <i class="fa-brands fa-github"></i><a href="https://github.com/Magnogen">GitHub - /Magnogen</a><br>
+      </article>
+      <article websites>
+        <h3><i class="fa fa-globe"></i>Websites</h3>
+        <p>
+          I've helped out in a few websites for other people - go check them out too!
+        </p>
+        <i class="fa fa-cube"></i><a href="https://www.skaliber.net">Skaliber.net</a><br>
+        <i class="fa fa-server"></i><a href="https://wickedworlds.ca/">WickedWorlds.ca</a><br>
+      </article>
+      <article elements>
+        <h3><i class="fa fa-atom"></i>Elements</h3>
+        <p>
+          A library of useful JavaScript functions, objects and variables that I use for a lot of my projects.
+          Inspired by <a href="https://github.com/TodePond/Habitat">TodePond's Habitat</a>.
+        </p>
+        <p>
+          From <code>Colour</code>s, to <code>Limit</code>ing numbers,
+          to recursive-descent (<code>Meal</code>s), to <code>Vector</code>s (WIP).
+          This is pretty helpful.
+        </p>
+        <i class="fa-brands fa-github"></i><a href="https://github.com/Magnogen/Weber">GitHub Repo</a><br>
+      </article>
+      <article weber>
+        <h3><i class="fa fa-globe"></i>Weber</h3>
+        <p>
+          A site generation tool that converts a Markdown derivative into HTML, CSS and JavaScript.
+        </p>
+        <p>
+          I'll be using it for my blog, when they both work, so that people can read it on my site,
+          and GitHub too if they wanted.
+        </p>
+        <i class="fa-brands fa-github"></i><a href="https://github.com/Magnogen/Weber">GitHub Repo</a><br>
+      </article>
+      <article carbogen>
+        <h3><i class="fa fa-file-code"></i>Carbogen</h3>
+        <p>
+          A Lisp-like Programming Language that makes use of bubbles.
+        </p>
+        <i class="fa-brands fa-github"></i><a href="https://github.com/Magnogen/Carbogen">GitHub Repo</a><br>
+      </article>
+      <article gentle>
+        <h3><i class="fa fa-file-code"></i>Gentle</h3>
+        <p>
+          A C-like Programming Language designed for making Generative Artwork.
+          It works by doing maths on picture "layers".
+        </p>
+        <i class="fa-brands fa-github"></i><a href="https://github.com/Magnogen/Gentle">GitHub Repo</a><br>
+      </article>
+    </main>
+    <div space></div>
+    <footer>
+      <main>
+        <article>
+          <h3>
+            <i class="fa-solid fa-trophy"></i>
+            Achievements
+            <i class="fa-solid fa-trophy"></i>
+          </h3>
           <p>
-            Hello there! Welcome to the official Magnogen website!<br />
-            There have been a few contributors to help this website, especially
-            in it's infant stages, you can see those individuals
-            <a href="/about">here</a>.<br />
-            <br />
-            I've got a few projects on the go at the moment. But there are
-            <a href="/apps">Android apps</a>, <a href="/music">tracks</a> and
-            <a href="/datapacks">Minecraft datapacks</a> that you can check out
-            that I've made before. I hope you'll be interested!<br />
-            <br />
-            There is also a small project that encrypts and decrypts codes and
-            ciphers. It's called <a href="/krypt">Krypt</a>, you're welcome play
-            around with it.<br />
-            <br />
-            Want to contact me? Feel free to do so on my Instagram and YouTube
-            accounts - you can find them at the bottom of this page.<br />
+            Unlock achievements by doing stuff on my site!
           </p>
-        </div>
-      </div>
-      <p class="w3-large w3-center w3-padding-16">I like to create:</p>
-      <p>
-        <i class="fa fa-music"></i>
-        Music and Ambiences
-      </p>
-      <a href="/music" style="text-decoration:none;">
-        <div class="w3-light-grey">
-          <div class="w3-container w3-padding-small w3-center"
-               style="width:80%"
-               bar>
-          </div>
-        </div>
-      </a>
-      <p>
-        <i class="fa fa-cube"></i>
-        Minecraft Mods and Datapacks
-      </p>
-      <a href="/apps" style="text-decoration:none;">
-        <div class="w3-light-grey">
-          <div class="w3-container w3-padding-small w3-center"
-               style="width:70%"
-               bar>
-          </div>
-        </div>
-      </a>
-      <p>
-        <i class="fa fa-cogs"></i>
-        Other Projects
-      </p>
-      <a href="/samples" style="text-decoration:none;">
-        <div class="w3-light-grey">
-          <div class="w3-container w3-padding-small w3-center"
-               style="width:25%"
-               bar>
-          </div>
-        </div>
-      </a>
-    </div>
-    
-    <script src="https://magnogen.net/src/footer.js"
-            colors="#0032a8,#004cff">
-    </script>
-    
-    <script src="https://magnogen.net/quotes.js"></script>
-    <script>
-      let rand = Math.floor(Math.random() * quotes.length);
-      document.getElementById("quotes").innerHTML = `<span style="color:#0032a8;font-size:150%;"><i class="fa fa-quote-left"></i> </span>${quotes[rand][0]}<br> - ${quotes[rand][1]}`;
-      function toggleFunction(){
-        let x = document.getElementById("mobileNav");
-        if (x.className.indexOf("w3-show") == -1) x.className +=" w3-show";
-        else x.className = x.className.replace(" w3-show", "");
-      }
-    </script>
+        </article>
+      </main>
+      Made with <i style="color:#ff0000" class="fa fa-heart"></i> by Magnogen
+    </footer>
+    <script src="sketch.js"></script>
   </body>
 </html>
