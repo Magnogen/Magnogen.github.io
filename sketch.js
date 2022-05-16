@@ -154,10 +154,10 @@
       test() { return totalSniped >= 100 }
     },
     {
-      id: 'toomuchtime',
-      title: 'Way Too Much Time On Your Hands',
+      id: 'dedication',
+      title: 'True Dedication',
       desc: 'Snipe 250 shapes into oblivion.',
-      icon: 'fa-solid fa-clock',
+      icon: 'fa-solid fa-shapes',
       unlocked: false,
       test() { return totalSniped >= 250 }
     },
