@@ -91,7 +91,8 @@
       const dx = c.width*(p.x+0.5) - x;
       const dy = c.height*(p.y+0.5) - y;
       const d = dx*dx + dy*dy;
-      if (d < 1.5*p.r*p.r) {
+      const mult = p.falling ? 1.5*1.5 : 1;
+      if (d < mult*p.r*p.r) {
         p.xv = 0.02 * random();
         p.yv = 0.01 * -Math.abs(0*random()+1);
         p.da = Math.random() < 0.5 ? -1000 : 1000;
