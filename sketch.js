@@ -201,7 +201,12 @@
   $('article[achid=final]').addEventListener('click', e => {
     if (!aches.filter(a => a.id != 'final').some(a => !a.unlocked)) {
       final = true;
-      Ps.forEach(p => p.falling = true);
+      Ps.forEach(p => {
+        p.xv = 0.02 * random();
+        p.yv = 0.01 * -Math.abs(0*random()+1);
+        p.da = Math.random() < 0.5 ? -1000 : 1000;
+        p.falling = true;
+      });
     }
   });
   
