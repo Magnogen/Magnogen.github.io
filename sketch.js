@@ -85,7 +85,8 @@
   });
   window.dispatchEvent(new Event("resize"));
   
-  function snipeAt(x, y) {
+  function snipeAt(X, Y) {
+    let [x, y] = [X*devicePixelRatio, Y*devicePixelRatio];
     let amnt = 0;
     for (let p of Ps) {
       const dx = c.width*(p.x+0.5) - x;
