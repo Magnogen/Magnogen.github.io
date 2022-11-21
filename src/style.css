@@ -11,7 +11,7 @@ html {
 }
 body {
   padding: 0; margin: 0;
-  font-family: "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 15px;
   line-height: 1.667em;
   box-sizing: border-box;
@@ -24,6 +24,8 @@ body {
   color: #fff;
 }
 
+code { font-family: "Fira Code", monospace; }
+
 header {
   pointer-events : none;
   position: -webkit-sticky; position: sticky;
@@ -34,17 +36,17 @@ header {
   background: #004cffaa;
   backdrop-filter: blur(0.5em);
 } body.dark header {
-  background: linear-gradient(to bottom, #0d1a26ff 33.333%, #0d1a2600),
-              radial-gradient(closest-side, #0d1a26cc 25%, #0d1a2600 95%);
+  background: linear-gradient(to bottom, #0d1a26ff 25%, #0d1a2600 100%),
+              radial-gradient(closest-side, #0d1a26cc 25%, #0d1a2600 90%);
 /*   background: #00000010; */
 } body.dark header:after {
   content: '';
   position: absolute;
   z-index: -1;
   top: 0; left: 0; right: 0; bottom: 0;
-  backdrop-filter: blur(0.1em);
-  -webkit-mask: linear-gradient(#000f 66.667%, #0000);
-          mask: linear-gradient(#000f 66.667%, #0000);
+  backdrop-filter: blur(0.05em);
+  -webkit-mask: linear-gradient(#000f 50%, #0000);
+          mask: linear-gradient(#000f 50%, #0000);
 } h1.title {
   font-weight: normal;
   margin: 0;
@@ -109,14 +111,13 @@ main {
     11.1px 22.3px 17.9px rgba(0, 0, 0, 0.11);
   transition: transform 0.2s;
 } body.dark article {
-  background-color: #fff2;
+  background: radial-gradient(farthest-side, #2d3943ff 80%, #2d394300 110%),
+              linear-gradient(#fff2, #fff2);
   color: #fff;
-  backdrop-filter: blur(0.1em);
   transition: 0.2s;
 } body.blue article.highlight {
 } body.dark article.highlight {
   background-color: #ffffff28;
-  backdrop-filter: blur(0.25em);
 } article > h3 {
   color: #0032a8;
   font-size: 1.25em;
