@@ -1,8 +1,9 @@
 /*  Colours: 
-    - DarkBlue: #0032a];
-    - LightBlue: #004cff[ff];
-    - LightestBlue: #80a8ff[ff];
-    - White: #fff[ff];
+    - DarkBlue:    #0032a8;
+    - LightBlue:   #004cff;
+    - LighterBlue: #80a6ff;
+    - OffWhite:    #ccdbff;
+    - White:       #ffffff;
 */
 
 html {
@@ -24,7 +25,37 @@ body {
   color: #fff;
 }
 
-code { font-family: "Fira Code", monospace; }
+a {
+  text-decoration: none;
+  background: linear-gradient(to right, #80a6ff, #80a6ff);
+  background-size: 0% 1px;
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  transition: background 0.2s, color 0.2s;
+  color: #80a6ff;
+} a:hover {
+  background: linear-gradient(to right, #ccdbff, #ccdbff);
+  background-size: 100% 1px;
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  color: #ccdbff;
+}
+a:active  { color: #004cff; }
+
+code {
+  font-family: "Fira Code", monospace;
+  display: block;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  background-color: #00162888;
+  font-size: 0.75em;
+  line-height: 1.8em;
+}
+code [str] { color: #bfb }
+code [key] { color: #fbb }
+code [var] { color: #fff }
+code [num] { color: #bbf }
+code [com] { font-style: italic; color: #bbb }
 
 header {
   pointer-events : none;
@@ -123,7 +154,7 @@ main {
   font-size: 1.25em;
   margin: 0;
 } body.dark article > h3 {
-  color: #a6c1ff;
+  color: #ccdbff;
   font-size: 1.25em;
   margin: 0;
 } article > h3 > i {
@@ -132,15 +163,6 @@ main {
   margin: 0 0.5em;
 } article > p {
   margin: 0.5em 0;
-}
-article a:link    { color: inherit; }
-article a:visited { color: #a6c1ff; }
-article a:hover   { color: #004cff; }
-article a:active  { color: #0032a8; }
-article code {
-  background-color: #00162888;
-  padding: 2px 4px;
-  border-radius: 4px;
 }
 div[space] { height: 120vh; }
 
