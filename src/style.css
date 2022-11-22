@@ -44,13 +44,14 @@ a:active  { color: #004cff; }
 
 code {
   font-family: "Fira Code", monospace;
-  display: block;
+  display: inline-block;
   padding: 0.5em 1em;
   border-radius: 0.5em;
   background-color: #00162888;
   font-size: 0.75em;
   line-height: 1.8em;
 }
+code.block { display: block; }
 code [str] { color: #bfb }
 code [key] { color: #fbb }
 code [var] { color: #fff }
