@@ -4,13 +4,6 @@
   let c = $("canvas[background]");
   let ctx = c.getContext("2d"); 
   
-  let twobirds = false;
-  let totalSniped = 0;
-  let lastSniped = -1;
-  let bullyAmount = 0;
-  let heaven = false;
-  let final = false;
-  
   function random(n=8) {
     let res = 0;
     for (let i = 0; i < n; i++)
@@ -98,118 +91,12 @@
         p.yv = 0.01 * -Math.abs(0*random()+1);
         p.da = Math.random() < 0.5 ? -1000 : 1000;
         p.falling = true;
-        amnt++;
-        if (lastSniped == p.i) bullyAmount++;
-        else {
-          bullyAmount = 0;
-          lastSniped = p.i;
-        }
       }
     }
-    if (amnt > 1) twobirds = true;
-    totalSniped += amnt;
-    // $('header span').innerHTML = totalSniped;
   }
   
   window.addEventListener("click", e => snipeAt(e.clientX, e.clientY));
   window.addEventListener('touchstart', e => snipeAt(e.touches[0].clientX, e.touches[0].clientY));
-  
-  let aches = [
-    {
-      id: 'first',
-      title: 'There\'s A First Time For Everything',
-      desc: 'Snipe your first shape.',
-      icon: 'fa-solid fa-1',
-      unlocked: false,
-      test() { return totalSniped >= 1 }
-    },
-    {
-      id: 'nocorners',
-      title: 'No Corners Here',
-      desc: 'Snipe away all the triangles and squares.',
-      icon: 'fa-solid fa-circle',
-      unlocked: false,
-      test() { return !Ps.some(p => p.sides < 20 || p.fade < 0.25) }
-    },
-    {
-      id: 'twobirds',
-      title: 'Two Birds With One Stone',
-      desc: 'Snipe two shapes away at the same time.',
-      icon: 'fa-solid fa-dove',
-      unlocked: false,
-      test() { return twobirds }
-    },
-    {
-      id: 'nice',
-      title: 'Nice',
-      desc: 'Snipe 69 shapes.',
-      icon: 'fa-solid fa-face-smile-wink',
-      unlocked: false,
-      test() { return totalSniped >= 69 }
-    },
-    {
-      id: 'awhile',
-      title: 'You\'ve Been Here A While',
-      desc: 'Snipe 100 shapes, sending them all to the abyss.',
-      icon: 'fa-solid fa-hourglass',
-      unlocked: false,
-      test() { return totalSniped >= 100 }
-    },
-    {
-      id: 'dedication',
-      title: 'True Dedication',
-      desc: 'Snipe 250 shapes into oblivion.',
-      icon: 'fa-solid fa-shapes',
-      unlocked: false,
-      test() { return totalSniped >= 250 }
-    },
-    {
-      id: 'keepieuppie',
-      title: 'Keepie Uppie',
-      desc: 'Snipe the same shape 3 times in a row.',
-      icon: 'fa-solid fa-angles-up',
-      unlocked: false,
-      test() { return bullyAmount >= 3 }
-    },
-    {
-      id: 'heaven',
-      title: 'What\'s Up With Gravity Anyway?',
-      desc: 'Send a shape up to heaven.',
-      icon: 'fa-solid fa-person-falling fa-flip-vertical',
-      unlocked: false,
-      test() { return heaven }
-    },
-    {
-      id: 'final',
-      title: 'The Final Achievement',
-      desc: 'Click on this achievement after completing all the others.',
-      icon: 'fa-solid fa-exclamation',
-      unlocked: false,
-      test() { return final }
-    }
-  ];
-  const achel = $('footer > main');
-  for (let ach of aches) {
-    achel.insertAdjacentHTML('beforeend', `
-      <article class="locked" achid="${ach.id}">
-        <h3><i class="${ach.icon}"></i>${ach.title}</h3>
-        <p>
-          ${ach.desc}
-        </p>
-      </article>`);
-  }
-  
-  $('article[achid=final]').addEventListener('click', e => {
-    if (!aches.filter(a => a.id != 'final').some(a => !a.unlocked)) {
-      final = true;
-      Ps.forEach(p => {
-        p.xv = 0.02 * random();
-        p.yv = 0.01 * -Math.abs(0*random()+1);
-        p.da = Math.random() < 0.5 ? -1000 : 1000;
-        p.falling = true;
-      });
-    }
-  });
   
   let lt = 0;
   function animate(t) {
@@ -228,16 +115,8 @@
       p.update(dt/200000);
     }
     
-    for (let ach of aches) {
-      if (ach.unlocked) continue;
-      if (ach.test()) {
-        ach.unlocked = true;
-        $(`article[achid=${ach.id}]`).classList.remove('locked')
-      }
-    }
-    
     requestAnimationFrame(animate);
   }
-
+  
   requestAnimationFrame(animate);
 })();
