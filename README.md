@@ -1,5 +1,5 @@
-# Magnogen.xyz
-###### Magnogen's Official Website https://magnogen.xyz
+# Magnogen.net
+###### Magnogen's Official Website https://magnogen.net
 
 This is a website made by Magnogen, with help from a few friends along the way!
 I've tried to make this as good-looking and as functional as I can, while also making it easier for myself to make changes and upgrades in future.
