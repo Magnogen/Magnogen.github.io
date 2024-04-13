@@ -4,7 +4,7 @@
 }
 
 body {
-  padding: 0 2rem 1rem 2rem;
+  padding: 0 1rem 0.5rem 1rem;
   margin-inline: auto;
   width: 100%;
   max-width: 64rem;
@@ -36,8 +36,8 @@ header {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: -1rem;
-  right: -1rem;
+  left: -0.5rem;
+  right: -0.5rem;
   background: #202020;
   z-index: -1;
   border-bottom: 1px solid #404040;
