@@ -113,13 +113,14 @@ a {
   content: '↗ ';
 }
 
-.red     { color: #f0a0a0 }
-.yellow  { color: #f0f0a0 }
-.green   { color: #a0f0a0 }
-.cyan    { color: #a0f0f0 }
-.blue    { color: #a0a0f0 }
-.magenta { color: #f0a0f0 }
-.grey    { color: #a0a0a0 }
+.red      { color: #f0a0a0 }
+.yellow   { color: #f0f0a0 }
+.green    { color: #a0f0a0 }
+.cyan     { color: #a0f0f0 }
+.blue     { color: #a0a0f0 }
+.magenta  { color: #f0a0f0 }
+.grey     { color: #a0a0a0 }
+.darkgrey { color: #808080 }
 
 code {
   display: block;
