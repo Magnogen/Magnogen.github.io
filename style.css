@@ -1,65 +1,25 @@
-* {
-  box-sizing: border-box;
-  padding: 0; margin: 0;
-}
-
 body {
-  padding: 0 1rem 0.5rem 1rem;
-  margin-inline: auto;
-  width: 100%;
-  max-width: 64rem;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  
-  background: #202020;
-  color: #e0e0e0;
+  max-width: 48rem;
+  margin: 0 auto;
+  padding: 1rem;
   font-family: sans-serif;
-  font-size: 1rem;
-  font-weight: 100;
+  color: #c0c0c0;
+  background: #202020;
 }
 
 header {
-  padding-top: 1rem;
-  padding-bottom: 0.25rem;
   display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  flex-wrap: wrap;
-  position: sticky;
-  top: 0;
-  isolation: isolate;
-  z-index: 1;
-} header:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: -0.5rem;
-  right: -0.5rem;
-  background: #202020;
-  z-index: -1;
-  border-bottom: 1px solid #404040;
+  align-items: baseline;
+  gap: 1rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: monospace;
   font-weight: 100;
 } h1 {
-  margin-right: 1rem;
-}
-
-#tagline {
-  padding-block: 0.25em;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  flex-grow: 1;
-  margin-bottom: 4rem;
-  align-items: flex-start;
+  font-size: 2rem;
+} h2 {
+  font-size: 1.5rem;
 }
 
 table {
@@ -68,6 +28,11 @@ table {
 } td:first-child {
   width: 8rem;
   padding-right: 1rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
 }
 
 details {
@@ -94,19 +59,10 @@ details {
   transform: rotate(90deg);
 }
 
-s {
-  text-decoration: underline;
-  text-decoration-color: #808080;
-  text-underline-offset: -0.4em;
-  text-decoration-skip-ink: none;
-}
-
 a {
-  width: max-content;
   color: #a0a0f0;
   text-decoration: underline;
   text-decoration-color: transparent;
-  transition: text-decoration-colr 0.2s ease;
 } a:hover, a:focus {
   text-decoration-color: currentColor;
 } a::before {
@@ -121,11 +77,3 @@ a {
 .magenta  { color: #f0a0f0 }
 .grey     { color: #a0a0a0 }
 .darkgrey { color: #808080 }
-
-code {
-  display: block;
-  background: #404040;
-  padding: 2px 4px;
-}
-
-
