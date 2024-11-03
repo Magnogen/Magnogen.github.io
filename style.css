@@ -7,6 +7,18 @@ body {
   background: #202020;
 }
 
+#bg {
+  background: #f00;
+  z-index: -1;
+  transform: rotate(30deg);
+  position: fixed;
+  left: -50vmax;
+  top: -50vmax;
+  width: 200vmax;
+  height: 200vmax;
+  image-rendering: pixelated;
+}
+
 header {
   display: flex;
   align-items: baseline;
