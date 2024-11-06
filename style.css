@@ -7,14 +7,22 @@ body {
   background: #202020;
 }
 
+#bg-wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  overflow: hidden;
+}
+
 #bg {
   z-index: -1;
   transform: rotate(30deg);
-  position: fixed;
-  left: -50vmax;
-  top: -50vmax;
-  width: 200vmax;
-  height: 200vmax;
+  position: absolute;
+  left: -500vmax;
+  top: -500vmax;
+  width: 1000vmax;
+  height: 1000vmax;
   image-rendering: pixelated;
 }
 
