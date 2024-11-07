@@ -26,5 +26,6 @@ on('load', () => {
     $('#bg-wrapper').style.height = `${Math.max(innerHeight, document.body.getBoundingClientRect().height)}px`;
   };
   $$('details').forEach(el => el.on('toggle', setHeight));
-  setHeight();
+  on('resize', setHeight)
+  setHeight()
 });
