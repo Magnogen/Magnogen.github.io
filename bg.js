@@ -23,7 +23,7 @@ on('load', () => {
   ctx.putImageData(img, 0, 0);
   
   const setHeight = () => {
-    $('#bg-wrapper').style.height = `${document.body.getBoundingClientRect().height}px`;
+    $('#bg-wrapper').style.height = `${Math.max(innerHeight, document.body.getBoundingClientRect().height)}px`;
   };
   $$('details').forEach(el => el.on('toggle', setHeight));
   setHeight();
