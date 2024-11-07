@@ -22,6 +22,9 @@ on('load', () => {
   
   ctx.putImageData(img, 0, 0);
   
-  $('#bg-wrapper').style.height = `${document.body.getBoundingClientRect().height}px`;
-  
+  const setHeight = () => {
+    $('#bg-wrapper').style.height = `${document.body.getBoundingClientRect().height}px`;
+  };
+  $$('details').forEach(el => el.on('toggle', setHeight));
+  setHeight();
 });
