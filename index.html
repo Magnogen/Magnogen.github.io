@@ -1,241 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="https://magnogen.net/src/favicon.png">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Home | Magnogen</title>
-    <meta name="description" content="My little corner of the Internet">
+    <meta name="description" content="My Little Corner of the Internet">
     <base target="_blank">
     <script src="https://src.magnogen.net/dom.js"></script>
-    <script src="https://src.magnogen.net/random.js"></script>
-    <script src="bg.js"></script>
+    <script src="chroma.js"></script>
+    <script src="sketch.js"></script>
   </head>
   <body>
-    <div id="bg-wrapper">
-      <canvas id="bg"></canvas>
-    </div>
     <header>
-      <h1>magnogen.net</h1>
-      <span id="tagline">hi im mag</span>
+      <h1>Magnogen.net</h1>
+      <span id="tagline">Hi, I'm Mag</span>
     </header>
     <main>
-      <h2>socials</h2>
+      <button onclick="toggleTheme()">Toggle Theme</button>
+      <script>
+        function toggleTheme() {
+          document.body.classList.toggle('light');
+        }
+      </script>
+      
+      <h2>Socials</h2>
       <table>
         <tr>
-          <td>github</td>
-          <td>
-            <a href="https://github.com/Magnogen">magnogen</a>
-          </td>
+          <td>GitHub</td>
+          <td><a href="https://github.com/Magnogen">Magnogen</a></td>
         </tr>
         <tr>
-          <td>youtube</td>
-          <td><a href="https://www.youtube.com/@Magnogen">magnogen</a></td>
+          <td>YouTube</td>
+          <td><a href="https://www.youtube.com/@Magnogen">Magnogen</a></td>
         </tr>
         <tr>
-          <td>itch</td>
-          <td>
-            <a href="https://magnogen.itch.io">magnogen.itch.io</a>
-          </td>
+          <td>Itch</td>
+          <td><a href="https://magnogen.itch.io">magnogen.itch.io</a></td>
         </tr>
         <tr>
-          <td>esolangs.org</td>
-          <td><a href="https://esolangs.org/wiki/User:Magnogen">user:magnogen</a></td>
+          <td>Esolangs.org</td>
+          <td><a href="https://esolangs.org/wiki/User:Magnogen">User:Magnogen</a></td>
         </tr>
         <tr>
-          <td>reddit</td>
-          <td>
-            <a href="https://www.reddit.com/u/MagnogenOnTheMoon">magnogen on the moon</a>
-          </td>
+          <td>Reddit</td>
+          <td><a href="https://www.reddit.com/u/MagnogenOnTheMoon">Magnogen on the Moon</a></td>
         </tr>
         <tr>
-          <td>mastodon</td>
-          <td>  
-            <a href="https://cupoftea.social/@Mag">mag (cupoftea.social)</a>
-          </td>
+          <td>Mastodon</td>
+          <td><a href="https://cupoftea.social/@Mag">Mag (cupoftea.social)</a></td>
         </tr>
         <tr>
-          <td><s>twitter</s> x</td>
-          <td>
-            <a href="https://twitter.com/Magnog3n">magnog3n</a>
-          </td>
+          <td><s>Twitter</s> X</td>
+          <td><a href="https://twitter.com/Magnog3n">Magnog3n</a></td>
         </tr>
       </table>
       
-      <h2>utils</h2>
-      <details><summary>src</summary>
+      <section id="about">
+        <h2>About Me</h2>
         <p>
-          a bunch of modular libraries i tend to use in my projects.
-          i labelled the good ones in <span class="green">green</span>.
+          Hi! I'm Mag, a developer passionate about creating fun and useful projects.
+          I specialize in JavaScript and enjoy exploring new tech and creative ideas.
         </p>
-        <a href="https://src.magnogen.net">show me</a>
-        <a href="https://github.com/Magnogen/source">sauce (github)</a>
-        <p>
-          tl;dr:
-        </p>
-        <table>
-          <tr>
-            <td><a href="https://src.magnogen.net/anim.js">anim.js</a></td>
-            <td>overly complicated animation library</td>
-          </tr>
-          <tr>
-            <td><a href="https://src.magnogen.net/cam.js">cam.js</a></td>
-            <td>idk why i didn't use ctx.transform()</td>
-          </tr>
-          <tr>
-            <td><a href="https://src.magnogen.net/colour.js">colour.js</a></td>
-            <td>poor boy's <a href="https://gka.github.io/chroma.js/">chroma.js</a></td>
-          </tr>
-          <tr>
-            <td><a class="green" href="https://src.magnogen.net/dom.js">dom.js</a></td>
-            <td>poor boy's <a href="https://jquery.com/">jquery</a></td>
-          </tr>
-          <tr>
-            <td><a class="green" href="https://src.magnogen.net/fsm.js">fsm.js</a></td>
-            <td>finite state machines</td>
-          </tr>
-          <tr>
-            <td><a class="green" href="https://src.magnogen.net/iter.js">iter.js</a></td>
-            <td>loop over various things</td>
-          </tr>
-          <tr>
-            <td><a href="https://src.magnogen.net/limit.js">limit.js</a></td>
-            <td>clamp, modulo, fold? sigmoid?</td>
-          </tr>
-          <tr>
-            <td><a class="green" href="https://src.magnogen.net/meal.js">meal.js</a></td>
-            <td>string parsing</td>
-          </tr>
-          <tr>
-            <td><a href="https://src.magnogen.net/pen.js">pen.js</a></td>
-            <td>inspired by scratch's pen blocks</td>
-          </tr>
-          <tr>
-            <td><a href="https://src.magnogen.net/piper.js">piper.js</a></td>
-            <td>...we don't talk about piper.js</td>
-          </tr>
-          <tr>
-            <td><a href="https://src.magnogen.net/pretty.js">pretty.js</a></td>
-            <td>meant to be a console.log alternative</td>
-          </tr>
-          <tr>
-            <td><a class="green" href="https://src.magnogen.net/random.js">random.js</a></td>
-            <td>various rng related stuff</td>
-          </tr>
-          <tr>
-            <td><a href="https://src.magnogen.net/scene.js">scene.js</a></td>
-            <td>i'll probably use this if i make videos again</td>
-          </tr>
-          <tr>
-            <td><a href="https://src.magnogen.net/shader.js">shader.js</a></td>
-            <td>poor boy's <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Tutorial/Getting_started_with_WebGL">webgl</a></td>
-          </tr>
-          <tr>
-            <td><a href="https://src.magnogen.net/shape.js">shape.js</a></td>
-            <td>whatever happened to ctx.beginPath()</td>
-          </tr>
-          <tr>
-            <td><a class="green" href="https://src.magnogen.net/sorder.js">sorder.js</a></td>
-            <td>second order systems - thanks t3ssel8r</td>
-          </tr>
-          <tr>
-            <td><a href="https://src.magnogen.net/tinylib.js">tinylib.js</a></td>
-            <td>collection of unrelated things</td>
-          </tr>
-          <tr>
-            <td><a class="green" href="https://src.magnogen.net/vec.js">vec.js</a></td>
-            <td>very helpful vector library</td>
-          </tr>
-        </table>
-      </details>
-      <details><summary>palbo (palette book)</summary>
-        <p>
-          a site for storing colours.
-          it was requested by a friend of mine, and i thought it turned out pretty good.
-        </p>
-        <a href="https://magnogen.net/palbo">show me</a>
-        <a href="https://github.com/Magnogen/palbo">sauce (github)</a>
-      </details>
+      </section>
       
-      <h2>games / interactive demos</h2>
-      <details><summary>aberratium (game)</summary>
-        <p>
-          my acerola jam 0 submission.
-        </p>
-        <a href="https://magnogen.itch.io/aberratium">show me (itch)</a>
-        <a href="https://github.com/Magnogen/aberratium">sauce (github)</a>
-      </details>
-      <details><summary>click (game)</summary>
-        <p>
-          clicky clicky click click.
-        </p>
-        <a href="https://magnogen.net/click">show me</a>
-        <a href="https://github.com/Magnogen/click">sauce (github)</a>
-      </details>
-      <details><summary>weirdle (game practice)</summary>
-        <p>
-          wordle practice.
-        </p>
-        <a href="https://magnogen.net/weirdle">show me</a>
-        <a href="https://github.com/Magnogen/weirdle">sauce (github)</a>
-      </details>
-      <details><summary>sand (cellular automata)</summary>
-        <p>
-          a browser-based cellular automata written in js.
-          you can play with a bunch of elements, from sand and water to fire and lava.
-        </p>
-        <a href="https://magnogen.net/sand">show me</a>
-        <a href="https://github.com/Magnogen/sand">sauce (github)</a>
-      </details>
-      
-      <h2>creative code</h2>
-      <details><summary>graidients</summary>
-        <p>
-          generate gradients and patterns using neural networks.
-          written in js. 
-        </p>
-        <a href="https://magnogen.net/Graidients">show me</a>
-        <a href="https://github.com/Magnogen/Graidients">sauce (github)</a>
-      </details>
-      <details><summary>dots</summary>
-        <p>
-          play with some jiggly dots.
-          written in js. 
-        </p>
-        <a href="https://magnogen.net/dots">show me</a>
-        <a href="https://github.com/Magnogen/dots">sauce (github)</a>
-      </details>
-      <details><summary>primes</summary>
-        <p>
-          prime numbers go brr. 
-        </p>
-        <a href="https://magnogen.net/primes">show me</a>
-        <a href="https://github.com/Magnogen/primes">sauce (github)</a>
-      </details>
-      <details><summary>flood</summary>
-        <p>
-          a browser-based colourful flood-fill algorithm written in js.
-        </p>
-        <a href="https://magnogen.net/flood">show me</a>
-        <a href="https://github.com/Magnogen/flood">sauce (github)</a>
-      </details>
-      <details><summary>shadering</summary>
-        <p>
-          hm yes i know webgl.
-          really basic glsl shader - noise, domain warping, etc.
-        </p>
-        <a href="https://magnogen.net/shadering">show me</a>
-        <a href="https://github.com/Magnogen/shadering">sauce (github)</a>
-      </details>
-      <details><summary>triangles</summary>
-        <p>
-          just a couple o' triangles.
-        </p>
-        <a href="https://magnogen.net/triangles">show me</a>
-        <a href="https://github.com/Magnogen/triangles">sauce (github)</a>
-      </details>
-      
+      <h2>My Stuff</h2>
+      <div class="cards">
+        <article>
+          <header><h3>Libraries</h3></header>
+          <main>
+            A bunch of modular libraries I tend to use in my projects.
+            <a href="https://src.magnogen.net">Show Me</a>
+            <a href="https://github.com/Magnogen/source">Sauce (GitHub)</a>
+          </main>
+        </article>
+        <article>
+          <header><h3>Palbo (Palette Book)</h3></header>
+          <main>
+            A site for storing colours.
+            It was requested by a friend of mine, and I thought it turned out pretty well.
+            <a href="https://magnogen.net/palbo">Show Me</a>
+            <a href="https://github.com/Magnogen/palbo">Sauce (GitHub)</a>
+          </main>
+        </article>
+        <article>
+          <header><h3>Aberratium</h3></header>
+          <main>
+            My Acerola Jam 0 submission.
+            <a href="https://magnogen.itch.io/aberratium">Show Me (Itch)</a>
+            <a href="https://github.com/Magnogen/aberratium">Sauce (GitHub)</a>
+          </main>
+        </article>
+        <article>
+          <header><h3>Click</h3></header>
+          <main>
+            Clicky clicky click click.
+            <a href="https://magnogen.net/click">Show Me</a>
+            <a href="https://github.com/Magnogen/click">Sauce (GitHub)</a>
+          </main>
+        </article>
+        <article>
+          <header><h3>Weirdle</h3></header>
+          <main>
+            Wordle practice.
+            <a href="https://magnogen.net/weirdle">Show Me</a>
+            <a href="https://github.com/Magnogen/weirdle">Sauce (GitHub)</a>
+          </main>
+        </article>
+        <article>
+          <header><h3>Sand</h3></header>
+          <main>
+            A browser-based cellular automata written in JS.
+            You can play with a bunch of elements, from sand and water to fire and lava.
+            <a href="https://magnogen.net/sand">Show Me</a>
+            <a href="https://github.com/Magnogen/sand">Sauce (GitHub)</a>
+          </main>
+        </article>
+        <article>
+          <header><h3>Graidients</h3></header>
+          <main>
+            Generate gradients and patterns using neural networks.
+            Written in JS.
+            <a href="https://magnogen.net/Graidients">Show Me</a>
+            <a href="https://github.com/Magnogen/Graidients">Sauce (GitHub)</a>
+          </main>
+        </article>
+        <article>
+          <header><h3>Dots</h3></header>
+          <main>
+            Play with some jiggly dots.
+            Written in JS.
+            <a href="https://magnogen.net/dots">Show Me</a>
+            <a href="https://github.com/Magnogen/dots">Sauce (GitHub)</a>
+          </main>
+        </article>
+        <article>
+          <header><h3>Primes</h3></header>
+          <main>
+            Prime numbers go brr.
+            <a href="https://magnogen.net/primes">Show Me</a>
+            <a href="https://github.com/Magnogen/primes">Sauce (GitHub)</a>
+          </main>
+        </article>
+        <article>
+          <header><h3>Flood</h3></header>
+          <main>
+            A browser-based colourful flood-fill algorithm written in JS.
+            <a href="https://magnogen.net/flood">Show Me</a>
+            <a href="https://github.com/Magnogen/flood">Sauce (GitHub)</a>
+          </main>
+        </article>
+        <article>
+          <header><h3>Shadering</h3></header>
+          <main>
+            Hm yes, I know WebGL.
+            Really basic GLSL shader - noise, domain warping, etc.
+            <a href="https://magnogen.net/shadering">Show Me</a>
+            <a href="https://github.com/Magnogen/shadering">Sauce (GitHub)</a>
+          </main>
+        </article>
+        <article>
+          <header><h3>Triangles</h3></header>
+          <main>
+            Just a couple o' triangles.
+            <a href="https://magnogen.net/triangles">Show Me</a>
+            <a href="https://github.com/Magnogen/triangles">Sauce (GitHub)</a>
+          </main>
+        </article>
+      </div>
     </main>
   </body>
 </html>
