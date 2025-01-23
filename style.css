@@ -1,32 +1,15 @@
+html {
+  background: repeating-conic-gradient(#101010 0% 25%, #181818 0% 50%) 50% / 2rem 2rem;
+}
+
 body {
-  max-width: 48rem;
+  max-width: 64rem;
   margin: 0 auto;
   padding: 1rem;
   font-family: sans-serif;
   color: #d0d0d0;
   background: #202020;
   transition: color 0.2s, background 0.2s;
-}
-
-body.light {
-  color: #202020;
-  background: #d0d0d0;
-}
-
-button {
-  transition: color 0.2s, background 0.2s;
-  width: max-content;
-  background: #d0d0d0;
-  color: #202020;
-  border: none;
-  padding: 0.25rem 0.5rem;
-  cursor: pointer;
-  border-radius: 0.25rem;
-}
-
-body.light button {
-  background: #202020;
-  color: #d0d0d0;
 }
 
 header {
@@ -71,10 +54,6 @@ a {
   text-decoration-color: currentColor;
 } a::before {
   content: '↗ ';
-}
-
-body.light a {
-  color: #202080
 }
 
 .cards {
