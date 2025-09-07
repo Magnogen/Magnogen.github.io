@@ -39,7 +39,7 @@ h1 {
 
 main {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
   gap: 1rem;
   width: 100%;
   max-width: 64rem;
