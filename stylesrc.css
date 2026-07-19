@@ -1,0 +1,106 @@
+:root {
+  --bg: #202020;
+  --panel: #404040;
+  --text: #ffffff;
+  --muted: #a0a0a0;
+  --line: #606060;
+  --link: #00a0ff;
+  --code-bg: #001020;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 2rem 1rem;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.6 sans-serif;
+}
+
+header,
+main,
+footer {
+  max-width: 64rem;
+  margin: 0 auto;
+}
+
+.title {
+  margin: 0;
+  letter-spacing: 0.5rem;
+}
+
+.greet {
+  margin: 0.5rem 0 1.5rem;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+h3 {
+  margin: 0 0 0.5rem;
+}
+
+article {
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  background: var(--panel);
+}
+
+p {
+  margin: 0 0 0.5rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+code {
+  display: block;
+  margin: 0.75rem 0;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: var(--code-bg);
+  color: #d6deeb;
+  font: 0.92rem/1.45 monospace;
+  white-space: normal;
+}
+
+.key {
+  color: #ff9cd8;
+}
+
+.var {
+  color: #9ad1ff;
+}
+
+.str {
+  color: #b8e986;
+}
+
+.num {
+  color: #ffd38d;
+}
+
+.com {
+  color: #8f9bb3;
+}
+
+.bol {
+  color: #c7b5ff;
+}
+
+footer {
+  margin-top: 2rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}

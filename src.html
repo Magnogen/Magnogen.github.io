@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Source | Magnogen</title>
+    <meta name="description" content="A bunch of libraries and stuff" />
+    <link rel="shortcut icon" href="https://magnogen.net/src/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="dark">
+    <header>
+        <span></span>
+        <h1 class="title">MAGNOGEN</h1>
+        <h2 class="greet">Source Files</h2>
+    </header>
+    <main>
+        <h3>My Socials</h3>
+        <a href="https://magnogen.net">My Website - Magnogen.net</a><br>
+        <a href="https://www.youtube.com/@Magnogen">YouTube - @Magnogen</a><br>
+        <a href="https://github.com/Magnogen">GitHub - /Magnogen</a>
+        <section class="project-grid" id="project-grid" aria-label="Project list">
+            <article class="anim">
+                <h3>Anim</h3>
+                <p>
+                    Animate like a pro. A range of features from frame control to easing functions to tweens.
+                </p>
+                <code>
+                    <span class="key">let</span> <span class="var">opts</span> = Tweenify(<span class="var">obj</span>, <span class="str">'prop'</span>, {<br>
+                        &nbsp;&nbsp;start: <span class="num">0</span>,<br>
+                        &nbsp;&nbsp;end: <span class="num">100</span>,<br>
+                        &nbsp;&nbsp;length: <span class="str">'1s'</span>,<br>
+                        &nbsp;&nbsp;ease: Ease.Linear<br>
+                    });
+                </code>
+                <a href="lib/anim.js">Open in Browser</a><br>
+                <a href="https://github.com/Magnogen/source/blob/main/anim.js">View on GitHub</a>
+            </article>
+            <article class="binary">
+                <h3>Binary</h3>
+                <p>
+                    Read and write binary data with a tiny buffer reader/writer pair.
+                </p>
+                <code>
+          <span class="key">const</span> <span class="var">writer</span> = BinaryWriter();<br>
+          <span class="var">writer</span>.uint16(<span class="num">513</span>);<br>
+          <span class="key">const</span> <span class="var">reader</span> = BinaryReader(<span class="var">writer</span>.toBuffer());<br>
+          <span class="var">reader</span>.uint16(); <span class="com">// 513</span>
+        </code>
+                <a href="lib/binary.js">Open in Browser</a><br>
+                <a href="https://github.com/Magnogen/source/blob/main/binary.js">View on GitHub</a>
+            </article>
+            <article class="cam">
+                <h3>Cam</h3>
+                <p>
+                    A 2D camera helper for position, zoom, rotation, and world-to-screen projection.
+                </p>
+                <code>
+            <span class="key">const</span> <span class="var">cam</span> = Camera2D(<span class="var">canvas</span>.width, <span class="var">canvas</span>.height);<br>
+          <span class="var">cam</span>.position = { x: <span class="num">100</span>, y: <span class="num">50</span> };<br>
+          <span class="var">cam</span>.scale = <span class="num">2</span>;<br>
+          <span class="key">const</span> <span class="var">screen</span> = <span class="var">cam</span>.at({ x: <span class="num">120</span>, y: <span class="num">60</span> });
+        </code>
+                <a href="lib/cam.js">Open in Browser</a><br>
+                <a href="https://github.com/Magnogen/source/blob/main/cam.js">View on GitHub</a>
+            </article>
+            <article class="colour">
+                <h3>Colour</h3>
+                <p>
+                    Makes colour manipulation a breeze, provides support for RGBA, HSLA, and CMYA formats.
+                </p>
+                <code>
+            <span class="key">let</span> <span class="var">col</span> = Colour(<span class="str">'rgb'</span>, <span class="num">255</span>, <span class="num">0</span>, <span class="num">0</span>);<br>
+            <span class="var">col</span>.toHex(); <span class="com">// "#ff0000ff"</span>
+        </code>
+                <a href="lib/colour.js">Open in Browser</a><br>
+                <a href="https://github.com/Magnogen/source/blob/main/colour.js">View on GitHub</a>
+            </article>
+            <article class="debug">
+                <h3>Debug</h3>
+                <p>
+                    Render nicely formatted object trees directly in the DOM for quick inspection.
+                </p>
+                <code>
+            <span class="key">const</span> <span class="var">debug</span> = Debugger(document.body);<br>
+            <span class="var">debug</span>({ score: <span class="num">42</span>, alive: <span class="bol">true</span> });
+        </code>
+                <a href="lib/debug.js">Open in Browser</a><br>
+                <a href="https://github.com/Magnogen/source/blob/main/debug.js">View on GitHub</a>
+            </article>
+            <article class="dom">
+                <h3>Dom</h3>
+                <p>
+                    Offers shorthand methods for querying elements and managing events.
+                </p>
+                <code>
+            $(<span class="str">'#myElem'</span>).on(<span class="str">'click'</span>, (<span class="var">event</span>) =&gt; {<br>
+                &nbsp;&nbsp;console.log(<span class="str">'Element clicked!'</span>);<br>
+            });
+        </code>
+                <a href="lib/dom.js">Open in Browser</a><br>
+                <a href="https://github.com/Magnogen/source/blob/main/dom.js">View on GitHub</a>
+            </article>
+            <article class="fps">
+                <h3>Fps</h3>
+                <p>
+                    Track realtime frame statistics including min, max, and average FPS.
+                </p>
+                <code>
+            <span class="key">const</span> <span class="var">fps</span> = FPS();<br>
+            <span class="var">fps</span>.submit(<span class="var">deltaTime</span>);<br>
+            <span class="var">fps</span>.average; <span class="com">// current average FPS</span>
+        </code>
+                <a href="lib/fps.js">Open in Browser</a><br>
+                <a href="https://github.com/Magnogen/source/blob/main/fps.js">View on GitHub</a>
+            </article>
+            <article class="fsm">
+                <h3>Fsm</h3>
+                <p>
+                    Build compact finite state machines with event-based transition handlers.
+                </p>
+                <code>
+            <span class="key">const</span> <span class="var">machine</span> = FSM({<br>
+                &nbsp;&nbsp;<span class="str">'idle:start'</span>: () =&gt; <span class="str">'running'</span>,<br>
+                &nbsp;&nbsp;<span class="str">'running:stop'</span>: () =&gt; <span class="str">'idle'</span>,<br>
+            });<br>
+            <span class="var">machine</span>.call(<span class="str">'start'</span>);
+        </code>
+                <a href="lib/fsm.js">Open in Browser</a><br>
+                <a href="https://github.com/Magnogen/source/blob/main/fsm.js">View on GitHub</a>
+            </article>
+            <article class="img">
+                <h3>Img</h3>
+                <p>
+                    Work with raw RGBA image buffers, pixels, regions, chunks, and tiles.
+                </p>
+                <code>
+          <span class="key">const</span> <span class="var">img</span> = Img(<span class="num">64</span>, <span class="num">64</span>);<br>
+          <span class="key">for</span> (<span class="key">const</span> <span class="var">px</span> <span class="key">of</span> <span class="var">img</span>.pixels()) {<br>
+            &nbsp;&nbsp;<span class="var">px</span>.rgb = <span class="num">32</span>;<br>
+        }<br>
+        <span class="var">img</span>.drawTo(<span class="var">canvas</span>);
+        </code>
+                <a href="lib/img.js">Open in Browser</a><br>
+                <a href="https://github.com/Magnogen/source/blob/main/img.js">View on GitHub</a>
+            </article>
+            <article class="iter">
+                <h3>Iter</h3>
+                <p>
+                    Traverse through multi-dimensional spaces with ease using this library, designed to simplify the
+                    process of iterating over complex structures.
+                </p>
+                <code>
+            <span class="key">let</span> <span class="var">mat</span> = Matrix({x: <span class="num">3</span>, y: <span class="num">3</span>}, <span class="bol">true</span>);<br>
+            <span class="key">for</span> (<span class="key">let</span> <span class="var">point</span> <span class="key">of</span> <span class="var">mat</span>) {<br>
+                &nbsp;&nbsp;console.log(<span class="var">point</span>);<br>
+            }
+        </code>
+                <a href="lib/iter.js">Open in Browser</a><br>
+                <a href="https://github.com/Magnogen/source/blob/main/iter.js">View on GitHub</a>
+            </article>
+            <article class="lex">
+                <h3>Lex</h3>
+                <p>
+                    Define tokenizers and parser combinators for lightweight language tooling.
+                </p>
+                <code>
+                <span class="key">const</span> <span class="var">lexer</span> = Lexer();<br>
+                <span class="var">lexer</span>.define(<span class="str">'word'</span>, /[A-Za-z]+/);<br>
+                <span class="var">lexer</span>.define(<span class="str">'space'</span>, /\s+/, { ignore: <span class="bol">true</span> });<br>
+                <span class="key">const</span> <span class="var">tokens</span> = <span class="var">lexer</span>.tokenize(<span class="str">'hello world'</span>);
+            </code>
+                <a href="lib/lex.js">Open in Browser</a><br>
+                <a href="https://github.com/Magnogen/source/blob/main/lex.js">View on GitHub</a>
+            </article>
+            <article class="limit">
+                <h3>Limit</h3>
+                <p>
+                    Ensure your numbers stay within the desired bounds, Clamp, Wrap, Fold, and Sigmoid operations.
+                </p>
+                <code>
+            <span class="key">let</span> <span class="var">limiter</span> = Limit(<span class="num">0</span>, <span class="num">10</span>);<br>
+            <span class="var">limiter</span>.clamp(<span class="num">11</span>); <span class="com">// 10</span><br>
+            <span class="var">limiter</span>.wrap(<span class="num">11</span>); <span class="com">// 1</span><br>
+            <span class="var">limiter</span>.fold(<span class="num">11</span>); <span class="com">// 9</span><br>
+            <span class="var">limiter</span>.sigmoid(<span class="num">15</span>); <span class="com">// 9.168...</span>
+        </code>
+                <a href="lib/limit.js">Open in Browser</a><br>
+                <a href="https://github.com/Magnogen/source/blob/main/limit.js">View on GitHub</a>
+            </article>
+            <article class="meal">
+                <h3>Meal</h3>
+                <p>
+                    Feast on strings, perfect for parsing and syntax highlighting tasks.
+                </p>
+                <code>
+            <span class="key">let</span> <span class="var">food</span> = Meal(<span class="str">'Hello, World!'</span>);<br>
+            <span class="var">food</span>.eat(<span class="str">'Hello'</span>); <span class="com">// "Hello"</span><br>
+            <span class="var">food</span>.first(<span class="num">2</span>); <span class="com">// ", "</span>
+        </code>
+                <a href="lib/meal.js">Open in Browser</a><br>
+                <a href="https://github.com/Magnogen/source/blob/main/meal.js">View on GitHub</a>
+            </article>
+            <article class="pen">
+                <h3>Pen</h3>
+                <p>
+                    A variety of pen operations for drawing. Inspired by Scratch, of all things.
+                </p>
+                <code>
+          <span class="key">let</span> <span class="var">pen</span> = Pen(<span class="var">context</span>);<br>
+          <span class="var">pen</span>.down();<br>
+          <span class="var">pen</span>.goto(<span class="num">50</span>, <span class="num">50</span>);<br>
+          <span class="var">pen</span>.up();
+        </code>
+                <a href="lib/pen.js">Open in Browser</a><br>
+                <a href="https://github.com/Magnogen/source/blob/main/pen.js">View on GitHub</a>
+            </article>
+            <article class="piper">
+                <h3>Piper</h3>
+                <p>
+                    Chain fluent math operations with a tiny immutable pipeline object.
+                </p>
+                <code>
+            <span class="key">const</span> <span class="var">value</span> = Pipe(<span class="num">3</span>)<br>
+            &nbsp;&nbsp;.mul(<span class="num">4</span>)<br>
+          &nbsp;&nbsp;.add(<span class="num">2</span>)<br>
+          &nbsp;&nbsp;.sqrt()<br>
+          &nbsp;&nbsp;.value;
+        </code>
+                <a href="lib/piper.js">Open in Browser</a><br>
+                <a href="https://github.com/Magnogen/source/blob/main/piper.js">View on GitHub</a>
+            </article>
+            <article class="pretty">
+                <h3>Pretty</h3>
+                <p>
+                    Print styled, escaped, and indented text into DOM elements.
+                </p>
+                <code>
+                <span class="key">const</span> <span class="var">out</span> = Pretty($(<span class="str">'#log'</span>));<br>
+                <span class="var">out</span>.println(<span class="str">'Hello'</span>);<br>
+                <span class="var">out</span>.indent();<br>
+          <span class="var">out</span>.println(<span class="str">'Indented'</span>);
+        </code>
+                <a href="lib/pretty.js">Open in Browser</a><br>
+                <a href="https://github.com/Magnogen/source/blob/main/pretty.js">View on GitHub</a>
+            </article>
+            <article class="random">
+                <h3>Random</h3>
+                <p>
+                    Generates random numbers and performs random operations, also with seeded Mulberry RNG.
+                </p>
+                <code>
+            <span class="key">let</span> <span class="var">num</span> = rand(<span class="num">1</span>, <span class="num">10</span>);<br>
+          <span class="key">let</span> <span class="var">arr</span> = [<span class="str">'a'</span>, <span class="str">'b'</span>, <span class="str">'c'</span>];<br>
+          <span class="key">let</span> <span class="var">choice</span> = choose(<span class="var">arr</span>);
+        </code>
+                <a href="lib/random.js">Open in Browser</a><br>
+                <a href="https://github.com/Magnogen/source/blob/main/random.js">View on GitHub</a>
+            </article>
+            <article class="scene">
+                <h3>Scene</h3>
+                <p>
+                    A library for creating and managing scenes in canvas-based animations. Allows you to generate frames
+                    and upload them to a server.
+                </p>
+                <code>
+            Scene(<span class="key">async function*</span> (<span class="var">time</span>) {<br>
+                &nbsp;&nbsp;<span class="key">while</span> (<span class="bol">true</span>) {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="key">const</span> <span class="var">hue</span> = <span class="num">360</span>*<span class="var">time</span>.getNow()/<span class="num">10</span>;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="var">context</span>.fillStyle = <span class="str">`hsl(${<span class="var">hue</span>}deg, 10%, 14%)`</span>;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="var">context</span>.fillRect(<span class="num">0</span>, <span class="num">0</span>, <span class="num">1920</span>, <span class="num">1080</span>);<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;<span class="key">yield</span> <span class="var">canvas</span>;<br>
+          &nbsp;&nbsp;}<br>
+        }, {<br>
+          &nbsp;&nbsp;title: <span class="str">'example'</span>,<br>
+          &nbsp;&nbsp;width: <span class="num">1920</span>,<br>
+          &nbsp;&nbsp;height: <span class="num">1080</span>,<br>
+          &nbsp;&nbsp;duration: <span class="num">10</span>,<br>
+          &nbsp;&nbsp;fps: <span class="num">30</span>,<br>
+          }).render();
+        </code>
+                <a href="lib/scene.js">Open in Browser</a><br>
+                <a href="https://github.com/Magnogen/source/blob/main/scene.js">View on GitHub</a>
+            </article>
+            <article class="segment">
+                <h3>Segment</h3>
+                <p>
+                    Draw smooth capsule segments between circles for joints, trails, and blobs.
+                </p>
+                <code>
+            drawCapsule(<span class="var">ctx</span>,<br>
+            &nbsp;&nbsp;<span class="num">100</span>, <span class="num">100</span>, <span class="num">20</span>,<br>
+            &nbsp;&nbsp;<span class="num">200</span>, <span class="num">120</span>, <span class="num">30</span><br>
+          );
+        </code>
+                <a href="lib/segment.js">Open in Browser</a><br>
+                <a href="https://github.com/Magnogen/source/blob/main/segment.js">View on GitHub</a>
+            </article>
+            <article class="shader">
+                <h3>Shader</h3>
+                <p>
+                    This was mostly just a project to see if I could get the hang of Web Workers. turned out pretty good
+                    though.
+                </p>
+                <code>
+                <span class="key">const</span> <span class="var">shader</span> = Shader(<span class="var">canvas</span>, <span class="num">4</span>);<br>
+                <span class="var">shader</span>.shade((<span class="var">width</span>, <span class="var">height</span>) =&gt; (<span class="var">pos</span>) =&gt; {<br>
+                    &nbsp;&nbsp;<span class="key">return</span> {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;r: <span class="var">pos</span>.x/<span class="var">width</span>*<span class="num">255</span>,<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;g: <span class="var">pos</span>.y/<span class="var">height</span>*<span class="num">255</span>,<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;b: <span class="num">0</span>,<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;a: <span class="num">255</span>,<br>
+                        &nbsp;&nbsp;}<br>
+                    });
+                </code>
+                <a href="lib/shader.js">Open in Browser</a><br>
+                <a href="https://github.com/Magnogen/source/blob/main/shader.js">View on GitHub</a>
+            </article>
+            <article class="shape">
+                <h3>Shape</h3>
+                <p>
+                    Transform polygon vertex sets with translation, rotation, scale, and bounds.
+                </p>
+                <code>
+            <span class="key">const</span> <span class="var">tri</span> = Shape([<br>
+            &nbsp;&nbsp;{ x: <span class="num">0</span>, y: <span class="num">0</span> },<br>
+            &nbsp;&nbsp;{ x: <span class="num">40</span>, y: <span class="num">0</span> },<br>
+            &nbsp;&nbsp;{ x: <span class="num">20</span>, y: <span class="num">30</span> },<br>
+          ]);<br>
+          <span class="var">tri</span>.rotation = Math.PI / <span class="num">4</span>;
+        </code>
+                <a href="lib/shape.js">Open in Browser</a><br>
+                <a href="https://github.com/Magnogen/source/blob/main/shape.js">View on GitHub</a>
+            </article>
+            <article class="sorder">
+                <h3>Sorder</h3>
+                <p>
+                    Apply spring-order smoothing to values and object properties.
+                </p>
+                <code>
+            <span class="key">const</span> <span class="var">update</span> = Sorder(<span class="var">player</span>, <span class="str">'x'</span>, {<br>
+          &nbsp;&nbsp;frequency: <span class="num">2</span>, springiness: <span class="num">1</span>, response: <span class="num">1</span>,<br>
+        });<br>
+          <span class="var">player</span>.x = <span class="num">100</span>;<br>
+          <span class="var">update</span>(<span class="num">1</span> / <span class="num">60</span>);
+        </code>
+                <a href="lib/sorder.js">Open in Browser</a><br>
+                <a href="https://github.com/Magnogen/source/blob/main/sorder.js">View on GitHub</a>
+            </article>
+            <article class="sound">
+                <h3>Sound</h3>
+                <p>
+                    Generate, play, and export procedural PCM audio in the browser.
+                </p>
+                <code>
+            <span class="key">const</span> <span class="var">snd</span> = Sound({ duration: <span class="num">1</span> });<br>
+            <span class="var">snd</span>.data[<span class="num">0</span>][<span class="num">0</span>] = <span class="num">1</span>;<br>
+            <span class="var">snd</span>.play();
+        </code>
+                <a href="lib/sound.js">Open in Browser</a><br>
+                <a href="https://github.com/Magnogen/source/blob/main/sound.js">View on GitHub</a>
+            </article>
+            <article class="tinylib">
+                <h3>Tinylib</h3>
+                <p>
+                    A compact utility pack with DOM helpers, random tools, and handy math functions.
+                </p>
+                <code>
+            <span class="key">const</span> <span class="var">nums</span> = [<span class="num">1</span>, <span class="num">2</span>, <span class="num">3</span>, <span class="num">4</span>];<br>
+            shuffle(<span class="var">nums</span>);<br>
+            <span class="key">const</span> <span class="var">id</span> = hash(<span class="str">'hello'</span>);
+        </code>
+                <a href="lib/tinylib.js">Open in Browser</a><br>
+                <a href="https://github.com/Magnogen/source/blob/main/tinylib.js">View on GitHub</a>
+            </article>
+            <article class="vec">
+                <h3>Vec</h3>
+                <p>
+                    Manipulate 2D and 3D vectors, offers a range of operations for vector arithmetic.
+                </p>
+                <code>
+                <span class="key">const</span> <span class="var">v1</span> = vec2(<span class="num">1</span>, <span class="num">2</span>);<br>
+                <span class="key">const</span> <span class="var">v2</span> = vec2(<span class="num">3</span>, <span class="num">4</span>);<br>
+          <span class="key">const</span> <span class="var">sum</span> = <span class="var">v1</span>.add(<span class="var">v2</span>);
+        </code>
+                <a href="lib/vec.js">Open in Browser</a><br>
+                <a href="https://github.com/Magnogen/source/blob/main/vec.js">View on GitHub</a>
+            </article>
+        </section>
+    </main>
+    <footer>
+        Made with &lt;3 by Magnogen
+    </footer>
+</body>
+
+</html>
